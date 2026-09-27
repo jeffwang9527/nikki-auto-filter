@@ -29,21 +29,13 @@ jobs:
         pip install pyyaml
 
 
-    - name: Download subscriptions
+    - name: Download subscription
       run: |
         mkdir -p input
 
         curl -L \
-        "你的订阅地址1" \
-        -o input/JP.yaml
-
-        curl -L \
-        "你的订阅地址2" \
-        -o input/HK.yaml
-
-        curl -L \
-        "你的订阅地址3" \
-        -o input/SG.yaml
+        "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/clash.yaml" \
+        -o input/all.yaml
 
 
     - name: Run filter

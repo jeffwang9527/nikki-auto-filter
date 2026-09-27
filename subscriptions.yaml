@@ -1,0 +1,7 @@
+subscriptions:
+  - name: main
+    url: https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/clash.yaml
+    regions:
+      - JP
+      - HK
+      - SG
