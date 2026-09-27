@@ -1,0 +1,65 @@
+name: Auto Filter Nikki Nodes
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+
+  workflow_dispatch:
+
+
+jobs:
+  filter:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+
+    - name: Install dependency
+      run: |
+        pip install pyyaml
+
+
+    - name: Download subscriptions
+      run: |
+        mkdir -p input
+
+        curl -L \
+        "你的订阅地址1" \
+        -o input/JP.yaml
+
+        curl -L \
+        "你的订阅地址2" \
+        -o input/HK.yaml
+
+        curl -L \
+        "你的订阅地址3" \
+        -o input/SG.yaml
+
+
+    - name: Run filter
+      run: |
+        python filter_nodes.py
+
+
+    - name: Commit result
+      run: |
+
+        git config user.name github-actions
+
+        git config user.email github-actions@github.com
+
+        git add output
+
+        git commit -m "auto update filtered nodes" || exit 0
+
+        git push
