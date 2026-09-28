@@ -56,6 +56,12 @@ jobs:
     - name: Run filter
       run: |
         python filter_nodes.py
+    - name: Run mihomo speed test
+      run: |
+        chmod +x /usr/local/bin/mihomo
+        mihomo -v
+
+        python speed_test.py
 
 
     - name: Commit result

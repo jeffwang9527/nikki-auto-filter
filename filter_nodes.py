@@ -58,26 +58,42 @@ def region(name):
 
     name = str(name).lower()
 
-    if any(x in name for x in [
-        "jp","japan","日本","东京","东京"
-    ]):
-        return "JP"
+    keywords = {
+        "JP":[
+            "jp",
+            "japan",
+            "tokyo",
+            "osaka",
+            "日本",
+            "东京",
+            "大阪"
+        ],
+
+        "HK":[
+            "hk",
+            "hong",
+            "hongkong",
+            "hong kong",
+            "香港"
+        ],
+
+        "SG":[
+            "sg",
+            "singapore",
+            "新加坡"
+        ]
+    }
 
 
-    if any(x in name for x in [
-        "hk","hong","香港"
-    ]):
-        return "HK"
+    for r, words in keywords.items():
 
+        for w in words:
 
-    if any(x in name for x in [
-        "sg","singapore","新加坡"
-    ]):
-        return "SG"
+            if w in name:
+                return r
 
 
     return "OTHER"
-
 
 
 with open(INPUT,encoding="utf8") as f:
@@ -97,9 +113,15 @@ groups={
 
 for n in nodes:
 
-    n["_score"]=score(n)
+    n["_score"] = score(n)
 
-    groups[region(n.get("name"))].append(n)
+    text = (
+        str(n.get("name",""))
+        + " "
+        + str(n.get("server",""))
+    )
+
+    groups[region(text)].append(n)
 
 
 
