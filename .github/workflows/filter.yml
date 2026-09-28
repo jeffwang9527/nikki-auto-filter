@@ -1,5 +1,8 @@
 name: Nikki Auto Speed Filter
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 */6 * * *"
