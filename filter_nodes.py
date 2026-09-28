@@ -54,6 +54,29 @@ def score(node):
 
 
 
+
+def deduplicate(nodes):
+
+    seen=set()
+    result=[]
+
+    for n in nodes:
+
+        key=(
+            n.get("type",""),
+            n.get("server",""),
+            str(n.get("port","")),
+            n.get("uuid",""),
+            n.get("password","")
+        )
+
+        if key not in seen:
+            seen.add(key)
+            result.append(n)
+
+    return result
+
+
 def region(name):
 
     name = str(name).lower()
@@ -128,14 +151,6 @@ for n in nodes:
 result=[]
 
 
-limits={
-    "JP":20,
-    "HK":20,
-    "SG":20,
-    "OTHER":5
-}
-
-
 for r,items in groups.items():
 
     items.sort(
@@ -143,9 +158,19 @@ for r,items in groups.items():
         reverse=True
     )
 
-    result.extend(
-        items[:limits[r]]
-    )
+    result.extend(items)
+
+
+result.sort(
+    key=lambda x:x["_score"],
+    reverse=True
+)
+
+
+result=result[:60]
+
+
+result=deduplicate(result)
 
 
 for n in result:
