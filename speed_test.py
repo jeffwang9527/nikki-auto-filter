@@ -133,7 +133,7 @@ for i,node in enumerate(nodes):
         )
 
 
-        if avg < 1.5:
+        if avg < 3:
 
             node["delay"]=round(avg,3)
 
@@ -162,7 +162,7 @@ with open(
 
     yaml.dump(
         {
-            "proxies":result[:15]
+            "proxies":result[:30]
         },
         f,
         allow_unicode=True,
