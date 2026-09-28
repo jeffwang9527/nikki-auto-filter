@@ -1,135 +1,161 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+
 import yaml
 import os
 import re
 
-CONFIG = {
-    "JP.yaml": {"hysteria2":10,"vless":10,"trojan":5},
-    "HK.yaml": {"hysteria2":12,"vless":8,"trojan":5},
-    "SG.yaml": {"vless":10,"hysteria2":6,"trojan":4}
-}
+
+INPUT = "input/all.yaml"
+OUTPUT = "output/nikki.yaml"
+
 
 BAD_WORDS = re.compile(
-    r"(expire|expired|traffic|test|测试|过期|剩余|流量|到期|公告)",
+    r"(expire|expired|traffic|test|测试|过期|剩余|流量|到期|公告|免费|试用)",
     re.I
 )
 
+
 TYPE_SCORE = {
-    "hysteria2":15,
-    "vless":12,
-    "trojan":10,
-    "vmess":5,
-    "ss":3
+    "hysteria2": 20,
+    "vless": 15,
+    "trojan": 12,
+    "vmess": 5,
+    "ss": 3
 }
 
-def load_nodes(file):
-    with open(file,encoding="utf8") as f:
-        return yaml.safe_load(f).get("proxies",[])
 
-def score(node,region):
-    s=50
+def score(node):
 
-    name=str(node.get("name",""))
-    server=str(node.get("server",""))
-    text=name+" "+server
+    s = 50
 
-    s += TYPE_SCORE.get(node.get("type",""),0)
+    name = str(node.get("name",""))
+    server = str(node.get("server",""))
 
-    if region=="JP":
-        s+=10
-    elif region=="SG":
-        s+=8
-    else:
-        s+=6
+    text = name + " " + server
 
-    if node.get("udp"):
-        s+=3
+
+    t = node.get("type","")
+
+    s += TYPE_SCORE.get(t,0)
+
 
     if node.get("tls"):
-        s+=2
+        s += 5
 
-    if node.get("server"):
-        s+=3
+    if node.get("udp"):
+        s += 3
+
 
     if BAD_WORDS.search(text):
-        s-=80
+        s -= 100
+
 
     return s
 
-def process(src,plan):
-
-    region=src.split(".")[0]
-
-    nodes=load_nodes(src)
-
-    scored=[]
-
-    for n in nodes:
-        n["_score"]=score(n,region)
-        scored.append(n)
 
 
-    result=[]
+def region(name):
+
+    name = str(name).lower()
+
+    if any(x in name for x in [
+        "jp","japan","日本","东京","东京"
+    ]):
+        return "JP"
 
 
-    for t,num in plan.items():
-
-        group=[
-            x for x in scored
-            if x.get("type")==t
-        ]
-
-        group.sort(
-            key=lambda x:x["_score"],
-            reverse=True
-        )
-
-        result.extend(
-            group[:num]
-        )
+    if any(x in name for x in [
+        "hk","hong","香港"
+    ]):
+        return "HK"
 
 
-    for n in result:
-        n.pop("_score",None)
+    if any(x in name for x in [
+        "sg","singapore","新加坡"
+    ]):
+        return "SG"
 
 
-    os.makedirs(
-        "output",
-        exist_ok=True
+    return "OTHER"
+
+
+
+with open(INPUT,encoding="utf8") as f:
+    data=yaml.safe_load(f)
+
+
+nodes=data.get("proxies",[])
+
+
+groups={
+    "JP":[],
+    "HK":[],
+    "SG":[],
+    "OTHER":[]
+}
+
+
+for n in nodes:
+
+    n["_score"]=score(n)
+
+    groups[region(n.get("name"))].append(n)
+
+
+
+result=[]
+
+
+limits={
+    "JP":20,
+    "HK":20,
+    "SG":20,
+    "OTHER":5
+}
+
+
+for r,items in groups.items():
+
+    items.sort(
+        key=lambda x:x["_score"],
+        reverse=True
+    )
+
+    result.extend(
+        items[:limits[r]]
     )
 
 
-    out="output/"+region+"-filtered.yaml"
+for n in result:
+    n.pop("_score",None)
 
 
-    with open(out,"w",encoding="utf8") as f:
 
-        yaml.dump(
-            {
-                "proxies":result
-            },
-            f,
-            allow_unicode=True,
-            sort_keys=False
-        )
+os.makedirs(
+    "output",
+    exist_ok=True
+)
 
 
-    print(
-        src,
-        "原始:",
-        len(nodes),
-        "输出:",
-        len(result)
+with open(
+    OUTPUT,
+    "w",
+    encoding="utf8"
+) as f:
+
+    yaml.dump(
+        {
+            "proxies":result
+        },
+        f,
+        allow_unicode=True,
+        sort_keys=False
     )
 
 
-
-for file,plan in CONFIG.items():
-
-    if os.path.exists(file):
-
-        process(
-            file,
-            plan
-        )
-
+print(
+    "Total:",
+    len(nodes),
+    "Output:",
+    len(result)
+)

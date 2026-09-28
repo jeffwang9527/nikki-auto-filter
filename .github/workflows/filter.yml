@@ -1,4 +1,4 @@
-name: Auto Filter Nikki Nodes
+name: Nikki Auto Speed Filter
 
 on:
   schedule:
@@ -8,9 +8,11 @@ on:
 
 
 jobs:
+
   filter:
 
     runs-on: ubuntu-latest
+
 
     steps:
 
@@ -24,9 +26,9 @@ jobs:
         python-version: "3.12"
 
 
-    - name: Install dependency
+    - name: Install Python packages
       run: |
-        pip install pyyaml
+        pip install pyyaml requests
 
 
     - name: Download subscription
@@ -36,6 +38,19 @@ jobs:
         curl -L \
         "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/clash.yaml" \
         -o input/all.yaml
+
+
+    - name: Download mihomo
+      run: |
+
+        wget -O mihomo.gz \
+        https://github.com/MetaCubeX/mihomo/releases/latest/download/mihomo-linux-amd64-v1.gz
+
+        gunzip mihomo.gz
+
+        chmod +x mihomo
+
+        sudo mv mihomo /usr/local/bin/mihomo
 
 
     - name: Run filter
@@ -52,6 +67,6 @@ jobs:
 
         git add output
 
-        git commit -m "auto update filtered nodes" || exit 0
+        git commit -m "auto update nikki nodes" || exit 0
 
         git push

@@ -3,10 +3,13 @@ filter_nodes_v2.py
 filter_nodes_v3.py
 filter_nodes_v4.py
 filter_nodes_v5.py
+
 HK.yaml
 JP.yaml
 SG.yaml
+
 HK-filtered.yaml
 JP-filtered.yaml
 SG-filtered.yaml
-output/
+
+input/
