@@ -1,11 +1,17 @@
 import yaml
 import subprocess
 import time
-import os
+import requests
 
 
 INPUT="output/nikki.yaml"
 OUTPUT="output/nikki-speed.yaml"
+
+
+TEST_URLS=[
+    "https://www.gstatic.com/generate_204",
+    "https://cp.cloudflare.com/generate_204"
+]
 
 
 with open(INPUT,encoding="utf8") as f:
@@ -21,12 +27,11 @@ for i,node in enumerate(nodes):
 
     name=node["name"]
 
-    print(
-        f"Testing {i+1}/{len(nodes)} {name}"
-    )
+    print(f"Testing {i+1}/{len(nodes)} {name}")
 
 
     config={
+
         "mixed-port":7890,
         "mode":"rule",
         "log-level":"error",
@@ -76,52 +81,72 @@ for i,node in enumerate(nodes):
         time.sleep(5)
 
 
-        r=subprocess.run(
-            [
-                "curl",
-                "-x",
-                "http://127.0.0.1:7890",
-                "-m",
-                "8",
-                "-s",
-                "-o",
-                "/dev/null",
-                "-w",
-                "%{time_total}",
-                "https://www.gstatic.com/generate_204"
-            ],
-            capture_output=True,
-            text=True
-        )
+        delays=[]
+
+
+        for url in TEST_URLS:
+
+            r=subprocess.run(
+                [
+                    "curl",
+                    "-x",
+                    "http://127.0.0.1:7890",
+                    "-m",
+                    "8",
+                    "-s",
+                    "-o",
+                    "/dev/null",
+                    "-w",
+                    "%{time_total}",
+                    url
+                ],
+                capture_output=True,
+                text=True
+            )
+
+
+            try:
+                delay=float(r.stdout)
+            except:
+                delay=99
+
+
+            delays.append(delay)
+
+            print(
+                url,
+                delay
+            )
 
 
         p.kill()
 
+        time.sleep(1)
 
-        delay=float(r.stdout)
+
+        avg=sum(delays)/len(delays)
 
 
         print(
-            "delay:",
-            delay
+            "average:",
+            avg
         )
 
 
-        if delay < 2.5:
+        if avg < 1.5:
 
-            node["delay"]=delay
+            node["delay"]=round(avg,3)
 
             result.append(node)
-
 
 
     except Exception as e:
 
         print(
             "failed",
-            name
+            name,
+            e
         )
-
 
 
 result.sort(
