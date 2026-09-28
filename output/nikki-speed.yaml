@@ -13,70 +13,26 @@ proxies:
   type: vless
   udp: true
   uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
-  delay: 0.055
+  delay: 0.062
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1457014057
-  network: tcp
-  port: 80
-  reality-opts:
-    public-key: NTXb7QGg9EyPkpG-7lmBNNaqf4473p_l8ITmTH-xmHg
-    short-id: 0db5c018ed7bb596
-  server: 5.78.159.214
-  servername: 5.78.159.214
-  tls: true
-  type: vless
-  udp: true
-  uuid: 52ecd83b-b6c1-41ee-bc36-049755bd33d2
-  delay: 0.08
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1291901232
+  name: vless-825595682
   network: tcp
   port: 443
   reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: 4477382ff6d3d41c
-  server: 51.81.203.63
-  servername: www.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-  delay: 0.181
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1527118569
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: yEpPLsSy8aCXkQ4wzc9t38gQACipc_k54upD9fJj5y4
-    short-id: 4679f07417e9feb4
-  server: 47.253.144.114
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  server: 185.95.231.156
   servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: a4c6bab6-bd83-4b72-8c78-99e96f40cde3
-  delay: 0.281
-- client-fingerprint: random
-  name: vless-1347369094
-  network: grpc
-  port: 8443
-  reality-opts:
-    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
-    short-id: b4e3b0b55b8dc75b
-  server: 31.56.184.132
-  servername: cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-  delay: 0.304
-- client-fingerprint: chrome
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  delay: 0.251
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-666967963
-  network: raw
+  name: vless-301213521
+  network: tcp
   port: 443
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
@@ -87,7 +43,35 @@ proxies:
   type: vless
   udp: true
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  delay: 0.315
+- client-fingerprint: safari
+  name: vless-1105975120
+  network: grpc
+  port: 33743
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+    short-id: ''
+  server: 185.223.57.10
+  servername: www.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
   delay: 0.317
+- client-fingerprint: firefox
+  name: vless-1297639936
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
+    short-id: 72ccd4a7563c2953
+  server: 94.183.170.147
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
+  delay: 0.318
 - client-fingerprint: qq
   name: vless-1365265785
   network: grpc
@@ -101,85 +85,10 @@ proxies:
   type: vless
   udp: true
   uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  delay: 0.337
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-842274870
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.35
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.341
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-692622912
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.133
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.341
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-696161188
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.74
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.344
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-538708835
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.231
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.367
+  delay: 0.319
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-669873691
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.89
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.373
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-706369195
+  name: vless-1143288287
   network: tcp
   port: 443
   reality-opts:
@@ -191,10 +100,10 @@ proxies:
   type: vless
   udp: true
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.431
+  delay: 0.344
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-962693501
+  name: vless-1242548391
   network: tcp
   port: 50159
   reality-opts:
@@ -206,25 +115,10 @@ proxies:
   type: vless
   udp: true
   uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  delay: 0.435
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-933894331
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.163
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.436
+  delay: 0.466
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1503978814
+  name: vless-1518612550
   network: tcp
   port: 443
   reality-opts:
@@ -236,7 +130,21 @@ proxies:
   type: vless
   udp: true
   uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  delay: 0.447
+  delay: 0.484
+- client-fingerprint: firefox
+  name: vless-1293658711
+  network: raw
+  port: 2053
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  server: 46.250.250.149
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  delay: 0.487
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-335170842
@@ -251,79 +159,63 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  delay: 0.478
+  delay: 0.549
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-212135096
-  network: tcp
-  port: 10583
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  delay: 0.491
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-1444669526
-  network: tcp
-  port: 18007
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  delay: 0.528
-- flow: xtls-rprx-vision
-  name: vless-1454143137
+  name: vless-1546710196
   network: tcp
   port: 443
-  server: 50.7.120.163
-  servername: nl-dedic-new-mori.failspace.top
-  skip-cert-verify: true
+  reality-opts:
+    public-key: 1vAAz3fcAmFqjyN7XXCtXkSUC5KHQrrmrw5GUAl2zWc
+    short-id: 228bb910bfac60d9
+  server: 199.247.25.212
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  delay: 0.571
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1062394219
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  delay: 0.55
+- name: vless-1520498570
   network: tcp
-  port: 43450
-  reality-opts:
-    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
-    short-id: e65d010354bdad73
-  server: 35.194.157.16
-  servername: www.amd.com
+  port: 443
+  server: onhit.shalana.xyz
+  servername: onhit.shalana.xyz
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
-  delay: 0.586
-- client-fingerprint: chrome
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  delay: 0.555
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: vless-59621877
-  network: raw
-  port: 18967
+  name: vless-1544320459
+  network: tcp
+  port: 8443
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
+    public-key: VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U
+    short-id: 1be482b8e08aa0ef
+  server: 185.255.114.91
+  servername: nl2.reddotcorp.org
   tls: true
   type: vless
   udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  delay: 0.591
+  uuid: 7faa65a6-b43b-413e-9480-a81fae3d0c49
+  delay: 0.557
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-1265981856
+  network: raw
+  port: 11690
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  server: 13.231.19.51
+  servername: www.tesla.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  delay: 0.588
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: vless-48555241
@@ -338,22 +230,67 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  delay: 0.62
+  delay: 0.603
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-59621877
+  network: raw
+  port: 18967
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  delay: 0.611
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-212135096
+  network: tcp
+  port: 10583
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  delay: 0.616
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1412445133
+  name: vless-1016882879
   network: tcp
-  port: 443
+  port: 18007
   reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  server: 51.161.204.244
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  delay: 0.627
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1546710194
+  network: tcp
+  port: 25605
+  reality-opts:
+    public-key: trh3vhKtu_iAKb6E2GuUvloJDZ8tN0jtzyj4kpV5IQA
+    short-id: 6df42a2c
+  server: 143.42.46.37
   servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  delay: 0.626
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  delay: 0.647
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-1545960767
@@ -368,21 +305,7 @@ proxies:
   type: vless
   udp: true
   uuid: e3a14b3d-8995-4031-a207-32ba5707c1ba
-  delay: 0.629
-- client-fingerprint: firefox
-  name: vless-1293658711
-  network: raw
-  port: 2053
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  server: 46.250.250.149
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  delay: 0.674
+  delay: 0.672
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: vless-1385866360
@@ -397,33 +320,21 @@ proxies:
   type: vless
   udp: true
   uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
-  delay: 0.698
-- name: vless-1520498570
+  delay: 0.758
+- client-fingerprint: firefox
+  name: vless-1327864776
   network: tcp
-  port: 443
-  server: onhit.shalana.xyz
-  servername: onhit.shalana.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  delay: 0.707
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-863082208
-  network: tcp
-  port: 19825
+  port: 2053
   reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: sg2-8sb.6121999.dpdns.org
-  servername: sg2-8sb.6121999.dpdns.org
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  server: 217.217.254.126
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  delay: 0.761
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  delay: 0.795
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-1545960766
@@ -438,4 +349,64 @@ proxies:
   type: vless
   udp: true
   uuid: e3a14b3d-8995-4031-a207-32ba5707c1ba
-  delay: 0.804
+  delay: 0.815
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1128668021
+  network: raw
+  port: 10574
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  delay: 0.979
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1062394219
+  network: tcp
+  port: 43450
+  reality-opts:
+    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
+    short-id: e65d010354bdad73
+  server: 35.194.157.16
+  servername: www.amd.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
+  delay: 0.985
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-12945895
+  network: tcp
+  port: 12972
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  delay: 1.282
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-522223669
+  network: tcp
+  port: 17623
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  delay: 2.356
