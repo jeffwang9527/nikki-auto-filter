@@ -13,82 +13,7 @@ proxies:
   type: vless
   udp: true
   uuid: a4c6bab6-bd83-4b72-8c78-99e96f40cde3
-  delay: 0.051298
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-666967963
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.15
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.08643
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-933894331
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.163
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.092238
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-696161188
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.74
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.092945
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1400430327
-  network: tcp#2🐊@oneclickvpnkeys
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.168
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.151675
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-842274870
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.35
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.216408
+  delay: 0.036
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: vless-692622912
@@ -103,7 +28,110 @@ proxies:
   type: vless
   udp: true
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  delay: 0.233377
+  delay: 0.096
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: vless-696161188
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.74
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  delay: 0.109
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-933894331
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.163
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  delay: 0.112
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: vless-842274870
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.35
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  delay: 0.135
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-666967963
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.15
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  delay: 0.137
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1400430327
+  network: tcp#2🐊@oneclickvpnkeys
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.168
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  delay: 0.171
+- client-fingerprint: random
+  name: vless-1347369094
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
+    short-id: b4e3b0b55b8dc75b
+  server: 31.56.184.132
+  servername: cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+  delay: 0.176
+- client-fingerprint: qq
+  name: vless-1365265785
+  network: grpc
+  port: 33743
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+    short-id: ''
+  server: 185.223.57.16
+  servername: www.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  delay: 0.221
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-1376498326
@@ -118,21 +146,7 @@ proxies:
   type: vless
   udp: true
   uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
-  delay: 0.271027
-- client-fingerprint: random
-  name: vless-1347369094
-  network: grpc
-  port: 8443
-  reality-opts:
-    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
-    short-id: b4e3b0b55b8dc75b
-  server: 31.56.184.132
-  servername: cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-  delay: 0.296097
+  delay: 0.255
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-1457014057
@@ -147,7 +161,19 @@ proxies:
   type: vless
   udp: true
   uuid: 52ecd83b-b6c1-41ee-bc36-049755bd33d2
-  delay: 0.319656
+  delay: 0.316
+- flow: xtls-rprx-vision
+  name: vless-1454143137
+  network: tcp
+  port: 443
+  server: 50.7.120.163
+  servername: nl-dedic-new-mori.failspace.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  delay: 0.341
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-1291901232
@@ -162,33 +188,7 @@ proxies:
   type: vless
   udp: true
   uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-  delay: 0.322863
-- flow: xtls-rprx-vision
-  name: vless-1454143137
-  network: tcp
-  port: 443
-  server: 50.7.120.163
-  servername: nl-dedic-new-mori.failspace.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  delay: 0.346799
-- client-fingerprint: qq
-  name: vless-1365265785
-  network: grpc
-  port: 33743
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-    short-id: ''
-  server: 185.223.57.16
-  servername: www.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  delay: 0.35091
+  delay: 0.387
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-962693501
@@ -203,7 +203,7 @@ proxies:
   type: vless
   udp: true
   uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  delay: 0.624463
+  delay: 0.641
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: vless-1503978814
@@ -218,4 +218,4 @@ proxies:
   type: vless
   udp: true
   uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  delay: 0.634038
+  delay: 0.653
