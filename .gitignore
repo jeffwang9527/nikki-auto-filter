@@ -13,3 +13,5 @@ JP-filtered.yaml
 SG-filtered.yaml
 
 input/
+__pycache__/
+*.pyc

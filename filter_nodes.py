@@ -1,43 +1,72 @@
-# -*- coding: utf-8 -*-
-
+﻿import os
 import yaml
-import os
+import glob
 import re
 
 
-INPUT = "input/all.yaml"
 OUTPUT = "output/nikki.yaml"
+
+REGIONS = {
+    "JP": 20,
+    "HK": 20,
+    "SG": 10,
+}
 
 
 BAD_WORDS = re.compile(
-    r"(expire|expired|traffic|test|测试|过期|剩余|流量|到期|公告|免费|试用)",
+    r"(expire|expired|traffic|test|free|trial|鍓╀綑|娴侀噺|鍒版湡|瀹樼綉|鍏嶈垂)",
     re.I
 )
 
 
 TYPE_SCORE = {
+    "vless": 30,
+    "trojan": 20,
     "hysteria2": 20,
-    "vless": 15,
-    "trojan": 12,
-    "vmess": 5,
-    "ss": 3
+    "vmess": 10,
+    "ss": 5
 }
 
 
-def score(node):
+def node_key(node):
+
+    if node.get("reality-opts"):
+
+        return (
+            str(node.get("server","")),
+            str(node.get("uuid","")),
+            str(node.get("reality-opts",{}).get("public-key",""))
+        )
+
+    return (
+        str(node.get("server","")),
+        str(node.get("port","")),
+        str(node.get("type",""))
+    )
+
+
+def score(node, region):
 
     s = 50
 
-    name = str(node.get("name",""))
-    server = str(node.get("server",""))
+    # Reality / Vision 浼樺厛
+    if node.get("reality-opts"):
+        s += 15
 
-    text = name + " " + server
+    if node.get("flow") == "xtls-rprx-vision":
+        s += 10
 
+    if node.get("network") == "tcp" and node.get("reality-opts"):
+        s += 3
 
-    t = node.get("type","")
+    name = str(node.get("name", ""))
 
-    s += TYPE_SCORE.get(t,0)
+    ntype = str(node.get("type", "")).lower()
 
+    s += TYPE_SCORE.get(ntype, 0)
+
+    # 鍦板尯鏉ユ簮鏉冮噸
+    s += REGIONS.get(region, 0)
 
     if node.get("tls"):
         s += 5
@@ -45,164 +74,250 @@ def score(node):
     if node.get("udp"):
         s += 3
 
+    # 璐ㄩ噺杩囨护
+    if node.get("reality-opts"):
+        s += 5
+
+    if not node.get("servername"):
+        s -= 20
+
+    if str(node.get("type","")).lower() == "trojan":
+        s -= 10
+
+    text = (
+        name +
+        " " +
+        str(node.get("server", ""))
+    )
 
     if BAD_WORDS.search(text):
-        s -= 100
-
+        s -= 50
 
     return s
 
 
 
+def load_region(region):
 
-def deduplicate(nodes):
+    result = []
+    seen = set()
 
-    seen=set()
-    result=[]
+    files = glob.glob(
+        f"input/{region}/*.yaml"
+    )
 
-    for n in nodes:
+    print(
+        f"{region} source files:",
+        len(files)
+    )
 
-        key=(
-            n.get("type",""),
-            n.get("server",""),
-            str(n.get("port","")),
-            n.get("uuid",""),
-            n.get("password","")
+    for file in files:
+
+        try:
+
+            with open(
+                file,
+                "r",
+                encoding="utf-8"
+            ) as f:
+
+                data = yaml.safe_load(f)
+
+
+            if not data:
+                continue
+
+
+            proxies = data.get(
+                "proxies",
+                []
+            )
+
+
+            for node in proxies:
+
+                if not isinstance(node, dict):
+                    continue
+
+
+                if not node.get("server"):
+                    continue
+
+
+                key = node_key(node)
+
+                if key in seen:
+                    continue
+
+                seen.add(key)
+
+
+                node["_region"] = region
+                node["_score"] = score(
+                    node,
+                    region
+                )
+
+
+                result.append(node)
+
+
+        except Exception as e:
+
+            print(
+                "skip",
+                file,
+                e
+            )
+
+
+        result.sort(
+            key=lambda x:(
+                ["JP","HK","SG"].index(x.get("_region","SG")),
+                -x["_score"]
+            )
         )
 
-        if key not in seen:
-            seen.add(key)
-            result.append(n)
+    print(
+        region,
+        "clean:",
+        len(result)
+    )
 
     return result
 
 
-def region(name):
 
-    name = str(name).lower()
+def main():
 
-    keywords = {
-        "JP":[
-            "jp",
-            "japan",
-            "tokyo",
-            "osaka",
-            "日本",
-            "东京",
-            "大阪"
-        ],
+    output = []
 
-        "HK":[
-            "hk",
-            "hong",
-            "hongkong",
-            "hong kong",
-            "香港"
-        ],
 
-        "SG":[
-            "sg",
-            "singapore",
-            "新加坡"
-        ]
+    limits = {
+        "JP":20,
+        "HK":20,
+        "SG":10
     }
 
 
-    for r, words in keywords.items():
+    for region in REGIONS:
 
-        for w in words:
-
-            if w in name:
-                return r
+        nodes = load_region(region)
 
 
-    return "OTHER"
+        selected = nodes[
+            :limits[region]
+        ]
 
 
-with open(INPUT,encoding="utf8") as f:
-    data=yaml.safe_load(f)
+        print(
+            region,
+            "selected:",
+            len(selected)
+        )
+
+        for n in selected:
+            n["name"] = f"{region} | {n.get('name','unknown')}"
+
+        output.extend(selected)
 
 
-nodes=data.get("proxies",[])
-
-
-groups={
-    "JP":[],
-    "HK":[],
-    "SG":[],
-    "OTHER":[]
-}
-
-
-for n in nodes:
-
-    n["_score"] = score(n)
-
-    text = (
-        str(n.get("name",""))
-        + " "
-        + str(n.get("server",""))
-    )
-
-    groups[region(text)].append(n)
-
-
-
-result=[]
-
-
-for r,items in groups.items():
-
-    items.sort(
-        key=lambda x:x["_score"],
-        reverse=True
-    )
-
-    result.extend(items)
-
-
-result.sort(
-    key=lambda x:x["_score"],
-    reverse=True
-)
-
-
-result=result[:60]
-
-
-result=deduplicate(result)
-
-
-for n in result:
-    n.pop("_score",None)
-
-
-
-os.makedirs(
-    "output",
-    exist_ok=True
-)
-
-
-with open(
-    OUTPUT,
-    "w",
-    encoding="utf8"
-) as f:
-
-    yaml.dump(
-        {
-            "proxies":result
-        },
-        f,
-        allow_unicode=True,
-        sort_keys=False
+    os.makedirs(
+        "output",
+        exist_ok=True
     )
 
 
-print(
-    "Total:",
-    len(nodes),
-    "Output:",
-    len(result)
+    clean=[]
+
+
+    for n in output:
+
+        n.pop(
+            "_score",
+            None
+        )
+
+        n.pop(
+            "_region",
+            None
+        )
+
+        clean.append(n)
+
+
+
+    with open(
+        OUTPUT,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        yaml.safe_dump(
+    {
+        "proxies": clean,
+        "proxy-groups": [
+            {
+                "name": "[JP] JP Auto",
+                "type": "url-test",
+                "url": "https://www.gstatic.com/generate_204",
+                "interval": 300,
+                "proxies": [
+                    n["name"] for n in clean
+                    if n["name"].startswith("JP |")
+                ]
+            },
+            {
+                "name": "[HK] HK Auto",
+                "type": "url-test",
+                "url": "https://www.gstatic.com/generate_204",
+                "interval": 300,
+                "proxies": [
+                    n["name"] for n in clean
+                    if n["name"].startswith("HK |")
+                ]
+            },
+            {
+                "name": "[SG] SG Auto",
+                "type": "url-test",
+                "url": "https://www.gstatic.com/generate_204",
+                "interval": 300,
+                "proxies": [
+                    n["name"] for n in clean
+                    if n["name"].startswith("SG |")
+                ]
+            },
+            {
+                "name": "[ALL] Auto",
+                "type": "fallback",
+                "url": "https://www.gstatic.com/generate_204",
+                "interval": 300,
+                "proxies": [
+                    "[JP] JP Auto",
+                    "[HK] HK Auto",
+                    "[SG] SG Auto"
+                ]
+            }
+        ]
+    },
+    f,
+    allow_unicode=True,
+    sort_keys=False
 )
+
+
+    print(
+        "Total output:",
+        len(clean)
+    )
+
+    print(
+        "Saved:",
+        OUTPUT
+    )
+
+
+
+if __name__=="__main__":
+    main()
+

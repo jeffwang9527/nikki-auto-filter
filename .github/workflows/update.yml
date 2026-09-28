@@ -1,0 +1,80 @@
+name: Update Nikki Nodes
+
+
+on:
+
+  schedule:
+
+    - cron: "30 19 * * *"
+
+
+  workflow_dispatch:
+
+
+
+jobs:
+
+  update:
+
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+
+    - name: Checkout
+
+      uses: actions/checkout@v4
+
+
+
+    - name: Python
+
+      uses: actions/setup-python@v5
+
+      with:
+
+        python-version: "3.11"
+
+
+
+    - name: Install
+
+      run: |
+
+        pip install -r requirements.txt
+
+
+
+    - name: Update sources
+
+      run: |
+
+        chmod +x update_sources.sh
+
+        ./update_sources.sh
+
+
+
+    - name: Filter
+
+      run: |
+
+        python filter_nodes.py
+
+
+
+    - name: Commit
+
+      run: |
+
+        git config user.name github-actions
+
+        git config user.email github-actions@github.com
+
+        git add output input
+
+        git commit -m "auto update nodes" || exit 0
+
+        git push
