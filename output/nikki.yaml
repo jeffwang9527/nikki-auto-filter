@@ -29,6 +29,20 @@ proxies:
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
+  name: JP | vless-656245170
+  network: tcp
+  port: 26518
+  reality-opts:
+    public-key: 1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk
+    short-id: 6caead99
+  server: 156.246.88.125
+  servername: github.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e01fcb68-3112-49da-b85d-dffb799cfc9b
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: JP | vless-665034432
   network: tcp
   port: 26518
@@ -41,20 +55,19 @@ proxies:
   type: vless
   udp: true
   uuid: e01fcb68-3112-49da-b85d-dffb799cfc9b
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: JP | vless-642242668
-  network: raw
-  port: 26518
+- client-fingerprint: chrome
+  name: JP | vless-688041973
+  network: grpc
+  port: 20230
   reality-opts:
-    public-key: 1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk
-    short-id: 6caead99
-  server: 156.246.88.125
-  servername: github.com
+    public-key: lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc
+    short-id: abae4722
+  server: jp004.421421.xyz
+  servername: www.nvidia.com
   tls: true
   type: vless
   udp: true
-  uuid: e01fcb68-3112-49da-b85d-dffb799cfc9b
+  uuid: 0400697c-b581-4575-9d2f-0bbd4659312d
 - name: JP | vless-50299
   network: tcp
   port: 47878
@@ -69,13 +82,6 @@ proxies:
   type: vless
   udp: true
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-- name: JP | vless-650437238
-  network: ws
-  port: 8880
-  server: lucky-field-0220.191-de2.workers.dev
-  type: vless
-  udp: true
-  uuid: 01c2fb74-10b5-452d-b893-67cb528b6a8d
 - name: JP | vless-656041581
   network: tcp
   port: 443
@@ -94,6 +100,13 @@ proxies:
   network: ws
   port: 8080
   server: 188.114.97.6
+  type: vless
+  udp: true
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: JP | vless-897224965
+  network: ws
+  port: 2052
+  server: 162.159.0.53
   type: vless
   udp: true
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -160,13 +173,6 @@ proxies:
   type: vless
   udp: true
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-- name: JP | vless-897225008
-  network: ws
-  port: 8880
-  server: 162.159.24.131
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: HK | vless-563294205
@@ -211,20 +217,6 @@ proxies:
   uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: HK | vless-1538231295
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Y9TEgB_8YVWzv8-wblXBjeX2t7IAtQhtQ3pE08gfNWw
-    short-id: 862266ae05b7a62f
-  server: 47.83.143.75
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1658f804-41bf-4b7c-a0be-ba01097e0f41
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: HK | vless-1545960767
   network: tcp
   port: 20270
@@ -237,20 +229,6 @@ proxies:
   type: vless
   udp: true
   uuid: e3a14b3d-8995-4031-a207-32ba5707c1ba
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: HK | vless-1549586943
-  network: tcp
-  port: 9443
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  server: 45.207.157.8
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 966990b5-5868-4af1-add6-011c72b4a443
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: HK | vless-1555053103
@@ -265,48 +243,6 @@ proxies:
   type: vless
   udp: true
   uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: HK | vless-1555053111
-  network: tcp
-  port: 32134
-  reality-opts:
-    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-    short-id: 6c6c7c97
-  server: 3696b38bsg.murphyweb.sbs
-  servername: buylite.music.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: HK | vless-1557930313
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lK305DpoHGgXocbC3HwUcAGnVtmJjsFACgJMbAJrUVw
-    short-id: fd6a3a70c2350e51
-  server: 62.60.232.238
-  servername: hk.dendiboss.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 617c4aa4-08bc-41ea-8fdf-0bacf068c317
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: HK | vless-1558629670
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lK305DpoHGgXocbC3HwUcAGnVtmJjsFACgJMbAJrUVw
-    short-id: fd6a3a70c2350e51
-  server: 62.60.232.238
-  servername: hk.dendiboss.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8d2341a3-13b8-4e5e-84e1-da1c4923149a
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: HK | vless-1559491698
@@ -321,6 +257,20 @@ proxies:
   type: vless
   udp: true
   uuid: a368752a-32fc-42f3-980a-6b049218b23f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: HK | vless-1560064398
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lK305DpoHGgXocbC3HwUcAGnVtmJjsFACgJMbAJrUVw
+    short-id: fd6a3a70c2350e51
+  server: 62.60.232.238
+  servername: hk.dendiboss.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8d2341a3-13b8-4e5e-84e1-da1c4923149a
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: HK | vless-1560109693
@@ -335,6 +285,20 @@ proxies:
   type: vless
   udp: true
   uuid: 914f3806-07a1-4158-9624-e183de065a38
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: HK | vless-1562090754
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  server: 139.28.168.201
+  servername: china.letsconnectpoint.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
 - client-fingerprint: chrome
   name: HK | vless-455170248
   network: tcp
@@ -359,26 +323,16 @@ proxies:
   type: vless
   udp: true
   uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-- name: HK | vless-1398522647
-  network: tcp
-  port: 11907
-  server: 195.58.144.56
-  servername: 195.58.144.56
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-- name: HK | vless-1557120160
+- name: HK | vless-1343864671
   network: ws
   port: 443
-  server: 156.224.79.83
-  servername: reqp9.t4ic.k5p.hh.vavava.kdns.fr
+  server: 103.190.178.195
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
 - name: HK | vless-1558988632
   network: ws
   port: 443
@@ -419,6 +373,54 @@ proxies:
   type: vless
   udp: true
   uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+- alterId: 0
+  cipher: auto
+  name: HK | vmess-161221962
+  network: ws
+  port: 443
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+- alterId: 0
+  cipher: auto
+  name: HK | vmess-161222957
+  network: ws
+  port: 443
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+- alterId: 0
+  cipher: auto
+  name: HK | vmess-161222959
+  network: ws
+  port: 443
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+- alterId: 0
+  cipher: auto
+  name: HK | vmess-161222963
+  network: ws
+  port: 443
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427c1f94373876c2f43e9f790f3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: SG | vless-12945894
@@ -489,9 +491,9 @@ proxies:
   type: vless
   udp: true
   uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: SG | vless-1016993018
+  name: SG | vless-1010702381
   network: tcp
   port: 24146
   reality-opts:
@@ -567,14 +569,15 @@ proxy-groups:
   proxies:
   - JP | vless-10287041
   - JP | vless-12945892
+  - JP | vless-656245170
   - JP | vless-665034432
-  - JP | vless-642242668
+  - JP | vless-688041973
   - JP | vless-50299
   - JP | vless-60292
-  - JP | vless-650437238
   - JP | vless-656041581
   - JP | vless-702076969
   - JP | vless-864009963
+  - JP | vless-897224965
   - JP | vless-897224971
   - JP | vless-897224972
   - JP | vless-897224975
@@ -584,7 +587,6 @@ proxy-groups:
   - JP | vless-897224995
   - JP | vless-897224999
   - JP | vless-897225003
-  - JP | vless-897225008
 - name: '[HK] HK Auto'
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -593,23 +595,23 @@ proxy-groups:
   - HK | vless-563294205
   - HK | vless-810591712
   - HK | vless-812140790
-  - HK | vless-1538231295
   - HK | vless-1545960767
-  - HK | vless-1549586943
   - HK | vless-1555053103
-  - HK | vless-1555053111
-  - HK | vless-1557930313
-  - HK | vless-1558629670
   - HK | vless-1559491698
+  - HK | vless-1560064398
   - HK | vless-1560109693
+  - HK | vless-1562090754
   - HK | vless-455170248
   - HK | vless-1487827018
-  - HK | vless-1398522647
-  - HK | vless-1557120160
+  - HK | vless-1343864671
   - HK | vless-1558988632
   - HK | vless-1559265360
   - HK | vless-1559265362
   - HK | vless-1559265364
+  - HK | vmess-161221962
+  - HK | vmess-161222957
+  - HK | vmess-161222959
+  - HK | vmess-161222963
 - name: '[SG] SG Auto'
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -620,7 +622,7 @@ proxy-groups:
   - SG | vless-862912453
   - SG | vless-1009372186
   - SG | vless-1010615625
-  - SG | vless-1016993018
+  - SG | vless-1010702381
   - SG | vless-1372418839
   - SG | vless-1545960766
   - SG | vless-1546710182
