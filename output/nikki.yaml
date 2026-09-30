@@ -68,111 +68,156 @@ proxies:
   type: vless
   udp: true
   uuid: 0400697c-b581-4575-9d2f-0bbd4659312d
-- name: JP | vless-50299
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  type: vless
-  udp: true
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- name: JP | vless-55001
+- name: JP | vless-25196
   network: ws
-  port: 80
-  server: 172.111.146.64
+  port: 2083
+  server: 172.64.145.202
+  servername: newwk1.f1w.de5.net
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-- name: JP | vless-656041581
-  network: tcp
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+- name: JP | vless-45847
+  network: ws
+  port: 7443
+  server: 116.204.164.30
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f
+- name: JP | vless-45849
+  network: ws
+  port: 7443
+  server: 116.204.164.60
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fc85cf23-75e6-4b91-b468-8adc9407047b
+- name: JP | vless-56629
+  network: ws
+  port: 2083
+  server: 172.66.44.211
+  servername: wk1.f1w.de5.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+- name: JP | vless-59619
+  network: ws
+  port: 51262
+  server: 175.41.179.37
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
+- name: JP | vless-62442
+  network: ws
+  port: 8443
+  server: 188.114.96.7
+  servername: fragrant-unit-d662.mmammatrix770088.workers.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
+- name: JP | vless-63897
+  network: ws
   port: 443
-  server: 137.220.221.179
+  server: 192.65.217.123
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: JP | vless-663849508
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+- name: JP | vless-71533
   network: ws
-  port: 8080
-  server: 172.67.143.54
+  port: 443
+  server: 45.135.235.123
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
-- name: JP | vless-831354126
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+- name: JP | vless-77303
   network: ws
-  port: 80
-  server: 45.131.210.34
+  port: 52014
+  server: 57.129.130.200
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-- name: JP | vless-864009963
+  uuid: c8b0617e-010f-43a8-b3d0-d5358febf0c9
+- name: JP | vless-79818
   network: ws
-  port: 8080
-  server: 188.114.97.6
+  port: 2053
+  server: 8.35.211.43
+  servername: go.iranfree.de5.net
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-- name: JP | vless-897224965
+  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
+- name: JP | vless-79882
   network: ws
-  port: 2052
-  server: 162.159.0.53
+  port: 2096
+  server: 8.35.211.87
+  servername: go.iranfree.de5.net
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-- name: JP | vless-897224971
+  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
+- name: JP | vless-83822
   network: ws
-  port: 2086
-  server: 108.162.198.178
+  port: 443
+  server: 92.60.74.123
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-- name: JP | vless-897224972
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+- name: JP | vless-94197
   network: ws
-  port: 8880
-  server: 172.64.52.6
+  port: 2083
+  server: vip3.kaixincloud.top
+  servername: newwk1.f1w.de5.net
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-- name: JP | vless-897224975
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+- name: JP | vless-2118045
   network: ws
-  port: 2086
-  server: 172.64.158.146
+  port: 443
+  server: soskeynets-meadow-af5b.woowoorrrkk.workers.dev
+  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-- name: JP | vless-897224976
+  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
+- name: JP | vless-2292687
   network: ws
-  port: 2052
-  server: 172.64.229.2
+  port: 443
+  server: app-q0zc4t.user-4gfyh5.workers.dev
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-- name: JP | vless-897224982
-  network: ws
-  port: 2086
-  server: 172.64.32.103
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-- name: JP | vless-897224987
-  network: ws
-  port: 2052
-  server: 172.64.158.146
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-- name: JP | vless-897224995
-  network: ws
-  port: 8880
-  server: 172.64.229.170
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-- name: JP | vless-897224999
-  network: ws
-  port: 2086
-  server: 172.64.154.8
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: HK | vless-563294205
@@ -229,20 +274,20 @@ proxies:
   type: vless
   udp: true
   uuid: 1658f804-41bf-4b7c-a0be-ba01097e0f41
-- client-fingerprint: ios
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: HK | vless-1554581450
+  name: HK | vless-1555053111
   network: tcp
-  port: 9443
+  port: 32134
   reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  server: 45.207.157.8
-  servername: www.amazon.com
+    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
+    short-id: 6c6c7c97
+  server: 3696b38bsg.murphyweb.sbs
+  servername: buylite.music.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 966990b5-5868-4af1-add6-011c72b4a443
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: HK | vless-1559491698
@@ -299,20 +344,6 @@ proxies:
   type: vless
   udp: true
   uuid: a368752a-32fc-42f3-980a-6b049218b23f
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: HK | vless-1578108079
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: 2kIZnJhcwmSnHlJ6I6kz5srz0R-9uUMJAAMAuS_U2xE
-    short-id: 1a60e2b1ca53aa6d
-  server: 62.60.232.30
-  servername: walnut-studio.justext.space
-  tls: true
-  type: vless
-  udp: true
-  uuid: a4511102-385d-4e68-9eb2-47128a7a78e1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: HK | vless-1579898153
@@ -342,34 +373,6 @@ proxies:
   udp: true
   uuid: 78d36530-c8b9-4ffa-bbe2-850fa11de2d8
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: HK | vless-1579898172
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HbjpGbCmp7lBysnS-twEYgGoriXACHZQObIpU9zJWVc
-    short-id: a273e9ee6ac0a466
-  server: hk5.miyazono-kaori.com
-  servername: www.hsbc.com.hk
-  tls: true
-  type: vless
-  udp: true
-  uuid: 78d36530-c8b9-4ffa-bbe2-850fa11de2d8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: HK | vless-1579898208
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: KhRbgahSFqlPKB6QNp9QYb4oXMy2SIgi440tm6iFZHA
-    short-id: ea6b43
-  server: hk4.miyazono-kaori.com
-  servername: hk4e-launcher-static.hoyoverse.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 78d36530-c8b9-4ffa-bbe2-850fa11de2d8
-- client-fingerprint: chrome
   name: HK | vless-455170248
   network: tcp
   port: 13779
@@ -382,6 +385,36 @@ proxies:
   type: vless
   udp: true
   uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+- name: HK | vless-209996039
+  network: ws
+  port: 2087
+  server: 91.193.59.191
+  servername: vlso5.1d.mom
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+- name: HK | vless-216227213
+  network: ws
+  port: 2083
+  server: 91.193.59.32
+  servername: vlsovip.1d.mom
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+- name: HK | vless-1389506151
+  network: ws
+  port: 443
+  server: marzban-production-32da.up.railway.app
+  servername: marzban-production-32da.up.railway.app
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51eeb384-03ef-45f4-8287-c609d39c8c2f
 - name: HK | vless-1559265360
   network: ws
   port: 443
@@ -530,34 +563,6 @@ proxies:
   type: vless
   udp: true
   uuid: 2db985f6-21bf-40c2-a4f1-4ce2cf90b1c2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: SG | vless-1553022544
-  network: tcp
-  port: 21464
-  reality-opts:
-    public-key: 7TVqIgOMgFzxjYG4nSSQxWWTE7cBPXjpoZwCsd337lY
-    short-id: 52f8
-  server: 18.143.191.201
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: SG | vless-1560068727
-  network: tcp
-  port: 23070
-  reality-opts:
-    public-key: px79hKhwQDhnVMdX3CF8dHKQsAVT8-FJ8ilk7JZAO2U
-    short-id: c7f5ef2673cc86bc
-  server: 18.140.72.106
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   name: SG | vless-1579898166
@@ -572,6 +577,34 @@ proxies:
   type: vless
   udp: true
   uuid: 2b728638-4adb-4d72-8887-c580998e2559
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: SG | vless-1579898185
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: I2PQq5bidT2RjVCJt2r-eSVpLNY61quSYgS2dseomF8
+    short-id: 1dd8558159ecd0
+  server: sg4.miyazono-kaori.com
+  servername: www.changiairport.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 78d36530-c8b9-4ffa-bbe2-850fa11de2d8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: SG | vless-1579898187
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Oh-r_LCdfRhSzm9zQEv-0jMO57hebZJzOmSTTGveh2c
+    short-id: 5f2ca3da385c
+  server: sg2.miyazono-kaori.com
+  servername: sg-hyp-api.hoyoverse.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 78d36530-c8b9-4ffa-bbe2-850fa11de2d8
 proxy-groups:
 - name: '[JP] JP Auto'
   type: url-test
@@ -583,21 +616,21 @@ proxy-groups:
   - JP | vless-126294516
   - JP | vless-250631738
   - JP | vless-688041973
-  - JP | vless-50299
-  - JP | vless-55001
-  - JP | vless-656041581
-  - JP | vless-663849508
-  - JP | vless-831354126
-  - JP | vless-864009963
-  - JP | vless-897224965
-  - JP | vless-897224971
-  - JP | vless-897224972
-  - JP | vless-897224975
-  - JP | vless-897224976
-  - JP | vless-897224982
-  - JP | vless-897224987
-  - JP | vless-897224995
-  - JP | vless-897224999
+  - JP | vless-25196
+  - JP | vless-45847
+  - JP | vless-45849
+  - JP | vless-56629
+  - JP | vless-59619
+  - JP | vless-62442
+  - JP | vless-63897
+  - JP | vless-71533
+  - JP | vless-77303
+  - JP | vless-79818
+  - JP | vless-79882
+  - JP | vless-83822
+  - JP | vless-94197
+  - JP | vless-2118045
+  - JP | vless-2292687
 - name: '[HK] HK Auto'
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -607,17 +640,17 @@ proxy-groups:
   - HK | vless-812140790
   - HK | vless-836349881
   - HK | vless-1533221320
-  - HK | vless-1554581450
+  - HK | vless-1555053111
   - HK | vless-1559491698
   - HK | vless-1560109693
   - HK | vless-1561372261
   - HK | vless-1562090754
-  - HK | vless-1578108079
   - HK | vless-1579898153
   - HK | vless-1579898158
-  - HK | vless-1579898172
-  - HK | vless-1579898208
   - HK | vless-455170248
+  - HK | vless-209996039
+  - HK | vless-216227213
+  - HK | vless-1389506151
   - HK | vless-1559265360
   - HK | vless-1559265362
   - HK | vless-1559265364
@@ -635,9 +668,9 @@ proxy-groups:
   - SG | vless-1010615625
   - SG | vless-1010702381
   - SG | vless-1552150522
-  - SG | vless-1553022544
-  - SG | vless-1560068727
   - SG | vless-1579898166
+  - SG | vless-1579898185
+  - SG | vless-1579898187
 - name: '[ALL] Auto'
   type: fallback
   url: https://www.gstatic.com/generate_204
