@@ -1,0 +1,85 @@
+general:
+  # 普通池：只使用 Au1rxx，不从 GPT 专用源取节点。
+  # 每个分片保留前 10 个作为云端候选；Au1rxx 自身已经做过发布前的上游测试。
+  - id: au1rxx-jp
+    source: Au1rxx
+    region: JP
+    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-JP.yaml
+    path: input/general/au1rxx-jp.yaml
+    limit: 10
+  - id: au1rxx-hk
+    source: Au1rxx
+    region: HK
+    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-HK.yaml
+    path: input/general/au1rxx-hk.yaml
+    limit: 10
+  - id: au1rxx-sg
+    source: Au1rxx
+    region: SG
+    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-SG.yaml
+    path: input/general/au1rxx-sg.yaml
+    limit: 10
+  - id: au1rxx-us
+    source: Au1rxx
+    region: US
+    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-US.yaml
+    path: input/general/au1rxx-us.yaml
+    limit: 10
+  - id: au1rxx-de
+    source: Au1rxx
+    region: DE
+    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-DE.yaml
+    path: input/general/au1rxx-de.yaml
+    limit: 10
+  - id: au1rxx-kr
+    source: Au1rxx
+    region: KR
+    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-KR.yaml
+    path: input/general/au1rxx-kr.yaml
+    limit: 10
+  - id: au1rxx-tw
+    source: Au1rxx
+    region: TW
+    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-TW.yaml
+    path: input/general/au1rxx-tw.yaml
+    limit: 10
+  - id: au1rxx-ca
+    source: Au1rxx
+    region: CA
+    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-CA.yaml
+    path: input/general/au1rxx-ca.yaml
+    limit: 10
+
+chatgpt:
+  # GPT 专用池：明确排除 Au1rxx，使用其它公开源。
+  # 这些 feed 通过 wzmwayne 的独立来源输出获取，避免使用其混合 Au1rxx 的 AIO。
+  - id: yoyapai
+    source: yoyapai
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/yoyapai/clash.yaml
+    path: input/chatgpt/yoyapai.yaml
+    limit: 12
+  - id: freesub
+    source: Ruk1ng001/freeSub
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/freesub/clash.yaml
+    path: input/chatgpt/freesub.yaml
+    limit: 12
+  - id: ripaojiedian
+    source: ripaojiedian/freenode
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/ripaojiedian/clash.yaml
+    path: input/chatgpt/ripaojiedian.yaml
+    limit: 12
+  - id: passcro
+    source: zhangkaiitugithub/passcro
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/passcro/clash.yaml
+    path: input/chatgpt/passcro.yaml
+    limit: 12
+  - id: anaer
+    source: anaer.github.io/Sub
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/anaer/clash.yaml
+    path: input/chatgpt/anaer.yaml
+    limit: 12
+  - id: xiaoji235
+    source: xiaoji235/airport-free
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/xiaoji235/clash.yaml
+    path: input/chatgpt/xiaoji235.yaml
+    limit: 12
