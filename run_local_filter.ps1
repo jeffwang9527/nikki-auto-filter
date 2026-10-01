@@ -66,16 +66,43 @@ if($Publish){
   $MinGeneral=[Math]::Max(8,[Math]::Floor($GeneralLimit*0.67))
   $MinChatGPT=[Math]::Max(5,[Math]::Floor($ChatGPTLimit*0.625))
   $MinTotal=[Math]::Max(14,[Math]::Floor(($GeneralLimit+$ChatGPTLimit)*0.70))
+
   if($Report.selected_general -lt $MinGeneral -or $Report.selected_chatgpt -lt $MinChatGPT -or $Report.selected_total -lt $MinTotal){
     throw "Publish blocked: one or both router pools are unexpectedly small; previous GitHub output is kept."
   }
-  $Status=git status --porcelain
-  if($Status){throw "Publish blocked because the working tree has local changes."}
-  git add output/nikki-general.yaml output/nikki-chatgpt.yaml output/nikki.yaml output/local-test-report.json cache/node-cache.json
-  git diff --cached --quiet
-  if($LASTEXITCODE -ne 0){
-    git commit -m "publish local mihomo node pools"
-    git push origin main
+
+  # 将“最终小池”安全发布到 origin/main，不要求当前 feature 工作树干净，
+  # 也不会把 feature 分支代码一起推到 main。
+  $PublishDir=Join-Path $env:TEMP ("nikki-publish-" + [Guid]::NewGuid().ToString("N"))
+  try {
+    git fetch origin main
+    if($LASTEXITCODE -ne 0){throw "git fetch origin main failed"}
+
+    git worktree add --detach $PublishDir origin/main
+    if($LASTEXITCODE -ne 0){throw "git worktree add failed"}
+
+    New-Item -ItemType Directory -Force -Path (Join-Path $PublishDir "output") | Out-Null
+    Copy-Item ".\output\nikki-general.yaml" (Join-Path $PublishDir "output\nikki-general.yaml") -Force
+    Copy-Item ".\output\nikki-chatgpt.yaml" (Join-Path $PublishDir "output\nikki-chatgpt.yaml") -Force
+    Copy-Item ".\output\nikki.yaml" (Join-Path $PublishDir "output\nikki.yaml") -Force
+    Copy-Item ".\output\local-test-report.json" (Join-Path $PublishDir "output\local-test-report.json") -Force
+
+    Push-Location $PublishDir
+    git add output/nikki-general.yaml output/nikki-chatgpt.yaml output/nikki.yaml output/local-test-report.json
+    git diff --cached --quiet
+    if($LASTEXITCODE -ne 0){
+      git config user.name "nikki-local-publisher"
+      git config user.email "nikki-local-publisher@users.noreply.github.com"
+      git commit -m "publish local mihomo node pools"
+      if($LASTEXITCODE -ne 0){throw "git commit failed"}
+      git push origin HEAD:main
+      if($LASTEXITCODE -ne 0){throw "git push to main failed"}
+    } else {
+      Write-Host "No output changes to publish."
+    }
+    Pop-Location
+  } finally {
+    if(Test-Path $PublishDir){ git worktree remove --force $PublishDir | Out-Null }
   }
 }
 Write-Host "Done."
