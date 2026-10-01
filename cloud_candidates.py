@@ -229,13 +229,9 @@ def main() -> None:
     general_nodes, general_stats = build_group(general_entries, "general")
     chatgpt_nodes, chatgpt_stats = build_group(chatgpt_entries, "chatgpt")
 
-    # GPT 专用池明确排除 Au1rxx 中已经出现的相同节点。
-    general_keys = {node_key(node) for node in general_nodes}
-    before_chatgpt = len(chatgpt_nodes)
-    chatgpt_nodes = [
-        node for node in chatgpt_nodes if node_key(node) not in general_keys
-    ]
-    removed_cross_source = before_chatgpt - len(chatgpt_nodes)
+    # 两个用途池独立；跨池允许出现相同节点。
+    # 候选池内部仍然严格按连接参数去重。
+    removed_cross_source = 0
 
     # 兼容旧脚本：candidates.yaml 只是两个候选池的合集，不用于最终路由器。
     union_seen = set()
@@ -256,7 +252,8 @@ def main() -> None:
         "general_candidate_count": len(general_nodes),
         "chatgpt_candidate_count": len(chatgpt_nodes),
         "candidate_total": len(union_nodes),
-        "chatgpt_cross_excluded_from_general": removed_cross_source,
+        "cross_pool_overlap_allowed": True,
+        "cross_pool_duplicates_removed": removed_cross_source,
         "source_groups": {
             "general": general_stats,
             "chatgpt": chatgpt_stats,
