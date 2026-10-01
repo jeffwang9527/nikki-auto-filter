@@ -20,9 +20,8 @@ DOWNLOADS = [
     ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/ripaojiedian/clash.yaml", "input/chatgpt/ripaojiedian.yaml"),
     ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/passcro/clash.yaml", "input/chatgpt/passcro.yaml"),
     ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/anaer/clash.yaml", "input/chatgpt/anaer.yaml"),
-    ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/xiaoji235/clash.yaml", "input/chatgpt/xiaoji235.yaml")
-
-def main() -> int:
+    ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/xiaoji235/clash.yaml", "input/chatgpt/xiaoji235.yaml"),
+]\n\ndef main() -> int:
     failures = 0
     for url, out_name in DOWNLOADS:
         out = Path(out_name)
