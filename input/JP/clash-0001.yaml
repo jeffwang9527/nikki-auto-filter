@@ -27,15 +27,6 @@ proxies:
       type: vless
       udp: true
       uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-    - alterId: 0
-      cipher: auto
-      name: vmess-97173
-      network: ws
-      port: 80
-      server: 172.111.146.64
-      type: vmess
-      udp: true
-      uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
     - name: trojan-112939
       password: tsuchiya
       port: 443
@@ -117,13 +108,6 @@ proxies:
       type: vless
       udp: true
       uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-    - name: vless-2335779
-      network: ws
-      port: 8880
-      server: www.gov.ua
-      type: vless
-      udp: true
-      uuid: bbecfa92-4f64-4eb8-82e6-388394d909fe
     - name: vless-2346541
       network: raw
       port: 47878
@@ -421,13 +405,6 @@ proxies:
       type: vless
       udp: true
       uuid: e01fcb68-3112-49da-b85d-dffb799cfc9b
-    - name: vless-143873862
-      network: ws
-      port: 80
-      server: 146.75.119.82
-      type: vless
-      udp: true
-      uuid: 77aafb39-8f3f-40e6-824d-3cbeab468283
     - name: vless-166272164
       network: tcp
       port: 47878
@@ -638,13 +615,6 @@ proxies:
       type: vmess
       udp: true
       uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-    - name: vless-264889060
-      network: ws
-      port: 8880
-      server: lucky-field-0220.191-de2.workers.dev
-      type: vless
-      udp: true
-      uuid: 01c2fb74-10b5-452d-b893-67cb528b6a8d
     - name: trojan-270678465
       password: 41c406e2-12b5-41f2-a329-d0621052d675
       port: 20129
@@ -720,6 +690,15 @@ proxies:
       type: vless
       udp: true
       uuid: 814bd064-544d-4255-a070-5705c03f6da9
+    - alterId: 0
+      cipher: auto
+      name: vmess-471035802
+      network: ws
+      port: 80
+      server: 172.111.146.64
+      type: vmess
+      udp: true
+      uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
     - name: trojan-474860662
       password: tsuchiya
       port: 443
@@ -1105,6 +1084,14 @@ proxies:
       sni: ""
       type: trojan
       udp: true
+    - name: trojan-691923946
+      password: 0400697c-b581-4575-9d2f-0bbd4659312d
+      port: 20230
+      server: jp005.421421.xyz
+      skip-cert-verify: true
+      sni: www.alibaba.com
+      type: trojan
+      udp: true
     - cipher: aes-256-gcm
       name: shadowsocks-696780669
       password: 3eOFeNssde7PYYMv
@@ -1167,20 +1154,6 @@ proxies:
         public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
         short-id: 48050fab
       server: 3.114.220.22
-      servername: www.apple.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 814bd064-544d-4255-a070-5705c03f6da9
-    - client-fingerprint: edge
-      flow: xtls-rprx-vision
-      name: vless-698161460
-      network: tcp
-      port: 12683
-      reality-opts:
-        public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-        short-id: 48050fab
-      server: 103.75.118.228
       servername: www.apple.com
       tls: true
       type: vless
@@ -1548,16 +1521,6 @@ proxies:
       type: vless
       udp: true
       uuid: 814bd064-544d-4255-a070-5705c03f6da9
-    - name: vless-826757144
-      network: ws
-      port: 443
-      server: 104.24.16.23
-      servername: dark-rain-2989.gzgshsgs.workers.dev
-      skip-cert-verify: false
-      tls: true
-      type: vless
-      udp: true
-      uuid: 2c122b00-78ed-44af-ae96-61f0786bf8a6
     - client-fingerprint: ios
       flow: xtls-rprx-vision
       name: vless-836349884
@@ -1572,13 +1535,6 @@ proxies:
       type: vless
       udp: true
       uuid: 814bd064-544d-4255-a070-5705c03f6da9
-    - name: vless-843823998
-      network: ws
-      port: 8880
-      server: www.gov.ua
-      type: vless
-      udp: true
-      uuid: bbecfa92-4f64-4eb8-82e6-388394d909fe
     - client-fingerprint: edge
       flow: xtls-rprx-vision
       name: vless-855580709
@@ -1623,13 +1579,6 @@ proxies:
       sni: ""
       type: trojan
       udp: true
-    - name: vless-858987859
-      network: ws
-      port: 8080
-      server: 188.114.97.6
-      type: vless
-      udp: true
-      uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
     - name: vless-858987912
       network: ws
       port: 8080
@@ -1675,20 +1624,6 @@ proxies:
       type: vmess
       udp: true
       uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    - name: vless-862230073
-      network: ws
-      port: 8880
-      server: rough-mouse-2a3a.424-e94.workers.dev
-      type: vless
-      udp: true
-      uuid: 70ca8aec-42ba-41df-a874-ec9517053dec
-    - name: vless-864009963
-      network: ws
-      port: 8080
-      server: 188.114.97.6
-      type: vless
-      udp: true
-      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     - client-fingerprint: qq
       flow: xtls-rprx-vision
       name: vless-864139131
@@ -1718,6 +1653,20 @@ proxies:
       udp: true
       uuid: 814bd064-544d-4255-a070-5705c03f6da9
     - name: vless-864949943
+      network: ws
+      port: 8080
+      server: 188.114.97.6
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-864962207
+      network: ws
+      port: 80
+      server: 172.111.146.64
+      type: vless
+      udp: true
+      uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+    - name: vless-872612269
       network: ws
       port: 8080
       server: 188.114.97.6
@@ -1940,6 +1889,13 @@ proxies:
       network: ws
       port: 80
       server: 104.18.46.46
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-897225109
+      network: ws
+      port: 80
+      server: 172.64.32.108
       type: vless
       udp: true
       uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -2440,13 +2396,6 @@ proxies:
       type: vless
       udp: true
       uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    - name: vless-897227704
-      network: ws
-      port: 80
-      server: 162.159.45.19
-      type: vless
-      udp: true
-      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     - name: vless-897227707
       network: ws
       port: 8880
@@ -2713,10 +2662,24 @@ proxies:
       type: vless
       udp: true
       uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-897227821
+      network: ws
+      port: 2052
+      server: 172.64.42.85
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     - name: vless-897227824
       network: ws
       port: 2082
       server: 162.159.48.32
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-897227846
+      network: ws
+      port: 8880
+      server: 172.64.158.146
       type: vless
       udp: true
       uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -3061,13 +3024,6 @@ proxies:
       type: vless
       udp: true
       uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    - name: vless-914032321
-      network: ws
-      port: 2052
-      server: 162.159.0.53
-      type: vless
-      udp: true
-      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     - name: vless-914032322
       network: ws
       port: 8080
@@ -3209,20 +3165,6 @@ proxies:
       type: vless
       udp: true
       uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    - client-fingerprint: random
-      flow: xtls-rprx-vision
-      name: vless-923366404
-      network: tcp
-      port: 12683
-      reality-opts:
-        public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-        short-id: 48050fab
-      server: 103.75.118.228
-      servername: www.apple.com
-      tls: true
-      type: vless
-      udp: true
-      uuid: 814bd064-544d-4255-a070-5705c03f6da9
     - name: vless-928804141
       network: ws
       port: 80
@@ -3293,13 +3235,6 @@ proxies:
       type: vless
       udp: true
       uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    - name: vless-929162120
-      network: ws
-      port: 2052
-      server: 104.18.34.14
-      type: vless
-      udp: true
-      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     - name: vless-931998972
       network: ws
       port: 2095
@@ -3363,6 +3298,62 @@ proxies:
       type: vless
       udp: true
       uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-931998991
+      network: ws
+      port: 8080
+      server: 172.64.42.85
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-931998998
+      network: ws
+      port: 2086
+      server: 172.64.53.55
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-931998999
+      network: ws
+      port: 80
+      server: 172.64.229.170
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-931999000
+      network: ws
+      port: 2052
+      server: 172.64.158.146
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-931999002
+      network: ws
+      port: 8880
+      server: 162.159.0.169
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-931999003
+      network: ws
+      port: 8880
+      server: 172.64.52.6
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-931999005
+      network: ws
+      port: 2082
+      server: 172.64.229.2
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    - name: vless-931999010
+      network: ws
+      port: 80
+      server: 172.64.32.108
+      type: vless
+      udp: true
+      uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
 proxy-groups:
     - interval: 300
       name: auto
@@ -3371,7 +3362,6 @@ proxy-groups:
         - shadowsocks-213
         - shadowsocks-218
         - vless-50299
-        - vmess-97173
         - trojan-112939
         - trojan-122310
         - trojan-122869
@@ -3382,7 +3372,6 @@ proxy-groups:
         - trojan-145259
         - vmess-145261
         - vless-2324733
-        - vless-2335779
         - vless-2346541
         - vmess-2386848
         - vmess-2387863
@@ -3412,7 +3401,6 @@ proxy-groups:
         - vless-114359422
         - vless-114359425
         - vless-126294516
-        - vless-143873862
         - vless-166272164
         - trojan-192032514
         - vmess-192463137
@@ -3433,7 +3421,6 @@ proxy-groups:
         - vless-246499915
         - vless-250631738
         - vmess-251726367
-        - vless-264889060
         - trojan-270678465
         - trojan-279470304
         - vmess-312922337
@@ -3441,6 +3428,7 @@ proxy-groups:
         - trojan-468215549
         - vless-470978002
         - vless-470978003
+        - vmess-471035802
         - trojan-474860662
         - hysteria2-479013117
         - vless-479071121
@@ -3476,6 +3464,7 @@ proxy-groups:
         - vless-688041973
         - trojan-688041977
         - trojan-689004677
+        - trojan-691923946
         - shadowsocks-696780669
         - trojan-696781199
         - trojan-696781206
@@ -3483,7 +3472,6 @@ proxy-groups:
         - trojan-696781242
         - vless-698153462
         - vless-698153465
-        - vless-698161460
         - vless-700888653
         - vless-701258228
         - vless-701259222
@@ -3517,24 +3505,21 @@ proxy-groups:
         - trojan-813920948
         - vless-816741386
         - vless-816741407
-        - vless-826757144
         - vless-836349884
-        - vless-843823998
         - vless-855580709
         - vless-855938844
         - trojan-856462008
         - trojan-856679737
-        - vless-858987859
         - vless-858987912
         - vless-860344657
         - trojan-860385109
         - vless-860680185
         - vmess-861223044
-        - vless-862230073
-        - vless-864009963
         - vless-864139131
         - vless-864764440
         - vless-864949943
+        - vless-864962207
+        - vless-872612269
         - vless-876360781
         - trojan-891939496
         - trojan-891939499
@@ -3566,6 +3551,7 @@ proxy-groups:
         - vless-897225096
         - vless-897225100
         - vless-897225107
+        - vless-897225109
         - vless-897225111
         - vless-897225113
         - vless-897225136
@@ -3637,7 +3623,6 @@ proxy-groups:
         - vless-897227695
         - vless-897227697
         - vless-897227703
-        - vless-897227704
         - vless-897227707
         - vless-897227708
         - vless-897227709
@@ -3676,7 +3661,9 @@ proxy-groups:
         - vless-897227817
         - vless-897227818
         - vless-897227819
+        - vless-897227821
         - vless-897227824
+        - vless-897227846
         - vless-897227856
         - vless-897227860
         - vless-897227868
@@ -3725,7 +3712,6 @@ proxy-groups:
         - trojan-899872171
         - vless-914032318
         - vless-914032319
-        - vless-914032321
         - vless-914032322
         - vless-914032325
         - vless-914032326
@@ -3746,7 +3732,6 @@ proxy-groups:
         - vless-923326708
         - vless-923326709
         - vless-923326710
-        - vless-923366404
         - vless-928804141
         - vless-928804142
         - vless-928812950
@@ -3757,7 +3742,6 @@ proxy-groups:
         - vless-928812956
         - vless-929162118
         - vless-929162119
-        - vless-929162120
         - vless-931998972
         - vless-931998973
         - vless-931998982
@@ -3767,6 +3751,14 @@ proxy-groups:
         - vless-931998988
         - vless-931998989
         - vless-931998990
+        - vless-931998991
+        - vless-931998998
+        - vless-931998999
+        - vless-931999000
+        - vless-931999002
+        - vless-931999003
+        - vless-931999005
+        - vless-931999010
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
@@ -3776,7 +3768,6 @@ proxy-groups:
         - shadowsocks-213
         - shadowsocks-218
         - vless-50299
-        - vmess-97173
         - trojan-112939
         - trojan-122310
         - trojan-122869
@@ -3787,7 +3778,6 @@ proxy-groups:
         - trojan-145259
         - vmess-145261
         - vless-2324733
-        - vless-2335779
         - vless-2346541
         - vmess-2386848
         - vmess-2387863
@@ -3817,7 +3807,6 @@ proxy-groups:
         - vless-114359422
         - vless-114359425
         - vless-126294516
-        - vless-143873862
         - vless-166272164
         - trojan-192032514
         - vmess-192463137
@@ -3838,7 +3827,6 @@ proxy-groups:
         - vless-246499915
         - vless-250631738
         - vmess-251726367
-        - vless-264889060
         - trojan-270678465
         - trojan-279470304
         - vmess-312922337
@@ -3846,6 +3834,7 @@ proxy-groups:
         - trojan-468215549
         - vless-470978002
         - vless-470978003
+        - vmess-471035802
         - trojan-474860662
         - hysteria2-479013117
         - vless-479071121
@@ -3881,6 +3870,7 @@ proxy-groups:
         - vless-688041973
         - trojan-688041977
         - trojan-689004677
+        - trojan-691923946
         - shadowsocks-696780669
         - trojan-696781199
         - trojan-696781206
@@ -3888,7 +3878,6 @@ proxy-groups:
         - trojan-696781242
         - vless-698153462
         - vless-698153465
-        - vless-698161460
         - vless-700888653
         - vless-701258228
         - vless-701259222
@@ -3922,24 +3911,21 @@ proxy-groups:
         - trojan-813920948
         - vless-816741386
         - vless-816741407
-        - vless-826757144
         - vless-836349884
-        - vless-843823998
         - vless-855580709
         - vless-855938844
         - trojan-856462008
         - trojan-856679737
-        - vless-858987859
         - vless-858987912
         - vless-860344657
         - trojan-860385109
         - vless-860680185
         - vmess-861223044
-        - vless-862230073
-        - vless-864009963
         - vless-864139131
         - vless-864764440
         - vless-864949943
+        - vless-864962207
+        - vless-872612269
         - vless-876360781
         - trojan-891939496
         - trojan-891939499
@@ -3971,6 +3957,7 @@ proxy-groups:
         - vless-897225096
         - vless-897225100
         - vless-897225107
+        - vless-897225109
         - vless-897225111
         - vless-897225113
         - vless-897225136
@@ -4042,7 +4029,6 @@ proxy-groups:
         - vless-897227695
         - vless-897227697
         - vless-897227703
-        - vless-897227704
         - vless-897227707
         - vless-897227708
         - vless-897227709
@@ -4081,7 +4067,9 @@ proxy-groups:
         - vless-897227817
         - vless-897227818
         - vless-897227819
+        - vless-897227821
         - vless-897227824
+        - vless-897227846
         - vless-897227856
         - vless-897227860
         - vless-897227868
@@ -4130,7 +4118,6 @@ proxy-groups:
         - trojan-899872171
         - vless-914032318
         - vless-914032319
-        - vless-914032321
         - vless-914032322
         - vless-914032325
         - vless-914032326
@@ -4151,7 +4138,6 @@ proxy-groups:
         - vless-923326708
         - vless-923326709
         - vless-923326710
-        - vless-923366404
         - vless-928804141
         - vless-928804142
         - vless-928812950
@@ -4162,7 +4148,6 @@ proxy-groups:
         - vless-928812956
         - vless-929162118
         - vless-929162119
-        - vless-929162120
         - vless-931998972
         - vless-931998973
         - vless-931998982
@@ -4172,6 +4157,14 @@ proxy-groups:
         - vless-931998988
         - vless-931998989
         - vless-931998990
+        - vless-931998991
+        - vless-931998998
+        - vless-931998999
+        - vless-931999000
+        - vless-931999002
+        - vless-931999003
+        - vless-931999005
+        - vless-931999010
       type: select
 rules:
     - MATCH,select
