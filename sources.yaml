@@ -1,15 +1,44 @@
 general:
-  # 普通池：改用独立聚合源 jifeng250/free-nodes，不再使用 Au1rxx。
-  # 云端最多保留 100 个候选，随后交给 Windows 本地 mihomo 测试普通访问。
-  - id: jifeng250-free-nodes
+  # 普通池：多源聚合，避免单一来源导致本地命中率过低。
+  # 云端最多保留 100 个候选，之后由 Windows 本地 mihomo 测试普通访问。
+  - id: jifeng250
     source: jifeng250/free-nodes
     url: https://raw.githubusercontent.com/jifeng250/free-nodes/main/clash.yaml
     path: input/general/jifeng250-free-nodes.yaml
-    limit: 100
+    limit: 40
+  - id: yoyapai
+    source: yoyapai
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/yoyapai/clash.yaml
+    path: input/general/yoyapai.yaml
+    limit: 10
+  - id: freesub
+    source: Ruk1ng001/freeSub
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/freesub/clash.yaml
+    path: input/general/freesub.yaml
+    limit: 10
+  - id: ripaojiedian
+    source: ripaojiedian/freenode
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/ripaojiedian/clash.yaml
+    path: input/general/ripaojiedian.yaml
+    limit: 10
+  - id: passcro
+    source: zhangkaiitugithub/passcro
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/passcro/clash.yaml
+    path: input/general/passcro.yaml
+    limit: 10
+  - id: anaer
+    source: anaer.github.io/Sub
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/anaer/clash.yaml
+    path: input/general/anaer.yaml
+    limit: 10
+  - id: xiaoji235
+    source: xiaoji235/airport-free
+    url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/xiaoji235/clash.yaml
+    path: input/general/xiaoji235.yaml
+    limit: 10
 
 chatgpt:
-  # GPT 专用池：继续使用非 Au1rxx 的公开来源。
-  # 与普通池出现相同节点不做跨池排除；两个最终池可以有重叠。
+  # GPT 专用池：与普通池允许使用相同来源/相同节点；两个最终池独立选择。
   - id: yoyapai
     source: yoyapai
     url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/yoyapai/clash.yaml
