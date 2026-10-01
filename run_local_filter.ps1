@@ -25,19 +25,26 @@ if(!$NoPull){
 & $Python -m pip install -r requirements.txt
 if($LASTEXITCODE -ne 0){throw "pip install failed"}
 
-# 每次本地运行默认刷新云端候选源快照；-NoSourceRefresh 可用于离线测试。
+# 默认每次运行先刷新公共源快照，再重新生成两套云端候选池。
+# -NoSourceRefresh 仅用于你明确要离线复测已有候选时。
+$DidRefresh=$false
 if(!$NoSourceRefresh){
   Write-Host "Refreshing public source snapshots..."
   if(Test-Path ".\bootstrap_sources.py"){
     & $Python ".\bootstrap_sources.py"
     if($LASTEXITCODE -ne 0){throw "bootstrap_sources.py failed"}
+    $DidRefresh=$true
   } else {
     throw "bootstrap_sources.py is missing; pull the latest feature branch first."
   }
 }
 
+$NeedBuild=$DidRefresh
 if(!(Test-Path ".\output\candidates-general.yaml") -or !(Test-Path ".\output\candidates-chatgpt.yaml")){
-  Write-Host "Split candidate files missing: building them now..."
+  $NeedBuild=$true
+}
+if($NeedBuild){
+  Write-Host "Building split cloud candidate pools..."
   & $Python ".\cloud_candidates.py"
   if($LASTEXITCODE -ne 0){throw "cloud candidate build failed"}
 }
