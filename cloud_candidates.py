@@ -5,6 +5,9 @@ import hashlib
 import ipaddress
 import json
 import re
+from datetime import datetime, timezone
+
+import requests
 from pathlib import Path
 from typing import Any
 
@@ -15,6 +18,8 @@ GENERAL_OUT = Path("output/candidates-general.yaml")
 CHATGPT_OUT = Path("output/candidates-chatgpt.yaml")
 UNION_OUT = Path("output/candidates.yaml")
 STATS = Path("output/cloud_stats.json")
+MAX_SOURCE_AGE_DAYS = 7
+GITHUB_API = "https://api.github.com"
 
 SUPPORTED_TYPES = {
     "vless",
@@ -120,6 +125,40 @@ def extract_proxies(value: Any) -> list[dict[str, Any]]:
     return []
 
 
+def github_source_freshness(entry: dict[str, Any]) -> tuple[bool, dict[str, Any]]:
+    """Check the latest commit touching the published source file; reject older than 7 days."""
+    repo = scalar(entry.get("activity_repo")).strip()
+    path = scalar(entry.get("activity_path")).strip()
+    if not repo:
+        return False, {"fresh": False, "reason": "missing activity_repo"}
+
+    url = f"{GITHUB_API}/repos/{repo}/commits"
+    params = {"per_page": 1}
+    if path:
+        params["path"] = path
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "nikki-auto-filter"}
+
+    try:
+        response = requests.get(url, params=params, headers=headers, timeout=15)
+        response.raise_for_status()
+        commits = response.json()
+        if not isinstance(commits, list) or not commits:
+            return False, {"fresh": False, "reason": "no commit found", "repo": repo, "path": path}
+        date_text = commits[0].get("commit", {}).get("committer", {}).get("date")
+        if not date_text:
+            return False, {"fresh": False, "reason": "commit date unavailable", "repo": repo, "path": path}
+        when = datetime.fromisoformat(date_text.replace("Z", "+00:00"))
+        age_days = max(0.0, (datetime.now(timezone.utc) - when).total_seconds() / 86400)
+        return age_days <= MAX_SOURCE_AGE_DAYS, {
+            "fresh": age_days <= MAX_SOURCE_AGE_DAYS,
+            "age_days": round(age_days, 2),
+            "latest_commit": date_text,
+            "repo": repo,
+            "path": path,
+        }
+    except Exception as exc:
+        return False, {"fresh": False, "reason": str(exc), "repo": repo, "path": path}
+
 def read_nodes(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         return []
@@ -155,11 +194,28 @@ def build_group(
         path = Path(scalar(entry.get("path")))
         limit = int(entry.get("limit", 0) or 0)
 
-        raw_nodes = read_nodes(path)
+        is_fresh, freshness = github_source_freshness(entry)
         accepted = 0
         valid = 0
         duplicate = 0
         obvious_bad = 0
+
+        if not is_fresh:
+            source_stats[source_id] = {
+                "source": source,
+                "region": region or None,
+                "input": str(path).replace("\\", "/"),
+                "valid_seen": 0,
+                "duplicates": 0,
+                "selected": 0,
+                "limit": limit,
+                "skipped_inactive": True,
+                "freshness": freshness,
+            }
+            print(f"[SKIP] inactive source {source_id}: {freshness}")
+            continue
+
+        raw_nodes = read_nodes(path)
 
         for index, node in enumerate(raw_nodes, 1):
             if not valid_node(node):
@@ -194,6 +250,8 @@ def build_group(
             "duplicates": duplicate,
             "selected": accepted,
             "limit": limit,
+            "skipped_inactive": False,
+            "freshness": freshness,
         }
 
     return selected, source_stats
@@ -252,6 +310,7 @@ def main() -> None:
         "general_candidate_count": len(general_nodes),
         "chatgpt_candidate_count": len(chatgpt_nodes),
         "candidate_total": len(union_nodes),
+        "max_source_age_days": MAX_SOURCE_AGE_DAYS,
         "cross_pool_overlap_allowed": True,
         "cross_pool_duplicates_removed": removed_cross_source,
         "source_groups": {
