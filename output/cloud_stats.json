@@ -88,7 +88,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 1.01,
+          "age_days": 1.02,
           "latest_commit": "2026-09-30T16:17:34Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
@@ -175,7 +175,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 1.01,
+          "age_days": 1.02,
           "latest_commit": "2026-09-30T16:17:34Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
