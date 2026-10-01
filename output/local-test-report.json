@@ -1,0 +1,136 @@
+{
+  "timestamp": 1790870289,
+  "general_candidate_count": 100,
+  "chatgpt_candidate_count": 72,
+  "candidate_count": 104,
+  "tested_now": 104,
+  "general_tested_now": 100,
+  "chatgpt_tested_now": 72,
+  "cache_reused": 0,
+  "general_eligible": 16,
+  "openai_edge_eligible": 13,
+  "selected_general": 12,
+  "selected_chatgpt": 8,
+  "selected_total": 20,
+  "policy": {
+    "general_limit": 12,
+    "chatgpt_limit": 8,
+    "concurrency": 6,
+    "success_retest_hours": 6.0,
+    "failure_cooldown_hours": 6.0,
+    "failure_eject_streak": 3,
+    "max_same_server": 2,
+    "pool_selection_independent": true
+  },
+  "selection_sources": {
+    "general": "output/candidates-general.yaml (Au1rxx only)",
+    "chatgpt": "output/candidates-chatgpt.yaml (non-Au1rxx sources only)"
+  },
+  "selected": {
+    "general": [
+      {
+        "name": "GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos[📺🎭🎪✨]_dokng.com_ff9ee1ab",
+        "delay_ms": 70,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_9efa9595",
+        "delay_ms": 97,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | Ruk1ng001/freeSub | A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_65a5452e",
+        "delay_ms": 107,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | Ruk1ng001/freeSub | A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_3e949dac",
+        "delay_ms": 151,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | Ruk1ng001/freeSub | A🟢🇯🇵res[🎬🤖📺🎭]_dokng.com_37a9cf97",
+        "delay_ms": 153,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_02db43ef",
+        "delay_ms": 159,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖🎭🎪]_dokng.com_b6834404",
+        "delay_ms": 179,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇵🇭hos[🤖📺🎭🎪]_dokng.com_4f809483",
+        "delay_ms": 184,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇩🇪DE德国丨yoyapai.com_1",
+        "delay_ms": 220,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_c015a23d",
+        "delay_ms": 229,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | Ruk1ng001/freeSub | A🟢🇭🇰res[📺✨🎞️📦]_dokng.com_2e236c13",
+        "delay_ms": 232,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | free18/v2ray | 每天更新，请加电报群防止失联",
+        "delay_ms": 244,
+        "grace": false
+      }
+    ],
+    "chatgpt": [
+      {
+        "name": "CHATGPT | Ruk1ng001/freeSub | A🟢🇭🇰res[📺✨🎞️📦]_dokng.com_2e236c13",
+        "delay_ms": 235,
+        "grace": false
+      },
+      {
+        "name": "CHATGPT | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_02db43ef",
+        "delay_ms": 276,
+        "grace": false
+      },
+      {
+        "name": "CHATGPT | Ruk1ng001/freeSub | A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_65a5452e",
+        "delay_ms": 302,
+        "grace": false
+      },
+      {
+        "name": "CHATGPT | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_8c4e44e7",
+        "delay_ms": 322,
+        "grace": false
+      },
+      {
+        "name": "CHATGPT | Ruk1ng001/freeSub | A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_3e949dac",
+        "delay_ms": 338,
+        "grace": false
+      },
+      {
+        "name": "CHATGPT | Ruk1ng001/freeSub | D🔴🇵🇭hos[🤖📺🎭🎪]_dokng.com_4f809483",
+        "delay_ms": 367,
+        "grace": false
+      },
+      {
+        "name": "CHATGPT | Ruk1ng001/freeSub | A🟢🇯🇵res[🎬🤖📺🎭]_dokng.com_37a9cf97",
+        "delay_ms": 391,
+        "grace": false
+      },
+      {
+        "name": "CHATGPT | free18/v2ray | 日期：10-01",
+        "delay_ms": 492,
+        "grace": false
+      }
+    ]
+  },
+  "note": "OpenAI/ChatGPT result is transport/edge reachability from this Windows network; it does not guarantee login, websocket, streaming, or long-term stability."
+}
