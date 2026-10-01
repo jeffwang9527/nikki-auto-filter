@@ -1,5 +1,5 @@
 param(
-    [string]$Mihomo="C:\VPN\v2rayN-7.24.9\v2rayN-windows-64\v2rayN-windows-64\bin\mihomo\mihomo-windows-amd64-v1.exe",
+    [string]$Mihomo="C:\VPN\v2rayN-7.24.9\v2rayN-windows-64\bin\mihomo\mihomo-windows-amd64-v1.exe",
     [int]$GeneralLimit=12,
     [int]$ChatGPTLimit=8,
     [int]$Concurrency=6,
