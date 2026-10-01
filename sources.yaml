@@ -1,58 +1,15 @@
 general:
-  # 普通池：只使用 Au1rxx，不从 GPT 专用源取节点。
-  # 每个分片保留前 10 个作为云端候选；Au1rxx 自身已经做过发布前的上游测试。
-  - id: au1rxx-jp
-    source: Au1rxx
-    region: JP
-    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-JP.yaml
-    path: input/general/au1rxx-jp.yaml
-    limit: 10
-  - id: au1rxx-hk
-    source: Au1rxx
-    region: HK
-    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-HK.yaml
-    path: input/general/au1rxx-hk.yaml
-    limit: 10
-  - id: au1rxx-sg
-    source: Au1rxx
-    region: SG
-    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-SG.yaml
-    path: input/general/au1rxx-sg.yaml
-    limit: 10
-  - id: au1rxx-us
-    source: Au1rxx
-    region: US
-    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-US.yaml
-    path: input/general/au1rxx-us.yaml
-    limit: 10
-  - id: au1rxx-de
-    source: Au1rxx
-    region: DE
-    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-DE.yaml
-    path: input/general/au1rxx-de.yaml
-    limit: 10
-  - id: au1rxx-kr
-    source: Au1rxx
-    region: KR
-    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-KR.yaml
-    path: input/general/au1rxx-kr.yaml
-    limit: 10
-  - id: au1rxx-tw
-    source: Au1rxx
-    region: TW
-    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-TW.yaml
-    path: input/general/au1rxx-tw.yaml
-    limit: 10
-  - id: au1rxx-ca
-    source: Au1rxx
-    region: CA
-    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-CA.yaml
-    path: input/general/au1rxx-ca.yaml
-    limit: 10
+  # 普通池：改用独立聚合源 jifeng250/free-nodes，不再使用 Au1rxx。
+  # 云端最多保留 100 个候选，随后交给 Windows 本地 mihomo 测试普通访问。
+  - id: jifeng250-free-nodes
+    source: jifeng250/free-nodes
+    url: https://raw.githubusercontent.com/jifeng250/free-nodes/main/clash.yaml
+    path: input/general/jifeng250-free-nodes.yaml
+    limit: 100
 
 chatgpt:
-  # GPT 专用池：明确排除 Au1rxx，使用其它公开源。
-  # 这些 feed 通过 wzmwayne 的独立来源输出获取，避免使用其混合 Au1rxx 的 AIO。
+  # GPT 专用池：继续使用非 Au1rxx 的公开来源。
+  # 与普通池出现相同节点不做跨池排除；两个最终池可以有重叠。
   - id: yoyapai
     source: yoyapai
     url: https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/yoyapai/clash.yaml
