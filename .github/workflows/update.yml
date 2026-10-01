@@ -2,7 +2,8 @@ name: Update Nikki cloud candidate pools
 
 on:
   schedule:
-    - cron: "0 */4 * * *"
+    # 避开每小时整点的 GitHub Actions 高峰；仍保持每 4 小时一次。
+    - cron: "17 */4 * * *"
   workflow_dispatch:
   push:
     branches: [main]
