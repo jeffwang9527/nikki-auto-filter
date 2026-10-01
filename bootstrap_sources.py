@@ -21,7 +21,7 @@ DOWNLOADS = [
     ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/ripaojiedian/clash.yaml", "input/chatgpt/ripaojiedian.yaml"),
     ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/passcro/clash.yaml", "input/chatgpt/passcro.yaml"),
     ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/anaer/clash.yaml", "input/chatgpt/anaer.yaml"),
-    ("https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/clashnodecc.txt", "input/chatgpt/xiaoji235.yaml"),
+    ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/xiaoji235/clash.yaml", "input/chatgpt/xiaoji235.yaml"),
 ]
 
 def main() -> int:
