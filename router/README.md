@@ -39,18 +39,9 @@ sh /tmp/apply_nikki_mixin.sh
 
 ## 一个需要保留的边界
 
-当前 mixin 已经把：
+当前 mixin 已经把 GPT/OpenAI 规则放在最前面，随后按中国域名/中国 IP 直连，最后用 `MATCH,NIKKI-普通池` 承接其他外网流量。这样实现：国内直连、GPT 走专用池、其他外网走普通池。
 
-- `chatgpt.com`
-- `openai.com`
-- `oaistatic.com`
-- `oaiusercontent.com`
-
-导向 GPT 专用池。
-
-普通流量仍由你现有的 Nikki 基础规则决定；这样不会因为本项目接入而把原来的国内直连、Apple、Telegram、Emby 等规则整体覆盖掉。
-
-若希望“所有未命中现有规则的默认流量”也强制改走本项目普通池，需要根据你路由器现有的 profile/rule 结构，把现有默认组接到 `NIKKI-普通池`；不要直接用一个新的 `MATCH,NIKKI-普通池` 覆盖整个规则尾部，否则会改变现有分流逻辑。
+GPT 规则位于直连与默认代理规则之前，依赖 Mihomo 从上到下的规则优先级；`MATCH,NIKKI-普通池` 只作为最后兜底，不会抢在前面的 GPT 或中国直连规则之前命中。
 
 ## 更新链路
 
