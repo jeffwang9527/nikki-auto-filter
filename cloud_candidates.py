@@ -248,6 +248,7 @@ def main() -> None:
         "general_candidate_count": len(general_nodes),
         "chatgpt_candidate_count": len(chatgpt_nodes),
         "candidate_total": len(union_nodes),
+        "chatgpt_cross_excluded_from_general": removed_cross_source,
         "source_groups": {
             "general": general_stats,
             "chatgpt": chatgpt_stats,
