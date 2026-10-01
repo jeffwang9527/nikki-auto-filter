@@ -26,22 +26,21 @@ download() {
 
 FAILED=0
 
-# 普通池：多源候选，共计最多 100 个。
-download "https://raw.githubusercontent.com/jifeng250/free-nodes/main/clash.yaml" "input/general/jifeng250-free-nodes.yaml" || FAILED=$((FAILED + 1))
+# 普通池：free18 + Barabama + Ruk1ng + ripaojiedian + anaer + yoyapai。
+download "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml" "input/general/free18.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml" "input/general/barabama-clashmeta.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml" "input/general/freesub.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash" "input/general/ripaojiedian.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml" "input/general/anaer.yaml" || FAILED=$((FAILED + 1))
 download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/yoyapai/clash.yaml" "input/general/yoyapai.yaml" || FAILED=$((FAILED + 1))
-download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/freesub/clash.yaml" "input/general/freesub.yaml" || FAILED=$((FAILED + 1))
-download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/ripaojiedian/clash.yaml" "input/general/ripaojiedian.yaml" || FAILED=$((FAILED + 1))
-download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/passcro/clash.yaml" "input/general/passcro.yaml" || FAILED=$((FAILED + 1))
-download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/anaer/clash.yaml" "input/general/anaer.yaml" || FAILED=$((FAILED + 1))
-download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/xiaoji235/clash.yaml" "input/general/xiaoji235.yaml" || FAILED=$((FAILED + 1))
 
-# GPT 专用池：6 个非 Au1rxx 来源，共计最多 72 个。
+# GPT 专用池：与普通池允许重叠。
 download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/yoyapai/clash.yaml" "input/chatgpt/yoyapai.yaml" || FAILED=$((FAILED + 1))
-download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/freesub/clash.yaml" "input/chatgpt/freesub.yaml" || FAILED=$((FAILED + 1))
-download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/ripaojiedian/clash.yaml" "input/chatgpt/ripaojiedian.yaml" || FAILED=$((FAILED + 1))
-download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/passcro/clash.yaml" "input/chatgpt/passcro.yaml" || FAILED=$((FAILED + 1))
-download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/anaer/clash.yaml" "input/chatgpt/anaer.yaml" || FAILED=$((FAILED + 1))
-download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/xiaoji235/clash.yaml" "input/chatgpt/xiaoji235.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml" "input/chatgpt/freesub.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash" "input/chatgpt/ripaojiedian.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml" "input/chatgpt/anaer.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml" "input/chatgpt/free18.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml" "input/chatgpt/barabama-clashmeta.yaml" || FAILED=$((FAILED + 1))
 
 echo "Sources updated; failed downloads: $FAILED"
 exit 0
