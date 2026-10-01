@@ -29,7 +29,7 @@ Nikki 官方项目当前支持 Profile Mixin、远程 subscription、以及 Sche
 
 ## 第一次安装
 
-把 `apply_nikki_mixin.sh` 上传到路由器执行：
+把 `apply_nikki_mixin.sh` 上传到路由器执行。安装脚本固定引用已验证的 Mixin 提交，以避免 jsDelivr `@main` 分支缓存导致规则暂时回退：
 
 ```sh
 sh /tmp/apply_nikki_mixin.sh
