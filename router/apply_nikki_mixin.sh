@@ -1,12 +1,12 @@
 #!/bin/sh
 set -eu
 
-MIXIN_URL="https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/router/nikki-mixin.yaml"
+MIXIN_URL="https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/router/nikki-mixin.yaml"
 MIXIN_FILE="/etc/nikki/mixin.yaml"
 
 echo "[1/4] Download Nikki pool mixin"
 tmp="${MIXIN_FILE}.tmp"
-wget -q -O "$tmp" "$MIXIN_URL"
+curl -4 -fsSL --connect-timeout 10 --max-time 30 "$MIXIN_URL" -o "$tmp"
 test -s "$tmp"
 mv "$tmp" "$MIXIN_FILE"
 
@@ -26,8 +26,8 @@ echo "[4/4] Reload Nikki"
 
 echo
 echo "Nikki pool mixin installed."
-echo "General provider: https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/output/nikki-general.yaml"
-echo "GPT provider:     https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/output/nikki-chatgpt.yaml"
+echo "General provider: https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-general.yaml"
+echo "GPT provider:     https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-chatgpt.yaml"
 echo "Provider refresh: 14400s (4h)"
 echo "Health check:     300s (5m)"
 echo
