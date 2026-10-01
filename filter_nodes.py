@@ -1,6 +1,7 @@
 import glob
 import json
 import os
+from pathlib import Path
 import ipaddress
 import re
 
@@ -234,6 +235,21 @@ def public_node_name(node, prefix):
     return f"{prefix} | {original}"
 
 
+def force_quote_reality_short_ids(path):
+    """Force all unquoted hexadecimal Reality short-id scalars to strings."""
+    p = Path(path)
+    text = p.read_text(encoding="utf-8")
+
+    text = re.sub(
+        r'^(\s+short-id:[ \t]*)([0-9A-Fa-f]+)[ \t]*$',
+        r'\1"\2"',
+        text,
+        flags=re.MULTILINE,
+    )
+
+    p.write_text(text, encoding="utf-8")
+
+
 def main():
     os.makedirs("output", exist_ok=True)
 
@@ -274,6 +290,8 @@ def main():
             allow_unicode=True,
             sort_keys=False,
         )
+
+    force_quote_reality_short_ids(OUTPUT)
 
     stats = {
         "total": len(clean),

@@ -6,7 +6,7 @@ proxies:
   port: 18007
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    short-id: "48050fab"
   server: 3.114.220.22
   servername: www.apple.com
   tls: true
@@ -20,7 +20,7 @@ proxies:
   port: 11452
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    short-id: "48050fab"
   server: 103.75.118.228
   servername: www.apple.com
   tls: true
@@ -34,7 +34,7 @@ proxies:
   port: 12683
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    short-id: "48050fab"
   server: 103.75.118.228
   servername: www.apple.com
   tls: true
@@ -48,7 +48,7 @@ proxies:
   port: 10583
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    short-id: "48050fab"
   server: 3.114.220.22
   servername: www.apple.com
   tls: true
@@ -62,7 +62,7 @@ proxies:
   port: 19645
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    short-id: "48050fab"
   server: 3.114.220.22
   servername: www.apple.com
   tls: true
@@ -76,7 +76,7 @@ proxies:
   port: 26518
   reality-opts:
     public-key: 1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk
-    short-id: 6caead99
+    short-id: "6caead99"
   server: jp.wxgqlfx.top
   servername: github.com
   tls: true
@@ -90,7 +90,7 @@ proxies:
   port: 26518
   reality-opts:
     public-key: 1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk
-    short-id: 6caead99
+    short-id: "6caead99"
   server: 156.246.88.125
   servername: github.com
   tls: true
@@ -104,7 +104,7 @@ proxies:
   port: 11452
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    short-id: "48050fab"
   server: 103.75.118.228
   servername: www.apple.com
   tls: true
@@ -118,7 +118,7 @@ proxies:
   port: 18007
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    short-id: "48050fab"
   server: 3.114.220.22
   servername: www.apple.com
   tls: true
@@ -132,7 +132,7 @@ proxies:
   port: 26518
   reality-opts:
     public-key: 1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk
-    short-id: 6caead99
+    short-id: "6caead99"
   server: jp.wxgqlfx.top
   servername: github.com
   tls: true
@@ -146,7 +146,7 @@ proxies:
   port: 26518
   reality-opts:
     public-key: 1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk
-    short-id: 6caead99
+    short-id: "6caead99"
   server: 156.246.88.125
   servername: github.com
   tls: true
@@ -159,7 +159,7 @@ proxies:
   port: 20230
   reality-opts:
     public-key: lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc
-    short-id: abae4722
+    short-id: "abae4722"
   server: jp004.421421.xyz
   servername: www.nvidia.com
   tls: true
@@ -253,7 +253,7 @@ proxies:
   port: 13779
   reality-opts:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
+    short-id: "af1bdd293097b664"
   server: 47.239.6.251
   servername: tesla.com
   tls: true
@@ -267,7 +267,7 @@ proxies:
   port: 35193
   reality-opts:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
+    short-id: "e8daed2d"
   server: 156.226.168.221
   servername: www.apple.com
   tls: true
@@ -281,7 +281,7 @@ proxies:
   port: 35193
   reality-opts:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
+    short-id: "e8daed2d"
   server: hk3n.wxgqlfx.vip
   servername: www.apple.com
   tls: true
@@ -295,7 +295,7 @@ proxies:
   port: 443
   reality-opts:
     public-key: Y9TEgB_8YVWzv8-wblXBjeX2t7IAtQhtQ3pE08gfNWw
-    short-id: 862266ae05b7a62f
+    short-id: "862266ae05b7a62f"
   server: 47.83.143.75
   servername: www.cloudflare.com
   tls: true
@@ -309,7 +309,7 @@ proxies:
   port: 443
   reality-opts:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
+    short-id: "3b74d85e"
   server: china.letsconnectpoint.com
   servername: china.letsconnectpoint.com
   tls: true
@@ -323,7 +323,7 @@ proxies:
   port: 443
   reality-opts:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
+    short-id: "3b74d85e"
   server: china.letsconnectpoint.com
   servername: china.letsconnectpoint.com
   tls: true
@@ -337,7 +337,7 @@ proxies:
   port: 443
   reality-opts:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
+    short-id: "3b74d85e"
   server: 139.28.168.201
   servername: china.letsconnectpoint.com
   tls: true
@@ -351,7 +351,7 @@ proxies:
   port: 443
   reality-opts:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
+    short-id: "3b74d85e"
   server: 139.28.168.201
   servername: china.letsconnectpoint.com
   tls: true
@@ -365,7 +365,7 @@ proxies:
   port: 443
   reality-opts:
     public-key: Z0sxSuzxnWYa5FNTZ-W4ImxQd674VG4KfmOBqlcudjU
-    short-id: 7c7ad24684
+    short-id: "7c7ad24684"
   server: bgroup.hk1.ilovegairport.com
   servername: ap-east-1.console.aws.amazon.com
   tls: true
@@ -379,7 +379,7 @@ proxies:
   port: 443
   reality-opts:
     public-key: wjVcW5OqGoFbeqwEPiQHjf-uQTwRMBsOKlRnl5JmSzA
-    short-id: a05ab5de12
+    short-id: "a05ab5de12"
   server: agroup.hk1.ilovegairport.com
   servername: ap-east-1.console.aws.amazon.com
   tls: true
@@ -393,7 +393,7 @@ proxies:
   port: 16934
   reality-opts:
     public-key: qnpbUyX8SEBJ-ztUYjVrdkNrb_FeKVC1mbFhga8kewk
-    short-id: ca026ad8d3
+    short-id: "ca026ad8d3"
   server: node1.csnety.com
   servername: v1-dy.ixigua.com
   tls: true
@@ -407,7 +407,7 @@ proxies:
   port: 16934
   reality-opts:
     public-key: qnpbUyX8SEBJ-ztUYjVrdkNrb_FeKVC1mbFhga8kewk
-    short-id: ca026ad8d3
+    short-id: "ca026ad8d3"
   server: 103.77.215.136
   servername: v1-dy.ixigua.com
   tls: true
@@ -421,7 +421,7 @@ proxies:
   port: 58111
   reality-opts:
     public-key: 9_-DFaGV2WwmOpZO5DZd2Ue3FlPGKjJ2BsKQmBDPREc
-    short-id: 09
+    short-id: "09"
   server: 103.77.215.136
   servername: v1-dy.ixigua.com
   tls: true
@@ -435,7 +435,7 @@ proxies:
   port: 17009
   reality-opts:
     public-key: VQzP1a61WGBDjvaocSLNcKRX6A6TOvYN0euwg48owT4
-    short-id: c832c0
+    short-id: "c832c0"
   server: node1.csnety.com
   servername: v1-dy.ixigua.com
   tls: true
@@ -449,7 +449,7 @@ proxies:
   port: 16934
   reality-opts:
     public-key: qnpbUyX8SEBJ-ztUYjVrdkNrb_FeKVC1mbFhga8kewk
-    short-id: ca026ad8d3
+    short-id: "ca026ad8d3"
   server: 103.77.215.136
   servername: v1-dy.ixigua.com
   tls: true
@@ -463,7 +463,7 @@ proxies:
   port: 16934
   reality-opts:
     public-key: qnpbUyX8SEBJ-ztUYjVrdkNrb_FeKVC1mbFhga8kewk
-    short-id: ca026ad8d3
+    short-id: "ca026ad8d3"
   server: node1.csnety.com
   servername: v1-dy.ixigua.com
   tls: true
@@ -477,7 +477,7 @@ proxies:
   port: 62697
   reality-opts:
     public-key: JF9fbvgfWRuH7mq6quBM-tlNwCK5FzaBSwkiqZ-G6wU
-    short-id: b91c3c
+    short-id: "b91c3c"
   server: node1.csnety.com
   servername: v1-dy.ixigua.com
   tls: true
@@ -491,7 +491,7 @@ proxies:
   port: 58111
   reality-opts:
     public-key: 9_-DFaGV2WwmOpZO5DZd2Ue3FlPGKjJ2BsKQmBDPREc
-    short-id: 09
+    short-id: "09"
   server: node1.csnety.com
   servername: v1-dy.ixigua.com
   tls: true
@@ -505,7 +505,7 @@ proxies:
   port: 35193
   reality-opts:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
+    short-id: "e8daed2d"
   server: hk3n.wxgqlfx.vip
   servername: www.apple.com
   tls: true
@@ -519,7 +519,7 @@ proxies:
   port: 35193
   reality-opts:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
+    short-id: "e8daed2d"
   server: 156.226.168.221
   servername: www.apple.com
   tls: true
@@ -533,7 +533,7 @@ proxies:
   port: 10574
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    short-id: "48050fab"
   server: 3.0.111.82
   servername: www.apple.com
   tls: true
@@ -547,7 +547,7 @@ proxies:
   port: 12972
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    short-id: "48050fab"
   server: 3.0.111.82
   servername: www.apple.com
   tls: true
@@ -561,7 +561,7 @@ proxies:
   port: 17623
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    short-id: "48050fab"
   server: 3.0.111.82
   servername: www.apple.com
   tls: true
@@ -575,7 +575,7 @@ proxies:
   port: 19825
   reality-opts:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
+    short-id: "6ba85179e30d4fc2"
   server: sg2-8sb.6121999.dpdns.org
   servername: sg2-8sb.6121999.dpdns.org
   tls: true
@@ -589,7 +589,7 @@ proxies:
   port: 19825
   reality-opts:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
+    short-id: "6ba85179e30d4fc2"
   server: 146.235.16.130
   servername: sg2-8sb.6121999.dpdns.org
   tls: true
@@ -603,7 +603,7 @@ proxies:
   port: 12512
   reality-opts:
     public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
-    short-id: e692a8250d2e2fd0
+    short-id: "e692a8250d2e2fd0"
   server: 46.137.202.178
   servername: www.intel.com
   tls: true
@@ -617,7 +617,7 @@ proxies:
   port: 41688
   reality-opts:
     public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
+    short-id: "7f342137c20387"
   server: 54.169.200.246
   servername: www.intel.com
   tls: true
@@ -631,7 +631,7 @@ proxies:
   port: 24146
   reality-opts:
     public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
+    short-id: "7205d9079521832c"
   server: 54.251.9.130
   servername: www.intel.com
   tls: true
@@ -659,7 +659,7 @@ proxies:
   port: 59615
   reality-opts:
     public-key: 7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M
-    short-id: 6b
+    short-id: "6b"
   server: 173.234.14.105
   servername: biosmod.partners.nvidia.com
   tls: true
