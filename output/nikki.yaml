@@ -85,7 +85,7 @@ proxies:
   uuid: e01fcb68-3112-49da-b85d-dffb799cfc9b
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: JP | vless-250631738
+  name: JP | vless-656245170
   network: tcp
   port: 26518
   reality-opts:
@@ -176,36 +176,6 @@ proxies:
   type: vless
   udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-- name: JP | vless-25196
-  network: ws
-  port: 2083
-  server: 172.64.145.202
-  servername: newwk1.f1w.de5.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-- name: JP | vless-45846
-  network: ws
-  port: 7443
-  server: 116.204.164.27
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c9b314e9-47f1-4d4d-be52-30b538777b14
-- name: JP | vless-45847
-  network: ws
-  port: 7443
-  server: 116.204.164.30
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f
 - name: JP | vless-45849
   network: ws
   port: 7443
@@ -226,6 +196,36 @@ proxies:
   type: vless
   udp: true
   uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+- name: JP | vless-56629
+  network: ws
+  port: 2083
+  server: 172.66.44.211
+  servername: wk1.f1w.de5.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+- name: JP | vless-57527
+  network: ws
+  port: 443
+  server: 172.67.164.152
+  servername: 002.inc-electrocell-001-002.workers.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+- name: JP | vless-59619
+  network: ws
+  port: 51262
+  server: 175.41.179.37
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
 - name: JP | vless-61396
   network: ws
   port: 443
@@ -236,16 +236,16 @@ proxies:
   type: vless
   udp: true
   uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-- name: JP | vless-62442
+- name: JP | vless-63897
   network: ws
-  port: 8443
-  server: 188.114.96.7
-  servername: fragrant-unit-d662.mmammatrix770088.workers.dev
+  port: 443
+  server: 192.65.217.123
+  servername: notls.lukongtou.eu.org
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: HK | vless-563294205
@@ -372,90 +372,6 @@ proxies:
   type: vless
   udp: true
   uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: HK | vless-1594427944
-  network: tcp
-  port: 16934
-  reality-opts:
-    public-key: qnpbUyX8SEBJ-ztUYjVrdkNrb_FeKVC1mbFhga8kewk
-    short-id: "ca026ad8d3"
-  server: node1.csnety.com
-  servername: v1-dy.ixigua.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a8845dc9-40e0-4e85-818b-94574868944b
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: HK | vless-1597394488
-  network: tcp
-  port: 16934
-  reality-opts:
-    public-key: qnpbUyX8SEBJ-ztUYjVrdkNrb_FeKVC1mbFhga8kewk
-    short-id: "ca026ad8d3"
-  server: 103.77.215.136
-  servername: v1-dy.ixigua.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 689c6e4f-8974-4fdb-8a35-cf2959277448
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: HK | vless-1599325387
-  network: tcp
-  port: 17009
-  reality-opts:
-    public-key: VQzP1a61WGBDjvaocSLNcKRX6A6TOvYN0euwg48owT4
-    short-id: "c832c0"
-  server: node1.csnety.com
-  servername: v1-dy.ixigua.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 689c6e4f-8974-4fdb-8a35-cf2959277448
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: HK | vless-1599325388
-  network: tcp
-  port: 16934
-  reality-opts:
-    public-key: qnpbUyX8SEBJ-ztUYjVrdkNrb_FeKVC1mbFhga8kewk
-    short-id: "ca026ad8d3"
-  server: node1.csnety.com
-  servername: v1-dy.ixigua.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 689c6e4f-8974-4fdb-8a35-cf2959277448
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: HK | vless-1599325390
-  network: tcp
-  port: 62697
-  reality-opts:
-    public-key: JF9fbvgfWRuH7mq6quBM-tlNwCK5FzaBSwkiqZ-G6wU
-    short-id: "b91c3c"
-  server: node1.csnety.com
-  servername: v1-dy.ixigua.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 689c6e4f-8974-4fdb-8a35-cf2959277448
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: HK | vless-1599325392
-  network: tcp
-  port: 58111
-  reality-opts:
-    public-key: 9_-DFaGV2WwmOpZO5DZd2Ue3FlPGKjJ2BsKQmBDPREc
-    short-id: "09"
-  server: node1.csnety.com
-  servername: v1-dy.ixigua.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 689c6e4f-8974-4fdb-8a35-cf2959277448
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: HK | vless-1600373183
@@ -470,6 +386,48 @@ proxies:
   type: vless
   udp: true
   uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: HK | vless-1603606409
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: "1a"
+  server: 42.200.173.5
+  servername: s3.ap-east-1.amazonaws.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: HK | vless-1603606432
+  network: tcp
+  port: 17009
+  reality-opts:
+    public-key: VQzP1a61WGBDjvaocSLNcKRX6A6TOvYN0euwg48owT4
+    short-id: "c832c0"
+  server: node1.csnety.com
+  servername: v1-dy.ixigua.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 262b8c00-9dc4-4415-9bb2-8f55ddf8a69d
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: HK | vless-1604632502
+  network: tcp
+  port: 17009
+  reality-opts:
+    public-key: VQzP1a61WGBDjvaocSLNcKRX6A6TOvYN0euwg48owT4
+    short-id: "c832c0"
+  server: 103.77.215.136
+  servername: v1-dy.ixigua.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 262b8c00-9dc4-4415-9bb2-8f55ddf8a69d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: HK | vless-813407634
@@ -526,6 +484,47 @@ proxies:
   type: vless
   udp: true
   uuid: 1658f804-41bf-4b7c-a0be-ba01097e0f41
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: HK | vless-1598061021
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: "3b74d85e"
+  server: china.letsconnectpoint.com
+  servername: china.letsconnectpoint.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 914f3806-07a1-4158-9624-e183de065a38
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: HK | vless-1600464000
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: "3b74d85e"
+  server: 139.28.168.201
+  servername: china.letsconnectpoint.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+- client-fingerprint: chrome
+  name: HK | vless-455170248
+  network: tcp
+  port: 13779
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: "af1bdd293097b664"
+  server: 47.238.210.5
+  servername: tesla.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: SG | vless-12945894
