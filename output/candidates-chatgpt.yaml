@@ -433,11 +433,11 @@ proxies:
     headers:
       Host: uae.unixzone.us
     path: /
-- name: CHATGPT | anaer/Sub | 爱尔兰 001
+- name: CHATGPT | anaer/Sub | 立陶宛 001
   type: vless
   network: ws
-  server: 89.125.139.115
-  port: 443
+  server: 147.78.0.186
+  port: 2053
   uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   servername: free.cndyw.ggff.net
   tls: true
@@ -446,6 +446,33 @@ proxies:
     headers:
       Host: free.cndyw.ggff.net
     path: pyip=bpb.yousef.isegaro.com
+- name: CHATGPT | anaer/Sub | 爱尔兰 001
+  type: vless
+  network: ws
+  server: 89.125.139.115
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  servername: free.cndyw.ggff.net
+  tls: true
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.comfp=random
+- name: CHATGPT | anaer/Sub | 丹麦 001
+  type: vless
+  network: ws
+  server: 159.195.253.15
+  port: 8443
+  uuid: bc221702-dd43-4642-a203-24d8d6a81165
+  servername: au1.pad-sservice.lat
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: safari
+  encryption: none
+  ws-opts:
+    headers:
+      Host: au1.pad-service.com
+    path: /au1
 - name: CHATGPT | anaer/Sub | 美国 002
   type: vless
   network: ws
@@ -459,19 +486,6 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
     path: /
-- name: CHATGPT | anaer/Sub | 美国 003
-  type: vless
-  network: ws
-  server: 132.243.203.202
-  port: 8443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  servername: free.cndyw.ggff.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: pyip=bpb.yousef.isegaro.com
 - name: CHATGPT | anaer/Sub | 印度 001
   type: vless
   network: ws
@@ -480,11 +494,21 @@ proxies:
   uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   servername: free.cndyw.ggff.net
   tls: true
-  client-fingerprint: random
   ws-opts:
     headers:
       Host: free.cndyw.ggff.net
-    path: pyip=bpb.yousef.isegaro.com
+    path: pyip=bpb.yousef.isegaro.comfp=random
+- name: CHATGPT | anaer/Sub | 美国 003
+  type: vless
+  network: tcp
+  server: us-vpnstore.rovilo.ir
+  port: 20018
+  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  tls: false
+  encryption: none
+  ws-opts:
+    headers:
+      Host: connectivitycheck.android.com
 - name: CHATGPT | anaer/Sub | 中国 001
   type: vless
   network: ws
@@ -530,30 +554,6 @@ proxies:
     headers:
       Host: platform117.halalkhor.info
     path: /platform117
-- name: CHATGPT | anaer/Sub | 中国 002
-  type: vless
-  network: ws
-  server: platform103.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  servername: platform103.halalkhor.info
-  tls: false
-  ws-opts:
-    headers:
-      Host: platform103.halalkhor.info
-    path: /platform103
-- name: CHATGPT | anaer/Sub | 美国 006
-  type: vless
-  network: ws
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  servername: platform115.halalkhor.info
-  tls: false
-  ws-opts:
-    headers:
-      Host: platform115.halalkhor.info
-    path: /platform115
 - name: CHATGPT | free18/v2ray | 每天更新，请加电报群防止失联
   type: vless
   server: 34.154.18.129
