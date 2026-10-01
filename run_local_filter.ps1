@@ -18,9 +18,9 @@ if(!$NoPull){
 }
 & $Python -m pip install -r requirements.txt
 if($LASTEXITCODE -ne 0){throw "pip install failed"}
-$args=@(".\local_mihomo_filter.py","--mihomo",$Mihomo,"--general-limit",$GeneralLimit,"--chatgpt-limit",$ChatGPTLimit,"--concurrency",$Concurrency)
+$FilterArgs=@(".\local_mihomo_filter.py","--mihomo",$Mihomo,"--general-limit",$GeneralLimit,"--chatgpt-limit",$ChatGPTLimit,"--concurrency",$Concurrency)
 if($Full){$args+="--full"}
-& $Python @args
+& $Python @FilterArgs
 if($LASTEXITCODE -ne 0){throw "local filter failed"}
 $Report=Get-Content ".\output\local-test-report.json" -Raw | ConvertFrom-Json
 Write-Host ("Selected: general={0}, chatgpt={1}, total={2}" -f $Report.selected_general,$Report.selected_chatgpt,$Report.selected_total)
