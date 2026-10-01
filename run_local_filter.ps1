@@ -25,23 +25,22 @@ if(!$NoPull){
 & $Python -m pip install -r requirements.txt
 if($LASTEXITCODE -ne 0){throw "pip install failed"}
 
-# 候选文件缺失时，Windows 直接用同一 Python 刷新源，不依赖 bash.exe。
-if(!(Test-Path ".\output\candidates-general.yaml") -or !(Test-Path ".\output\candidates-chatgpt.yaml")){
-  if(!$NoSourceRefresh){
-    Write-Host "Split candidate files missing: refreshing public source snapshots..."
-    if(Test-Path ".\bootstrap_sources.py"){
-      & $Python ".\bootstrap_sources.py"
-      if($LASTEXITCODE -ne 0){throw "bootstrap_sources.py failed"}
-    } else {
-      throw "bootstrap_sources.py is missing; pull the latest feature branch first."
-    }
+# 每次本地运行默认刷新云端候选源快照；-NoSourceRefresh 可用于离线测试。
+if(!$NoSourceRefresh){
+  Write-Host "Refreshing public source snapshots..."
+  if(Test-Path ".\bootstrap_sources.py"){
+    & $Python ".\bootstrap_sources.py"
+    if($LASTEXITCODE -ne 0){throw "bootstrap_sources.py failed"}
+  } else {
+    throw "bootstrap_sources.py is missing; pull the latest feature branch first."
   }
+}
 
-  Write-Host "Building split cloud candidate pools..."
+if(!(Test-Path ".\output\candidates-general.yaml") -or !(Test-Path ".\output\candidates-chatgpt.yaml")){
+  Write-Host "Split candidate files missing: building them now..."
   & $Python ".\cloud_candidates.py"
   if($LASTEXITCODE -ne 0){throw "cloud candidate build failed"}
 }
-
 $FilterArgs=@(
   ".\local_mihomo_filter.py",
   "--mihomo",$Mihomo,
