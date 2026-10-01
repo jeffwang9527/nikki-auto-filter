@@ -9,7 +9,10 @@ Windows 本地 mihomo 测试完成后，由 `run_local_filter.ps1 -Publish` 发�
 - `output/nikki-general.yaml`：普通池，默认最多 12 个
 - `output/nikki-chatgpt.yaml`：GPT 专用池，默认最多 8 个
 
-这两个文件进入 GitHub `main` 后，通过 `cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main` 提供给路由器。
+这两个文件进入 GitHub `main` 后，通过 jsDelivr CDN 提供给路由器：
+
+- 普通池：`https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-general.yaml`
+- GPT 池：`https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-chatgpt.yaml`
 
 ## 路由器自动下载
 
@@ -61,6 +64,8 @@ Windows 本地 mihomo
 普通 ≤12 + GPT ≤8
   ↓
 Publish 到 main
+  ↓
+jsDelivr CDN
   ↓
 Nikki proxy-providers 每 4h 拉取
   ↓
