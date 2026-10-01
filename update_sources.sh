@@ -2,9 +2,8 @@
 
 set -u
 
-mkdir -p input/JP input/HK input/SG input/extra
+mkdir -p input/general input/chatgpt
 
-# 下载到临时文件，成功后才替换正式文件；失败时保留旧文件。
 download() {
     url="$1"
     out="$2"
@@ -27,29 +26,23 @@ download() {
 
 FAILED=0
 
-# 主源：Au1rxx 的国家分片。
-# 该项目当前说明：发布前已经进行 TCP/TLS/sing-box/HTTP-over-proxy 两轮实测，
-# 并按真实 HTTP 延迟排序；这里保留其发布顺序，不再用静态评分重排。
-download \
-  "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/country/JP/clash-0001.yaml" \
-  "input/JP/clash-0001.yaml" || FAILED=$((FAILED + 1))
+# 普通池：只来自 Au1rxx。
+download "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-JP.yaml" "input/general/au1rxx-jp.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-HK.yaml" "input/general/au1rxx-hk.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-SG.yaml" "input/general/au1rxx-sg.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-US.yaml" "input/general/au1rxx-us.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-DE.yaml" "input/general/au1rxx-de.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-KR.yaml" "input/general/au1rxx-kr.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-TW.yaml" "input/general/au1rxx-tw.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-CA.yaml" "input/general/au1rxx-ca.yaml" || FAILED=$((FAILED + 1))
 
-download \
-  "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/country/HK/clash-0001.yaml" \
-  "input/HK/clash-0001.yaml" || FAILED=$((FAILED + 1))
-
-download \
-  "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/country/SG/clash-0001.yaml" \
-  "input/SG/clash-0001.yaml" || FAILED=$((FAILED + 1))
-
-# 第二来源：wzmwayne AIO。
-# AIO 是跨地区合并列表，节点已经通过 mihomo generate_204 实测并按延迟排序。
-# 这里只补最多 10 个，避免把大量节点塞进 OpenWrt。
-download \
-  "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/aio/clash.yaml" \
-  "input/extra/wzmwayne-aio.yaml" || FAILED=$((FAILED + 1))
+# GPT 专用池：明确排除 Au1rxx，使用其它公开源的独立输出。
+download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/yoyapai/clash.yaml" "input/chatgpt/yoyapai.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/freesub/clash.yaml" "input/chatgpt/freesub.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/ripaojiedian/clash.yaml" "input/chatgpt/ripaojiedian.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/passcro/clash.yaml" "input/chatgpt/passcro.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/anaer/clash.yaml" "input/chatgpt/anaer.yaml" || FAILED=$((FAILED + 1))
+download "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/xiaoji235/clash.yaml" "input/chatgpt/xiaoji235.yaml" || FAILED=$((FAILED + 1))
 
 echo "Sources updated; failed downloads: $FAILED"
-# 即使某个来源暂时下载失败也不要让 GitHub Actions 因此直接失败：
-# filter_nodes.py 会继续使用上一轮仍存在的 input 文件。
 exit 0
