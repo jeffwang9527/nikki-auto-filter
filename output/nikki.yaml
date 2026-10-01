@@ -216,6 +216,16 @@ proxies:
   type: vless
   udp: true
   uuid: fc85cf23-75e6-4b91-b468-8adc9407047b
+- name: JP | vless-50404
+  network: ws
+  port: 443
+  server: 154.194.0.123
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
 - name: JP | vless-61396
   network: ws
   port: 443
@@ -236,16 +246,6 @@ proxies:
   type: vless
   udp: true
   uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
-- name: JP | vless-71533
-  network: ws
-  port: 443
-  server: 45.135.235.123
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: HK | vless-563294205
@@ -372,29 +372,15 @@ proxies:
   type: vless
   udp: true
   uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
-- client-fingerprint: random
+- client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: HK | vless-1591550717
+  name: HK | vless-1594427944
   network: tcp
   port: 16934
   reality-opts:
     public-key: qnpbUyX8SEBJ-ztUYjVrdkNrb_FeKVC1mbFhga8kewk
     short-id: "ca026ad8d3"
   server: node1.csnety.com
-  servername: v1-dy.ixigua.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a8845dc9-40e0-4e85-818b-94574868944b
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: HK | vless-1592758660
-  network: tcp
-  port: 16934
-  reality-opts:
-    public-key: qnpbUyX8SEBJ-ztUYjVrdkNrb_FeKVC1mbFhga8kewk
-    short-id: "ca026ad8d3"
-  server: 103.77.215.136
   servername: v1-dy.ixigua.com
   tls: true
   type: vless
@@ -526,6 +512,20 @@ proxies:
   type: vless
   udp: true
   uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: HK | vless-1547863889
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: Y9TEgB_8YVWzv8-wblXBjeX2t7IAtQhtQ3pE08gfNWw
+    short-id: "862266ae05b7a62f"
+  server: 47.83.143.75
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1658f804-41bf-4b7c-a0be-ba01097e0f41
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: SG | vless-12945894
@@ -666,75 +666,81 @@ proxies:
   type: vless
   udp: true
   uuid: e2632874-614e-4261-af62-52aca3358e4e
-- name: EXTRA | hysteria2-180178213
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  port: 33333
-  server: 155.248.209.237
-  skip-cert-verify: true
-  sni: 155.248.209.237
-  type: hysteria2
+- cipher: aes-128-gcm
+  name: EXTRA | shadowsocks-1596432404
+  password: 14aa62344b706355c4444b255c5fc041
+  port: 19693
+  server: 199.60.101.12
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: EXTRA | shadowsocks-1578174501
+  password: 87e9cb62706b5cd08da95b8b423cb673
+  port: 16469
+  server: 103.214.111.162
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: EXTRA | shadowsocks-1574303180
+  password: 2591a42af498878e47d881cd1ed1fa9d
+  port: 10676
+  server: 66.23.204.219
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: EXTRA | shadowsocks-159
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+  udp: true
 - cipher: rc4-md5
-  name: EXTRA | shadowsocks-27271
+  name: EXTRA | shadowsocks-27269
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 107.155.57.51
-  type: ss
-  udp: true
-- name: EXTRA | hysteria2-1531622830
-  password: 099830134df5ac3a04a4b21d39b8c395
-  port: 50160
-  server: 163.192.14.135
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-- cipher: rc4-md5
-  name: EXTRA | shadowsocks-27275
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.155.57.11
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: EXTRA | shadowsocks-1593870598
-  password: 0dd1077fdfae98efd742d9b97e5dbb87
-  port: 15438
-  server: 104.192.225.106
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: EXTRA | shadowsocks-1575014861
-  password: 0dd1077fdfae98efd742d9b97e5dbb87
-  port: 15442
-  server: 104.192.225.110
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: EXTRA | shadowsocks-1591586192
-  password: 0b6091bbea4d8d0ab0e327902dcd3244
-  port: 16444
-  server: 103.214.109.197
+  server: 138.199.42.68
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: EXTRA | vmess-1453104505
-  network: tcp
+  name: EXTRA | vmess-1444974394
+  network: raw
   port: 22324
-  server: 167.17.68.89
+  server: 167.88.62.124
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: EXTRA | US 🇺🇸 | @Raydikalx | F4AF2E
+  server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - cipher: aes-128-gcm
-  name: EXTRA | shadowsocks-1577646737
-  password: 62dd75ba944947d4ca983cf1679b3797
-  port: 15240
-  server: 173.234.25.90
+  name: EXTRA | shadowsocks-158
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: EXTRA | shadowsocks-157
-  password: G5p6ww4o67HB
-  port: 8388
-  server: 108.181.0.177
+- cipher: aes-256-gcm
+  name: EXTRA | shadowsocks-687923666
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 15.204.246.132
   type: ss
   udp: true
+- name: EXTRA | CA 🇨🇦 | @Raydikalx | 30CA9B
+  server: 162.159.156.214
+  port: 8880
+  type: vless
+  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
+  udp: true
+  tls: false
+  servername: soft-band-8da6.426.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: soft-band-8da6.426.workers.dev
