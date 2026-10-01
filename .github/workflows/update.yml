@@ -1,80 +1,72 @@
-name: Update Nikki Nodes
-
+name: Update Nikki cloud candidate pools
 
 on:
-
   schedule:
-
-    - cron: "0 */4 * * *"
-
-
+    # 避开每小时整点的 GitHub Actions 高峰；仍保持每 4 小时一次。
+    - cron: "17 */4 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "input/**"
+      - "output/**"
 
 permissions:
   contents: write
 
 jobs:
-
   update:
-
-
     runs-on: ubuntu-latest
-
-
+    timeout-minutes: 15
     steps:
-
-
-    - name: Checkout
-
-      uses: actions/checkout@v4
-      with:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-    - name: Python
+      - name: Install
+        run: python -m pip install -r requirements.txt
 
-      uses: actions/setup-python@v5
+      - name: Update public sources
+        run: |
+          chmod +x update_sources.sh
+          ./update_sources.sh
 
-      with:
+      - name: Build separated cloud candidate pools
+        run: python cloud_candidates.py
 
-        python-version: "3.11"
+      - name: Validate candidate pools
+        run: |
+          python - <<'PY'
+          import yaml
 
+          def count(path):
+              d = yaml.safe_load(open(path, encoding="utf-8"))
+              return len(d.get("proxies", [])) if isinstance(d, dict) else 0
 
+          general = count("output/candidates-general.yaml")
+          chatgpt = count("output/candidates-chatgpt.yaml")
+          total = count("output/candidates.yaml")
 
-    - name: Install
+          assert 0 < general <= 100, f"unexpected general candidate count: {general}"
+          assert 0 < chatgpt <= 100, f"unexpected ChatGPT candidate count: {chatgpt}"
+          assert total >= general, "union pool smaller than general pool"
+          assert total >= chatgpt, "union pool smaller than ChatGPT pool"
 
-      run: |
+          print("general candidates:", general)
+          print("ChatGPT candidates:", chatgpt)
+          print("combined candidates:", total)
+          PY
 
-        pip install -r requirements.txt
-
-
-
-    - name: Update sources
-
-      run: |
-
-        chmod +x update_sources.sh
-
-        ./update_sources.sh
-
-
-
-    - name: Filter
-
-      run: |
-
-        python filter_nodes.py
-
-
-
-    - name: Commit
-
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-
-        git add .
-
-        git diff --cached --quiet || git commit -m "auto update nodes"
-
-        git push
+      - name: Commit candidate pools
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add sources.yaml input output/candidates.yaml output/candidates-general.yaml output/candidates-chatgpt.yaml output/cloud_stats.json
+          git diff --cached --quiet || git commit -m "update separated cloud candidate pools"
+          git push
