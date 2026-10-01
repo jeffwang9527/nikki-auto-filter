@@ -25,17 +25,15 @@ if(!$NoPull){
 & $Python -m pip install -r requirements.txt
 if($LASTEXITCODE -ne 0){throw "pip install failed"}
 
-# 云端候选文件缺失时，在 Windows 本地只做“源下载 + 云端结构初筛”，
-# 不在这一阶段进行节点网络测试。
+# 候选文件缺失时，Windows 直接用同一 Python 刷新源，不依赖 bash.exe。
 if(!(Test-Path ".\output\candidates-general.yaml") -or !(Test-Path ".\output\candidates-chatgpt.yaml")){
-  if(!$NoSourceRefresh -and (Test-Path ".\update_sources.sh")){
+  if(!$NoSourceRefresh){
     Write-Host "Split candidate files missing: refreshing public source snapshots..."
-    $Bash=(Get-Command bash.exe -ErrorAction SilentlyContinue)
-    if($Bash){
-      & $Bash.Source ".\update_sources.sh"
-      if($LASTEXITCODE -ne 0){throw "update_sources.sh failed"}
+    if(Test-Path ".\bootstrap_sources.py"){
+      & $Python ".\bootstrap_sources.py"
+      if($LASTEXITCODE -ne 0){throw "bootstrap_sources.py failed"}
     } else {
-      Write-Host "bash.exe not found; using existing snapshots if available."
+      throw "bootstrap_sources.py is missing; pull the latest feature branch first."
     }
   }
 
@@ -52,7 +50,6 @@ $FilterArgs=@(
   "--concurrency",$Concurrency
 )
 if($Full){$FilterArgs+="--full"}
-
 & $Python @FilterArgs
 if($LASTEXITCODE -ne 0){throw "local filter failed"}
 
@@ -63,14 +60,11 @@ if($Publish){
   $MinGeneral=[Math]::Max(8,[Math]::Floor($GeneralLimit*0.67))
   $MinChatGPT=[Math]::Max(5,[Math]::Floor($ChatGPTLimit*0.625))
   $MinTotal=[Math]::Max(14,[Math]::Floor(($GeneralLimit+$ChatGPTLimit)*0.70))
-
   if($Report.selected_general -lt $MinGeneral -or $Report.selected_chatgpt -lt $MinChatGPT -or $Report.selected_total -lt $MinTotal){
     throw "Publish blocked: one or both router pools are unexpectedly small; previous GitHub output is kept."
   }
-
   $Status=git status --porcelain
   if($Status){throw "Publish blocked because the working tree has local changes."}
-
   git add output/nikki-general.yaml output/nikki-chatgpt.yaml output/nikki.yaml output/local-test-report.json cache/node-cache.json
   git diff --cached --quiet
   if($LASTEXITCODE -ne 0){
@@ -78,5 +72,4 @@ if($Publish){
     git push origin main
   }
 }
-
 Write-Host "Done."
