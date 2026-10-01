@@ -20,7 +20,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.44,
+          "age_days": 0.45,
           "latest_commit": "2026-10-01T05:58:05Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
@@ -37,7 +37,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.24,
+          "age_days": 0.25,
           "latest_commit": "2026-10-01T10:41:28Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
@@ -192,7 +192,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.44,
+          "age_days": 0.45,
           "latest_commit": "2026-10-01T05:58:05Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
@@ -209,7 +209,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.24,
+          "age_days": 0.25,
           "latest_commit": "2026-10-01T10:41:28Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
