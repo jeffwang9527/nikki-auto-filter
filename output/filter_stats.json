@@ -1,0 +1,20 @@
+{
+  "total": 60,
+  "max_total": 60,
+  "main_limits": {
+    "JP": 20,
+    "HK": 20,
+    "SG": 10
+  },
+  "region_counts": {
+    "JP": 20,
+    "HK": 20,
+    "SG": 10
+  },
+  "source_counts": {
+    "Au1rxx": 50,
+    "wzmwayne-AIO": 10
+  },
+  "extra_limit": 10,
+  "extra_source": "input/extra/wzmwayne-aio.yaml"
+}
