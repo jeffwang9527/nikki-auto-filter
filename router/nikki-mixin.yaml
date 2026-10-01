@@ -1,0 +1,53 @@
+# Nikki/Mihomo profile mixin for the two local-tested node pools.
+# No YAML anchors are used because Nikki has had first-start issues with
+# anchor/merge constructs in proxy-providers on some versions.
+#
+# The two provider URLs are the small files published by the Windows local
+# testing stage. Nikki downloads them directly; no second download daemon is
+# required on the router.
+
+proxy-providers:
+  NIKKI-GENERAL:
+    type: http
+    url: "https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/output/nikki-general.yaml"
+    path: ./providers/proxy/nikki-general.yaml
+    interval: 14400
+    size-limit: 2000000
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+
+  NIKKI-GPT:
+    type: http
+    url: "https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/output/nikki-chatgpt.yaml"
+    path: ./providers/proxy/nikki-chatgpt.yaml
+    interval: 14400
+    size-limit: 2000000
+    health-check:
+      enable: true
+      url: https://chatgpt.com/robots.txt
+      interval: 300
+
+proxy-groups:
+  - name: "NIKKI-普通池"
+    type: url-test
+    use:
+      - NIKKI-GENERAL
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+
+  - name: "NIKKI-GPT专用池"
+    type: url-test
+    use:
+      - NIKKI-GPT
+    url: https://chatgpt.com/robots.txt
+    interval: 300
+    tolerance: 50
+
+rules:
+  - DOMAIN-SUFFIX,chatgpt.com,NIKKI-GPT专用池
+  - DOMAIN-SUFFIX,openai.com,NIKKI-GPT专用池
+  - DOMAIN-SUFFIX,oaistatic.com,NIKKI-GPT专用池
+  - DOMAIN-SUFFIX,oaiusercontent.com,NIKKI-GPT专用池
