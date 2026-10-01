@@ -47,7 +47,19 @@ proxy-groups:
     tolerance: 50
 
 rules:
+  # GPT/OpenAI must match before any domestic/direct/default proxy rules.
   - DOMAIN-SUFFIX,chatgpt.com,NIKKI-GPT专用池
   - DOMAIN-SUFFIX,openai.com,NIKKI-GPT专用池
   - DOMAIN-SUFFIX,oaistatic.com,NIKKI-GPT专用池
   - DOMAIN-SUFFIX,oaiusercontent.com,NIKKI-GPT专用池
+
+  # Keep LAN/private traffic direct.
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+
+  # China traffic direct; all remaining external traffic goes to the general pool.
+  - GEOSITE,cn,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,NIKKI-普通池
