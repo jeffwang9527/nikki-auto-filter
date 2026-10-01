@@ -16,5 +16,6 @@
     "wzmwayne-AIO": 10
   },
   "extra_limit": 10,
-  "extra_source": "input/extra/wzmwayne-aio.yaml"
+  "extra_source": "input/extra/wzmwayne-aio.yaml",
+  "selection": "Au1rxx source-verified + structural score; wzmwayne AIO order preserved"
 }
