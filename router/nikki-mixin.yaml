@@ -47,19 +47,46 @@ proxy-groups:
     tolerance: 50
 
 rules:
-  # GPT/OpenAI must match before any domestic/direct/default proxy rules.
+  # GPT/OpenAI 必须最前
   - DOMAIN-SUFFIX,chatgpt.com,NIKKI-GPT专用池
   - DOMAIN-SUFFIX,openai.com,NIKKI-GPT专用池
   - DOMAIN-SUFFIX,oaistatic.com,NIKKI-GPT专用池
   - DOMAIN-SUFFIX,oaiusercontent.com,NIKKI-GPT专用池
 
-  # Keep LAN/private traffic direct.
+  # LAN
   - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
   - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
   - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
 
-  # China traffic direct; all remaining external traffic goes to the general pool.
+  # 常用国外客户端服务直连
+  - DOMAIN-SUFFIX,adobe.com,DIRECT
+  - DOMAIN-SUFFIX,adobelogin.com,DIRECT
+  - DOMAIN-SUFFIX,adobe.io,DIRECT
+
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+  - DOMAIN-SUFFIX,office.com,DIRECT
+  - DOMAIN-SUFFIX,office.net,DIRECT
+  - DOMAIN-SUFFIX,live.com,DIRECT
+  - DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+
+  - DOMAIN-SUFFIX,steampowered.com,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamstatic.com,DIRECT
+
+  # 支付
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN-SUFFIX,alipayobjects.com,DIRECT
+  - DOMAIN-SUFFIX,unionpay.com,DIRECT
+
+  # 中国大陆
   - GEOSITE,cn,DIRECT
   - GEOIP,CN,DIRECT
+
+  # 其他全部走普通池
   - MATCH,NIKKI-普通池
