@@ -1,8 +1,100 @@
 proxies:
-- name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos[📺🎭🎪✨]_dokng.com_ff9ee1ab
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d85a93d5
+  password: null
   port: 443
-  server: 43.155.62.157
+  server: fan.240104.xyz
+  skip-cert-verify: true
+  tls: true
   type: http
+  username: null
+- name: GEN | GENERAL | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_55d5bd22
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  port: 443
+  server: 50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com
+  skip-cert-verify: true
+  sni: 50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com
+  type: hysteria2
+- name: GEN | GENERAL | free18/v2ray | 🇫🇷_法国_31
+  type: vless
+  server: 34.155.54.237
+  port: 443
+  uuid: 069a2bbd-3fc9-470f-a251-c836a96ed04a
+  servername: www.cloudflare.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SVT2WeXMIrumlh5VG1lbHN6YbqL7-u2iRkv1js8XEU4
+    short-id: 3f95392a418ec8fd
+  skip-cert-verify: true
+  udp: true
+- cipher: aes-256-cfb
+  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🤖📺🎭🎪]_dokng.com_1df47937
+  password: amazonskr05
+  port: 443
+  server: 15.237.215.103
+  type: ss
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇮🇱_以色列_20
+  type: vless
+  server: 34.165.56.30
+  port: 443
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
+  servername: www.cloudflare.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+    short-id: fffff8acddadcac3
+  skip-cert-verify: true
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_6
+  type: vless
+  server: 177.1.186.44
+  port: 443
+  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  servername: mcde.67resserv67.info
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
+    short-id: 29455a3a790acbd0
+  skip-cert-verify: true
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇷🇺_俄罗斯_12
+  type: vless
+  server: 31.76.34.216
+  port: 443
+  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
+  servername: ru-c-1.minzt.su
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
+  skip-cert-verify: true
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇮🇪_爱尔兰_19
+  type: vless
+  server: 198.55.102.59
+  port: 4443
+  uuid: 7f86f371-5a85-48be-babc-7af1ae7ffb75
+  servername: vk.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
+    short-id: ce6767c3f1
+  skip-cert-verify: true
+  udp: true
+- name: GEN | GENERAL | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_7c20d6d5
+  password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+  port: 443
+  server: 3ccb74ed-tmm5c0-ttyjoe-ieln.nw4.hyhuawei.com
+  skip-cert-verify: true
+  sni: 3ccb74ed-tmm5c0-ttyjoe-ieln.nw4.hyhuawei.com
+  type: hysteria2
 - name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_9efa9595
   password: null
   port: 443
@@ -11,92 +103,24 @@ proxies:
   tls: true
   type: http
   username: null
-- name: GEN | GENERAL | Ruk1ng001/freeSub | A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_65a5452e
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
+- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
+  type: vless
+  server: 108.162.198.178
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: GEN | GENERAL | Ruk1ng001/freeSub | A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_3e949dac
-  password: 9sK2mP8xQ7vL3nZ6
-  port: 443
-  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
-  skip-cert-verify: true
-  sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
-  type: anytls
-- alterId: '2'
-  cipher: auto
-  name: GEN | GENERAL | Ruk1ng001/freeSub | A🟢🇯🇵res[🎬🤖📺🎭]_dokng.com_37a9cf97
-  network: tcp
-  port: 11262
-  server: goldcnmltyljgfwgov.vip62.wogcnmnnagfwgov.com
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-- alterId: '2'
-  cipher: auto
-  name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_02db43ef
-  network: tcp
-  port: 11206
-  server: sbgfgov.vip6.wogacnmnagfwgov.com
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-- cipher: aes-256-cfb
-  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖🎭🎪]_dokng.com_b6834404
-  password: amazonskr05
-  port: 443
-  server: 15.237.255.137
-  type: ss
   udp: true
-- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇵🇭hos[🤖📺🎭🎪]_dokng.com_4f809483
+- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🔍]_dokng.com_4f809483
   password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
   port: 17930
   server: yazhouany02.downapptwo.cc
   skip-cert-verify: true
   sni: flv02.swiftrelay.cc
   type: anytls
-  udp: true
-- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇩🇪DE德国丨yoyapai.com_1
-  type: vless
-  server: 94.228.171.219
-  port: 8444
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
-  network: ws
-  servername: germany.tofreedom.ru
-  tls: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /c7f5317cd04691bc
-    headers:
-      Host: germany.tofreedom.ru
-  skip-cert-verify: true
-  udp: true
-- cipher: aes-256-cfb
-  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_c015a23d
-  password: amazonskr05
-  port: 443
-  server: 15.237.126.250
-  type: ss
-  udp: true
-- name: GEN | GENERAL | Ruk1ng001/freeSub | A🟢🇭🇰res[📺✨🎞️📦]_dokng.com_2e236c13
-  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  port: 443
-  server: a044c416-tmkao0-u4zg37-1jcwu.hk3.hyhuawei.com
-  skip-cert-verify: true
-  sni: a044c416-tmkao0-u4zg37-1jcwu.hk3.hyhuawei.com
-  type: hysteria2
-- name: GEN | GENERAL | free18/v2ray | 每天更新，请加电报群防止失联
-  type: vless
-  server: 34.154.18.129
-  port: 443
-  uuid: fffe33b6-5735-4a71-adb1-1c154def9024
-  servername: www.cloudflare.com
-  tls: true
-  client-fingerprint: qq
-  reality-opts:
-    public-key: -Tb9KKp870JxcZ3Ka7Rx5ez3QBYryX4e8_jdyNZu2wE
-    short-id: ed278463058a6dc9
-  skip-cert-verify: true
   udp: true
