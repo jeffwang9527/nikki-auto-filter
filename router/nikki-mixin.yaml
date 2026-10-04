@@ -112,6 +112,23 @@ rules:
   - DOMAIN-SUFFIX,alipayobjects.com,DIRECT
   - DOMAIN-SUFFIX,unionpay.com,DIRECT
 
+  # 国内电商：显式直连，避免走代理海外节点触发风控（京东/淘宝/拼多多/美团等）
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+  - DOMAIN-SUFFIX,jdpay.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,alicdn.com,DIRECT
+  - DOMAIN-SUFFIX,taobaocdn.com,DIRECT
+  - DOMAIN-SUFFIX,1688.com,DIRECT
+  - DOMAIN-SUFFIX,pinduoduo.com,DIRECT
+  - DOMAIN-SUFFIX,yangkeduo.com,DIRECT
+  - DOMAIN-SUFFIX,pddpic.com,DIRECT
+  - DOMAIN-SUFFIX,meituan.com,DIRECT
+  - DOMAIN-SUFFIX,meituan.net,DIRECT
+  - DOMAIN-SUFFIX,suning.com,DIRECT
+  - DOMAIN-SUFFIX,vip.com,DIRECT
+
   # 中国大陆
   - GEOSITE,cn,DIRECT
   - GEOIP,CN,DIRECT
