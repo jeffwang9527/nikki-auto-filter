@@ -1,13 +1,21 @@
 #!/bin/sh
 set -eu
 
-MIXIN_URL="https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@2e8a7cdc4511895a32dcccc75d7aba5bc021392c/router/nikki-mixin.yaml"
+# Track main branch so the router auto-applies future mixin updates without manual hash sync.
+# jsDelivr caches @main briefly (usually minutes, worst case up to ~12h); cron reruns converge.
+MIXIN_URL="https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/router/nikki-mixin.yaml"
 MIXIN_FILE="/etc/nikki/mixin.yaml"
 
 echo "[1/4] Download Nikki pool mixin"
 tmp="${MIXIN_FILE}.tmp"
 curl -4 -fsSL --connect-timeout 10 --max-time 30 "$MIXIN_URL" -o "$tmp"
 test -s "$tmp"
+
+if cmp -s "$tmp" "$MIXIN_FILE"; then
+    rm -f "$tmp"
+    echo "mixin unchanged, skip reload"
+    exit 0
+fi
 mv "$tmp" "$MIXIN_FILE"
 
 echo "[2/4] Enable Nikki mixin processing"
