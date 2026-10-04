@@ -1,17 +1,17 @@
 {
-  "timestamp": 1791118031,
+  "timestamp": 1791154958,
   "general_candidate_count": 100,
-  "chatgpt_candidate_count": 72,
-  "candidate_count": 104,
-  "tested_now": 104,
+  "chatgpt_candidate_count": 48,
+  "candidate_count": 102,
+  "tested_now": 102,
   "general_tested_now": 100,
-  "chatgpt_tested_now": 72,
+  "chatgpt_tested_now": 48,
   "cache_reused": 0,
-  "general_eligible": 10,
-  "openai_edge_eligible": 8,
-  "selected_general": 10,
+  "general_eligible": 14,
+  "openai_edge_eligible": 9,
+  "selected_general": 12,
   "selected_chatgpt": 8,
-  "selected_total": 18,
+  "selected_total": 20,
   "policy": {
     "general_limit": 12,
     "chatgpt_limit": 8,
@@ -20,8 +20,7 @@
     "failure_cooldown_hours": 6.0,
     "failure_eject_streak": 3,
     "max_same_server": 2,
-    "pool_selection_independent": true,
-    "historical_reliability_ranking": true
+    "pool_selection_independent": true
   },
   "selection_sources": {
     "general": "output/candidates-general.yaml (Au1rxx only)",
@@ -30,95 +29,105 @@
   "selected": {
     "general": [
       {
-        "name": "GENERAL | free18/v2ray | 日期：10-04",
-        "delay_ms": 97,
-        "grace": false
-      },
-      {
-        "name": "GENERAL | free18/v2ray | 🇨🇳_中国_28",
-        "delay_ms": 113,
-        "grace": false
-      },
-      {
-        "name": "GENERAL | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm",
-        "delay_ms": 164,
-        "grace": false
-      },
-      {
         "name": "GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos[🎬📺🎭🎪]_dokng.com_ebc6bc61",
-        "delay_ms": 251,
+        "delay_ms": 149,
         "grace": false
       },
       {
-        "name": "GENERAL | free18/v2ray | 🇩🇪_德国_18",
-        "delay_ms": 323,
+        "name": "GENERAL | free18/v2ray | 🇰🇷_韩国_27",
+        "delay_ms": 213,
         "grace": false
       },
       {
-        "name": "GENERAL | free18/v2ray | 🇯🇵_日本_5",
-        "delay_ms": 335,
+        "name": "GENERAL | free18/v2ray | 日期：10-04",
+        "delay_ms": 242,
         "grace": false
       },
       {
         "name": "GENERAL | free18/v2ray | 🇹🇼_台湾_37",
-        "delay_ms": 350,
+        "delay_ms": 248,
         "grace": false
       },
       {
-        "name": "GENERAL | free18/v2ray | 🇺🇸_美国_33",
-        "delay_ms": 405,
+        "name": "GENERAL | free18/v2ray | 🇨🇳_中国_35",
+        "delay_ms": 332,
         "grace": false
       },
       {
-        "name": "GENERAL | free18/v2ray | 🇩🇪_德国_15",
-        "delay_ms": 880,
+        "name": "GENERAL | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm",
+        "delay_ms": 400,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | anaer/Sub | 德国 001",
+        "delay_ms": 514,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | free18/v2ray | 🇨🇳_中国_28",
+        "delay_ms": 549,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | free18/v2ray | 🇩🇪_德国_18",
+        "delay_ms": 633,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | free18/v2ray | 🇺🇸_美国_16",
+        "delay_ms": 852,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | free18/v2ray | 🇯🇵_日本_5",
+        "delay_ms": 898,
         "grace": false
       },
       {
         "name": "GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_c4d8c40f",
         "delay_ms": 238,
-        "grace": false
+        "grace": true
       }
     ],
     "chatgpt": [
       {
+        "name": "CHATGPT | anaer/Sub | 美国 002",
+        "delay_ms": 130,
+        "grace": false
+      },
+      {
         "name": "CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇭🇰HK丨yoyapai.com香港丨yoyapai.com_1",
-        "delay_ms": 237,
+        "delay_ms": 350,
         "grace": false
       },
       {
-        "name": "CHATGPT | free18/v2ray | 🇯🇵_日本_5",
-        "delay_ms": 247,
+        "name": "CHATGPT | anaer/Sub | 美国 003",
+        "delay_ms": 397,
         "grace": false
       },
       {
-        "name": "CHATGPT | free18/v2ray | 日期：10-04",
-        "delay_ms": 325,
-        "grace": false
-      },
-      {
-        "name": "CHATGPT | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm",
-        "delay_ms": 543,
-        "grace": false
-      },
-      {
-        "name": "CHATGPT | anaer/Sub | 美国 005",
-        "delay_ms": 604,
-        "grace": false
-      },
-      {
-        "name": "CHATGPT | anaer/Sub | 美国 006",
-        "delay_ms": 835,
+        "name": "CHATGPT | anaer/Sub | 德国 001",
+        "delay_ms": 408,
         "grace": false
       },
       {
         "name": "CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇭🇰HK丨yoyapai.com香港丨yoyapai.com",
-        "delay_ms": 1984,
+        "delay_ms": 686,
         "grace": false
       },
       {
-        "name": "CHATGPT | ripaojiedian/freenode | 🇭🇰 香港|@ripaojiedian",
-        "delay_ms": 1179,
+        "name": "CHATGPT | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm",
+        "delay_ms": 797,
+        "grace": false
+      },
+      {
+        "name": "CHATGPT | free18/v2ray | 日期：10-04",
+        "delay_ms": 933,
+        "grace": false
+      },
+      {
+        "name": "CHATGPT | free18/v2ray | 🇯🇵_日本_5",
+        "delay_ms": 950,
         "grace": false
       }
     ]
