@@ -60,9 +60,27 @@ rules:
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
 
   # 常用国外客户端服务直连
-  - DOMAIN-SUFFIX,adobe.com,DIRECT
-  - DOMAIN-SUFFIX,adobelogin.com,DIRECT
-  - DOMAIN-SUFFIX,adobe.io,DIRECT
+  - DOMAIN-SUFFIX,adobe.com,REJECT
+  - DOMAIN-SUFFIX,adobelogin.com,REJECT
+  - DOMAIN-SUFFIX,adobe.io,REJECT
+  - DOMAIN-SUFFIX,adobecc.com,REJECT
+  - DOMAIN-SUFFIX,adobecces.com,REJECT
+  - DOMAIN-SUFFIX,adobeccstatic.com,REJECT
+  - DOMAIN-SUFFIX,adobedtm.com,REJECT
+  - DOMAIN-SUFFIX,adobeexchange.com,REJECT
+  - DOMAIN-SUFFIX,adobegenuine.com,REJECT
+  - DOMAIN-SUFFIX,adobe-identity.com,REJECT
+  - DOMAIN-SUFFIX,adobejanus.com,REJECT
+  - DOMAIN-SUFFIX,adobesc.com,REJECT
+  - DOMAIN-SUFFIX,adobedc.net,REJECT
+  - DOMAIN-SUFFIX,adobeoobe.com,REJECT
+  - DOMAIN-SUFFIX,adobeprojectm.com,REJECT
+  - DOMAIN-SUFFIX,adobe-services.com,REJECT
+  - DOMAIN-SUFFIX,adobess.com,REJECT
+  - DOMAIN-SUFFIX,adobesunbreak.com,REJECT
+  - DOMAIN-SUFFIX,adobetag.com,REJECT
+  - DOMAIN-SUFFIX,behance.net,REJECT
+  - DOMAIN-SUFFIX,ftcdn.net,REJECT
 
   - DOMAIN-SUFFIX,microsoft.com,DIRECT
   - DOMAIN-SUFFIX,microsoftonline.com,DIRECT
