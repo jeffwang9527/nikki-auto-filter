@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-MIXIN_URL="https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@8520a5f8dcf7fbb4f784d74396823890e8b5a825/router/nikki-mixin.yaml"
+MIXIN_URL="https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@2e8a7cdc4511895a32dcccc75d7aba5bc021392c/router/nikki-mixin.yaml"
 MIXIN_FILE="/etc/nikki/mixin.yaml"
 
 echo "[1/4] Download Nikki pool mixin"
