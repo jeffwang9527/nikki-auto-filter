@@ -59,14 +59,21 @@ rules:
   - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
 
-  # Adobe：只断正版验证(genuine)，其余服务直连，保证破解版可正常启动
+  # Adobe：屏蔽正版验证与授权判定服务，保留启动必需服务直连，保证破解版可正常启动且不弹窗
+  # lose access 判定走多组域名：genuine 验证 / adobe.io 判定服务 / 账户与商务状态，须逐组屏蔽
   - DOMAIN-SUFFIX,adobegenuine.com,REJECT
   - DOMAIN-SUFFIX,genuine.adobe.com,REJECT
   - DOMAIN-SUFFIX,ereg.adobe.com,REJECT
   - DOMAIN-SUFFIX,practivate.adobe.com,REJECT
+  # adobe.io 整域覆盖 cc-api-data*/gcts/p13n/ic 等判定与促销服务，实测断掉不影响 PS 启动
+  - DOMAIN-SUFFIX,adobe.io,REJECT
+  - DOMAIN-SUFFIX,adobestats.io,REJECT
+  - DOMAIN-SUFFIX,services.adobe.com,REJECT
+  - DOMAIN-SUFFIX,commerce.adobe.com,REJECT
+  - DOMAIN-SUFFIX,service.account.adobe.com,REJECT
+  - DOMAIN-SUFFIX,crs.cr.adobe.com,REJECT
   - DOMAIN-SUFFIX,adobe.com,DIRECT
   - DOMAIN-SUFFIX,adobelogin.com,DIRECT
-  - DOMAIN-SUFFIX,adobe.io,DIRECT
   - DOMAIN-SUFFIX,adobecc.com,DIRECT
   - DOMAIN-SUFFIX,adobecces.com,DIRECT
   - DOMAIN-SUFFIX,adobeccstatic.com,DIRECT
