@@ -59,28 +59,31 @@ rules:
   - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
 
-  # 常用国外客户端服务直连
-  - DOMAIN-SUFFIX,adobe.com,REJECT
-  - DOMAIN-SUFFIX,adobelogin.com,REJECT
-  - DOMAIN-SUFFIX,adobe.io,REJECT
-  - DOMAIN-SUFFIX,adobecc.com,REJECT
-  - DOMAIN-SUFFIX,adobecces.com,REJECT
-  - DOMAIN-SUFFIX,adobeccstatic.com,REJECT
-  - DOMAIN-SUFFIX,adobedtm.com,REJECT
-  - DOMAIN-SUFFIX,adobeexchange.com,REJECT
+  # Adobe：只断正版验证(genuine)，其余服务直连，保证破解版可正常启动
   - DOMAIN-SUFFIX,adobegenuine.com,REJECT
-  - DOMAIN-SUFFIX,adobe-identity.com,REJECT
-  - DOMAIN-SUFFIX,adobejanus.com,REJECT
-  - DOMAIN-SUFFIX,adobesc.com,REJECT
-  - DOMAIN-SUFFIX,adobedc.net,REJECT
-  - DOMAIN-SUFFIX,adobeoobe.com,REJECT
-  - DOMAIN-SUFFIX,adobeprojectm.com,REJECT
-  - DOMAIN-SUFFIX,adobe-services.com,REJECT
-  - DOMAIN-SUFFIX,adobess.com,REJECT
-  - DOMAIN-SUFFIX,adobesunbreak.com,REJECT
-  - DOMAIN-SUFFIX,adobetag.com,REJECT
-  - DOMAIN-SUFFIX,behance.net,REJECT
-  - DOMAIN-SUFFIX,ftcdn.net,REJECT
+  - DOMAIN-SUFFIX,genuine.adobe.com,REJECT
+  - DOMAIN-SUFFIX,ereg.adobe.com,REJECT
+  - DOMAIN-SUFFIX,practivate.adobe.com,REJECT
+  - DOMAIN-SUFFIX,adobe.com,DIRECT
+  - DOMAIN-SUFFIX,adobelogin.com,DIRECT
+  - DOMAIN-SUFFIX,adobe.io,DIRECT
+  - DOMAIN-SUFFIX,adobecc.com,DIRECT
+  - DOMAIN-SUFFIX,adobecces.com,DIRECT
+  - DOMAIN-SUFFIX,adobeccstatic.com,DIRECT
+  - DOMAIN-SUFFIX,adobedtm.com,DIRECT
+  - DOMAIN-SUFFIX,adobeexchange.com,DIRECT
+  - DOMAIN-SUFFIX,adobe-identity.com,DIRECT
+  - DOMAIN-SUFFIX,adobejanus.com,DIRECT
+  - DOMAIN-SUFFIX,adobesc.com,DIRECT
+  - DOMAIN-SUFFIX,adobedc.net,DIRECT
+  - DOMAIN-SUFFIX,adobeoobe.com,DIRECT
+  - DOMAIN-SUFFIX,adobeprojectm.com,DIRECT
+  - DOMAIN-SUFFIX,adobe-services.com,DIRECT
+  - DOMAIN-SUFFIX,adobess.com,DIRECT
+  - DOMAIN-SUFFIX,adobesunbreak.com,DIRECT
+  - DOMAIN-SUFFIX,adobetag.com,DIRECT
+  - DOMAIN-SUFFIX,behance.net,DIRECT
+  - DOMAIN-SUFFIX,ftcdn.net,DIRECT
 
   - DOMAIN-SUFFIX,microsoft.com,DIRECT
   - DOMAIN-SUFFIX,microsoftonline.com,DIRECT
