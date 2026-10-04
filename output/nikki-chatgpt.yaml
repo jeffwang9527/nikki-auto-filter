@@ -1,78 +1,83 @@
 proxies:
-- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇭🇰HK丨yoyapai.com香港丨yoyapai.com_1
   type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  server: 34.96.188.243
+  port: 443
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  servername: www.cloudflare.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+    short-id: 64b3f192fc0669e1
   skip-cert-verify: false
   udp: true
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_7c20d6d5
-  password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+- name: GPT | CHATGPT | free18/v2ray | 🇯🇵_日本_5
+  type: trojan
+  server: prime-corgi.rooster465.autos
   port: 443
-  server: 3ccb74ed-tmm5c0-ttyjoe-ieln.nw4.hyhuawei.com
+  password: UX82473651
+  sni: prime-corgi.rooster465.autos
   skip-cert-verify: true
-  sni: 3ccb74ed-tmm5c0-ttyjoe-ieln.nw4.hyhuawei.com
-  type: hysteria2
-- name: GPT | CHATGPT | free18/v2ray | 🇩🇪_德国_6
+  udp: true
+- name: GPT | CHATGPT | free18/v2ray | 日期：10-04
   type: vless
-  server: 177.1.186.44
-  port: 443
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
-  servername: mcde.67resserv67.info
+  server: 112.49.63.11
+  port: 33102
+  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
+  servername: sgg.knhqf.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  reality-opts:
-    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
-    short-id: 29455a3a790acbd0
   skip-cert-verify: true
   udp: true
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_9efa9595
-  password: null
+- name: GPT | CHATGPT | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm
+  type: trojan
+  server: inviting-ferret.rooster465.autos
   port: 443
-  server: fan.571589.xyz
-  skip-cert-verify: false
-  tls: true
-  type: http
-  username: null
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_55d5bd22
-  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
-  port: 443
-  server: 50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
   skip-cert-verify: true
-  sni: 50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com
-  type: hysteria2
-- name: GPT | CHATGPT | free18/v2ray | 🇷🇺_俄罗斯_12
+  udp: true
+- name: GPT | CHATGPT | anaer/Sub | 美国 005
   type: vless
-  server: 31.76.34.216
-  port: 443
-  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
-  servername: ru-c-1.minzt.su
+  network: ws
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  servername: platform109.halalkhor.info
+  tls: false
+  ws-opts:
+    headers:
+      Host: platform109.halalkhor.info
+    path: /platform109
+- name: GPT | CHATGPT | anaer/Sub | 美国 006
+  type: vless
+  network: ws
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  tls: false
+  ws-opts:
+    headers:
+      Host: platform101.halalkhor.info
+    path: /platform101
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇭🇰HK丨yoyapai.com香港丨yoyapai.com
+  type: vless
+  server: 27.44.143.169
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  servername: thuk.huaweiyouxuan.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
-  skip-cert-verify: true
+  skip-cert-verify: false
   udp: true
-- cipher: aes-256-cfb
-  name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇫🇷hos[🤖📺🎭🎪]_dokng.com_1df47937
-  password: amazonskr05
-  port: 443
-  server: 15.237.215.103
-  type: ss
-  udp: true
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[🔍]_dokng.com_4f809483
-  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
-  port: 17930
-  server: yazhouany02.downapptwo.cc
-  skip-cert-verify: true
-  sni: flv02.swiftrelay.cc
-  type: anytls
-  udp: true
+- name: GPT | CHATGPT | ripaojiedian/freenode | 🇭🇰 香港|@ripaojiedian
+  server: v10.hdacd.com
+  port: 30807
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
