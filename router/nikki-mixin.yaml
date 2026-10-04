@@ -15,7 +15,7 @@ proxy-providers:
     size-limit: 2000000
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://www.google.com/generate_204
       interval: 300
 
   NIKKI-GPT:
@@ -34,7 +34,7 @@ proxy-groups:
     type: url-test
     use:
       - NIKKI-GENERAL
-    url: https://www.gstatic.com/generate_204
+    url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
 

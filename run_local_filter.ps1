@@ -11,6 +11,26 @@ param(
 $ErrorActionPreference="Stop"
 Set-Location $PSScriptRoot
 
+# Network precondition: only run when the PC is booted, Wi-Fi link is up and internet is
+# reachable, while the wired Ethernet link is NOT connected. The scheduled task retries via
+# RestartInterval until this passes (covers missed runs after boot).
+$WiFiOk=$false
+$NetOk=$false
+$EthernetUp=$false
+try{
+  $upAdapters=Get-NetAdapter -Physical | Where-Object {$_.Status -eq 'Up'}
+  $wifiAdapter=$upAdapters | Where-Object {$_.InterfaceDescription -match 'Wi-?Fi|Wireless|802\.11|WLAN'}
+  if($wifiAdapter){$WiFiOk=$true}
+  $ethAdapter=$upAdapters | Where-Object {$_.InterfaceDescription -notmatch 'Wi-?Fi|Wireless|802\.11|WLAN|Bluetooth|Virtual|Loopback|TAP|VPN'}
+  if($ethAdapter){$EthernetUp=$true}
+  $conn=Get-NetConnectionProfile -ErrorAction SilentlyContinue | Where-Object {$_.IPv4Connectivity -eq 'Internet' -or $_.IPv6Connectivity -eq 'Internet'}
+  if($conn){$NetOk=$true}
+}catch{}
+if(!($WiFiOk -and $NetOk -and -not $EthernetUp)){
+  Write-Host "Network precondition not met: WiFiUp=$WiFiOk Internet=$NetOk EthernetUp=$EthernetUp. Task will retry via RestartInterval."
+  exit 3
+}
+
 $Python="C:\ComfyUI-aki\ComfyUI-aki-v1.6\python\python.exe"
 if(!(Test-Path $Python)){throw "Python not found: $Python"}
 if(!(Test-Path $Mihomo)){throw "mihomo not found: $Mihomo"}
