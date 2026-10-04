@@ -1,140 +1,83 @@
 proxies:
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇴NO挪威丨yoyapai.com
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇹🇼TW臺灣丨yoyapai.com
   type: vless
-  server: 45.132.177.80
-  port: 9881
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  network: grpc
-  servername: dl.google.com
-  tls: true
-  client-fingerprint: safari
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabb
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩国丨yoyapai.com
-  type: vless
-  server: crimson-smoke-7818.397.workers.dev
-  port: 8880
-  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇸🇬SG新加坡丨yoyapai.com
-  type: vless
-  server: 35.185.179.62
+  server: 34.80.248.240
   port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
   servername: www.cloudflare.com
   tls: true
-  client-fingerprint: ios
+  client-fingerprint: chrome
   reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-    short-id: eb97ce837da2f6ad
+    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
+    short-id: d74a6321deec9f31
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇭🇰HK丨yoyapai.com香港丨yoyapai.com
   type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇵🇱PL波蘭丨yoyapai.com
-  type: vless
-  server: 45.132.177.72
-  port: 9844
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  network: grpc
-  servername: dl.google.com
+  server: 27.44.143.169
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  servername: thuk.huaweiyouxuan.com
   tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aa
+  flow: xtls-rprx-vision
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇷FR法國丨yoyapai.com
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇭🇰HK丨yoyapai.com香港丨yoyapai.com_1
   type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 86dc5fb4-f279-45b7-a2c6-0d1e84b85c18
-  network: ws
-  servername: lingering-dawn-5d4a.163-3f1.workers.dev
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-dawn-5d4a.163-3f1.workers.dev
+  server: 34.96.188.243
+  port: 443
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  servername: www.cloudflare.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+    short-id: 64b3f192fc0669e1
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇯🇵JP日本丨yoyapai.com
+  type: vless
+  server: 210.140.81.172
+  port: 443
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  servername: www.amazon.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇭🇰HK丨yoyapai.com香港丨yoyapai.com_3
+  type: vless
+  server: 34.92.16.7
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  servername: www.cloudflare.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
   skip-cert-verify: false
   udp: true
 - name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美国丨yoyapai.com
   type: vless
-  server: 63.141.128.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 8.35.211.73
+  port: 2087
+  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
   network: ws
-  tls: false
+  servername: d39333476.pages.dev
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /resource
     headers:
-      Host: vms.lifetime42.workers.dev
+      Host: d39333476.pages.dev
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇸🇬SG新加坡丨yoyapai.com_5
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-violet-a5ce.29-440.workers.dev
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇦CA加拿大丨yoyapai.com
-  type: vless
-  server: 155.46.167.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    headers:
-      Host: vms.lifetime50.workers.dev
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_1
-  type: vless
-  server: www.gov.se
-  port: 8080
-  uuid: 989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf
-  network: ws
-  servername: www.gov.se
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_2
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
   type: vless
   server: 185.148.104.30
   port: 8880
@@ -147,7 +90,44 @@ proxies:
       Host: vms.lifetime51.workers.dev
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_3
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美国丨yoyapai.com_1
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime42.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韓國丨yoyapai.com
+  type: vless
+  server: crimson-smoke-7818.397.workers.dev
+  port: 8880
+  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇷FR法國丨yoyapai.com
+  type: vless
+  server: 104.17.64.70
+  port: 8880
+  uuid: 220046c3-0081-4c22-a648-83a52bc3a0d5
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: yellow-sky-38b3.154-d73.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_1
   type: vless
   server: lucky-field-0220.191-de2.workers.dev
   port: 8880
@@ -157,6 +137,21 @@ proxies:
   tls: false
   ws-opts:
     path: /pyip=ProxyIP.SG.CMLiussss.net
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美国丨yoyapai.com_2
+  type: vless
+  server: 129.153.71.28
+  port: 28863
+  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+  network: ws
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
   skip-cert-verify: false
   udp: true
 - client-fingerprint: chrome
@@ -171,17 +166,6 @@ proxies:
   tls: true
   type: vless
   uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-- client-fingerprint: chrome
-  name: CHATGPT | Ruk1ng001/freeSub | C🟠🇭🇰hos[🎬📺🎭🎪]_dokng.com_ebc6bc61
-  port: 443
-  reality-opts:
-    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
-    short-id: 64b3f192fc0669e1
-  server: 34.96.188.243
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  uuid: 75d38591-267e-4d89-98bc-164f25b50880
 - client-fingerprint: chrome
   name: CHATGPT | Ruk1ng001/freeSub | C🟠🇹🇼hos[🎬🤖📺🎭]_dokng.com_7cff547a
   network: tcp
@@ -198,14 +182,6 @@ proxies:
   port: 17981
   server: 120.232.115.170
   type: http
-- flow: xtls-rprx-vision
-  name: CHATGPT | Ruk1ng001/freeSub | C🟠🇭🇰hos[🎬📺🎭🎪]_dokng.com_9c274f18
-  port: 14343
-  server: 27.44.143.169
-  servername: thuk.huaweiyouxuan.com
-  tls: true
-  type: vless
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
 - client-fingerprint: chrome
   name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_edf30073
   port: 443
@@ -263,6 +239,26 @@ proxies:
   name: CHATGPT | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_7f5c9081
   port: 28788
   server: kkaicpu-g06.jp07-sh-vm0.entry.fr0528.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2375151e-88f8-3a69-bf57-c462ff20c6d8
+- alterId: 1
+  cipher: auto
+  name: CHATGPT | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_42fcb21b
+  port: 28788
+  server: kkalkx8-g06.jp07-sh-vm0.entry.fr0528.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2375151e-88f8-3a69-bf57-c462ff20c6d8
+- alterId: 1
+  cipher: auto
+  name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[🔍]_dokng.com_65e1eab9
+  port: 46487
+  server: tialc4e-g06.jp05-h6-vm0.entry.fr0528.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -585,133 +581,117 @@ proxies:
     path: /platform101
 - name: CHATGPT | free18/v2ray | 每天更新，请加电报群防止失联
   type: vless
-  server: 199.68.198.13
+  server: 34.158.210.177
   port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  servername: example.org
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  servername: www.cloudflare.com
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+    short-id: 3fd0a8ddef3ae5c6
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | free18/v2ray | 电报群：https://t.me/vvkj11
   type: vless
-  server: pl193.mech-pro.online
+  server: 34.47.83.187
   port: 443
-  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
-  servername: pl193.mech-pro.online
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  servername: www.cloudflare.com
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: ios
   reality-opts:
-    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
-    short-id: 16e0f049
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+    short-id: 8685f8b4d9f4f51e
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 日期：10-03
+- name: CHATGPT | free18/v2ray | 日期：10-04
   type: vless
-  server: de.monkora.org
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  servername: example.org
+  server: 112.49.63.11
+  port: 33102
+  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
+  servername: sgg.knhqf.com
   tls: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm
-  type: vless
-  server: germanydvatri.online
+  type: trojan
+  server: inviting-ferret.rooster465.autos
   port: 443
-  uuid: f811a2e8-08ed-4b30-b44c-449a7cab54d8
-  servername: germanydvatri.online
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: aHxzHc7w0r_8X8mdx1XCyg2ooRLjcOQMOuscdAQPrEo
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇫🇮_芬兰_5
-  type: vless
-  server: finl11.ali-bard.online
+- name: CHATGPT | free18/v2ray | 🇯🇵_日本_5
+  type: trojan
+  server: prime-corgi.rooster465.autos
   port: 443
-  uuid: 4643976f-85fa-40cf-9e58-ea28b50f253b
-  servername: finl11.ali-bard.online
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  password: UX82473651
+  sni: prime-corgi.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇩🇪_德国_6
+- name: CHATGPT | free18/v2ray | 🇺🇸_美国_6
   type: vless
-  server: 177.1.186.44
+  server: 136.86.230.49
   port: 443
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
-  servername: mcde.67resserv67.info
+  uuid: dffab367-7769-4c6c-86f2-66fc6bd03003
+  servername: www.cloudflare.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: LYnDDS0AkBwVeeTyIEE5MhrTV_PZO5f1qBAbMN6z4HM
+    short-id: f1955f72763eb2fb
+  skip-cert-verify: true
+  udp: true
+- name: CHATGPT | free18/v2ray | 🇺🇸_美国_7
+  type: vless
+  server: 23.172.40.108
+  port: 20808
+  uuid: f79cb3fa-70b7-4dc5-86ce-a02e9528c3c3
+  servername: shop-eu-en.amd.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
-    short-id: 29455a3a790acbd0
+    public-key: WIZniiSMNsJ82J5Ee4YthKavyreqYxxz1PyqKbWbQQI
+    short-id: b4
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇳🇱_荷兰_7
-  type: vless
-  server: 103.75.125.17
+- name: CHATGPT | free18/v2ray | 🇩🇪_德国_8
+  type: trojan
+  server: meet-goshawk.rooster465.autos
   port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  servername: example.org
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  password: UX82473651
+  sni: meet-goshawk.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇪🇪_爱沙尼亚_8
+- name: CHATGPT | free18/v2ray | 🇸🇪_瑞典_11
   type: vless
-  server: 212.87.190.36
+  server: 132.243.231.12
   port: 443
-  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
-  servername: ee174.mech-pro.online
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  servername: d3-se1.cloud-cdn.xyz
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: ios
   reality-opts:
-    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
-    short-id: 16e0f049
+    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
+    short-id: 5efa80b939612291
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇵🇱_波兰_9
+- name: CHATGPT | free18/v2ray | 🇲🇩_摩尔多瓦_12
   type: vless
-  server: 77.83.246.202
+  server: mori-md.failspace.top
   port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  servername: example.org
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  servername: mori-md.failspace.top
   tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  flow: xtls-rprx-vision
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇵🇱_波兰_10
-  type: vless
-  server: pl.monkora.org
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  servername: example.org
-  tls: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇳🇱_荷兰_11
+- name: CHATGPT | free18/v2ray | 🇳🇱_荷兰_14
   type: vless
   server: 217.60.35.228
   port: 8443
@@ -719,23 +699,24 @@ proxies:
   servername: kaneki.cfd
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: random
   reality-opts:
     public-key: 4jeCe2efqOkTQ-r99RHuACTH8_BuNNP1Rx6cuBXS4hg
     short-id: a4f8c92d
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇷🇺_俄罗斯_12
+- name: CHATGPT | free18/v2ray | 🇩🇪_德国_15
   type: vless
-  server: 31.76.34.216
+  server: 163.245.52.91
   port: 443
-  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
-  servername: ru-c-1.minzt.su
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  servername: d3-ee1.cloud-cdn.xyz
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: safari
   reality-opts:
-    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
+    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
+    short-id: ad6e08b22389abd2
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | Barabama/FreeNodes | 中国_1
