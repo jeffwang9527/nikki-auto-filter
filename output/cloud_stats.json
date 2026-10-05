@@ -1,9 +1,9 @@
 {
   "method": "source-separated dedupe + structural cleanup + obvious-bad filtering only",
   "local_network_tests": false,
-  "general_candidate_count": 100,
-  "chatgpt_candidate_count": 72,
-  "candidate_total": 104,
+  "general_candidate_count": 90,
+  "chatgpt_candidate_count": 60,
+  "candidate_total": 93,
   "max_source_age_days": 7,
   "cross_pool_overlap_allowed": true,
   "cross_pool_duplicates_removed": 0,
@@ -13,15 +13,15 @@
         "source": "free18/v2ray",
         "region": null,
         "input": "input/general/free18.yaml",
-        "valid_seen": 37,
-        "duplicates": 7,
+        "valid_seen": 32,
+        "duplicates": 2,
         "selected": 30,
         "limit": 30,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.83,
-          "latest_commit": "2026-10-04T04:43:19Z",
+          "age_days": 0.0,
+          "latest_commit": "2026-10-05T04:33:47Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
         }
@@ -37,7 +37,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 2.6,
+          "age_days": 2.76,
           "latest_commit": "2026-10-02T10:16:59Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
@@ -47,14 +47,14 @@
         "source": "Ruk1ng001/freeSub",
         "region": null,
         "input": "input/general/freesub.yaml",
-        "valid_seen": 17,
-        "duplicates": 2,
+        "valid_seen": 15,
+        "duplicates": 0,
         "selected": 15,
         "limit": 15,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 1.45,
+          "age_days": 1.61,
           "latest_commit": "2026-10-03T14:00:01Z",
           "repo": "Ruk1ng001/freeSub",
           "path": "clash.yaml"
@@ -64,14 +64,14 @@
         "source": "ripaojiedian/freenode",
         "region": null,
         "input": "input/general/ripaojiedian.yaml",
-        "valid_seen": 10,
+        "valid_seen": 0,
         "duplicates": 0,
-        "selected": 10,
+        "selected": 0,
         "limit": 10,
-        "skipped_inactive": false,
+        "skipped_inactive": true,
         "freshness": {
-          "fresh": true,
-          "age_days": 6.98,
+          "fresh": false,
+          "age_days": 7.14,
           "latest_commit": "2026-09-28T01:13:40Z",
           "repo": "ripaojiedian/freenode",
           "path": "clash"
@@ -88,7 +88,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.4,
+          "age_days": 0.56,
           "latest_commit": "2026-10-04T15:10:49Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
@@ -98,15 +98,15 @@
         "source": "yoyapai.com (via wzmwayne/proxy-node)",
         "region": null,
         "input": "input/general/yoyapai.yaml",
-        "valid_seen": 15,
-        "duplicates": 5,
+        "valid_seen": 14,
+        "duplicates": 4,
         "selected": 10,
         "limit": 10,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.08,
-          "latest_commit": "2026-10-04T22:49:39Z",
+          "age_days": 0.05,
+          "latest_commit": "2026-10-05T03:31:00Z",
           "repo": "wzmwayne/proxy-node",
           "path": "output/yoyapai/clash.yaml"
         }
@@ -117,15 +117,15 @@
         "source": "yoyapai.com (via wzmwayne/proxy-node)",
         "region": null,
         "input": "input/chatgpt/yoyapai.yaml",
-        "valid_seen": 14,
-        "duplicates": 2,
+        "valid_seen": 16,
+        "duplicates": 4,
         "selected": 12,
         "limit": 12,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.08,
-          "latest_commit": "2026-10-04T22:49:39Z",
+          "age_days": 0.05,
+          "latest_commit": "2026-10-05T03:31:00Z",
           "repo": "wzmwayne/proxy-node",
           "path": "output/yoyapai/clash.yaml"
         }
@@ -134,14 +134,14 @@
         "source": "Ruk1ng001/freeSub",
         "region": null,
         "input": "input/chatgpt/freesub.yaml",
-        "valid_seen": 14,
-        "duplicates": 2,
+        "valid_seen": 13,
+        "duplicates": 1,
         "selected": 12,
         "limit": 12,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 1.45,
+          "age_days": 1.61,
           "latest_commit": "2026-10-03T14:00:01Z",
           "repo": "Ruk1ng001/freeSub",
           "path": "clash.yaml"
@@ -151,14 +151,14 @@
         "source": "ripaojiedian/freenode",
         "region": null,
         "input": "input/chatgpt/ripaojiedian.yaml",
-        "valid_seen": 12,
+        "valid_seen": 0,
         "duplicates": 0,
-        "selected": 12,
+        "selected": 0,
         "limit": 12,
-        "skipped_inactive": false,
+        "skipped_inactive": true,
         "freshness": {
-          "fresh": true,
-          "age_days": 6.98,
+          "fresh": false,
+          "age_days": 7.14,
           "latest_commit": "2026-09-28T01:13:40Z",
           "repo": "ripaojiedian/freenode",
           "path": "clash"
@@ -175,7 +175,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.4,
+          "age_days": 0.56,
           "latest_commit": "2026-10-04T15:10:49Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
@@ -185,15 +185,15 @@
         "source": "free18/v2ray",
         "region": null,
         "input": "input/chatgpt/free18.yaml",
-        "valid_seen": 15,
-        "duplicates": 3,
+        "valid_seen": 14,
+        "duplicates": 2,
         "selected": 12,
         "limit": 12,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.83,
-          "latest_commit": "2026-10-04T04:43:19Z",
+          "age_days": 0.0,
+          "latest_commit": "2026-10-05T04:33:47Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
         }
@@ -209,7 +209,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 2.6,
+          "age_days": 2.76,
           "latest_commit": "2026-10-02T10:16:59Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
