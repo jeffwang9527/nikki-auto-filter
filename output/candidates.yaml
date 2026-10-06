@@ -1,19 +1,150 @@
 proxies:
 - name: GENERAL | free18/v2ray | 每天更新，请加电报群防止失联
   type: vless
-  server: bgroup.jp3.ilovegairport.com
-  port: 443
-  uuid: f354744d-21d9-4836-9934-4989e1c4d877
-  servername: ap-northeast-1.console.aws.amazon.com
+  server: 87.199.199.25
+  port: 8443
+  uuid: 67bb6612-261d-47b5-811e-aa2aeb2100c7
+  servername: fileharbor.cc
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: TDbVu9oeQc6rjrsBcHuMs0tybjKy2EQQdZalmLvwSk0
-    short-id: 8ea105393d
+    public-key: kQV48T3zJZQbisn4n1EEGVP8Ok3gSB5Uml2LLdplNU4
+    short-id: a53f8c1e6d9b2740
   skip-cert-verify: true
   udp: true
 - name: GENERAL | free18/v2ray | 电报群：https://t.me/vvkj11
+  type: vless
+  server: 155.212.187.222
+  port: 8451
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
+    short-id: 5ea112e8
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 日期：10-06
+  type: vless
+  server: s251.wagahaha.xyz
+  port: 443
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  servername: u695098u47d2e9bes71.gogocs.xyz
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm
+  type: vless
+  server: s249.freessr.bid
+  port: 443
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  servername: u695098u47d2e9bes71.gogocs.xyz
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇺🇸_美国_5
+  type: vless
+  server: s881.wagahaha.xyz
+  port: 443
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  servername: u695098u07fcba7ds79.kukuss.top
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇨🇳_中国_6
+  type: vless
+  server: 14.17.78.146
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  servername: thuk.huaweiyouxuan.com
+  tls: true
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇨🇳_中国_8
+  type: vless
+  server: 27.44.143.169
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  servername: thuk.huaweiyouxuan.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇨🇳_中国_9
+  type: vless
+  server: 112.49.63.11
+  port: 33102
+  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
+  servername: sgg.knhqf.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇨🇳_中国_10
+  type: vless
+  server: 112.49.63.11
+  port: 33102
+  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
+  servername: sgg.knhqf.com
+  tls: true
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇨🇳_中国_11
+  type: vless
+  server: 27.155.117.209
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  servername: thuk.huaweiyouxuan.com
+  tls: true
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇨🇳_中国_12
+  type: vless
+  server: 36.248.14.90
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  servername: thuk.huaweiyouxuan.com
+  tls: true
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇨🇳_中国_15
+  type: vless
+  server: 14.17.78.144
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  servername: thuk.huaweiyouxuan.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇨🇳_中国_16
+  type: vless
+  server: 27.44.143.169
+  port: 33102
+  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
+  servername: sgg.knhqf.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇨🇳_中国_17
   type: vless
   server: 27.155.117.209
   port: 33102
@@ -23,79 +154,38 @@ proxies:
   flow: xtls-rprx-vision
   skip-cert-verify: true
   udp: true
-- name: GENERAL | free18/v2ray | 日期：10-05
+- name: GENERAL | free18/v2ray | 🇪🇸_西班牙_19
   type: vless
-  server: 112.49.63.11
+  server: 195.170.172.139
+  port: 57667
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  servername: u695098u6b6f0dd0s2057.gogocs.xyz
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇨🇳_中国_20
+  type: vless
+  server: 27.44.143.169
   port: 33102
   uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
   servername: sgg.knhqf.com
   tls: true
-  client-fingerprint: chrome
   skip-cert-verify: true
   udp: true
-- name: GENERAL | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm
+- name: GENERAL | free18/v2ray | 🇺🇸_美国_21
   type: vless
-  server: nl-2.srv.dvzh.net
+  server: 23.166.40.27
   port: 443
-  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
-  servername: nl-2.srv.dvzh.net
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  servername: u695098u07fcba7ds79.kukuss.top
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
-    short-id: e0ccc8c2f487d913
+  client-fingerprint: firefox
   skip-cert-verify: true
   udp: true
-- name: GENERAL | free18/v2ray | 🇨🇳_中国_5
-  type: vless
-  server: 36.248.14.90
-  port: 14343
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-  servername: thuk.huaweiyouxuan.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇨🇳_中国_6
-  type: vless
-  server: 112.49.63.11
-  port: 33102
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-  servername: sgg.knhqf.com
-  tls: true
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇺🇸_美国_8
-  type: vless
-  server: 172.86.105.224
-  port: 443
-  uuid: 71e9e770-bfc6-11f1-8b5c-54db13ea7d40
-  servername: www.nvidia.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: n25FmewpAEsvLl9Vr0bRFcz044f4IE7orWeWOzu8rwk
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇸🇬_新加坡_9
-  type: vless
-  server: 13.212.109.205
-  port: 443
-  uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  servername: cs.a8game.vip
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: PhOIlEfiYVUhkWKIfX_IOwJ6zz_Zk0QEj4sfcZyuShY
-    short-id: abcddb0c38896b8b
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇩🇪_德国_11
+- name: GENERAL | free18/v2ray | 🇩🇪_德国_22
   type: vless
   server: 163.245.52.91
   port: 443
@@ -103,55 +193,79 @@ proxies:
   servername: d3-ee1.cloud-cdn.xyz
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
     public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
     short-id: ad6e08b22389abd2
   skip-cert-verify: true
   udp: true
-- name: GENERAL | free18/v2ray | 🇺🇸_美国_12
+- name: GENERAL | free18/v2ray | 🇺🇸_美国_24
   type: vless
-  server: 34.187.170.146
+  server: s880.gogocs.xyz
   port: 443
-  uuid: dffab367-7769-4c6c-86f2-66fc6bd03003
-  servername: www.cloudflare.com
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  servername: u695098u07fcba7ds79.kukuss.top
   tls: true
-  client-fingerprint: qq
-  reality-opts:
-    public-key: LYnDDS0AkBwVeeTyIEE5MhrTV_PZO5f1qBAbMN6z4HM
-    short-id: f1955f72763eb2fb
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
   skip-cert-verify: true
   udp: true
-- name: GENERAL | free18/v2ray | 🇹🇼_台湾_13
+- name: GENERAL | free18/v2ray | 🇩🇪_德国_27
   type: vless
-  server: 130.211.240.128
+  server: de2.srv.vbuste.ru
   port: 443
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
-  servername: www.cloudflare.com
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  servername: de2.srv.vbuste.ru
   tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇩🇪_德国_30
+  type: vless
+  server: 31.77.109.35
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  servername: d3-de1.cloud-cdn.xyz
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
+    short-id: 494afdc75f8c2fa8
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_31
+  type: vless
+  server: 157.228.150.34
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇳🇱_荷兰_35
+  type: vless
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  servername: rusbid.de
+  tls: true
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-    short-id: d74a6321deec9f31
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   skip-cert-verify: true
   udp: true
-- name: GENERAL | free18/v2ray | 🇨🇿_捷克_14
-  type: vless
-  server: kayoor.hivaphone.ir
-  port: 2045
-  uuid: d7e99010-e7c3-4978-9d30-2e63882dcfbe
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇰🇷_韩国_15
-  type: trojan
-  server: neutral-quail.rooster465.autos
-  port: 443
-  password: UX82473651
-  sni: neutral-quail.rooster465.autos
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇫🇮_芬兰_16
+- name: GENERAL | free18/v2ray | 🇫🇮_芬兰_36
   type: vless
   server: 131.123.13.93
   port: 443
@@ -165,7 +279,20 @@ proxies:
     short-id: 29455a3a790acbd0
   skip-cert-verify: true
   udp: true
-- name: GENERAL | free18/v2ray | 🇳🇱_荷兰_17
+- name: GENERAL | free18/v2ray | 🇷🇺_俄罗斯_37
+  type: vless
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  servername: www.samsung.com
+  tls: true
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇳🇱_荷兰_40
   type: vless
   server: 150.241.80.113
   port: 443
@@ -179,146 +306,18 @@ proxies:
     short-id: 87cc0414902bee2d
   skip-cert-verify: true
   udp: true
-- name: GENERAL | free18/v2ray | 🇩🇪_德国_18
+- name: GENERAL | free18/v2ray | 🇺🇸_美国_42
   type: vless
-  server: 88.99.225.79
-  port: 46647
-  uuid: 436fa4be-430f-4f59-8d01-8492926b2501
-  servername: images.apple.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: QNO9iBFY6Rh0POOWFNtMWd46jagrc6t-gPbA9eqEeUw
-    short-id: 68d3f0df3f577938
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇩🇪_德国_19
-  type: vless
-  server: 2.26.54.13
-  port: 2083
-  uuid: 95909398-3902-495b-9670-63f1b13becde
-  servername: files.meridian-labs.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg
-    short-id: f9d89d4a
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇳🇱_荷兰_20
-  type: vless
-  server: pl-waw.dontblockmepls.com
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  servername: rusbid.de
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇷🇴_罗马尼亚_21
-  type: trojan
-  server: 77.74.123.106
-  port: 4443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇺🇸_美国_22
-  type: vless
-  server: s880.gogocs.xyz
-  port: 443
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  servername: u695098u07fcba7ds79.kukuss.top
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇺🇸_美国_23
-  type: vless
-  server: s881.wagahaha.xyz
-  port: 443
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  servername: u695098u07fcba7ds79.kukuss.top
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇳🇱_荷兰_24
-  type: vless
-  server: 193.142.59.180
+  server: 198.12.124.74
   port: 10829
   uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  servername: u695098u3b5ab61cs124.gogocs.xyz
+  servername: u695098u5e20ed1cs709.gogocs.xyz
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   skip-cert-verify: true
   udp: true
-- name: GENERAL | free18/v2ray | 🇸🇪_瑞典_25
-  type: vless
-  server: 143.246.199.124
-  port: 443
-  uuid: 79ccb156-bfc6-11f1-9811-525400d1d4f7
-  servername: www.blocket.se
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇳🇱_荷兰_26
-  type: vless
-  server: 62.105.220.106
-  port: 443
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  servername: u695098u7dae9c0cs220.gogocs.xyz
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇳🇱_荷兰_27
-  type: vless
-  server: s128.okgg.top
-  port: 10829
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  servername: u695098u3b5ab61cs124.gogocs.xyz
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇳🇱_荷兰_28
-  type: vless
-  server: s148.okgg.top
-  port: 10829
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  servername: u695098u3b5ab61cs124.gogocs.xyz
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇺🇸_美国_29
-  type: vless
-  server: 23.166.40.27
-  port: 443
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  servername: u695098u07fcba7ds79.kukuss.top
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇩🇪_德国_30
+- name: GENERAL | free18/v2ray | 🇩🇪_德国_43
   type: vless
   server: 179.61.138.177
   port: 443
@@ -329,28 +328,25 @@ proxies:
   client-fingerprint: firefox
   skip-cert-verify: true
   udp: true
-- name: GENERAL | free18/v2ray | 🇪🇪_爱沙尼亚_31
+- name: GENERAL | free18/v2ray | 🇳🇱_荷兰_45
   type: vless
-  server: ee.h1cloud.net
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  servername: www.samsung.com
-  tls: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-    short-id: a73f0410d728c823
-  skip-cert-verify: true
-  udp: true
-- name: GENERAL | free18/v2ray | 🇪🇸_西班牙_32
-  type: vless
-  server: 195.170.172.139
-  port: 57667
+  server: 62.105.220.106
+  port: 443
   uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  servername: u695098u6b6f0dd0s2057.gogocs.xyz
+  servername: u695098u7dae9c0cs220.gogocs.xyz
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: firefox
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇭🇰_香港_48
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: GENERAL | Barabama/FreeNodes | 中国_1
@@ -611,6 +607,130 @@ proxies:
   uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
   ws-opts:
     path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
+- alterId: 0
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_8da9256e
+  network: none
+  port: 60004
+  server: 43.163.247.248
+  tls: false
+  type: vmess
+  uuid: 0b53b46f-aaf9-4a8c-8221-38751e22cde5
+- name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_1b8fac76
+  port: 1080
+  server: 47.238.126.208
+  type: socks5
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[📺]_dokng.com_c45ae8d8
+  port: 443
+  server: 183.179.162.50
+  tls: true
+  type: http
+- cipher: aes-256-gcm
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos[🎬🤖📺🎭]_dokng.com_055aba95
+  password: c52921e2-576c-44ef-88f9-6d9d955708aa
+  port: 22061
+  server: t8d3wf.5tencent.asia
+  type: ss
+- client-fingerprint: chrome
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_19904362
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos[🎬📺🎭🎪]_dokng.com_35656cdc
+  password: bc96cf70-9c62-4f52-aa7b-70b1814a94cf
+  port: 443
+  server: node1.luoye.ee
+  sni: node1.luoye.ee
+  type: trojan
+  udp: true
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎞️]_dokng.com_c4d8c40f
+  port: 17981
+  server: 120.232.115.170
+  type: http
+- down: ''
+  fingerprint: ''
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_9a2d14fa
+  obfs: ''
+  obfs-password: ''
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-sg-001.fastervpn.world
+  type: hysteria2
+  up: ''
+- fingerprint: ''
+  name: GENERAL | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭✨]_dokng.com_218ee7d6
+  password: 9sK2mP8xQ7vL3nZ6
+  port: 443
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  skip-cert-verify: true
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  type: anytls
+  udp: true
+  username: 9sK2mP8xQ7vL3nZ6
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: GENERAL | Ruk1ng001/freeSub | A🟢🇹🇼res[📺🎭🎪✨]_dokng.com_9f1b69e0
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  port: 8080
+  server: tw3.dexlos.com
+  sni: tw3.dexlos.com
+  tls: true
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  version: 5
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: GENERAL | Ruk1ng001/freeSub | A🟢🇯🇵res[🎬🤖📺🎞️]_dokng.com_3bec9262
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: t11.qifei.app
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+- name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭✨]_dokng.com_054bd55d
+  port: 10808
+  server: 123.58.219.171
+  type: socks5
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos_dokng.com_db363b3a
+  password: admin
+  port: 8899
+  server: 47.242.19.215
+  skip-cert-verify: true
+  type: socks5
+  username: admin
+- cipher: aes-128-gcm
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos[🎬🤖📺🎭]_dokng.com_617a80fa
+  password: c52921e2-576c-44ef-88f9-6d9d955708aa
+  port: 40015
+  server: t8d3wf.5tencent.asia
+  type: ss
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇰🇷hos[🎬🤖📺🎭]_dokng.com_3012d418
+  network: http
+  port: 123
+  server: 43.108.103.167
+  tls: false
+  type: vmess
+  uuid: 35aa0fda-175a-4aec-c468-0231dee1a121
 - name: GENERAL | anaer/Sub | 德国 001
   type: vless
   network: ws
@@ -729,17 +849,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇭🇰HK丨yoyapai.com香港丨yoyapai.com
-  type: vless
-  server: 27.44.143.169
-  port: 14343
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-  servername: thuk.huaweiyouxuan.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  udp: true
 - name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇯🇵JP日本丨yoyapai.com
   type: vless
   server: 210.140.81.172
@@ -858,7 +967,7 @@ proxies:
       Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_1
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_1
   type: vless
   server: lucky-field-0220.191-de2.workers.dev
   port: 8880
@@ -883,28 +992,3 @@ proxies:
       Host: vms.lifetime50.workers.dev
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | anaer/Sub | 美国 003
-  type: vless
-  network: ws
-  server: cf.090227.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  servername: ccc.010304.xyz
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /
-- name: CHATGPT | anaer/Sub | 美国 004
-  type: vless
-  network: ws
-  server: 64.176.15.110
-  port: 2053
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  servername: free.cndyw.ggff.net
-  tls: true
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: pyip=bpb.yousef.isegaro.comfp=random
