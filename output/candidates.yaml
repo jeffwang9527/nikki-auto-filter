@@ -992,3 +992,28 @@ proxies:
       Host: vms.lifetime50.workers.dev
   skip-cert-verify: false
   udp: true
+- name: CHATGPT | anaer/Sub | 美国 003
+  type: vless
+  network: ws
+  server: cf.090227.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  servername: ccc.010304.xyz
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+- name: CHATGPT | anaer/Sub | 美国 004
+  type: vless
+  network: ws
+  server: 64.176.15.110
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  servername: free.cndyw.ggff.net
+  tls: true
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.comfp=random
