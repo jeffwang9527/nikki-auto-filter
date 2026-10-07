@@ -1,63 +1,10 @@
 proxies:
-- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎞️]_dokng.com_c4d8c40f
-  port: 17981
-  server: 120.232.115.170
-  type: http
-- name: GEN | GENERAL | anaer/Sub | 瑞士 001
-  type: vless
-  network: tcp
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  tls: false
-  encryption: none
-- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[📺]_dokng.com_c45ae8d8
+- cipher: aes-256-cfb
+  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_09e8dd5a
+  password: amazonskr05
   port: 443
-  server: 183.179.162.50
-  tls: true
-  type: http
-- name: GEN | GENERAL | free18/v2ray | 🇨🇳_中国_9
-  type: vless
-  server: 112.49.63.11
-  port: 33102
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-  servername: sgg.knhqf.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-- name: GEN | GENERAL | free18/v2ray | 🇨🇳_中国_8
-  type: vless
-  server: 27.44.143.169
-  port: 14343
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-  servername: thuk.huaweiyouxuan.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-- name: GEN | GENERAL | anaer/Sub | 德国 001
-  type: vless
-  network: ws
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  tls: false
-  ws-opts:
-    headers:
-      Host: uae.unixzone.us
-    path: /
-- name: GEN | GENERAL | free18/v2ray | 🇨🇳_中国_11
-  type: vless
-  server: 27.155.117.209
-  port: 14343
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-  servername: thuk.huaweiyouxuan.com
-  tls: true
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
+  server: 63.185.114.140
+  type: ss
   udp: true
 - name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_30
   type: vless
@@ -73,17 +20,91 @@ proxies:
     short-id: 494afdc75f8c2fa8
   skip-cert-verify: true
   udp: true
-- name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_22
+- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com
   type: vless
-  server: 163.245.52.91
+  server: 45.131.208.4
+  port: 80
+  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: floral-thunder-10d3.82-67d.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: GEN | GENERAL | anaer/Sub | 伊拉克 001
+  type: vless
+  network: tcp
+  server: 81.90.20.200
   port: 443
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  servername: d3-ee1.cloud-cdn.xyz
+  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
+  servername: pl.pupoe.sbs
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  delay: 890
+  flow: xtls-rprx-vision
+- cipher: aes-256-cfb
+  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_edec3ced
+  password: amazonskr05
+  port: 443
+  server: 18.159.149.158
+  type: ss
+  udp: true
+- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩國丨yoyapai.com
+  type: vless
+  server: 104.17.144.29
+  port: 8880
+  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: spring-sound-8d8e.36-9ff.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_27
+  type: vless
+  server: de2.srv.vbuste.ru
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  servername: de2.srv.vbuste.ru
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: randomized
   reality-opts:
-    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-    short-id: ad6e08b22389abd2
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
   skip-cert-verify: true
   udp: true
+- client-fingerprint: chrome
+  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[📺🎪✨🎞️]_dokng.com_19904362
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
+- name: GEN | GENERAL | Ruk1ng001/freeSub | A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_65a5452e
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_431c69cc
+  port: 443
+  server: 43.160.239.37
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_c4d8c40f
+  port: 17981
+  server: 120.232.115.170
+  type: http

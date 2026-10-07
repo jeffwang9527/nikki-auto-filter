@@ -1,69 +1,71 @@
 proxies:
-- name: GPT | CHATGPT | anaer/Sub | 瑞士 001
+- name: GPT | CHATGPT | anaer/Sub | 伊拉克 001
   type: vless
   network: tcp
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  tls: false
-  encryption: none
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[📺]_dokng.com_c45ae8d8
+  server: 81.90.20.200
   port: 443
-  server: 183.179.162.50
+  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
+  servername: pl.pupoe.sbs
+  skip-cert-verify: false
   tls: true
-  type: http
-- name: GPT | CHATGPT | anaer/Sub | 美国 001
-  type: vless
-  network: ws
-  server: 104.18.47.113
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
-- name: GPT | CHATGPT | anaer/Sub | 美国 002
-  type: vless
-  network: ws
-  server: 162.159.39.218
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
-- name: GPT | CHATGPT | anaer/Sub | 德国 001
-  type: vless
-  network: ws
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  tls: false
-  ws-opts:
-    headers:
-      Host: uae.unixzone.us
-    path: /
-- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇭🇰HK香港丨yoyapai.com
-  type: vless
-  server: 27.44.143.169
-  port: 14343
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-  servername: thuk.huaweiyouxuan.com
-  tls: true
+  udp: true
+  delay: 890
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+- cipher: aes-256-cfb
+  name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_09e8dd5a
+  password: amazonskr05
+  port: 443
+  server: 63.185.114.140
+  type: ss
+  udp: true
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇭🇰hos[📺]_dokng.com_db363b3a
+  password: admin
+  port: 8899
+  server: 47.242.19.215
+  skip-cert-verify: true
+  type: socks5
+  username: admin
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com_1
+  type: vless
+  server: 45.131.208.4
+  port: 80
+  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram馃嚚馃嚦+@WangCai2
+    headers:
+      Host: floral-thunder-10d3.82-67d.workers.dev
   skip-cert-verify: false
   udp: true
-- name: GPT | CHATGPT | free18/v2ray | 🇨🇳_中国_9
-  type: vless
-  server: 112.49.63.11
-  port: 33102
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-  servername: sgg.knhqf.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
+- client-fingerprint: chrome
+  name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇯🇵hos[📺🎪✨🎞️]_dokng.com_19904362
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
   skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
   udp: true
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_431c69cc
+  port: 443
+  server: 43.160.239.37
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_65a5452e
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_c143036d
+  network: tcp
+  port: 40543
+  server: 154.36.145.126
+  type: vless
+  uuid: 01efb55c-1b88-415f-aa59-71293ab2fc6d
