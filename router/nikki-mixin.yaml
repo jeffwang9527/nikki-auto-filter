@@ -7,6 +7,10 @@
 # required on the router.
 
 proxy-providers:
+  NODES:
+    type: file
+    path: /etc/nikki/run/nikki.yaml
+
   NIKKI-GENERAL:
     type: http
     url: "https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-general.yaml"
@@ -34,6 +38,7 @@ proxy-groups:
     type: url-test
     use:
       - NIKKI-GENERAL
+      - NODES
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
