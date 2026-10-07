@@ -13,15 +13,15 @@
         "source": "free18/v2ray",
         "region": null,
         "input": "input/general/free18.yaml",
-        "valid_seen": 48,
-        "duplicates": 18,
+        "valid_seen": 37,
+        "duplicates": 7,
         "selected": 30,
         "limit": 30,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 1.0,
-          "latest_commit": "2026-10-06T04:32:06Z",
+          "age_days": 0.17,
+          "latest_commit": "2026-10-07T04:36:42Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
         }
@@ -37,7 +37,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 4.76,
+          "age_days": 4.93,
           "latest_commit": "2026-10-02T10:16:59Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
@@ -54,7 +54,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.61,
+          "age_days": 0.78,
           "latest_commit": "2026-10-06T14:00:01Z",
           "repo": "Ruk1ng001/freeSub",
           "path": "clash.yaml"
@@ -71,7 +71,7 @@
         "skipped_inactive": true,
         "freshness": {
           "fresh": false,
-          "age_days": 9.14,
+          "age_days": 9.31,
           "latest_commit": "2026-09-28T01:13:40Z",
           "repo": "ripaojiedian/freenode",
           "path": "clash"
@@ -88,7 +88,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.5,
+          "age_days": 0.67,
           "latest_commit": "2026-10-06T16:31:35Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
@@ -105,7 +105,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.03,
+          "age_days": 0.2,
           "latest_commit": "2026-10-07T03:46:07Z",
           "repo": "wzmwayne/proxy-node",
           "path": "output/yoyapai/clash.yaml"
@@ -124,7 +124,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.03,
+          "age_days": 0.2,
           "latest_commit": "2026-10-07T03:46:07Z",
           "repo": "wzmwayne/proxy-node",
           "path": "output/yoyapai/clash.yaml"
@@ -141,7 +141,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.61,
+          "age_days": 0.78,
           "latest_commit": "2026-10-06T14:00:01Z",
           "repo": "Ruk1ng001/freeSub",
           "path": "clash.yaml"
@@ -158,7 +158,7 @@
         "skipped_inactive": true,
         "freshness": {
           "fresh": false,
-          "age_days": 9.14,
+          "age_days": 9.31,
           "latest_commit": "2026-09-28T01:13:40Z",
           "repo": "ripaojiedian/freenode",
           "path": "clash"
@@ -175,7 +175,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.5,
+          "age_days": 0.67,
           "latest_commit": "2026-10-06T16:31:35Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
@@ -185,15 +185,15 @@
         "source": "free18/v2ray",
         "region": null,
         "input": "input/chatgpt/free18.yaml",
-        "valid_seen": 15,
-        "duplicates": 3,
+        "valid_seen": 14,
+        "duplicates": 2,
         "selected": 12,
         "limit": 12,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 1.0,
-          "latest_commit": "2026-10-06T04:32:06Z",
+          "age_days": 0.17,
+          "latest_commit": "2026-10-07T04:36:42Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
         }
@@ -209,7 +209,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 4.76,
+          "age_days": 4.93,
           "latest_commit": "2026-10-02T10:16:59Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
