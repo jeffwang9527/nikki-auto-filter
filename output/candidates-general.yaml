@@ -628,101 +628,108 @@ proxies:
   uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
   ws-opts:
     path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[📺🎭]_dokng.com_c45ae8d8
+- name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_ff9ee1ab
+  port: 443
+  server: 43.155.62.157
+  type: http
+- alterId: 64
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | A🟢🇨🇳res[🎞️📦]_dokng.com_0da15920
+  network: tcp
+  port: 50002
+  server: 112.132.215.108
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  xudp: true
+- name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd55d
+  port: 10808
+  server: 123.58.219.171
+  type: socks5
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8
   port: 443
   server: 183.179.162.50
   tls: true
   type: http
-- client-fingerprint: chrome
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[📺🎪✨🎞️]_dokng.com_19904362
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  sni: 45.32.52.173
-  type: trojan
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇨🇳hos_dokng.com_d1a1fc7f
+  network: ws
+  port: 10086
+  server: 39.108.113.127
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_c4d8c40f
+  uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_23257430
+  password: null
   port: 17981
   server: 120.232.115.170
   type: http
-- name: GENERAL | Ruk1ng001/freeSub | A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_65a5452e
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  username: null
 - name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_40b4073a
   password: null
   port: 17981
   server: 119.188.131.55
   type: http
   username: null
-- name: GENERAL | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_c143036d
+- cipher: aes-128-gcm
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos[🎬🤖📺🎭]_dokng.com_fe7ff292
+  password: cb403111-a584-48a7-af9d-fd029156e114
+  port: 40014
+  server: ruot.ayucloudservices.nl
+  type: ss
+- alterId: '2'
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[📺]_dokng.com_02db43ef
   network: tcp
-  port: 40543
-  server: 154.36.145.126
-  type: vless
-  uuid: 01efb55c-1b88-415f-aa59-71293ab2fc6d
+  port: 11206
+  server: sbgfgov.vip6.wogacnmnagfwgov.com
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+- cipher: aes-256-cfb
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_7106c6de
+  password: amazonskr05
+  port: 443
+  server: 15.237.53.180
+  type: ss
+  udp: true
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_5275faab
+  port: 12121
+  server: 112.216.54.226
+  type: http
 - name: GENERAL | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_431c69cc
   port: 443
   server: 43.160.239.37
   skip-cert-verify: true
   tls: true
   type: http
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos[📺]_dokng.com_db363b3a
-  password: admin
-  port: 8899
-  server: 47.242.19.215
-  skip-cert-verify: true
-  type: socks5
-  username: admin
-- name: GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[🤖📺🎭🎪]_dokng.com_1b81f86d
-  port: 10808
-  server: 101.36.104.46
-  type: socks5
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇻🇳hos[🎬🤖🎪✨]_dokng.com_e23f0183
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1007
-  server: 4zfp01mn.zf-mix.9999231.xyz
-  skip-cert-verify: true
-  sni: vn-my.9999231.xyz
-  type: anytls
-  udp: true
 - cipher: aes-256-cfb
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_09e8dd5a
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_c53b9a80
   password: amazonskr05
   port: 443
-  server: 63.185.114.140
+  server: 18.196.88.40
   type: ss
   udp: true
-- name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd55d
-  port: 10808
-  server: 123.58.219.171
-  type: socks5
+- name: GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_3132b54f
+  port: 443
+  server: fan.587475.xyz
+  tls: true
+  type: http
 - cipher: aes-256-cfb
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_edec3ced
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖🎭🎪]_dokng.com_ecf10505
   password: amazonskr05
   port: 443
-  server: 18.159.149.158
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_2129fdd0
-  password: 9cfaa78d51ac366f
-  port: 10771
-  server: 212.192.221.129
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖🎭🎪]_dokng.com_e79793b1
-  password: amazonskr05
-  port: 443
-  server: 13.36.167.227
+  server: 13.36.241.80
   type: ss
   udp: true
 - name: GENERAL | anaer/Sub | 伊拉克 001
