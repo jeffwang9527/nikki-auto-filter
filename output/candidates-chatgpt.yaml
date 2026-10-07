@@ -1,55 +1,35 @@
 proxies:
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇯🇵JP日本丨yoyapai.com
-  type: vless
-  server: 210.140.81.172
-  port: 443
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  servername: www.amazon.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: random
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇭🇰HK香港丨yoyapai.com
-  type: vless
-  server: 27.44.143.169
-  port: 14343
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-  servername: thuk.huaweiyouxuan.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  udp: true
 - name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇦CA加拿大丨yoyapai.com
   type: vless
-  server: 155.46.167.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: yg9.ygkkk.dpdns.org
+  port: 8443
+  uuid: 86c50e3a-5b87-40dd-bd20-03c7f2735e40
   network: ws
-  tls: false
+  servername: ygwp.sbbz.tech
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
+    path: /
     headers:
-      Host: vms.lifetime50.workers.dev
+      Host: ygwp.sbbz.tech
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩國丨yoyapai.com
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美国丨yoyapai.com
   type: vless
-  server: 104.17.144.29
-  port: 8880
-  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
+  server: 8.35.211.73
+  port: 2087
+  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
   network: ws
-  tls: false
+  servername: d39333476.pages.dev
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /resource
     headers:
-      Host: spring-sound-8d8e.36-9ff.workers.dev
+      Host: d39333476.pages.dev
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇩🇪DE德國丨yoyapai.com
   type: vless
   server: 91.206.71.8
   port: 80
@@ -57,12 +37,41 @@ proxies:
   network: ws
   tls: false
   ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
+    path: /pyip=Telegram🇨🇳 @WangCai2
     headers:
       Host: round-haze-8783.294.workers.dev
   skip-cert-verify: false
   udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
+  type: vless
+  server: lucky-field-0220.191-de2.workers.dev
+  port: 8880
+  uuid: 01c2fb74-10b5-452d-b893-67cb528b6a8d
+  network: ws
+  servername: lucky-field-0220.191-de2.workers.dev
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+  skip-cert-verify: false
+  udp: true
 - name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_1
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  servername: dey.lnmarketplace.net
+  tls: true
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇦CA加拿大丨yoyapai.com_1
   type: vless
   server: 155.46.167.30
   port: 8880
@@ -70,7 +79,6 @@ proxies:
   network: ws
   tls: false
   ws-opts:
-    path: /
     headers:
       Host: vms.lifetime50.workers.dev
   skip-cert-verify: false
@@ -89,9 +97,35 @@ proxies:
       Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_3
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韓國丨yoyapai.com
   type: vless
-  server: 185.148.104.30
+  server: crimson-smoke-7818.397.workers.dev
+  port: 8880
+  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美国丨yoyapai.com_1
+  type: vless
+  server: 129.153.71.28
+  port: 28863
+  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+  network: ws
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美国丨yoyapai.com_2
+  type: vless
+  server: 63.141.128.30
   port: 8880
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -99,10 +133,23 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime51.workers.dev
+      Host: vms.lifetime42.workers.dev
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇩🇪DE德國丨yoyapai.com
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_4
+  type: vless
+  server: 155.46.167.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime50.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_6
   type: vless
   server: 91.206.71.8
   port: 80
@@ -110,48 +157,9 @@ proxies:
   network: ws
   tls: false
   ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
+    path: /pyip=Telegram🇨🇳+@WangCai2
     headers:
       Host: round-haze-8783.294.workers.dev
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com
-  type: vless
-  server: 45.131.208.4
-  port: 80
-  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: floral-thunder-10d3.82-67d.workers.dev
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_6
-  type: vless
-  server: 185.148.107.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com_1
-  type: vless
-  server: 45.131.208.4
-  port: 80
-  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=Telegram馃嚚馃嚦+@WangCai2
-    headers:
-      Host: floral-thunder-10d3.82-67d.workers.dev
   skip-cert-verify: false
   udp: true
 - name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[📺🎭]_dokng.com_c45ae8d8
@@ -451,6 +459,17 @@ proxies:
   flow: xtls-rprx-vision
   skip-cert-verify: true
   udp: true
+- name: CHATGPT | free18/v2ray | 🇨🇳_中国_8
+  type: vless
+  server: 27.44.143.169
+  port: 14343
+  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  servername: thuk.huaweiyouxuan.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  udp: true
 - name: CHATGPT | free18/v2ray | 🇨🇳_中国_9
   type: vless
   server: 112.49.63.11
@@ -498,17 +517,6 @@ proxies:
   port: 14343
   uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
   servername: thuk.huaweiyouxuan.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇨🇳_中国_16
-  type: vless
-  server: 27.44.143.169
-  port: 33102
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-  servername: sgg.knhqf.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
