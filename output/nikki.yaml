@@ -1,73 +1,66 @@
 proxies:
+- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8
+  port: 443
+  server: 183.179.162.50
+  tls: true
+  type: http
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_3132b54f
+  port: 443
+  server: fan.587475.xyz
+  tls: true
+  type: http
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_431c69cc
+  port: 443
+  server: 43.160.239.37
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd55d
+  port: 10808
+  server: 123.58.219.171
+  type: socks5
+- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_23257430
+  password: null
+  port: 17981
+  server: 120.232.115.170
+  type: http
+  username: null
 - cipher: aes-256-cfb
-  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_09e8dd5a
+  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_7106c6de
   password: amazonskr05
   port: 443
-  server: 63.185.114.140
+  server: 15.237.53.180
   type: ss
   udp: true
-- name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_30
+- name: GEN | GENERAL | anaer/Sub | 德国 001
   type: vless
-  server: 31.77.109.35
-  port: 443
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  servername: d3-de1.cloud-cdn.xyz
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
-    short-id: 494afdc75f8c2fa8
-  skip-cert-verify: true
-  udp: true
-- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com
-  type: vless
-  server: 45.131.208.4
-  port: 80
-  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
   network: ws
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   tls: false
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+    path: /
+- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇸🇬SG新加坡丨yoyapai.com
+  type: vless
+  server: 103.25.202.102
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  network: ws
+  servername: asia.csmaster.site
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: floral-thunder-10d3.82-67d.workers.dev
+      Host: asia.csmaster.site
   skip-cert-verify: false
   udp: true
-- name: GEN | GENERAL | anaer/Sub | 伊拉克 001
+- name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_15
   type: vless
-  network: tcp
-  server: 81.90.20.200
-  port: 443
-  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
-  servername: pl.pupoe.sbs
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 890
-  flow: xtls-rprx-vision
-- cipher: aes-256-cfb
-  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_edec3ced
-  password: amazonskr05
-  port: 443
-  server: 18.159.149.158
-  type: ss
-  udp: true
-- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩國丨yoyapai.com
-  type: vless
-  server: 104.17.144.29
-  port: 8880
-  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: spring-sound-8d8e.36-9ff.workers.dev
-  skip-cert-verify: false
-  udp: true
-- name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_27
-  type: vless
-  server: de2.srv.vbuste.ru
+  server: 177.1.187.251
   port: 443
   uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   servername: de2.srv.vbuste.ru
@@ -79,102 +72,105 @@ proxies:
     short-id: 4be4110078ebed4a
   skip-cert-verify: true
   udp: true
-- client-fingerprint: chrome
-  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[📺🎪✨🎞️]_dokng.com_19904362
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  sni: 45.32.52.173
-  type: trojan
-  udp: true
-- name: GEN | GENERAL | Ruk1ng001/freeSub | A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_65a5452e
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_431c69cc
-  port: 443
-  server: 43.160.239.37
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_c4d8c40f
-  port: 17981
-  server: 120.232.115.170
-  type: http
-- name: GPT | CHATGPT | anaer/Sub | 伊拉克 001
-  type: vless
-  network: tcp
-  server: 81.90.20.200
-  port: 443
-  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
-  servername: pl.pupoe.sbs
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  delay: 890
-  flow: xtls-rprx-vision
 - cipher: aes-256-cfb
-  name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_09e8dd5a
+  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖🎭🎪]_dokng.com_ecf10505
   password: amazonskr05
   port: 443
-  server: 63.185.114.140
+  server: 13.36.241.80
   type: ss
   udp: true
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇭🇰hos[📺]_dokng.com_db363b3a
-  password: admin
-  port: 8899
-  server: 47.242.19.215
-  skip-cert-verify: true
-  type: socks5
-  username: admin
-- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com_1
+- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com
   type: vless
-  server: 45.131.208.4
-  port: 80
-  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=Telegram馃嚚馃嚦+@WangCai2
-    headers:
-      Host: floral-thunder-10d3.82-67d.workers.dev
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  tls: true
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    mode: stream-one
   skip-cert-verify: false
   udp: true
-- client-fingerprint: chrome
-  name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇯🇵hos[📺🎪✨🎞️]_dokng.com_19904362
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  sni: 45.32.52.173
-  type: trojan
+- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  servername: dey.lnmarketplace.net
+  tls: true
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+  skip-cert-verify: false
   udp: true
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8
+  port: 443
+  server: 183.179.162.50
+  tls: true
+  type: http
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd55d
+  port: 10808
+  server: 123.58.219.171
+  type: socks5
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_ff9ee1ab
+  port: 443
+  server: 43.155.62.157
+  type: http
 - name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_431c69cc
   port: 443
   server: 43.160.239.37
   skip-cert-verify: true
   tls: true
   type: http
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_65a5452e
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_c143036d
-  network: tcp
-  port: 40543
-  server: 154.36.145.126
+- cipher: aes-256-cfb
+  name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_7106c6de
+  password: amazonskr05
+  port: 443
+  server: 15.237.53.180
+  type: ss
+  udp: true
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇸🇬SG新加坡丨yoyapai.com
   type: vless
-  uuid: 01efb55c-1b88-415f-aa59-71293ab2fc6d
+  server: 103.25.202.102
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  network: ws
+  servername: asia.csmaster.site
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+  skip-cert-verify: false
+  udp: true
+- name: GPT | CHATGPT | anaer/Sub | 爱尔兰 002
+  type: vless
+  network: ws
+  server: 89.125.96.75
+  port: 2053
+  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
+  servername: wss.zazazuza.ru
+  skip-cert-verify: false
+  tls: true
+  client-fingerprint: chrome
+  encryption: none
+  ws-opts:
+    headers:
+      Host: wss.zazazuza.ru
+    path: /vpn-wss/fluxor/59011/
+- name: GPT | CHATGPT | anaer/Sub | 美国 001
+  type: vless
+  network: tcp
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  tls: false
+  encryption: none
