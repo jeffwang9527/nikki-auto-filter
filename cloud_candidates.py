@@ -5,6 +5,7 @@ import hashlib
 import ipaddress
 import json
 import re
+import time
 from datetime import datetime, timezone
 
 import requests
@@ -157,6 +158,29 @@ def github_source_freshness(entry: dict[str, Any]) -> tuple[bool, dict[str, Any]
             "path": path,
         }
     except Exception as exc:
+        # 网络链路抖动时重试 2 次，避免 freshness 误判导致候选池缩水。
+        for attempt in range(2):
+            time.sleep(2)
+            try:
+                response = requests.get(url, params=params, headers=headers, timeout=15)
+                response.raise_for_status()
+                commits = response.json()
+                if not isinstance(commits, list) or not commits:
+                    return False, {"fresh": False, "reason": "no commit found", "repo": repo, "path": path}
+                date_text = commits[0].get("commit", {}).get("committer", {}).get("date")
+                if not date_text:
+                    return False, {"fresh": False, "reason": "commit date unavailable", "repo": repo, "path": path}
+                when = datetime.fromisoformat(date_text.replace("Z", "+00:00"))
+                age_days = max(0.0, (datetime.now(timezone.utc) - when).total_seconds() / 86400)
+                return age_days <= MAX_SOURCE_AGE_DAYS, {
+                    "fresh": age_days <= MAX_SOURCE_AGE_DAYS,
+                    "age_days": round(age_days, 2),
+                    "latest_commit": date_text,
+                    "repo": repo,
+                    "path": path,
+                }
+            except Exception as retry_exc:
+                exc = retry_exc
         return False, {"fresh": False, "reason": str(exc), "repo": repo, "path": path}
 
 def read_nodes(path: Path) -> list[dict[str, Any]]:

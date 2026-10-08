@@ -8,7 +8,7 @@ param(
     [switch]$NoPull,
     [switch]$NoSourceRefresh
 )
-$ErrorActionPreference="Stop"
+$ErrorActionPreference="Continue"
 Set-Location $PSScriptRoot
 
 # Network precondition: only run when the PC is booted, Wi-Fi link is up and internet is
@@ -38,7 +38,7 @@ if(!(Test-Path $Mihomo)){throw "mihomo not found: $Mihomo"}
 if(!$NoPull){
   $Branch=(git branch --show-current).Trim()
   if(!$Branch){throw "Unable to detect current git branch."}
-  git pull --rebase --autostash origin $Branch
+  git pull --rebase --autostash origin $Branch 2>&1 | Out-Null
   if($LASTEXITCODE -ne 0){throw "git pull failed on $Branch"}
 }
 
@@ -98,7 +98,7 @@ if($Publish){
     git fetch origin main
     if($LASTEXITCODE -ne 0){throw "git fetch origin main failed"}
 
-    git worktree add --detach $PublishDir origin/main
+    git worktree add --detach $PublishDir origin/main 2>&1
     if($LASTEXITCODE -ne 0){throw "git worktree add failed"}
 
     New-Item -ItemType Directory -Force -Path (Join-Path $PublishDir "output") | Out-Null
@@ -115,14 +115,14 @@ if($Publish){
       git config user.email "nikki-local-publisher@users.noreply.github.com"
       git commit -m "publish local mihomo node pools"
       if($LASTEXITCODE -ne 0){throw "git commit failed"}
-      git push origin HEAD:main
+      git push origin HEAD:main 2>&1
       if($LASTEXITCODE -ne 0){throw "git push to main failed"}
     } else {
       Write-Host "No output changes to publish."
     }
     Pop-Location
   } finally {
-    if(Test-Path $PublishDir){ git worktree remove --force $PublishDir | Out-Null }
+    if(Test-Path $PublishDir){ git worktree remove --force $PublishDir 2>&1 | Out-Null }
   }
 }
 Write-Host "Done."
