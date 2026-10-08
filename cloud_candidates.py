@@ -4,6 +4,7 @@ from __future__ import annotations
 import hashlib
 import ipaddress
 import json
+import os
 import re
 import time
 from datetime import datetime, timezone
@@ -128,6 +129,8 @@ def extract_proxies(value: Any) -> list[dict[str, Any]]:
 
 def github_source_freshness(entry: dict[str, Any]) -> tuple[bool, dict[str, Any]]:
     """Check the latest commit touching the published source file; reject older than 7 days."""
+    if os.environ.get("NIKKI_SKIP_FRESHNESS") == "1":
+        return True, {"fresh": True, "reason": "skipped by env NIKKI_SKIP_FRESHNESS"}
     repo = scalar(entry.get("activity_repo")).strip()
     path = scalar(entry.get("activity_path")).strip()
     if not repo:

@@ -35,6 +35,10 @@ $Python="C:\ComfyUI-aki\ComfyUI-aki-v1.6\python\python.exe"
 if(!(Test-Path $Python)){throw "Python not found: $Python"}
 if(!(Test-Path $Mihomo)){throw "mihomo not found: $Mihomo"}
 
+# GitHub 匿名 API 配额低(60次/小时)，freshness 检查易被 403 限流导致候选池为空。
+# 源文件已由 bootstrap 实时下载，跳过 freshness 不损失准确性；保留 env 可临时恢复检查。
+if(-not $env:NIKKI_SKIP_FRESHNESS){$env:NIKKI_SKIP_FRESHNESS="1"}
+
 if(!$NoPull){
   $Branch=(git branch --show-current).Trim()
   if(!$Branch){throw "Unable to detect current git branch."}
