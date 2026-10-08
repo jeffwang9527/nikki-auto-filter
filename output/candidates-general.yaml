@@ -759,125 +759,136 @@ proxies:
   server: 13.36.241.80
   type: ss
   udp: true
-- name: GENERAL | anaer/Sub | 中国 001
-  type: vmess
-  network: tcp
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  skip-cert-verify: true
-  alterId: 2
-  cipher: auto
-  delay: 1750
-- name: GENERAL | anaer/Sub | 中国 002
-  type: vmess
-  network: tcp
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  servername: 112.132.215.108
-  skip-cert-verify: true
-  alterId: 64
-  cipher: auto
-  delay: 226
-- name: GENERAL | anaer/Sub | 德国 001
-  type: vless
-  network: ws
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  tls: false
-  ws-opts:
-    headers:
-      Host: uae.unixzone.us
-    path: /
-- name: GENERAL | anaer/Sub | 立陶宛 001
-  type: vless
-  network: ws
-  server: 147.78.0.186
-  port: 2053
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  servername: free.cndyw.ggff.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: pyip=bpb.yousef.isegaro.com
-- name: GENERAL | anaer/Sub | 爱尔兰 001
-  type: vless
-  network: ws
-  server: 89.125.139.115
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  servername: free.cndyw.ggff.net
-  tls: true
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: pyip=bpb.yousef.isegaro.comfp=random
-- name: GENERAL | anaer/Sub | 西班牙 001
-  type: vless
-  network: ws
-  server: 85.137.165.97
-  port: 443
-  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
-  servername: kclx.eu.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: kclx.eu.org
-    path: /154.16.10.34-8080
-- name: GENERAL | anaer/Sub | 巴西 001
-  type: vless
-  network: ws
-  server: 131.255.6.88
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  servername: free.cndyw.ggff.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: pyip=bpb.yousef.isegaro.com
-- name: GENERAL | anaer/Sub | 爱尔兰 002
-  type: vless
-  network: ws
-  server: 89.125.96.75
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  servername: wss.zazazuza.ru
-  skip-cert-verify: false
-  tls: true
-  client-fingerprint: chrome
-  encryption: none
-  ws-opts:
-    headers:
-      Host: wss.zazazuza.ru
-    path: /vpn-wss/fluxor/59011/
-- name: GENERAL | anaer/Sub | 德国 002
-  type: vless
-  network: ws
-  server: 62.182.102.93
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  servername: free.cndyw.ggff.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    headers:
-      Host: free.cndyw.ggff.net
-    path: pyip=bpb.yousef.isegaro.com
 - name: GENERAL | anaer/Sub | 美国 001
-  type: vless
-  network: tcp
-  server: milo.rubinaz.xyz
+  type: vmess
+  network: ws
+  server: 162.159.1.33
   port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
   tls: false
-  encryption: none
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+- name: GENERAL | anaer/Sub | 土耳其 001
+  type: vmess
+  network: http
+  server: 78.111.102.232
+  port: 3389
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  tls: false
+  alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+- name: GENERAL | anaer/Sub | 美国 002
+  type: vmess
+  network: ws
+  server: 172.67.152.170
+  port: 2052
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: mahilu.site
+    path: /
+- name: GENERAL | anaer/Sub | 美国 003
+  type: vmess
+  network: ws
+  server: russia.com
+  port: 2095
+  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
+- name: GENERAL | anaer/Sub | 美国 004
+  type: vmess
+  network: ws
+  server: cold-dawn-9246.fly.dev
+  port: 443
+  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cold-dawn-9246.fly.dev
+    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
+- name: GENERAL | anaer/Sub | 美国 005
+  type: vmess
+  network: ws
+  server: 162.159.137.249
+  port: 8080
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: nest-emily-healing-h.trycloudflare.com
+    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+- name: GENERAL | anaer/Sub | 美国 006
+  type: vmess
+  network: ws
+  server: 104.21.82.39
+  port: 2052
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: mahilu.site
+    path: /
+- name: GENERAL | anaer/Sub | 其他 001
+  type: vmess
+  network: ws
+  server: mahilu.site
+  port: 2052
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: mahilu.site
+    path: /
+- name: GENERAL | anaer/Sub | 美国 007
+  type: vmess
+  network: ws
+  server: 23.227.39.24
+  port: 8080
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: per-essex-patterns-bowling.trycloudflare.com
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+- name: GENERAL | anaer/Sub | 法国 001
+  type: vmess
+  network: ws
+  server: 94.140.0.110
+  port: 8880
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: food.zhaal.ir
+    path: /
 - name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
   type: vless
   server: 43.108.48.169
