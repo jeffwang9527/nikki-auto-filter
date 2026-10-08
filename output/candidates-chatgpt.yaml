@@ -181,10 +181,6 @@ proxies:
     host: b33ec4a1s226.fuhuovps.xyz
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_ff9ee1ab
-  port: 443
-  server: 43.155.62.157
-  type: http
 - alterId: 64
   cipher: auto
   name: CHATGPT | Ruk1ng001/freeSub | A🟢🇨🇳res[🎞️📦]_dokng.com_0da15920
@@ -197,15 +193,17 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   xudp: true
-- name: CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd55d
-  port: 10808
-  server: 123.58.219.171
-  type: socks5
 - name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8
   port: 443
   server: 183.179.162.50
   tls: true
   type: http
+- name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[🎞️]_dokng.com_23257430
+  password: null
+  port: 17981
+  server: 120.232.115.170
+  type: http
+  username: null
 - alpn:
   - ''
   alterId: '0'
@@ -223,49 +221,80 @@ proxies:
     headers: {}
     path: /
   xudp: true
-- name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_23257430
-  password: null
-  port: 17981
-  server: 120.232.115.170
-  type: http
-  username: null
-- name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_40b4073a
-  password: null
-  port: 17981
-  server: 119.188.131.55
-  type: http
-  username: null
-- cipher: aes-128-gcm
-  name: CHATGPT | Ruk1ng001/freeSub | C🟠🇭🇰hos[🎬🤖📺🎭]_dokng.com_fe7ff292
-  password: cb403111-a584-48a7-af9d-fd029156e114
-  port: 40014
-  server: ruot.ayucloudservices.nl
-  type: ss
-- alterId: '2'
-  cipher: auto
-  name: CHATGPT | Ruk1ng001/freeSub | D🔴🇯🇵hos[📺]_dokng.com_02db43ef
-  network: tcp
-  port: 11206
-  server: sbgfgov.vip6.wogacnmnagfwgov.com
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-- cipher: aes-256-cfb
-  name: CHATGPT | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_7106c6de
-  password: amazonskr05
-  port: 443
-  server: 15.237.53.180
-  type: ss
-  udp: true
-- name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_5275faab
-  port: 12121
-  server: 112.216.54.226
-  type: http
-- name: CHATGPT | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_431c69cc
-  port: 443
-  server: 43.160.239.37
+- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_53d63ead
+  password: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  port: 1892
+  server: sin-a-02.auuas.com
   skip-cert-verify: true
+  sni: images.apple.com
+  type: anytls
+  udp: true
+- name: CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd55d
+  port: 10808
+  server: 123.58.219.171
+  type: socks5
+- down: ''
+  fingerprint: ''
+  name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_9a2d14fa
+  obfs: ''
+  obfs-password: ''
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-sg-001.fastervpn.world
+  type: hysteria2
+  up: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_4baa1f3c
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4tYZTzPnpJQQiG3bExrmT1TBzRMuaBWhFssBRNqrDVU
+    short-id: b1a9832f489b
+  server: vl.033.node-for-bigairport.com
+  servername: ap-southeast-1.console.aws.amazon.com
+  tls: true
+  type: vless
+  uuid: 11bce34b-e248-4af5-a0f1-951c4c5ece45
+- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos_dokng.com_8d6ee341
+  password: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  port: 1892
+  server: sin-a-01.auuas.com
+  skip-cert-verify: true
+  sni: images.apple.com
+  type: anytls
+  udp: true
+- name: CHATGPT | Ruk1ng001/freeSub | A🟢🇰🇷res[🎭]_dokng.com_783c64fd
+  port: 1080
+  server: 59.6.191.48
+  type: socks5
+- name: CHATGPT | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_043d44ac
+  password: ''
+  port: 443
+  server: fan.571589.xyz
+  skip-cert-verify: true
+  sni: fan.571589.xyz
   tls: true
   type: http
+  udp: true
+  username: ''
+- client-fingerprint: chrome
+  name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_79f3708c
+  network: ws
+  password: HutaoCloud
+  port: 11543
+  server: 185.220.238.77
+  skip-cert-verify: true
+  sni: 185.220.238.77
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+    path: /api
 - name: CHATGPT | anaer/Sub | 中国 001
   type: vmess
   network: tcp
