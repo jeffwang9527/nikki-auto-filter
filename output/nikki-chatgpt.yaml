@@ -1,14 +1,43 @@
 proxies:
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_043d44ac
-  password: ''
+- cipher: aes-256-cfb
+  name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_d0da9ad2
+  password: amazonskr05
   port: 443
-  server: fan.571589.xyz
-  skip-cert-verify: true
-  sni: fan.571589.xyz
-  tls: true
-  type: http
+  server: 3.79.59.187
+  type: ss
   udp: true
-  username: ''
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_5275faab
+  port: 12121
+  server: 112.216.54.226
+  type: http
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇬🇧GB英國丨yoyapai.com
+  type: vless
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  network: ws
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: false
+  udp: true
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com
+  type: vless
+  server: 45.131.208.4
+  port: 80
+  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram馃嚚馃嚦+@WangCai2
+    headers:
+      Host: floral-thunder-10d3.82-67d.workers.dev
+  skip-cert-verify: false
+  udp: true
 - name: GPT | CHATGPT | free18/v2ray | 日期：10-08
   type: vless
   server: s249.freessr.bid
@@ -33,62 +62,20 @@ proxies:
     short-id: 06e00e7c
   skip-cert-verify: true
   udp: true
-- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇮FI芬兰丨yoyapai.com_2
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇮FI芬兰丨yoyapai.com
   type: vless
-  server: psf-3.weedly.top
-  port: 80
-  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: machinemag.ir
-  skip-cert-verify: false
-  udp: true
-- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com
-  type: vless
-  server: dey.lnmarketplace.net
+  server: 199.232.239.239
   port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  uuid: 71a195c5-df47-47ad-81be-f4d3a3a21be3
   network: xhttp
+  servername: ssl.fastly.com
   tls: true
+  client-fingerprint: firefox
   alpn:
   - h2
   xhttp-opts:
-    path: /kavir
-    mode: stream-one
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
+    host: cloudnet2026.global.ssl.fastly.net
+    mode: auto
   skip-cert-verify: false
   udp: true
-- name: GPT | CHATGPT | anaer/Sub | 德国 001
-  type: vless
-  network: ws
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  tls: false
-  ws-opts:
-    headers:
-      Host: uae.unixzone.us
-    path: /
-- name: GPT | CHATGPT | anaer/Sub | 美国 001
-  type: vless
-  network: tcp
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  tls: false
-  encryption: none
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_4baa1f3c
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 4tYZTzPnpJQQiG3bExrmT1TBzRMuaBWhFssBRNqrDVU
-    short-id: b1a9832f489b
-  server: vl.033.node-for-bigairport.com
-  servername: ap-southeast-1.console.aws.amazon.com
-  tls: true
-  type: vless
-  uuid: 11bce34b-e248-4af5-a0f1-951c4c5ece45
