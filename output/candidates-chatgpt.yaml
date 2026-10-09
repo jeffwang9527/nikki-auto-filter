@@ -270,161 +270,153 @@ proxies:
   skip-cert-verify: true
   type: socks5
   username: '111'
-- name: CHATGPT | anaer/Sub | 美国 001
-  type: vmess
+- name: CHATGPT | anaer/Sub | 德国 001
+  type: vless
   network: ws
-  server: 162.159.1.33
-  port: 8080
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   tls: false
-  alterId: 0
-  cipher: auto
   ws-opts:
     headers:
-      Host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- name: CHATGPT | anaer/Sub | 土耳其 001
-  type: vmess
-  network: http
-  server: 78.111.102.232
-  port: 3389
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-  tls: false
-  alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-- name: CHATGPT | anaer/Sub | 美国 002
-  type: vmess
-  network: ws
-  server: 172.67.152.170
-  port: 2052
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: mahilu.site
+      Host: uae.unixzone.us
     path: /
-- name: CHATGPT | anaer/Sub | 美国 003
-  type: vmess
+- name: CHATGPT | anaer/Sub | 立陶宛 001
+  type: vless
   network: ws
-  server: russia.com
-  port: 2095
-  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
-- name: CHATGPT | anaer/Sub | 美国 004
-  type: vmess
-  network: ws
-  server: cold-dawn-9246.fly.dev
-  port: 443
-  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  servername: free.cndyw.ggff.net
   tls: true
-  alterId: 0
-  cipher: auto
+  client-fingerprint: random
   ws-opts:
     headers:
-      Host: cold-dawn-9246.fly.dev
-    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
-- name: CHATGPT | anaer/Sub | 美国 005
-  type: vmess
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.com
+- name: CHATGPT | anaer/Sub | 爱尔兰 001
+  type: vless
   network: ws
-  server: 162.159.137.249
-  port: 8080
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: nest-emily-healing-h.trycloudflare.com
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-- name: CHATGPT | anaer/Sub | 美国 006
-  type: vmess
-  network: ws
-  server: 104.21.82.39
-  port: 2052
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: mahilu.site
-    path: /
-- name: CHATGPT | anaer/Sub | 其他 001
-  type: vmess
-  network: ws
-  server: mahilu.site
-  port: 2052
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: mahilu.site
-    path: /
-- name: CHATGPT | anaer/Sub | 美国 007
-  type: vmess
-  network: ws
-  server: 23.227.39.24
-  port: 8080
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
-- name: CHATGPT | anaer/Sub | 法国 001
-  type: vmess
-  network: ws
-  server: 94.140.0.110
-  port: 8880
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: food.zhaal.ir
-    path: /
-- name: CHATGPT | anaer/Sub | 美国 008
-  type: vmess
-  network: ws
-  server: 23.227.38.22
-  port: 8080
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
-- name: CHATGPT | anaer/Sub | 美国 009
-  type: trojan
-  network: ws
-  server: 23.227.38.11
+  server: 89.125.139.115
   port: 443
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  servername: free.cndyw.ggff.net
+  tls: true
   ws-opts:
     headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: /argox-tr
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.comfp=chrome
+- name: CHATGPT | anaer/Sub | 西班牙 001
+  type: vless
+  network: ws
+  server: 85.137.165.97
+  port: 443
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  servername: kclx.eu.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: kclx.eu.org
+    path: /154.16.10.34-8080
+- name: CHATGPT | anaer/Sub | 印度 001
+  type: vless
+  network: ws
+  server: 203.202.232.211
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  servername: ccc.010304.xyz
+  tls: true
+  encryption: none
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chrome
+- name: CHATGPT | anaer/Sub | 美国 001
+  type: vless
+  network: ws
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  servername: ccc.010304.xyz
+  tls: true
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chromefp=chrome
+- name: CHATGPT | anaer/Sub | 巴西 001
+  type: vless
+  network: ws
+  server: 131.255.6.88
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  servername: free.cndyw.ggff.net
+  tls: true
+  client-fingerprint: random
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.com
+- name: CHATGPT | anaer/Sub | 德国 002
+  type: vless
+  network: ws
+  server: 62.182.102.93
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  servername: free.cndyw.ggff.net
+  tls: true
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.comfp=random
+- name: CHATGPT | anaer/Sub | 澳大利亚 001
+  type: vless
+  network: ws
+  server: 103.102.228.113
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  servername: vp58.cc.cd
+  tls: true
+  ws-opts:
+    headers:
+      Host: vp58.cc.cd
+    path: /TelegramU0001F1E8U0001F1F3
+- name: CHATGPT | anaer/Sub | 美国 002
+  type: vless
+  network: ws
+  server: 141.193.27.4
+  port: 80
+  uuid: e403856e-4e50-49e6-9edc-d9536a803a6a
+  tls: false
+  encryption: none
+  ws-opts:
+    headers:
+      Host: proud-cloud-5c50.113-8dc.workers.dev
+    path: /pyip=Telegram🇨🇳+
+- name: CHATGPT | anaer/Sub | 巴西 002
+  type: vless
+  network: ws
+  server: 188.114.98.0
+  port: 443
+  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
+  servername: tn1r.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: tn1r.eu.cc
+    path: /id-pusat
+- name: CHATGPT | anaer/Sub | 日本 001
+  type: vless
+  network: ws
+  server: 103.116.7.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  ws-opts:
+    headers:
+      Host: vms.lifetime35.workers.dev
+    path: /
 - name: CHATGPT | free18/v2ray | 每天更新，请加电报群防止失联
   type: vless
   server: 103.244.145.138
