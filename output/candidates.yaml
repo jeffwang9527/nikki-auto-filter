@@ -624,133 +624,144 @@ proxies:
   uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
   ws-opts:
     path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎞️]_dokng.com_23257430
-  password: null
+- client-fingerprint: chrome
+  name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_742b46f1
+  port: 443
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  server: 34.92.19.135
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+- client-fingerprint: chrome
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇹🇼hos[🎬📺🎭🎪]_dokng.com_155680b9
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
+    short-id: 32f66f37df3f58d2
+  server: 35.236.142.6
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8
+  port: 443
+  server: 183.179.162.50
+  tls: true
+  type: http
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎞️]_dokng.com_c4d8c40f
   port: 17981
   server: 120.232.115.170
   type: http
-  username: null
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos_dokng.com_d00e3bc8
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: GENERAL | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_4d3ce0de
   network: tcp
-  port: 1891
+  port: 443
   reality-opts:
-    public-key: z6wAS22cWD7Sx0w9Ib5ya7JBL4rDs4qraPMYELTG0Ss
-    short-id: 8378f267
-  server: sin-a-01.auuas.com
-  servername: www.npmjs.com
+    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
+    short-id: f39ad9d9eb26df47
+  server: 154.37.216.186
+  servername: www.bing.com
   tls: true
   type: vless
   udp: true
-  uuid: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
   xudp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_9197bbf0
-  port: 9443
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  server: 176.97.71.18
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 52d5defc-88f6-4c2c-9b1f-c19bf3e99778
-- cipher: aes-256-gcm
-  name: GENERAL | Ruk1ng001/freeSub | B🟡🇯🇵biz[🎬🤖📺🎭]_dokng.com_4a750742
-  password: 00fc9c6e-64ca-4088-b3ca-beee77289d12
-  port: 22069
-  server: w5r9kx.5tencent.asia
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos[🎬📺🎭🎪]_dokng.com_3089daf3
-  port: 32134
-  reality-opts:
-    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-    short-id: 6c6c7c97
-  server: 3696b38bsg.murphyweb.sbs
-  servername: buylite.music.apple.com
-  tls: true
-  type: vless
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
-- alterId: 1
-  cipher: auto
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_b689a08e
-  port: 11773
-  server: 8e1lvzz-g01.jp02-e3-vm0.entry.fr0528.art
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4a1f9bcd-7752-3635-b430-098dc75c2c67
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_5275faab
-  port: 12121
-  server: 112.216.54.226
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_5da2fc4b
+  port: 17981
+  server: 119.188.131.55
   type: http
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🔍]_dokng.com_16f5ab4e
-  password: '123456'
-  port: 1080
-  server: 8.209.236.192
-  type: socks5
-  username: '123456'
-- cipher: aes-256-cfb
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_04b04be3
-  password: amazonskr05
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_ab561926
+  password: UX82473651
   port: 443
-  server: 3.77.34.196
-  type: ss
+  server: ace-liger.rooster465.autos
+  skip-cert-verify: true
+  sni: ace-liger.rooster465.autos
+  type: trojan
   udp: true
-- client-fingerprint: chrome
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_354c8166
-  port: 9443
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_6fd0b3d2
+  port: 33375
   reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  server: 38.180.188.178
-  servername: www.amazon.com
+    public-key: x1nqrSzJzU5Hq7fr36PEmtBfOf98A2XiFuRzIsdcz20
+    short-id: 5895914d
+  server: 2610sgdodo.volkvpn.com
+  servername: www.lamer.com.sg
   tls: true
   type: vless
-  uuid: 52d5defc-88f6-4c2c-9b1f-c19bf3e99778
-- cipher: aes-256-cfb
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_d0da9ad2
-  password: amazonskr05
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_c011235f
+  password: UX82473651
   port: 443
-  server: 3.79.59.187
-  type: ss
-  udp: true
-- auth: f25f19f29ce3fb53a35bf1b35b452a43
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇮🇱hos_dokng.com_8bcf6792
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  port: 50160
-  server: 129.159.156.109
+  server: rested-seahorse.rooster465.autos
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+  sni: rested-seahorse.rooster465.autos
+  type: trojan
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_60761924
+  password: UX82473651
+  port: 443
+  server: musical-mouse.rooster465.autos
+  skip-cert-verify: true
+  sni: musical-mouse.rooster465.autos
+  type: trojan
   udp: true
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos[🔍]_dokng.com_099454ad
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_53d63ead
+  password: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  port: 1892
+  server: sin-a-02.auuas.com
+  skip-cert-verify: true
+  sni: images.apple.com
+  type: anytls
+  udp: true
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos_dokng.com_099454ad
   password: '111'
   port: 11211
   server: 47.243.173.50
   skip-cert-verify: true
   type: socks5
   username: '111'
-- cipher: aes-256-cfb
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎪]_dokng.com_95784057
-  password: amazonskr05
-  port: 443
-  server: 51.44.86.16
-  type: ss
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | A🟢🇨🇳res_dokng.com_2b9683c9
+  network: ws
+  port: 10086
+  server: 120.48.133.162
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-cfb
-  name: GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎪]_dokng.com_ecf10505
-  password: amazonskr05
+  uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+- alterId: 2
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos_dokng.com_533a58aa
+  port: 11252
+  server: goldcnmltyljgfwgov.vip52.wogcnmnnagfwgov.com
+  type: vmess
+  udp: true
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🤖📺🎭🎪]_dokng.com_d27d4972
+  password: UX82473651
   port: 443
-  server: 13.36.241.80
-  type: ss
+  server: stable-python.rooster465.autos
+  skip-cert-verify: true
+  sni: stable-python.rooster465.autos
+  type: trojan
   udp: true
 - name: GENERAL | anaer/Sub | 美国 001
   type: vmess
