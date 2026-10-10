@@ -412,162 +412,147 @@ proxies:
     path: /
 - name: CHATGPT | free18/v2ray | 每天更新，请加电报群防止失联
   type: vless
-  server: 103.244.145.138
+  server: 13.143.172.203
   port: 443
-  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
-  servername: zsde.eu-cdn294.com
+  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
+  servername: 13.143.172.203
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: f4EJP55daJRlJkcZbbGsY-gFGGFGiXPPdfVxtNWQPCE
-    short-id: c8621ebb1e56abb3
+  client-fingerprint: firefox
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | free18/v2ray | 电报群：https://t.me/vvkj11
   type: vless
-  server: de2.srv.vbuste.ru
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  servername: de2.srv.vbuste.ru
+  server: game-cloud-hk.xnncl.com
+  port: 32590
+  uuid: 45938515-0eb8-4aa7-8f0d-4b63a55e5228
+  servername: osxapps.itunes.apple.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
+    public-key: CiI5eIWAfESv03_Rv719gCxgloug9beZIHagH3TEVGM
+    short-id: ee
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 日期：10-09
+- name: CHATGPT | free18/v2ray | 日期：10-10
   type: vless
-  server: f0b7.n9ne.com.tr
-  port: 35306
-  uuid: e81e1114-99b5-4fea-aafc-84426e845a14
-  servername: n9ne.com.tr
+  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  port: 443
+  uuid: rgiw5k0gg5
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
   tls: true
-  client-fingerprint: qq
-  reality-opts:
-    public-key: NHurz_4uphCHgIbrnr3HRzfsq-LmIaPaUopWwHNJ8HU
-    short-id: ceb4496ab0cc7a9f
+  flow: xtls-rprx-vision
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm
+  type: trojan
+  server: sy2.australiacaregroup.site
+  port: 10003
+  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  sni: sy2.australiacaregroup.site
+  skip-cert-verify: true
+  udp: true
+- name: CHATGPT | free18/v2ray | 🇨🇭_瑞士_5
   type: vless
-  server: fi-s-1.pythonmakemigreat.wiki
+  server: dobro.ali-bard.online
   port: 443
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  servername: fi-s-1.pythonmakemigreat.wiki
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: 78f97d82e16aaad6
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇸🇪_瑞典_5
-  type: vless
-  server: swidenlanzerotte.live
-  port: 443
-  uuid: 56de13ac-086e-4789-8e1e-1bf2bd90216b
-  servername: swidenlanzerotte.live
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇩🇪_德国_6
-  type: vless
-  server: 147.45.63.64
-  port: 443
-  uuid: 579b72a5-785a-4fb6-ac64-1de2f8c49601
-  servername: cloudflare.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9J5SrrBYJ4Tz_zpSM3n-EWuin5jmUqEI8LJ5htsGZy8
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇳🇱_荷兰_7
-  type: vless
-  server: pl-waw.dontblockmepls.com
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  servername: rusbid.de
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇳🇱_荷兰_8
-  type: vless
-  server: 2.26.231.218
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  servername: rusbid.de
+  uuid: 12e95f93-443c-45f0-9a2a-5b318b9124cf
+  servername: dobro.ali-bard.online
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇨🇦_加拿大_9
+- name: CHATGPT | free18/v2ray | 🇨🇭_瑞士_6
   type: vless
-  server: 209.200.246.61
+  server: 179.255.191.86
   port: 443
-  uuid: ab9929fd-ab22-48e3-8723-480733c0eca9
-  servername: ca.vpnskyline.com
+  uuid: 12e95f93-443c-45f0-9a2a-5b318b9124cf
+  servername: dobro.ali-bard.online
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: NO3w10fOUvwK8L7vzCVPDLWIKYCHDaB6ealdMnv4jS4
-    short-id: e287e3906e3c
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇳🇴_挪威_11
+- name: CHATGPT | free18/v2ray | 🇧🇷_巴西_7
   type: vless
-  server: c5fl8w.api-gate.org
+  server: 35.199.90.53
   port: 443
-  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
-  servername: ca9.eu-cdn294.com
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  servername: www.cloudflare.com
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: B1g2P-3yW3cQW0WZweSPKUP3lZSQ5pgr8doCYvA0cRg
-    short-id: df3dc12b0b9b0c93
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇪🇸_西班牙_12
-  type: vless
-  server: 195.170.172.139
-  port: 57667
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  servername: u695098u6b6f0dd0s2057.gogocs.xyz
-  tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+    short-id: b62a4da6cd1c4dd6
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇳🇱_荷兰_14
+- name: CHATGPT | free18/v2ray | 🇷🇺_俄罗斯_9
   type: vless
-  server: 150.241.80.113
-  port: 443
-  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
-  servername: nl.skfv-mirror.ru
+  server: 196.240.125.251
+  port: 8443
+  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
+  servername: api-v1-6ac7858f.vmagnum.win
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: safari
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  udp: true
+- name: CHATGPT | free18/v2ray | 🇺🇸_美国_10
+  type: vless
+  server: 193.23.195.37
+  port: 13443
+  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
+  servername: ya.ru
+  tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM
-    short-id: 87cc0414902bee2d
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
+  skip-cert-verify: true
+  udp: true
+- name: CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_11
+  type: vless
+  server: 157.228.128.59
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  skip-cert-verify: true
+  udp: true
+- name: CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_12
+  type: vless
+  server: 157.228.150.34
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  skip-cert-verify: true
+  udp: true
+- name: CHATGPT | free18/v2ray | 🇺🇸_美国_14
+  type: vless
+  server: 13.143.137.206
+  port: 8443
+  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
+  servername: ya.ru
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | Barabama/FreeNodes | 中国_1
