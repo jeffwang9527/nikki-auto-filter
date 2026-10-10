@@ -1,0 +1,81 @@
+proxies:
+- cipher: aes-256-cfb
+  name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_d0da9ad2
+  password: amazonskr05
+  port: 443
+  server: 3.79.59.187
+  type: ss
+  udp: true
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_5275faab
+  port: 12121
+  server: 112.216.54.226
+  type: http
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇬🇧GB英國丨yoyapai.com
+  type: vless
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  network: ws
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: false
+  udp: true
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com
+  type: vless
+  server: 45.131.208.4
+  port: 80
+  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram馃嚚馃嚦+@WangCai2
+    headers:
+      Host: floral-thunder-10d3.82-67d.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: GPT | CHATGPT | free18/v2ray | 日期：10-08
+  type: vless
+  server: s249.freessr.bid
+  port: 443
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  servername: u695098u47d2e9bes71.gogocs.xyz
+  tls: true
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  udp: true
+- name: GPT | CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_14
+  type: vless
+  server: 157.228.128.59
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  skip-cert-verify: true
+  udp: true
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇮FI芬兰丨yoyapai.com
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 71a195c5-df47-47ad-81be-f4d3a3a21be3
+  network: xhttp
+  servername: ssl.fastly.com
+  tls: true
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
+    host: cloudnet2026.global.ssl.fastly.net
+    mode: auto
+  skip-cert-verify: false
+  udp: true

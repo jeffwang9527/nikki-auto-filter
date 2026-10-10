@@ -1,0 +1,149 @@
+proxies:
+- cipher: aes-256-cfb
+  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_d0da9ad2
+  password: amazonskr05
+  port: 443
+  server: 3.79.59.187
+  type: ss
+  udp: true
+- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎞️]_dokng.com_23257430
+  password: null
+  port: 17981
+  server: 120.232.115.170
+  type: http
+  username: null
+- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇬🇧GB英國丨yoyapai.com
+  type: vless
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  network: ws
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: false
+  udp: true
+- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩國丨yoyapai.com
+  type: vless
+  server: 104.17.144.29
+  port: 8880
+  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: spring-sound-8d8e.36-9ff.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_22
+  type: vless
+  server: 177.1.187.251
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  servername: de2.srv.vbuste.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  skip-cert-verify: true
+  udp: true
+- cipher: aes-256-cfb
+  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎪]_dokng.com_ecf10505
+  password: amazonskr05
+  port: 443
+  server: 13.36.241.80
+  type: ss
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_14
+  type: vless
+  server: 157.228.128.59
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  skip-cert-verify: true
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_23
+  type: vless
+  server: de2.srv.vbuste.ru
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  servername: de2.srv.vbuste.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  skip-cert-verify: true
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇺🇸_美国_37
+  type: vless
+  server: psf-3.weedly.top
+  port: 80
+  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: machinemag.ir
+  skip-cert-verify: true
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_20
+  type: vless
+  server: 157.228.150.34
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  skip-cert-verify: true
+  udp: true
+- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇮FI芬兰丨yoyapai.com
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 71a195c5-df47-47ad-81be-f4d3a3a21be3
+  network: xhttp
+  servername: ssl.fastly.com
+  tls: true
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
+    host: cloudnet2026.global.ssl.fastly.net
+    mode: auto
+  skip-cert-verify: false
+  udp: true
+- name: GEN | GENERAL | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_19
+  type: vless
+  server: 157.228.160.166
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  skip-cert-verify: true
+  udp: true

@@ -1,149 +1,131 @@
 proxies:
-- cipher: aes-256-cfb
-  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_d0da9ad2
-  password: amazonskr05
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: GEN | GENERAL | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_4d3ce0de
+  network: tcp
   port: 443
-  server: 3.79.59.187
-  type: ss
+  reality-opts:
+    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
+    short-id: f39ad9d9eb26df47
+  server: 154.37.216.186
+  servername: www.bing.com
+  tls: true
+  type: vless
   udp: true
-- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎞️]_dokng.com_23257430
-  password: null
-  port: 17981
-  server: 120.232.115.170
+  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+  xudp: true
+- name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🤖📺🎭🎪]_dokng.com_d27d4972
+  password: UX82473651
+  port: 443
+  server: stable-python.rooster465.autos
+  skip-cert-verify: true
+  sni: stable-python.rooster465.autos
+  type: trojan
+  udp: true
+- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8
+  port: 443
+  server: 183.179.162.50
+  tls: true
   type: http
-  username: null
-- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇬🇧GB英國丨yoyapai.com
-  type: vless
-  server: 162.159.152.4
+- name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_c011235f
+  password: UX82473651
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  network: ws
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  server: rested-seahorse.rooster465.autos
+  skip-cert-verify: true
+  sni: rested-seahorse.rooster465.autos
+  type: trojan
+- name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_ab561926
+  password: UX82473651
+  port: 443
+  server: ace-liger.rooster465.autos
+  skip-cert-verify: true
+  sni: ace-liger.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_742b46f1
+  port: 443
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  server: 34.92.19.135
+  servername: www.cloudflare.com
   tls: true
+  type: vless
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+- name: GEN | GENERAL | free18/v2ray | 🇳🇱_荷兰_36
+  type: vless
+  server: s1244.csgfw.top
+  port: 10829
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  servername: u695098ueb8953b4s861.gogocs.xyz
+  tls: true
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-  skip-cert-verify: false
+  skip-cert-verify: true
   udp: true
-- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩國丨yoyapai.com
+- name: GEN | GENERAL | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm
   type: vless
-  server: 104.17.144.29
-  port: 8880
-  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
+  server: fi-s-1.pythonmakemigreat.wiki
+  port: 443
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  servername: fi-s-1.pythonmakemigreat.wiki
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
+    short-id: 78f97d82e16aaad6
+  skip-cert-verify: true
+  udp: true
+- name: GEN | GENERAL | anaer/Sub | 德国 001
+  type: vless
   network: ws
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   tls: false
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: spring-sound-8d8e.36-9ff.workers.dev
-  skip-cert-verify: false
-  udp: true
-- name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_22
-  type: vless
-  server: 177.1.187.251
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  servername: de2.srv.vbuste.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  skip-cert-verify: true
-  udp: true
-- cipher: aes-256-cfb
-  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇫🇷hos[🎬🤖📺🎪]_dokng.com_ecf10505
-  password: amazonskr05
-  port: 443
-  server: 13.36.241.80
-  type: ss
-  udp: true
-- name: GEN | GENERAL | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_14
-  type: vless
-  server: 157.228.128.59
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  skip-cert-verify: true
-  udp: true
-- name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_23
-  type: vless
-  server: de2.srv.vbuste.ru
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  servername: de2.srv.vbuste.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  skip-cert-verify: true
-  udp: true
-- name: GEN | GENERAL | free18/v2ray | 🇺🇸_美国_37
-  type: vless
-  server: psf-3.weedly.top
-  port: 80
-  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
-  network: ws
-  tls: false
-  ws-opts:
+      Host: uae.unixzone.us
     path: /
+- name: GEN | GENERAL | free18/v2ray | 🇳🇱_荷兰_7
+  type: vless
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  servername: rusbid.de
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  skip-cert-verify: true
+  udp: true
+- name: GEN | GENERAL | anaer/Sub | 澳大利亚 001
+  type: vless
+  network: ws
+  server: 103.102.228.113
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  servername: vp58.cc.cd
+  tls: true
+  ws-opts:
     headers:
-      Host: machinemag.ir
-  skip-cert-verify: true
-  udp: true
-- name: GEN | GENERAL | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_20
+      Host: vp58.cc.cd
+    path: /TelegramU0001F1E8U0001F1F3
+- name: GEN | GENERAL | free18/v2ray | 🇫🇷_法国_24
   type: vless
-  server: 157.228.150.34
+  server: tyxyrytyro-51255165170-direct.araghchy.com
   port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
+  uuid: tyxyrytyro
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
-  skip-cert-verify: true
-  udp: true
-- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇮FI芬兰丨yoyapai.com
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 71a195c5-df47-47ad-81be-f4d3a3a21be3
-  network: xhttp
-  servername: ssl.fastly.com
-  tls: true
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  xhttp-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
-    host: cloudnet2026.global.ssl.fastly.net
-    mode: auto
-  skip-cert-verify: false
-  udp: true
-- name: GEN | GENERAL | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_19
-  type: vless
-  server: 157.228.160.166
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
   skip-cert-verify: true
   udp: true

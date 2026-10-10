@@ -1,81 +1,87 @@
 proxies:
-- cipher: aes-256-cfb
-  name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_d0da9ad2
-  password: amazonskr05
-  port: 443
-  server: 3.79.59.187
-  type: ss
-  udp: true
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_5275faab
-  port: 12121
-  server: 112.216.54.226
-  type: http
-- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇬🇧GB英國丨yoyapai.com
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  network: ws
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-  skip-cert-verify: false
-  udp: true
-- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com
-  type: vless
-  server: 45.131.208.4
-  port: 80
-  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=Telegram馃嚚馃嚦+@WangCai2
-    headers:
-      Host: floral-thunder-10d3.82-67d.workers.dev
-  skip-cert-verify: false
-  udp: true
-- name: GPT | CHATGPT | free18/v2ray | 日期：10-08
-  type: vless
-  server: s249.freessr.bid
-  port: 443
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  servername: u695098u47d2e9bes71.gogocs.xyz
-  tls: true
+- client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  skip-cert-verify: true
-  udp: true
-- name: GPT | CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_14
-  type: vless
-  server: 157.228.128.59
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_4d3ce0de
+  network: tcp
   port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
   reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  skip-cert-verify: true
-  udp: true
-- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇮FI芬兰丨yoyapai.com
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 71a195c5-df47-47ad-81be-f4d3a3a21be3
-  network: xhttp
-  servername: ssl.fastly.com
+    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
+    short-id: f39ad9d9eb26df47
+  server: 154.37.216.186
+  servername: www.bing.com
   tls: true
-  client-fingerprint: firefox
+  type: vless
+  udp: true
+  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+  xudp: true
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇭🇰hos_dokng.com_099454ad
+  password: '111'
+  port: 11211
+  server: 47.243.173.50
+  skip-cert-verify: true
+  type: socks5
+  username: '111'
+- client-fingerprint: chrome
+  name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_742b46f1
+  port: 443
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  server: 34.92.19.135
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8
+  port: 443
+  server: 183.179.162.50
+  tls: true
+  type: http
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_ab561926
+  password: UX82473651
+  port: 443
+  server: ace-liger.rooster465.autos
+  skip-cert-verify: true
+  sni: ace-liger.rooster465.autos
+  type: trojan
+  udp: true
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_53d63ead
+  password: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  port: 1892
+  server: sin-a-02.auuas.com
+  skip-cert-verify: true
+  sni: images.apple.com
+  type: anytls
+  udp: true
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  tls: true
   alpn:
   - h2
   xhttp-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
-    host: cloudnet2026.global.ssl.fastly.net
-    mode: auto
+    path: /kavir
+    mode: stream-one
   skip-cert-verify: false
+  udp: true
+- name: GPT | CHATGPT | free18/v2ray | 🇳🇱_荷兰_8
+  type: vless
+  server: 2.26.231.218
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  servername: rusbid.de
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  skip-cert-verify: true
   udp: true
