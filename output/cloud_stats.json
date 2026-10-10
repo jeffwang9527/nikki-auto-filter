@@ -20,7 +20,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.66,
+          "age_days": 0.84,
           "latest_commit": "2026-10-09T04:37:41Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
@@ -37,7 +37,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 2.4,
+          "age_days": 2.58,
           "latest_commit": "2026-10-07T10:49:15Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
@@ -54,7 +54,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.27,
+          "age_days": 0.45,
           "latest_commit": "2026-10-09T14:00:02Z",
           "repo": "Ruk1ng001/freeSub",
           "path": "clash.yaml"
@@ -71,7 +71,7 @@
         "skipped_inactive": true,
         "freshness": {
           "fresh": false,
-          "age_days": 11.8,
+          "age_days": 11.98,
           "latest_commit": "2026-09-28T01:13:40Z",
           "repo": "ripaojiedian/freenode",
           "path": "clash"
@@ -88,7 +88,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.15,
+          "age_days": 0.33,
           "latest_commit": "2026-10-09T16:50:50Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
@@ -98,15 +98,15 @@
         "source": "yoyapai.com (via wzmwayne/proxy-node)",
         "region": null,
         "input": "input/general/yoyapai.yaml",
-        "valid_seen": 11,
-        "duplicates": 1,
+        "valid_seen": 27,
+        "duplicates": 17,
         "selected": 10,
         "limit": 10,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.11,
-          "latest_commit": "2026-10-09T17:59:23Z",
+          "age_days": 0.03,
+          "latest_commit": "2026-10-09T23:55:46Z",
           "repo": "wzmwayne/proxy-node",
           "path": "output/yoyapai/clash.yaml"
         }
@@ -117,15 +117,15 @@
         "source": "yoyapai.com (via wzmwayne/proxy-node)",
         "region": null,
         "input": "input/chatgpt/yoyapai.yaml",
-        "valid_seen": 14,
-        "duplicates": 2,
+        "valid_seen": 29,
+        "duplicates": 17,
         "selected": 12,
         "limit": 12,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.11,
-          "latest_commit": "2026-10-09T17:59:23Z",
+          "age_days": 0.03,
+          "latest_commit": "2026-10-09T23:55:46Z",
           "repo": "wzmwayne/proxy-node",
           "path": "output/yoyapai/clash.yaml"
         }
@@ -141,7 +141,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.27,
+          "age_days": 0.45,
           "latest_commit": "2026-10-09T14:00:02Z",
           "repo": "Ruk1ng001/freeSub",
           "path": "clash.yaml"
@@ -158,7 +158,7 @@
         "skipped_inactive": true,
         "freshness": {
           "fresh": false,
-          "age_days": 11.8,
+          "age_days": 11.98,
           "latest_commit": "2026-09-28T01:13:40Z",
           "repo": "ripaojiedian/freenode",
           "path": "clash"
@@ -175,7 +175,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.15,
+          "age_days": 0.33,
           "latest_commit": "2026-10-09T16:50:50Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
@@ -192,7 +192,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.66,
+          "age_days": 0.84,
           "latest_commit": "2026-10-09T04:37:41Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
@@ -209,7 +209,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 2.4,
+          "age_days": 2.58,
           "latest_commit": "2026-10-07T10:49:15Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
