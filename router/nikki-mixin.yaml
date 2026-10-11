@@ -19,7 +19,7 @@ proxy-providers:
     size-limit: 2000000
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: https://www.google.com/generate_204
       interval: 300
 
   NIKKI-GPT:
@@ -39,7 +39,7 @@ proxy-groups:
     use:
       - NIKKI-GENERAL
       - NODES
-    url: https://cp.cloudflare.com/generate_204
+    url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
 
@@ -50,6 +50,15 @@ proxy-groups:
     url: https://chatgpt.com/robots.txt
     interval: 300
     tolerance: 50
+  # Google 相关域名：优先普通池，普通池不通自动回退到 GPT 专用池
+  - name: "NIKKI-GOOGLE回退"
+    type: fallback
+    use:
+      - NIKKI-普通池
+      - NIKKI-GPT专用池
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 50
 
 rules:
   # GPT/OpenAI 必须最前
@@ -57,6 +66,13 @@ rules:
   - DOMAIN-SUFFIX,openai.com,NIKKI-GPT专用池
   - DOMAIN-SUFFIX,oaistatic.com,NIKKI-GPT专用池
   - DOMAIN-SUFFIX,oaiusercontent.com,NIKKI-GPT专用池
+  # Google：普通池不通时经 fallback 自动切到 GPT 专用池
+  - DOMAIN-SUFFIX,google.com,NIKKI-GOOGLE回退
+  - DOMAIN-SUFFIX,googleapis.com,NIKKI-GOOGLE回退
+  - DOMAIN-SUFFIX,gstatic.com,NIKKI-GOOGLE回退
+  - DOMAIN-SUFFIX,googleusercontent.com,NIKKI-GOOGLE回退
+  - DOMAIN-SUFFIX,googletagmanager.com,NIKKI-GOOGLE回退
+  - DOMAIN-SUFFIX,google-analytics.com,NIKKI-GOOGLE回退
 
   # LAN
   - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve

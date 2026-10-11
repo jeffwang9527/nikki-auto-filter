@@ -22,8 +22,8 @@ import yaml
 GENERAL_TESTS = [
     ("gstatic", "https://www.gstatic.com/generate_204", "204", 6500),
     ("github", "https://github.com/", "200-399", 8500),
-    # 与路由器 NIKKI-GENERAL health-check / url-test 目标保持一致（google → cloudflare 放宽，免费节点对 CF 更友好）
-    ("cloudflare", "https://cp.cloudflare.com/generate_204", "204", 6500),
+    # 与路由器 NIKKI-GENERAL health-check / url-test 目标保持一致（google 测活，保证普通池节点对 Google 可用）
+    ("google", "https://www.google.com/generate_204", "204", 6500),
 ]
 
 OPENAI_TESTS = [

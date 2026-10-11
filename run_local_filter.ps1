@@ -87,7 +87,7 @@ if($LASTEXITCODE -ne 0){throw "local filter failed"}
 $Report=Get-Content ".\output\local-test-report.json" -Raw | ConvertFrom-Json
 Write-Host ("Selected: general={0}, chatgpt={1}, total={2}" -f $Report.selected_general,$Report.selected_chatgpt,$Report.selected_total)
 
-# A+C: 发布后验证 —— 强制路由器刷新 provider，并按路由器判活标准（https://cp.cloudflare.com/generate_204 / chatgpt.com/robots.txt）逐节点测活。
+# A+C: 发布后验证 —— 强制路由器刷新 provider，并按路由器判活标准（https://www.google.com/generate_204 / chatgpt.com/robots.txt）逐节点测活。
 function Verify-RouterPools {
   param(
     [string]$RouterApi="http://192.168.2.1:9090",
@@ -116,7 +116,7 @@ function Verify-RouterPools {
   foreach($n in $GenNames){
     $enc=[uri]::EscapeDataString($n)
     try{
-      $d=Invoke-RestMethod -Uri ("$RouterApi/proxies/$enc/delay?url=" + [uri]::EscapeDataString("https://cp.cloudflare.com/generate_204") + "&timeout=6500") -Headers $Hdr -TimeoutSec 12
+      $d=Invoke-RestMethod -Uri ("$RouterApi/proxies/$enc/delay?url=" + [uri]::EscapeDataString("https://www.google.com/generate_204") + "&timeout=6500") -Headers $Hdr -TimeoutSec 12
       if($d.delay -gt 0){$GenAlive++}
     }catch{}
   }
