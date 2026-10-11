@@ -94,14 +94,16 @@ function Verify-RouterPools {
     [string]$Secret="885696"
   )
   $Hdr=@{Authorization="Bearer $Secret"}
+  $RefreshOk=$true
   Write-Host "Forcing router provider refresh (PUT NIKKI-GENERAL / NIKKI-GPT)..."
   try {
     Invoke-RestMethod -Method Put -Uri "$RouterApi/providers/proxies/NIKKI-GENERAL" -Headers $Hdr -TimeoutSec 40 | Out-Null
     Invoke-RestMethod -Method Put -Uri "$RouterApi/providers/proxies/NIKKI-GPT" -Headers $Hdr -TimeoutSec 40 | Out-Null
   } catch {
-    # PUT 失败常见于当前池在路由器判活标准下已死（路由器拉 jsDelivr 也走普通池），
-    # 此时不中断，改用现有 provider 状态核查，若存活不足走回滚
-    Write-Host "WARNING: provider PUT refresh failed: $($_.Exception.Message). Checking existing provider state instead."
+    # PUT 失败 = 路由器未能拉到最新池（常见：路由器下载 jsDelivr provider 也走普通池，池全灭导致 i/o timeout）。
+    # 此时无法确认新池是否生效，绝不能拿旧 provider 状态去触发回滚，标记 refresh_ok=false 由调用方处理。
+    $RefreshOk=$false
+    Write-Host "WARNING: provider PUT refresh failed: $($_.Exception.Message). New pool did NOT reach router; rollback will be skipped."
   }
   Start-Sleep -Seconds 8
   $GenProv=Invoke-RestMethod -Uri "$RouterApi/providers/proxies/NIKKI-GENERAL" -Headers $Hdr -TimeoutSec 20
@@ -127,7 +129,7 @@ function Verify-RouterPools {
     }catch{}
   }
   Write-Host ("Router alive check: general={0}/{1}, gpt={2}/{3}" -f $GenAlive, $GenNames.Count, $GptAlive, $GptNames.Count)
-  return [pscustomobject]@{general_alive=$GenAlive; general_total=$GenNames.Count; gpt_alive=$GptAlive; gpt_total=$GptNames.Count}
+  return [pscustomobject]@{general_alive=$GenAlive; general_total=$GenNames.Count; gpt_alive=$GptAlive; gpt_total=$GptNames.Count; refresh_ok=$RefreshOk}
 }
 
 if($Publish){
@@ -190,7 +192,9 @@ if($Publish){
 
     # A+C: 发布后路由器强制刷新 + 存活核查，普通池存活数不足则回滚上一池
     $Verify = Verify-RouterPools
-    if($Verify.general_alive -lt 4){
+    if(-not $Verify.refresh_ok){
+      Write-Host "Router provider refresh FAILED (new pool not pulled). Rollback SKIPPED to avoid rolling back to an unverified state."
+    } elseif($Verify.general_alive -lt 4){
       Write-Host "WARNING: router general pool alive < 4. Rolling back to previous pool..."
       if(!(Test-Path ".\output\nikki-general-previous.yaml") -or !(Test-Path ".\output\nikki-chatgpt-previous.yaml")){
         throw "Rollback source missing; previous pools not found. Current (possibly degraded) pool is kept on GitHub."
@@ -204,7 +208,11 @@ if($Publish){
       if($LASTEXITCODE -ne 0){throw "rollback push to main failed"}
       Write-Host "Rollback pushed. Verifying again..."
       $Verify2 = Verify-RouterPools
-      Write-Host ("After rollback: general={0}/{1}, gpt={2}/{3}" -f $Verify2.general_alive, $Verify2.general_total, $Verify2.gpt_alive, $Verify2.gpt_total)
+      if($Verify2.refresh_ok){
+        Write-Host ("After rollback: general={0}/{1}, gpt={2}/{3}" -f $Verify2.general_alive, $Verify2.general_total, $Verify2.gpt_alive, $Verify2.gpt_total)
+      } else {
+        Write-Host "After rollback: router refresh failed again; latest rollback state not confirmed on router."
+      }
     }
   } finally {
     if(Test-Path $PublishDir){ git worktree remove --force $PublishDir 2>&1 | Out-Null }
