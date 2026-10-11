@@ -1,7 +1,7 @@
 param(
     [string]$Mihomo="C:\VPN\v2rayN-7.24.9\v2rayN-windows-64\bin\mihomo\mihomo-windows-amd64-v1.exe",
-    [int]$GeneralLimit=12,
-    [int]$ChatGPTLimit=8,
+    [int]$GeneralLimit=20,
+    [int]$ChatGPTLimit=12,
     [int]$Concurrency=6,
     [switch]$Full,
     [switch]$Publish,
@@ -87,7 +87,7 @@ if($LASTEXITCODE -ne 0){throw "local filter failed"}
 $Report=Get-Content ".\output\local-test-report.json" -Raw | ConvertFrom-Json
 Write-Host ("Selected: general={0}, chatgpt={1}, total={2}" -f $Report.selected_general,$Report.selected_chatgpt,$Report.selected_total)
 
-# A+C: 发布后验证 —— 强制路由器刷新 provider，并按路由器判活标准（www.google.com/generate_204 / chatgpt.com/robots.txt）逐节点测活。
+# A+C: 发布后验证 —— 强制路由器刷新 provider，并按路由器判活标准（https://cp.cloudflare.com/generate_204 / chatgpt.com/robots.txt）逐节点测活。
 function Verify-RouterPools {
   param(
     [string]$RouterApi="http://192.168.2.1:9090",
@@ -116,7 +116,7 @@ function Verify-RouterPools {
   foreach($n in $GenNames){
     $enc=[uri]::EscapeDataString($n)
     try{
-      $d=Invoke-RestMethod -Uri ("$RouterApi/proxies/$enc/delay?url=" + [uri]::EscapeDataString("https://www.google.com/generate_204") + "&timeout=6500") -Headers $Hdr -TimeoutSec 12
+      $d=Invoke-RestMethod -Uri ("$RouterApi/proxies/$enc/delay?url=" + [uri]::EscapeDataString("https://cp.cloudflare.com/generate_204") + "&timeout=6500") -Headers $Hdr -TimeoutSec 12
       if($d.delay -gt 0){$GenAlive++}
     }catch{}
   }
@@ -133,12 +133,13 @@ function Verify-RouterPools {
 }
 
 if($Publish){
-  $MinGeneral=[Math]::Max(8,[Math]::Floor($GeneralLimit*0.67))
-  $MinChatGPT=[Math]::Max(5,[Math]::Floor($ChatGPTLimit*0.625))
-  $MinTotal=[Math]::Max(14,[Math]::Floor(($GeneralLimit+$ChatGPTLimit)*0.70))
+  # 发布保护下限放宽：候选不足不再硬拦截，降为低保底 + 告警，允许尽力推送防节点池全灭。
+  $MinGeneral=[Math]::Max(3,[Math]::Floor($GeneralLimit*0.30))
+  $MinChatGPT=[Math]::Max(2,[Math]::Floor($ChatGPTLimit*0.30))
+  $MinTotal=[Math]::Max(5,[Math]::Floor(($GeneralLimit+$ChatGPTLimit)*0.30))
 
   if($Report.selected_general -lt $MinGeneral -or $Report.selected_chatgpt -lt $MinChatGPT -or $Report.selected_total -lt $MinTotal){
-    throw "Publish blocked: one or both router pools are unexpectedly small; previous GitHub output is kept."
+    Write-Host ("WARNING: pools are smaller than the soft floor (general={0}<{1}, chatgpt={2}<{3}, total={4}<{5}); publishing best-effort anyway (release guard relaxed)." -f $Report.selected_general,$MinGeneral,$Report.selected_chatgpt,$MinChatGPT,$Report.selected_total,$MinTotal)
   }
 
   # 将“最终小池”安全发布到 origin/main，不要求当前 feature 工作树干净，

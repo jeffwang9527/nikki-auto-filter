@@ -13,6 +13,7 @@ DOWNLOADS = [
     ("https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash", "input/general/ripaojiedian.yaml"),
     ("https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml", "input/general/anaer.yaml"),
     ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/yoyapai/clash.yaml", "input/general/yoyapai.yaml"),
+    ("https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml", "input/general/au1rxx.yaml"),
     # chatgpt: same active sources are allowed to overlap
     ("https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/yoyapai/clash.yaml", "input/chatgpt/yoyapai.yaml"),
     ("https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml", "input/chatgpt/freesub.yaml"),
@@ -20,6 +21,7 @@ DOWNLOADS = [
     ("https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml", "input/chatgpt/anaer.yaml"),
     ("https://raw.githubusercontent.com/free18/v2ray/main/c.yaml", "input/chatgpt/free18.yaml"),
     ("https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml", "input/chatgpt/barabama-clashmeta.yaml"),
+    ("https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml", "input/chatgpt/au1rxx.yaml"),
 ]
 
 def main() -> int:

@@ -22,9 +22,8 @@ import yaml
 GENERAL_TESTS = [
     ("gstatic", "https://www.gstatic.com/generate_204", "204", 6500),
     ("github", "https://github.com/", "200-399", 8500),
-    ("cloudflare", "https://www.cloudflare.com/cdn-cgi/trace", "200-299", 6500),
-    # 与路由器 NIKKI-GENERAL health-check / url-test 目标保持一致，避免 PC 判活但路由器判死
-    ("google", "https://www.google.com/generate_204", "204", 6500),
+    # 与路由器 NIKKI-GENERAL health-check / url-test 目标保持一致（google → cloudflare 放宽，免费节点对 CF 更友好）
+    ("cloudflare", "https://cp.cloudflare.com/generate_204", "204", 6500),
 ]
 
 OPENAI_TESTS = [
@@ -295,18 +294,22 @@ def run_probe(
 ) -> dict[str, Any]:
     state = dict(previous)
     state["name"] = scalar(node.get("name"))
+    state["last_run"] = int(time.time())
 
     for kind in sorted(kinds):
         if due(state, kind, full):
             update_kind(state, runner, kind, full)
 
-    state["last_run"] = int(time.time())
     return state
 
 
 def eligible(state: dict[str, Any], kind: str) -> tuple[bool, bool]:
     if state.get(f"{kind}_ok"):
         return True, False
+
+    # 收紧：本轮刚实测过且失败的节点，禁止凭历史成绩入池（grace 只给“本轮未测”的历史好节点）
+    if state.get(f"last_{kind}_test") == state.get("last_run"):
+        return False, False
 
     grace = (
         int(state.get(f"{kind}_consecutive_fail", 0)) < FAIL_EJECT_STREAK
@@ -407,8 +410,8 @@ def main() -> None:
     ap.add_argument(
         "--chatgpt-previous", default="output/nikki-chatgpt-previous.yaml"
     )
-    ap.add_argument("--general-limit", type=int, default=12)
-    ap.add_argument("--chatgpt-limit", type=int, default=8)
+    ap.add_argument("--general-limit", type=int, default=20)
+    ap.add_argument("--chatgpt-limit", type=int, default=12)
     ap.add_argument("--concurrency", type=int, default=6)
     ap.add_argument("--full", action="store_true")
     args = ap.parse_args()
@@ -576,8 +579,8 @@ def main() -> None:
             "rolling_previous_pool": True,
         },
         "selection_sources": {
-            "general": "output/candidates-general.yaml (Au1rxx only)",
-            "chatgpt": "output/candidates-chatgpt.yaml (non-Au1rxx sources only)",
+            "general": "output/candidates-general.yaml (multi-source pool)",
+            "chatgpt": "output/candidates-chatgpt.yaml (same multi-source pool)",
         },
         "selected": {
             "general": [
