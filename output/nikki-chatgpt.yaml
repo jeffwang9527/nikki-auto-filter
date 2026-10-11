@@ -19,29 +19,13 @@ proxies:
   udp: true
   uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
   xudp: true
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇭🇰hos_dokng.com_099454ad
-  password: '111'
-  port: 11211
-  server: 47.243.173.50
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_c011235f
+  password: UX82473651
+  port: 443
+  server: rested-seahorse.rooster465.autos
   skip-cert-verify: true
-  type: socks5
-  username: '111'
-- client-fingerprint: chrome
-  name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_742b46f1
-  port: 443
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-    short-id: 56d4e7ae4f86fa39
-  server: 34.92.19.135
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8
-  port: 443
-  server: 183.179.162.50
-  tls: true
-  type: http
+  sni: rested-seahorse.rooster465.autos
+  type: trojan
 - name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_ab561926
   password: UX82473651
   port: 443
@@ -50,13 +34,22 @@ proxies:
   sni: ace-liger.rooster465.autos
   type: trojan
   udp: true
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_53d63ead
-  password: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
-  port: 1892
-  server: sin-a-02.auuas.com
-  skip-cert-verify: true
-  sni: images.apple.com
-  type: anytls
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_1
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  servername: dey.lnmarketplace.net
+  tls: true
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+  skip-cert-verify: false
   udp: true
 - name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com
   type: vless
@@ -72,16 +65,37 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
-- name: GPT | CHATGPT | free18/v2ray | 🇳🇱_荷兰_8
+- name: GPT | GPT | CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_14
   type: vless
-  server: 2.26.231.218
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  servername: rusbid.de
+  server: 157.228.128.59
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: randomized
   reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
   skip-cert-verify: true
+  udp: true
+- name: GPT | CHATGPT | anaer/Sub | 澳大利亚 001
+  type: vless
+  network: ws
+  server: 103.102.228.113
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  servername: vp58.cc.cd
+  tls: true
+  ws-opts:
+    headers:
+      Host: vp58.cc.cd
+    path: /TelegramU0001F1E8U0001F1F3
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_60761924
+  password: UX82473651
+  port: 443
+  server: musical-mouse.rooster465.autos
+  skip-cert-verify: true
+  sni: musical-mouse.rooster465.autos
+  type: trojan
   udp: true
