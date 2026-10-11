@@ -23,6 +23,8 @@ GENERAL_TESTS = [
     ("gstatic", "https://www.gstatic.com/generate_204", "204", 6500),
     ("github", "https://github.com/", "200-399", 8500),
     ("cloudflare", "https://www.cloudflare.com/cdn-cgi/trace", "200-299", 6500),
+    # 与路由器 NIKKI-GENERAL health-check / url-test 目标保持一致，避免 PC 判活但路由器判死
+    ("google", "https://www.google.com/generate_204", "204", 6500),
 ]
 
 OPENAI_TESTS = [
@@ -356,6 +358,24 @@ def write_yaml(path: Path, nodes: list[dict[str, Any]]) -> None:
     tmp.replace(path)
 
 
+def load_optional_nodes(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    try:
+        return dedupe_nodes(load_nodes(path))
+    except (OSError, ValueError, yaml.YAMLError) as exc:
+        print(f"[WARN] previous pool ignored: {path}: {exc}")
+        return []
+
+
+def snapshot_pool(current: Path, previous: Path) -> None:
+    """Keep the last valid published pool before replacing it."""
+    if not current.exists() or not load_optional_nodes(current):
+        return
+    previous.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(current, previous)
+
+
 def dedupe_nodes(nodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
     output = []
     seen = set()
@@ -381,6 +401,12 @@ def main() -> None:
     ap.add_argument("--general-out", default="output/nikki-general.yaml")
     ap.add_argument("--chatgpt-out", default="output/nikki-chatgpt.yaml")
     ap.add_argument("--union-out", default="output/nikki.yaml")
+    ap.add_argument(
+        "--general-previous", default="output/nikki-general-previous.yaml"
+    )
+    ap.add_argument(
+        "--chatgpt-previous", default="output/nikki-chatgpt-previous.yaml"
+    )
     ap.add_argument("--general-limit", type=int, default=12)
     ap.add_argument("--chatgpt-limit", type=int, default=8)
     ap.add_argument("--concurrency", type=int, default=6)
@@ -389,19 +415,29 @@ def main() -> None:
 
     general_candidates = dedupe_nodes(load_nodes(Path(args.general_candidate)))
     chatgpt_candidates = dedupe_nodes(load_nodes(Path(args.chatgpt_candidate)))
+    general_previous = load_optional_nodes(Path(args.general_previous))
+    chatgpt_previous = load_optional_nodes(Path(args.chatgpt_previous))
+    if not general_previous:
+        general_previous = load_optional_nodes(Path(args.general_out))
+    if not chatgpt_previous:
+        chatgpt_previous = load_optional_nodes(Path(args.chatgpt_out))
+    # Current candidates come first; the previous published pool is the
+    # rolling fallback and is retained until it fails or is outranked.
+    general_pool = dedupe_nodes(general_candidates + general_previous)
+    chatgpt_pool = dedupe_nodes(chatgpt_candidates + chatgpt_previous)
 
     # 建立“节点 -> 需要测试的用途集合”。
     # 普通节点只测普通目标，GPT 专用节点只测 OpenAI/ChatGPT 目标；
     # 若将来两个来源集合发生重叠，则同一个 mihomo 实例里分别测两套目标。
     tasks: dict[str, tuple[dict[str, Any], set[str]]] = {}
 
-    for node in general_candidates:
+    for node in general_pool:
         key = node_key(node)
         if key not in tasks:
             tasks[key] = (node, set())
         tasks[key][1].add("general")
 
-    for node in chatgpt_candidates:
+    for node in chatgpt_pool:
         key = node_key(node)
         if key not in tasks:
             tasks[key] = (node, set())
@@ -420,6 +456,8 @@ def main() -> None:
     print(
         f"[local] general_candidates={len(general_candidates)} "
         f"chatgpt_candidates={len(chatgpt_candidates)} "
+        f"general_previous={len(general_previous)} "
+        f"chatgpt_previous={len(chatgpt_previous)} "
         f"to_test={len(to_test)} cache_entries={len(cache)} "
         f"concurrency={args.concurrency}"
     )
@@ -467,13 +505,13 @@ def main() -> None:
     general_eligible: list[tuple[dict[str, Any], dict[str, Any], bool]] = []
     chatgpt_eligible: list[tuple[dict[str, Any], dict[str, Any], bool]] = []
 
-    for node in general_candidates:
+    for node in general_pool:
         state = results.get(node_key(node), {})
         ok, grace = eligible(state, "general")
         if ok:
             general_eligible.append((node, state, grace))
 
-    for node in chatgpt_candidates:
+    for node in chatgpt_pool:
         state = results.get(node_key(node), {})
         ok, grace = eligible(state, "openai")
         if ok:
@@ -492,6 +530,10 @@ def main() -> None:
         for node, _, _ in chatgpt_pick
     ]
 
+    # Preserve the last published pool before replacing the active files.
+    snapshot_pool(Path(args.general_out), Path(args.general_previous))
+    snapshot_pool(Path(args.chatgpt_out), Path(args.chatgpt_previous))
+
     # 路由器只消费这三个小文件；candidates-* 仍然只是本地测速前的候选池。
     write_yaml(Path(args.general_out), general_out)
     write_yaml(Path(args.chatgpt_out), chatgpt_out)
@@ -508,6 +550,10 @@ def main() -> None:
         "timestamp": int(time.time()),
         "general_candidate_count": len(general_candidates),
         "chatgpt_candidate_count": len(chatgpt_candidates),
+        "general_previous_count": len(general_previous),
+        "chatgpt_previous_count": len(chatgpt_previous),
+        "general_pool_count": len(general_pool),
+        "chatgpt_pool_count": len(chatgpt_pool),
         "candidate_count": len(tasks),
         "tested_now": len(to_test),
         "general_tested_now": general_tested_now,
@@ -527,6 +573,7 @@ def main() -> None:
             "failure_eject_streak": FAIL_EJECT_STREAK,
             "max_same_server": MAX_SAME_SERVER,
             "pool_selection_independent": True,
+            "rolling_previous_pool": True,
         },
         "selection_sources": {
             "general": "output/candidates-general.yaml (Au1rxx only)",

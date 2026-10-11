@@ -52,7 +52,9 @@ GitHub 云端（每 4h）
   ↓
 Windows 本地 mihomo
   ↓
-普通 ≤12 + GPT ≤8
+上一轮小池 + 本轮候选合并复测
+  ↓
+普通 ≤12 + GPT ≤8（滚动替换）
   ↓
 Publish 到 main
   ↓

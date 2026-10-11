@@ -10,6 +10,7 @@ param(
 )
 $ErrorActionPreference="Continue"
 Set-Location $PSScriptRoot
+$env:PYTHONIOENCODING="utf-8"
 
 # Network precondition: only run when the PC is booted, Wi-Fi link is up and internet is
 # reachable, while the wired Ethernet link is NOT connected. The scheduled task retries via
@@ -86,6 +87,49 @@ if($LASTEXITCODE -ne 0){throw "local filter failed"}
 $Report=Get-Content ".\output\local-test-report.json" -Raw | ConvertFrom-Json
 Write-Host ("Selected: general={0}, chatgpt={1}, total={2}" -f $Report.selected_general,$Report.selected_chatgpt,$Report.selected_total)
 
+# A+C: 发布后验证 —— 强制路由器刷新 provider，并按路由器判活标准（www.google.com/generate_204 / chatgpt.com/robots.txt）逐节点测活。
+function Verify-RouterPools {
+  param(
+    [string]$RouterApi="http://192.168.2.1:9090",
+    [string]$Secret="885696"
+  )
+  $Hdr=@{Authorization="Bearer $Secret"}
+  Write-Host "Forcing router provider refresh (PUT NIKKI-GENERAL / NIKKI-GPT)..."
+  try {
+    Invoke-RestMethod -Method Put -Uri "$RouterApi/providers/proxies/NIKKI-GENERAL" -Headers $Hdr -TimeoutSec 40 | Out-Null
+    Invoke-RestMethod -Method Put -Uri "$RouterApi/providers/proxies/NIKKI-GPT" -Headers $Hdr -TimeoutSec 40 | Out-Null
+  } catch {
+    # PUT 失败常见于当前池在路由器判活标准下已死（路由器拉 jsDelivr 也走普通池），
+    # 此时不中断，改用现有 provider 状态核查，若存活不足走回滚
+    Write-Host "WARNING: provider PUT refresh failed: $($_.Exception.Message). Checking existing provider state instead."
+  }
+  Start-Sleep -Seconds 8
+  $GenProv=Invoke-RestMethod -Uri "$RouterApi/providers/proxies/NIKKI-GENERAL" -Headers $Hdr -TimeoutSec 20
+  $GptProv=Invoke-RestMethod -Uri "$RouterApi/providers/proxies/NIKKI-GPT" -Headers $Hdr -TimeoutSec 20
+  $GenNames=@($GenProv.proxies | ForEach-Object { $_.name })
+  $GptNames=@($GptProv.proxies | ForEach-Object { $_.name })
+  Write-Host ("Providers loaded: general={0}, gpt={1}" -f $GenNames.Count, $GptNames.Count)
+
+  $GenAlive=0
+  foreach($n in $GenNames){
+    $enc=[uri]::EscapeDataString($n)
+    try{
+      $d=Invoke-RestMethod -Uri ("$RouterApi/proxies/$enc/delay?url=" + [uri]::EscapeDataString("https://www.google.com/generate_204") + "&timeout=6500") -Headers $Hdr -TimeoutSec 12
+      if($d.delay -gt 0){$GenAlive++}
+    }catch{}
+  }
+  $GptAlive=0
+  foreach($n in $GptNames){
+    $enc=[uri]::EscapeDataString($n)
+    try{
+      $d=Invoke-RestMethod -Uri ("$RouterApi/proxies/$enc/delay?url=" + [uri]::EscapeDataString("https://chatgpt.com/robots.txt") + "&timeout=8500") -Headers $Hdr -TimeoutSec 14
+      if($d.delay -gt 0){$GptAlive++}
+    }catch{}
+  }
+  Write-Host ("Router alive check: general={0}/{1}, gpt={2}/{3}" -f $GenAlive, $GenNames.Count, $GptAlive, $GptNames.Count)
+  return [pscustomobject]@{general_alive=$GenAlive; general_total=$GenNames.Count; gpt_alive=$GptAlive; gpt_total=$GptNames.Count}
+}
+
 if($Publish){
   $MinGeneral=[Math]::Max(8,[Math]::Floor($GeneralLimit*0.67))
   $MinChatGPT=[Math]::Max(5,[Math]::Floor($ChatGPTLimit*0.625))
@@ -110,9 +154,27 @@ if($Publish){
     Copy-Item ".\output\nikki-chatgpt.yaml" (Join-Path $PublishDir "output\nikki-chatgpt.yaml") -Force
     Copy-Item ".\output\nikki.yaml" (Join-Path $PublishDir "output\nikki.yaml") -Force
     Copy-Item ".\output\local-test-report.json" (Join-Path $PublishDir "output\local-test-report.json") -Force
+    if(Test-Path ".\output\nikki-general-previous.yaml"){
+      Copy-Item ".\output\nikki-general-previous.yaml" (Join-Path $PublishDir "output\nikki-general-previous.yaml") -Force
+    }
+    if(Test-Path ".\output\nikki-chatgpt-previous.yaml"){
+      Copy-Item ".\output\nikki-chatgpt-previous.yaml" (Join-Path $PublishDir "output\nikki-chatgpt-previous.yaml") -Force
+    }
 
     Push-Location $PublishDir
-    git add output/nikki-general.yaml output/nikki-chatgpt.yaml output/nikki.yaml output/local-test-report.json
+    $PublishFiles=@(
+      "output/nikki-general.yaml",
+      "output/nikki-chatgpt.yaml",
+      "output/nikki.yaml",
+      "output/local-test-report.json"
+    )
+    if(Test-Path "output/nikki-general-previous.yaml"){
+      $PublishFiles += "output/nikki-general-previous.yaml"
+    }
+    if(Test-Path "output/nikki-chatgpt-previous.yaml"){
+      $PublishFiles += "output/nikki-chatgpt-previous.yaml"
+    }
+    git add @PublishFiles
     git diff --cached --quiet
     if($LASTEXITCODE -ne 0){
       git config user.name "nikki-local-publisher"
@@ -125,6 +187,25 @@ if($Publish){
       Write-Host "No output changes to publish."
     }
     Pop-Location
+
+    # A+C: 发布后路由器强制刷新 + 存活核查，普通池存活数不足则回滚上一池
+    $Verify = Verify-RouterPools
+    if($Verify.general_alive -lt 4){
+      Write-Host "WARNING: router general pool alive < 4. Rolling back to previous pool..."
+      if(!(Test-Path ".\output\nikki-general-previous.yaml") -or !(Test-Path ".\output\nikki-chatgpt-previous.yaml")){
+        throw "Rollback source missing; previous pools not found. Current (possibly degraded) pool is kept on GitHub."
+      }
+      Copy-Item ".\output\nikki-general-previous.yaml" ".\output\nikki-general.yaml" -Force
+      Copy-Item ".\output\nikki-chatgpt-previous.yaml" ".\output\nikki-chatgpt.yaml" -Force
+      git add output/nikki-general.yaml output/nikki-chatgpt.yaml
+      git commit -m "rollback to previous node pools (router alive check failed)" 2>&1
+      if($LASTEXITCODE -ne 0){throw "rollback commit failed"}
+      git push origin HEAD:main 2>&1
+      if($LASTEXITCODE -ne 0){throw "rollback push to main failed"}
+      Write-Host "Rollback pushed. Verifying again..."
+      $Verify2 = Verify-RouterPools
+      Write-Host ("After rollback: general={0}/{1}, gpt={2}/{3}" -f $Verify2.general_alive, $Verify2.general_total, $Verify2.gpt_alive, $Verify2.gpt_total)
+    }
   } finally {
     if(Test-Path $PublishDir){ git worktree remove --force $PublishDir 2>&1 | Out-Null }
   }
