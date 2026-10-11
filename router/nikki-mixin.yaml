@@ -134,6 +134,8 @@ rules:
   - DOMAIN-SUFFIX,suning.com,DIRECT
   - DOMAIN-SUFFIX,vip.com,DIRECT
 
+  # jsDelivr CDN：provider 更新走直连，不依赖代理池存活（节点全灭时仍能拉到新池）
+  - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
   # 中国大陆
   - GEOSITE,cn,DIRECT
   - GEOIP,CN,DIRECT
