@@ -1,8 +1,16 @@
 proxies:
-- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇬🇧hos[🎬📺🎭🎪]_dokng.com_2b887a70
+- name: GEN | GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_ab561926
+  password: UX82473651
+  port: 443
+  server: ace-liger.rooster465.autos
+  skip-cert-verify: true
+  sni: ace-liger.rooster465.autos
+  type: trojan
+  udp: true
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d85a93d5
   password: null
   port: 443
-  server: 37.120.233.34
+  server: fan.240104.xyz
   skip-cert-verify: true
   tls: true
   type: http
@@ -14,24 +22,56 @@ proxies:
   skip-cert-verify: true
   sni: anytls2.864106.xyz
   type: anytls
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇫🇷hos[🎬🤖📺🎭]_dokng.com_13bb1fbc
+  port: 443
+  server: 103.82.101.43
+  skip-cert-verify: true
+  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
+  tls: true
+  type: http
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇳🇱hos[🎬🤖📺🎪]_dokng.com_20704a3e
+  password: None
+  port: 443
+  server: 149.36.51.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
 - name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_bad22d32
   port: 8443
   server: 44.229.69.166
   skip-cert-verify: true
   tls: true
   type: http
-- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇳🇱hos[🎬🤖📺🎭]_dokng.com_c745045d
+- cipher: aes-256-cfb
+  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇬🇧hos[🤖🎪🎞️📦]_dokng.com_91b85eba
+  password: amazonskr05
   port: 443
-  server: 185.246.153.28
+  server: 13.40.25.145
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: GEN | GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_742b46f1
+  port: 443
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  server: 34.92.19.135
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+- name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_2b514860
+  password: null
+  port: 443
+  server: 149.36.50.157
   skip-cert-verify: true
-  sni: 4a8c2906c96058315dffbc2b0e7ff19b-0c66a58858a795df.apache-iv.com
   tls: true
   type: http
-- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇫🇷hos[🎬🤖📺🎭]_dokng.com_13bb1fbc
+  username: null
+- name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8
   port: 443
-  server: 103.82.101.43
-  skip-cert-verify: true
-  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
+  server: 183.179.162.50
   tls: true
   type: http
 - name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_bd68bfa4
@@ -42,12 +82,14 @@ proxies:
   tls: true
   type: http
   username: null
-- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_3df7bcd5
-  port: 9002
-  server: 158.173.154.3
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇬🇧hos[🎬📺🎭🎪]_dokng.com_2b887a70
+  password: null
+  port: 443
+  server: 37.120.233.34
   skip-cert-verify: true
   tls: true
   type: http
+  username: null
 - name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇳🇱hos[🎬🤖📺🎭]_dokng.com_4fefa5e6
   password: ''
   port: 443
@@ -57,66 +99,45 @@ proxies:
   type: http
   udp: true
   username: ''
-- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇳🇱hos[🎬🤖📺🎪]_dokng.com_20704a3e
-  password: None
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd55d
+  port: 10808
+  server: 123.58.219.171
+  type: socks5
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_4628e154
   port: 443
-  server: 149.36.51.129
+  server: efr-marktplatz.club
+  sni: efr-marktplatz.club
+  tls: true
+  type: http
+- name: GEN | GENERAL | Ruk1ng001/freeSub | B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_5024ffeb
+  port: 8080
+  server: 104.51.39.146
+  type: http
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇳🇱hos[🎬🤖📺🎭]_dokng.com_c745045d
+  port: 443
+  server: 185.246.153.28
+  skip-cert-verify: true
+  sni: 4a8c2906c96058315dffbc2b0e7ff19b-0c66a58858a795df.apache-iv.com
+  tls: true
+  type: http
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_3df7bcd5
+  port: 9002
+  server: 158.173.154.3
   skip-cert-verify: true
   tls: true
   type: http
-  username: null
-- name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_2b514860
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇨🇿hos[🎬🤖📺🎭]_dokng.com_9fc21f6b
   password: null
   port: 443
-  server: 149.36.50.157
+  server: 185.216.35.66
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: GEN | GENERAL | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_12
-  type: vless
-  server: 157.228.160.166
+- cipher: aes-256-cfb
+  name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇨🇦hos[🎬🤖📺🎪]_dokng.com_d41225ce
+  password: amazonskr05
   port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
-  skip-cert-verify: true
-  udp: true
-- name: GEN | GENERAL | Ruk1ng001/freeSub | A🟢🇮🇩res[🎬🤖📺🎭]_dokng.com_bf687581
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1015
-  server: 7a9a2v1f.zf-mix.9999231.xyz
-  skip-cert-verify: true
-  sni: id-house.9999231.xyz
-  type: anytls
-  udp: true
-- client-fingerprint: chrome
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  name: GEN | GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[✈️]_dokng.com_9f01a8ac
-  password: 776b4834-caaf-4006-ab21-409e958867af
-  port: 33091
-  server: 45.202.240.4
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: anytls
-  udp: true
-- name: GEN | GENERAL | free18/v2ray | 电报群：t.me/vvkj11
-  type: vless
-  server: de2.srv.vbuste.ru
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  servername: de2.srv.vbuste.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  skip-cert-verify: true
+  server: 35.183.81.9
+  type: ss
   udp: true
