@@ -646,19 +646,29 @@ proxies:
   uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
   ws-opts:
     path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd55d
+- name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺✨🎞️]_dokng.com_054bd55d
   port: 10808
   server: 123.58.219.171
   type: socks5
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8
-  port: 443
-  server: 183.179.162.50
+- cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬📺🎭🎪]_dokng.com_ee28d122
+  network: ws
+  port: 36342
+  server: 149.30.247.249
+  servername: work.fotoman.com
+  skip-cert-verify: true
   tls: true
-  type: http
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_c4d8c40f
+  type: vless
+  uuid: 2948257a-90ab-4bf5-995a-62d909e11d40
+  ws-opts:
+    host: bing.com
+    path: /
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_23257430
+  password: null
   port: 17981
   server: 120.232.115.170
   type: http
+  username: null
 - alpn:
   - ''
   alterId: '0'
@@ -676,95 +686,95 @@ proxies:
     headers: {}
     path: /
   xudp: true
-- name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🔍]_dokng.com_d8a84f16
-  password: abc123
-  port: 1080
-  server: 47.239.98.42
-  type: socks5
-  username: abc123
-- cipher: aes-256-gcm
-  name: GENERAL | Ruk1ng001/freeSub | B🟡🇯🇵biz[🎬🤖📺🎭]_dokng.com_c039ddfb
-  password: bd962c9a-d6f2-4561-bd80-34206c4d5279
-  port: 22069
-  server: ruot.ayucloudservices.nl
-  type: ss
-- alterId: '0'
-  cipher: auto
-  name: GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_e6ac24e6
-  network: ws
-  port: 8080
-  server: 212.50.251.193
-  type: vmess
-  uuid: dabfcf88-0a4b-43ca-ac7a-a4f44d877bbc
-  ws-opts:
-    headers:
-      Host: 212.50.251.193
-    path: /vmess
-- client-fingerprint: chrome
-  name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_79f3708c
-  network: ws
-  password: HutaoCloud
-  port: 11543
-  server: 185.220.238.77
-  skip-cert-verify: true
-  sni: 185.220.238.77
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /api
-- name: GENERAL | Ruk1ng001/freeSub | D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_5275faab
-  port: 12121
-  server: 112.216.54.226
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_c45ae8d8
+  port: 443
+  server: 183.179.162.50
+  tls: true
   type: http
-- alterId: 0
+- name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos_dokng.com_1455c7a7
+  port: 10808
+  server: 36.155.23.163
+  skip-cert-verify: true
+  type: socks5
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_5da2fc4b
+  port: 17981
+  server: 119.188.131.55
+  type: http
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[📺🎭]_dokng.com_e4405807
+  password: '1234'
+  port: 2080
+  server: 13.212.235.123
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- auth: 745A6079-6A61-423D-BDD9-B344C1D26E62
+  name: GENERAL | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_0b7f4425
+  password: 745A6079-6A61-423D-BDD9-B344C1D26E62
+  port: 20133
+  server: sg1.dexlos.com
+  sni: sg1.dexlos.com
+  type: hysteria2
+  udp: true
+- alterId: 1
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /ABCDE
-  name: GENERAL | Ruk1ng001/freeSub | A🟢🇺🇸res[🎬📺🎪🔍]_dokng.com_33a66f53
-  network: http
-  port: 54162
-  server: 38.175.209.232
+  name: GENERAL | Ruk1ng001/freeSub | D🔴🇯🇵hos[🎬🤖📺🎭]_dokng.com_73524957
+  port: 46482
+  server: 88664kt-g01.jp05-h6-vm0.entry.fr0528.art
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 96db90da-c019-4f27-b3d3-facfa4894628
-- name: GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬📺🎭🎪]_dokng.com_46f19d14
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 19000
-  server: anytls2.864106.xyz
-  skip-cert-verify: true
-  sni: anytls2.864106.xyz
-  type: anytls
-- name: GENERAL | Ruk1ng001/freeSub | A🟢🇮🇩res[🎬🤖📺🎭]_dokng.com_bf687581
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1015
-  server: 7a9a2v1f.zf-mix.9999231.xyz
-  skip-cert-verify: true
-  sni: id-house.9999231.xyz
-  type: anytls
   udp: true
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn[📺✈️🔍]_dokng.com_0b409c03
-  port: 10800
-  server: 195.154.84.121
-  type: http
-- client-fingerprint: chrome
-  name: GENERAL | Ruk1ng001/freeSub | D🔴🇩🇰hos[🎬🤖📺🎭]_dokng.com_76c79447
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1027
-  server: 3uilvi9w.zf-mix.9999231.xyz
-  sni: dk-wy.9999231.xyz
-  type: anytls
+  uuid: 4a1f9bcd-7752-3635-b430-098dc75c2c67
+- alterId: 1
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_b689a08e
+  port: 11773
+  server: 8e1lvzz-g01.jp02-e3-vm0.entry.fr0528.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🤖📺🎪]_dokng.com_5db07fc6
-  password: usqmqUKJFIlCmvkCNSY64L3k
-  port: 443
-  server: 8.209.247.109
-  skip-cert-verify: true
-  type: hysteria2
+  uuid: 4a1f9bcd-7752-3635-b430-098dc75c2c67
+- alterId: 1
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_0a646871
+  port: 444
+  server: ze66v5z-g01.jp04-1d-vm0.entry.fr0528.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4a1f9bcd-7752-3635-b430-098dc75c2c67
+- alterId: 1
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_2bd3549e
+  port: 28783
+  server: ze1i45t-g01.jp07-sh-vm0.entry.fr0528.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4a1f9bcd-7752-3635-b430-098dc75c2c67
+- alterId: 1
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_5f6523d7
+  port: 28783
+  server: 8tyivzz-g01.jp07-sh-vm0.entry.fr0528.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4a1f9bcd-7752-3635-b430-098dc75c2c67
+- alterId: 1
+  cipher: auto
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_1c47129c
+  port: 444
+  server: vt6iv5t-g01.jp04-1d-vm0.entry.fr0528.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4a1f9bcd-7752-3635-b430-098dc75c2c67
 - name: GENERAL | anaer/Sub | 德国 001
   type: vless
   network: ws
