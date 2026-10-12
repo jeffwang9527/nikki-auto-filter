@@ -7,7 +7,7 @@ set -eu
 # them itself) -> avoids jsDelivr @main stale cache, raw EOF resets, and the
 # manual commit-hash maintenance of the old pinned-CD approach.
 
-RAW_BASE="https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main"
+RAW_BASE="https://github.com/jeffwang9527/nikki-auto-filter/raw/main"
 MIXIN_URL="$RAW_BASE/router/nikki-mixin.yaml"
 GENERAL_URL="$RAW_BASE/output/nikki-general.yaml"
 GPT_URL="$RAW_BASE/output/nikki-chatgpt.yaml"
