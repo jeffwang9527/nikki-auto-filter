@@ -24,7 +24,7 @@ proxy-providers:
 
   NIKKI-GPT:
     type: http
-    url: "https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-chatgpt.yaml"
+    url: "https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-chatgpt.yaml"
     path: ./providers/proxy/nikki-chatgpt.yaml
     interval: 14400
     size-limit: 2000000
@@ -50,12 +50,14 @@ proxy-groups:
     url: https://chatgpt.com/robots.txt
     interval: 300
     tolerance: 50
-  # Google 相关域名：优先普通池，普通池不通自动回退到 GPT 专用池
+  # Google 相关域名：优先普通池 provider，普通池节点不通自动回退到 GPT provider
+  # 注意：mihomo fallback 组 use 只支持 proxy-provider，不支持 proxy-group
   - name: "NIKKI-GOOGLE回退"
     type: fallback
     use:
-      - NIKKI-普通池
-      - NIKKI-GPT专用池
+      - NIKKI-GENERAL
+      - NODES
+      - NIKKI-GPT
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
