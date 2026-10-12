@@ -148,9 +148,8 @@ rules:
 
   # jsDelivr CDN：provider 更新走直连，不依赖代理池存活（节点全灭时仍能拉到新池）
   - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
-  # GitHub raw：应用/下载走直连（节点池由路由器 apply 脚本从 raw 拉取到本地，
-  # 不再依赖 mihomo 自身下载，避开 jsDelivr @main 缓存与 raw 连接被重置问题）
-  - DOMAIN-SUFFIX,githubusercontent.com,DIRECT
+  # GitHub raw：走代理池（路由器直连 raw 被墙 EOF；apply 脚本经 127.0.0.1:7890 拉取）
+  - DOMAIN-SUFFIX,githubusercontent.com,NIKKI-普通池
   # 中国大陆
   - GEOSITE,cn,DIRECT
   - GEOIP,CN,DIRECT

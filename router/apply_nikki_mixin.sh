@@ -19,7 +19,7 @@ fetch() {
     url="$1"
     dst="$2"
     tmp="${dst}.tmp"
-    curl -4 -fsSL --connect-timeout 10 --max-time 30 "$url" -o "$tmp"
+    curl -4 -fsSL -x http://127.0.0.1:7890 --connect-timeout 10 --max-time 30 "$url" -o "$tmp"
     if [ -f "$dst" ] && cmp -s "$tmp" "$dst"; then
         rm -f "$tmp"
     else
