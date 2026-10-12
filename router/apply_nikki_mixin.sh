@@ -1,9 +1,10 @@
 #!/bin/sh
 set -eu
 
-# Pin exact commit c8fceab (the commit whose router/nikki-mixin.yaml contains the
-# fastly @f137593 provider URLs). Update this hash whenever the mixin changes.
-MIXIN_URL="https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@c8fceab/router/nikki-mixin.yaml"
+# Pull the mixin from raw.githubusercontent.com @main: no CDN cache delay,
+# so provider/output updates take effect as soon as the publish job pushes.
+# (jsDelivr @main edge cache was unreliable -> pinned commits required manual maintenance.)
+MIXIN_URL="https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/router/nikki-mixin.yaml"
 MIXIN_FILE="/etc/nikki/mixin.yaml"
 
 echo "[1/4] Download Nikki pool mixin"
@@ -34,9 +35,9 @@ echo "[4/4] Reload Nikki"
 
 echo
 echo "Nikki pool mixin installed."
-echo "Mixin source:     fastly.jsdelivr.net @c8fceab (contains @f137593 providers)"
-echo "General provider: https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@f137593/output/nikki-general.yaml"
-echo "GPT provider:     https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@f137593/output/nikki-chatgpt.yaml"
+echo "Mixin source:     raw.githubusercontent.com @main (no CDN cache)"
+echo "General provider: https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/output/nikki-general.yaml"
+echo "GPT provider:     https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/output/nikki-chatgpt.yaml"
 echo "Provider refresh: 14400s (4h)"
 echo "Health check:     300s (5m)"
 echo

@@ -13,7 +13,7 @@ proxy-providers:
 
   NIKKI-GENERAL:
     type: http
-    url: "https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@f137593/output/nikki-general.yaml"
+    url: "https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/output/nikki-general.yaml"
     path: ./providers/proxy/nikki-general.yaml
     interval: 14400
     size-limit: 2000000
@@ -24,7 +24,7 @@ proxy-providers:
 
   NIKKI-GPT:
     type: http
-    url: "https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@f137593/output/nikki-chatgpt.yaml"
+    url: "https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/output/nikki-chatgpt.yaml"
     path: ./providers/proxy/nikki-chatgpt.yaml
     interval: 14400
     size-limit: 2000000
@@ -154,6 +154,8 @@ rules:
 
   # jsDelivr CDN：provider 更新走直连，不依赖代理池存活（节点全灭时仍能拉到新池）
   - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
+  # GitHub raw：provider 更新走直连（raw@main 无 CDN 缓存延迟，发布即生效）
+  - DOMAIN-SUFFIX,githubusercontent.com,DIRECT
   # 中国大陆
   - GEOSITE,cn,DIRECT
   - GEOIP,CN,DIRECT
