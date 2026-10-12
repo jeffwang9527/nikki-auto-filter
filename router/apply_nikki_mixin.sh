@@ -34,6 +34,7 @@ echo "[4/4] Reload Nikki"
 
 echo
 echo "Nikki pool mixin installed."
+echo "Mixin source:     fastly.jsdelivr.net @c8fceab (contains @f137593 providers)"
 echo "General provider: https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@f137593/output/nikki-general.yaml"
 echo "GPT provider:     https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@f137593/output/nikki-chatgpt.yaml"
 echo "Provider refresh: 14400s (4h)"
