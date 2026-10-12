@@ -1,8 +1,4 @@
 proxies:
-- name: GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_5024ffeb
-  port: 8080
-  server: 104.51.39.146
-  type: http
 - name: GPT | CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_14
   type: vless
   server: 157.228.160.166
@@ -16,17 +12,6 @@ proxies:
     public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
     short-id: 3cef317b
   skip-cert-verify: true
-  udp: true
-- client-fingerprint: chrome
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  name: GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[✈️]_dokng.com_9f01a8ac
-  password: 776b4834-caaf-4006-ab21-409e958867af
-  port: 33091
-  server: 45.202.240.4
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: anytls
   udp: true
 - name: GPT | CHATGPT | free18/v2ray | 🇵🇱_波兰_13
   type: vless
@@ -54,21 +39,6 @@ proxies:
   port: 10808
   server: 123.58.219.171
   type: socks5
-- cipher: aes-256-cfb
-  name: GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇬🇧hos[🤖🎪🎞️📦]_dokng.com_91b85eba
-  password: amazonskr05
-  port: 443
-  server: 13.40.25.145
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇩🇰hos[🎬🤖📺🎭]_dokng.com_76c79447
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1027
-  server: 3uilvi9w.zf-mix.9999231.xyz
-  sni: dk-wy.9999231.xyz
-  type: anytls
-  udp: true
 - name: GPT | CHATGPT | ripaojiedian/freenode | 🇭🇰 香港|@ripaojiedian
   server: v10.hdacd.com
   port: 30807
@@ -92,26 +62,6 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: GPT | GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_4d3ce0de
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
-    short-id: f39ad9d9eb26df47
-  server: 154.37.216.186
-  servername: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
-  xudp: true
 - name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
   type: vless
   server: dey.lnmarketplace.net
@@ -129,3 +79,55 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
+- name: GPT | CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_12
+  type: vless
+  server: 157.228.128.59
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  skip-cert-verify: true
+  udp: true
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬📺🎭🎪]_dokng.com_46f19d14
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 19000
+  server: anytls2.864106.xyz
+  skip-cert-verify: true
+  sni: anytls2.864106.xyz
+  type: anytls
+- name: GPT | CHATGPT | anaer/Sub | 比利时 001
+  type: vless
+  network: tcp
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  tls: false
+  encryption: none
+- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇭瑞士丨yoyapai.com
+  type: vless
+  server: ns.l90909l.vip
+  port: 2096
+  uuid: 3fcec4e4-a674-44d2-8cae-c253cec43b9c
+  network: grpc
+  servername: id.vk.com
+  tls: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  skip-cert-verify: false
+  udp: true
+- name: GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_bd68bfa4
+  password: null
+  port: 443
+  server: 146.70.244.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null

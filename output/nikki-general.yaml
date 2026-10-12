@@ -33,10 +33,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- name: GEN | GEN | GEN | GENERAL | Ruk1ng001/freeSub | B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_5024ffeb
-  port: 8080
-  server: 104.51.39.146
-  type: http
 - name: GEN | GENERAL | free18/v2ray | 🇵🇱_波兰_29
   type: vless
   server: 80.47.12.94
@@ -104,17 +100,6 @@ proxies:
   flow: xtls-rprx-vision
   skip-cert-verify: true
   udp: true
-- client-fingerprint: chrome
-  name: GEN | GEN | GEN | GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_742b46f1
-  port: 443
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-    short-id: 56d4e7ae4f86fa39
-  server: 34.92.19.135
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
 - name: GEN | GENERAL | free18/v2ray | 🇩🇪_德国_27
   type: vless
   server: 177.1.187.251
@@ -136,13 +121,6 @@ proxies:
   server: 3uilvi9w.zf-mix.9999231.xyz
   sni: dk-wy.9999231.xyz
   type: anytls
-  udp: true
-- cipher: aes-256-cfb
-  name: GEN | GEN | GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇨🇦hos[🎬🤖📺🎪]_dokng.com_d41225ce
-  password: amazonskr05
-  port: 443
-  server: 35.183.81.9
-  type: ss
   udp: true
 - name: GEN | GENERAL | anaer/Sub | 美国 002
   type: vless
@@ -195,3 +173,38 @@ proxies:
   sni: 4a8c2906c96058315dffbc2b0e7ff19b-0c66a58858a795df.apache-iv.com
   tls: true
   type: http
+- name: GEN | GENERAL | anaer/Sub | 美国 001
+  type: vless
+  network: ws
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  servername: ccc.010304.xyz
+  tls: true
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chromefp=chrome
+- name: GEN | GENERAL | ripaojiedian/freenode | 🇭🇰 香港|@ripaojiedian
+  server: v10.hdacd.com
+  port: 30807
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: GEN | GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_4
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  tls: true
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    mode: stream-one
+  skip-cert-verify: false
+  udp: true
