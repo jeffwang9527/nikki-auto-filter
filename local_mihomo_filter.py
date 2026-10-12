@@ -322,6 +322,7 @@ def pick(
     items: list[tuple[dict[str, Any], dict[str, Any], bool]],
     limit: int,
     metric: str,
+    max_delay: int | None = None,
 ) -> list[tuple[dict[str, Any], dict[str, Any], bool]]:
     def rank(item):
         node, state, grace = item
@@ -339,6 +340,19 @@ def pick(
     servers: dict[str, int] = {}
 
     for node, state, grace in sorted(items, key=rank):
+        if max_delay is not None:
+            delay_ms = state.get(metric)
+            if delay_ms is None:
+                fallback = (
+                    "general_last_success_median"
+                    if metric == "general_median"
+                    else "openai_last_success_median"
+                )
+                delay_ms = state.get(fallback)
+            # Hard ceiling: no usable delay record or over the threshold
+            # means the node must not enter the published pool at all.
+            if delay_ms is None or float(delay_ms) > max_delay:
+                continue
         server = server_key(node)
         if servers.get(server, 0) >= MAX_SAME_SERVER:
             continue
@@ -413,6 +427,13 @@ def main() -> None:
     ap.add_argument("--general-limit", type=int, default=20)
     ap.add_argument("--chatgpt-limit", type=int, default=12)
     ap.add_argument("--concurrency", type=int, default=6)
+    ap.add_argument(
+        "--max-delay",
+        type=int,
+        default=1500,
+        help="hard delay ceiling (ms); nodes whose measured median delay "
+        "exceeds this are excluded from the pool entirely",
+    )
     ap.add_argument("--full", action="store_true")
     args = ap.parse_args()
 
@@ -521,8 +542,12 @@ def main() -> None:
             chatgpt_eligible.append((node, state, grace))
 
     # 两个池独立选择，不再互相排斥。
-    general_pick = pick(general_eligible, args.general_limit, "general_median")
-    chatgpt_pick = pick(chatgpt_eligible, args.chatgpt_limit, "openai_median")
+    general_pick = pick(
+        general_eligible, args.general_limit, "general_median", args.max_delay
+    )
+    chatgpt_pick = pick(
+        chatgpt_eligible, args.chatgpt_limit, "openai_median", args.max_delay
+    )
 
     general_out = [
         {**node, "name": f"GEN | {scalar(node.get('name'))}"}
@@ -570,6 +595,7 @@ def main() -> None:
         "policy": {
             "general_limit": args.general_limit,
             "chatgpt_limit": args.chatgpt_limit,
+            "max_delay_ms": args.max_delay,
             "concurrency": args.concurrency,
             "success_retest_hours": SUCCESS_TTL / 3600,
             "failure_cooldown_hours": FAIL_COOLDOWN / 3600,

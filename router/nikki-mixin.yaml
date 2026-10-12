@@ -29,26 +29,26 @@ proxy-groups:
     use:
       - NIKKI-GENERAL
     url: https://www.google.com/generate_204
-    interval: 300
-    tolerance: 50
+    interval: 600
+    tolerance: 150
 
   - name: "NIKKI-GPT专用池"
     type: url-test
     use:
       - NIKKI-GPT
     url: https://chatgpt.com/robots.txt
-    interval: 300
-    tolerance: 50
-  # Google 相关域名：优先普通池 provider，普通池节点不通自动回退到 GPT provider
-  # 注意：mihomo fallback 组 use 只支持 proxy-provider，不支持 proxy-group
+    interval: 600
+    tolerance: 150
+  # Google 相关域名：双 provider 延迟选优，GENERAL 池节点全灭时自动落到 GPT 池节点
+  # 注意：url-test 组 use 支持多 provider，GENERAL 池节点存活时按延迟与 GPT 池公平竞争
   - name: "NIKKI-GOOGLE回退"
-    type: fallback
+    type: url-test
     use:
       - NIKKI-GENERAL
       - NIKKI-GPT
     url: https://www.google.com/generate_204
-    interval: 300
-    tolerance: 50
+    interval: 600
+    tolerance: 150
 
 rules:
   # GPT/OpenAI 必须最前
