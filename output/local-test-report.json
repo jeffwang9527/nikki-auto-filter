@@ -1,18 +1,18 @@
 {
-  "timestamp": 1791780506,
-  "general_candidate_count": 99,
+  "timestamp": 1791794745,
+  "general_candidate_count": 100,
   "chatgpt_candidate_count": 72,
-  "general_previous_count": 12,
-  "chatgpt_previous_count": 8,
-  "general_pool_count": 107,
-  "chatgpt_pool_count": 77,
-  "candidate_count": 107,
-  "tested_now": 107,
-  "general_tested_now": 107,
-  "chatgpt_tested_now": 77,
-  "cache_reused": 0,
-  "general_eligible": 37,
-  "openai_edge_eligible": 21,
+  "general_previous_count": 14,
+  "chatgpt_previous_count": 5,
+  "general_pool_count": 110,
+  "chatgpt_pool_count": 73,
+  "candidate_count": 114,
+  "tested_now": 39,
+  "general_tested_now": 33,
+  "chatgpt_tested_now": 10,
+  "cache_reused": 75,
+  "general_eligible": 29,
+  "openai_edge_eligible": 13,
   "selected_general": 20,
   "selected_chatgpt": 12,
   "selected_total": 32,
@@ -34,13 +34,23 @@
   "selected": {
     "general": [
       {
-        "name": "GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_ab561926",
-        "delay_ms": 266,
+        "name": "GENERAL | free18/v2ray | 🇳🇱_荷兰_31",
+        "delay_ms": 180,
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d85a93d5",
-        "delay_ms": 291,
+        "name": "GENERAL | free18/v2ray | 🇫🇷_法国_15",
+        "delay_ms": 214,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | free18/v2ray | 🇵🇱_波兰_29",
+        "delay_ms": 235,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | free18/v2ray | 🇱🇹_立陶宛_32",
+        "delay_ms": 242,
         "grace": false
       },
       {
@@ -49,32 +59,27 @@
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇫🇷hos[🎬🤖📺🎭]_dokng.com_13bb1fbc",
+        "name": "GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇫🇷hos[🎬🤖📺🎭]_dokng.com_13bb1fbc",
         "delay_ms": 358,
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇳🇱hos[🎬🤖📺🎪]_dokng.com_20704a3e",
+        "name": "GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇳🇱hos[🎬🤖📺🎪]_dokng.com_20704a3e",
         "delay_ms": 361,
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_bad22d32",
+        "name": "GENERAL | free18/v2ray | 🇷🇺_俄罗斯_26",
+        "delay_ms": 377,
+        "grace": false
+      },
+      {
+        "name": "GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_bad22d32",
         "delay_ms": 384,
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | C🟠🇬🇧hos[🤖🎪🎞️📦]_dokng.com_91b85eba",
-        "delay_ms": 385,
-        "grace": false
-      },
-      {
-        "name": "GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_742b46f1",
-        "delay_ms": 389,
-        "grace": false
-      },
-      {
-        "name": "GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_2b514860",
+        "name": "GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_2b514860",
         "delay_ms": 396,
         "grace": false
       },
@@ -84,17 +89,17 @@
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_bd68bfa4",
+        "name": "GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_bd68bfa4",
         "delay_ms": 397,
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇬🇧hos[🎬📺🎭🎪]_dokng.com_2b887a70",
+        "name": "GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇬🇧hos[🎬📺🎭🎪]_dokng.com_2b887a70",
         "delay_ms": 397,
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | C🟠🇳🇱hos[🎬🤖📺🎭]_dokng.com_4fefa5e6",
+        "name": "GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇳🇱hos[🎬🤖📺🎭]_dokng.com_4fefa5e6",
         "delay_ms": 400,
         "grace": false
       },
@@ -104,70 +109,45 @@
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_4628e154",
-        "delay_ms": 438,
-        "grace": false
-      },
-      {
-        "name": "GENERAL | Ruk1ng001/freeSub | B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_5024ffeb",
-        "delay_ms": 439,
-        "grace": false
-      },
-      {
-        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇳🇱hos[🎬🤖📺🎭]_dokng.com_c745045d",
+        "name": "GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇳🇱hos[🎬🤖📺🎭]_dokng.com_c745045d",
         "delay_ms": 466,
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_3df7bcd5",
+        "name": "GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_3df7bcd5",
         "delay_ms": 471,
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | D🔴🇨🇿hos[🎬🤖📺🎭]_dokng.com_9fc21f6b",
-        "delay_ms": 478,
+        "name": "GENERAL | free18/v2ray | 🇩🇪_德国_27",
+        "delay_ms": 485,
         "grace": false
       },
       {
-        "name": "GENERAL | Ruk1ng001/freeSub | C🟠🇨🇦hos[🎬🤖📺🎪]_dokng.com_d41225ce",
-        "delay_ms": 483,
+        "name": "GENERAL | Ruk1ng001/freeSub | A🟢🇮🇩res[🎬🤖📺🎭]_dokng.com_bf687581",
+        "delay_ms": 539,
+        "grace": false
+      },
+      {
+        "name": "GENERAL | free18/v2ray | 🇳🇱_荷兰_9",
+        "delay_ms": 564,
         "grace": false
       }
     ],
     "chatgpt": [
-      {
-        "name": "GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_4d3ce0de",
-        "delay_ms": 357,
-        "grace": false
-      },
       {
         "name": "CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd55d",
         "delay_ms": 361,
         "grace": false
       },
       {
-        "name": "CHATGPT | Ruk1ng001/freeSub | C🟠🇬🇧hos[🤖🎪🎞️📦]_dokng.com_91b85eba",
-        "delay_ms": 428,
+        "name": "CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_14",
+        "delay_ms": 379,
         "grace": false
       },
       {
-        "name": "CHATGPT | Ruk1ng001/freeSub | C🟠🇨🇦hos[🎬🤖📺🎪]_dokng.com_d41225ce",
-        "delay_ms": 463,
-        "grace": false
-      },
-      {
-        "name": "CHATGPT | Ruk1ng001/freeSub | B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_5024ffeb",
-        "delay_ms": 499,
-        "grace": false
-      },
-      {
-        "name": "CHATGPT | Ruk1ng001/freeSub | D🔴🇩🇰hos[🎬🤖📺🎭]_dokng.com_76c79447",
-        "delay_ms": 735,
-        "grace": false
-      },
-      {
-        "name": "GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🤖📺🎭🎪]_dokng.com_ab561926",
-        "delay_ms": 737,
+        "name": "CHATGPT | free18/v2ray | 🇵🇱_波兰_13",
+        "delay_ms": 613,
         "grace": false
       },
       {
@@ -176,23 +156,43 @@
         "grace": false
       },
       {
-        "name": "CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[✈️]_dokng.com_9f01a8ac",
-        "delay_ms": 983,
-        "grace": false
-      },
-      {
         "name": "CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇭瑞士丨yoyapai.com",
         "delay_ms": 1988,
         "grace": false
       },
       {
-        "name": "CHATGPT | Ruk1ng001/freeSub | D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_bd68bfa4",
+        "name": "GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_bd68bfa4",
         "delay_ms": 2108,
         "grace": false
       },
       {
         "name": "CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[🎬📺🎭🎪]_dokng.com_c45ae8d8",
         "delay_ms": 214,
+        "grace": true
+      },
+      {
+        "name": "CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com",
+        "delay_ms": 423,
+        "grace": true
+      },
+      {
+        "name": "CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_4",
+        "delay_ms": 485,
+        "grace": true
+      },
+      {
+        "name": "CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_12",
+        "delay_ms": 517,
+        "grace": true
+      },
+      {
+        "name": "CHATGPT | anaer/Sub | 德国 001",
+        "delay_ms": 851,
+        "grace": true
+      },
+      {
+        "name": "CHATGPT | anaer/Sub | 比利时 001",
+        "delay_ms": 966,
         "grace": true
       }
     ]
