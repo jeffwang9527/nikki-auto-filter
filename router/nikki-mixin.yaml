@@ -12,22 +12,16 @@ proxy-providers:
     path: /etc/nikki/run/nikki.yaml
 
   NIKKI-GENERAL:
-    type: http
-    url: "https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/output/nikki-general.yaml"
-    path: ./providers/proxy/nikki-general.yaml
-    interval: 14400
-    size-limit: 2000000
+    type: file
+    path: /etc/nikki/run/nikki-general.yaml
     health-check:
       enable: true
       url: https://www.google.com/generate_204
       interval: 300
 
   NIKKI-GPT:
-    type: http
-    url: "https://raw.githubusercontent.com/jeffwang9527/nikki-auto-filter/main/output/nikki-chatgpt.yaml"
-    path: ./providers/proxy/nikki-chatgpt.yaml
-    interval: 14400
-    size-limit: 2000000
+    type: file
+    path: /etc/nikki/run/nikki-chatgpt.yaml
     health-check:
       enable: true
       url: https://chatgpt.com/robots.txt
@@ -154,7 +148,8 @@ rules:
 
   # jsDelivr CDN：provider 更新走直连，不依赖代理池存活（节点全灭时仍能拉到新池）
   - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
-  # GitHub raw：provider 更新走直连（raw@main 无 CDN 缓存延迟，发布即生效）
+  # GitHub raw：应用/下载走直连（节点池由路由器 apply 脚本从 raw 拉取到本地，
+  # 不再依赖 mihomo 自身下载，避开 jsDelivr @main 缓存与 raw 连接被重置问题）
   - DOMAIN-SUFFIX,githubusercontent.com,DIRECT
   # 中国大陆
   - GEOSITE,cn,DIRECT
