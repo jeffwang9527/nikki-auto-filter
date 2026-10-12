@@ -13,7 +13,7 @@ proxy-providers:
 
   NIKKI-GENERAL:
     type: http
-    url: "https://cdn.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-general.yaml"
+    url: "https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-general.yaml"
     path: ./providers/proxy/nikki-general.yaml
     interval: 14400
     size-limit: 2000000
