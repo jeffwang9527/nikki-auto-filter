@@ -1,9 +1,9 @@
 #!/bin/sh
 set -eu
 
-# Track main branch so the router auto-applies future mixin updates without manual hash sync.
-# jsDelivr caches @main briefly (usually minutes, worst case up to ~12h); cron reruns converge.
-MIXIN_URL="https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/router/nikki-mixin.yaml"
+# Pin exact commit f137593 so the router always pulls the same verified mixin version.
+# Update this hash whenever the mixin/provider URLs change upstream.
+MIXIN_URL="https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@f137593/router/nikki-mixin.yaml"
 MIXIN_FILE="/etc/nikki/mixin.yaml"
 
 echo "[1/4] Download Nikki pool mixin"
@@ -34,8 +34,8 @@ echo "[4/4] Reload Nikki"
 
 echo
 echo "Nikki pool mixin installed."
-echo "General provider: https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-general.yaml"
-echo "GPT provider:     https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@main/output/nikki-chatgpt.yaml"
+echo "General provider: https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@f137593/output/nikki-general.yaml"
+echo "GPT provider:     https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@f137593/output/nikki-chatgpt.yaml"
 echo "Provider refresh: 14400s (4h)"
 echo "Health check:     300s (5m)"
 echo
