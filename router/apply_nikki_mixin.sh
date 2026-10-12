@@ -1,9 +1,9 @@
 #!/bin/sh
 set -eu
 
-# Pin exact commit f137593 so the router always pulls the same verified mixin version.
-# Update this hash whenever the mixin/provider URLs change upstream.
-MIXIN_URL="https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@f137593/router/nikki-mixin.yaml"
+# Pin exact commit c8fceab (the commit whose router/nikki-mixin.yaml contains the
+# fastly @f137593 provider URLs). Update this hash whenever the mixin changes.
+MIXIN_URL="https://fastly.jsdelivr.net/gh/jeffwang9527/nikki-auto-filter@c8fceab/router/nikki-mixin.yaml"
 MIXIN_FILE="/etc/nikki/mixin.yaml"
 
 echo "[1/4] Download Nikki pool mixin"
