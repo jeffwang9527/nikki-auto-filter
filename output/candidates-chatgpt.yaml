@@ -168,10 +168,6 @@ proxies:
       Host: nbhhh.mrcool.kdns.fr
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_ff9ee1ab
-  port: 443
-  server: 43.155.62.157
-  type: http
 - alterId: 64
   cipher: auto
   name: CHATGPT | Ruk1ng001/freeSub | A🟢🇨🇳res[🎞️📦]_dokng.com_0da15920
@@ -184,14 +180,16 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   xudp: true
-- name: CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[📺🎭🎞️🔍]_dokng.com_054bd55d
+- name: CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎞️]_dokng.com_054bd55d
   port: 10808
   server: 123.58.219.171
   type: socks5
-- name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_c4d8c40f
+- name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[🎞️]_dokng.com_23257430
+  password: null
   port: 17981
   server: 120.232.115.170
   type: http
+  username: null
 - alpn:
   - ''
   alterId: '0'
@@ -209,56 +207,68 @@ proxies:
     headers: {}
     path: /
   xudp: true
-- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬📺🎭]_dokng.com_c51e1d0a
-  password: '1234'
-  port: 2080
-  server: 54.169.198.75
-  skip-cert-verify: true
-  type: http
-  username: '1234'
-- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[📺]_dokng.com_e72160ea
-  password: '1234'
-  port: 2080
-  server: 47.129.205.189
-  skip-cert-verify: true
-  type: http
-  username: '1234'
-- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[📺🎭]_dokng.com_e4405807
+- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[📺🎪]_dokng.com_e4405807
   password: '1234'
   port: 2080
   server: 13.212.235.123
   skip-cert-verify: true
   type: http
   username: '1234'
-- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎭]_dokng.com_dcacfb9f
+- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🔍]_dokng.com_b83de358
   password: '1234'
   port: 2080
-  server: 18.143.169.187
+  server: 13.212.55.110
   skip-cert-verify: true
   type: http
   username: '1234'
-- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_8d6ee341
-  password: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
-  port: 1892
-  server: sin-a-01.auuas.com
+- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos_dokng.com_76e9313c
+  password: '1234'
+  port: 2080
+  server: 18.143.144.220
   skip-cert-verify: true
-  sni: images.apple.com
-  type: anytls
+  type: http
   udp: true
-- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬]_dokng.com_de7ed748
-  password: '1234'
-  port: 2080
-  server: 13.212.186.198
-  skip-cert-verify: true
-  type: http
   username: '1234'
-- name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos_dokng.com_e7c68157
-  password: '1234'
-  port: 2080
-  server: 54.169.52.51
-  skip-cert-verify: true
+- name: CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_40b4073a
+  password: null
+  port: 17981
+  server: 119.188.131.55
   type: http
-  username: '1234'
+  username: null
+- auth: 745A6079-6A61-423D-BDD9-B344C1D26E62
+  name: CHATGPT | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_63ee2fe0
+  password: 745A6079-6A61-423D-BDD9-B344C1D26E62
+  port: 20177
+  server: sg1.dexlos.com
+  sni: sg1.dexlos.com
+  type: hysteria2
+  udp: true
+- auth: 745A6079-6A61-423D-BDD9-B344C1D26E62
+  name: CHATGPT | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_0b7f4425
+  password: 745A6079-6A61-423D-BDD9-B344C1D26E62
+  port: 20133
+  server: sg1.dexlos.com
+  sni: sg1.dexlos.com
+  type: hysteria2
+  udp: true
+- name: CHATGPT | Ruk1ng001/freeSub | D🔴🇰🇷hos[🎞️✈️🔍]_dokng.com_5275faab
+  port: 12121
+  server: 112.216.54.226
+  type: http
+- alterId: '0'
+  cipher: auto
+  name: CHATGPT | Ruk1ng001/freeSub | C🟠🇭🇰hos[📺🔍]_dokng.com_525d5cb2
+  network: ws
+  port: 443
+  server: xcWBH1Kr0wwfXG24.v.3dns.vip
+  servername: xcWBH1Kr0wwfXG24.v.3dns.vip
+  tls: true
+  type: vmess
+  uuid: efe82ebc-46b3-4242-b612-b652b8fbc870
+  ws-opts:
+    headers:
+      Host: xcWBH1Kr0wwfXG24.v.3dns.vip
+    path: /ws-vmess
 - name: CHATGPT | anaer/Sub | 德国 001
   type: vless
   network: ws
