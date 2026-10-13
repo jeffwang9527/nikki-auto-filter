@@ -20,7 +20,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.84,
+          "age_days": 0.91,
           "latest_commit": "2026-10-12T04:33:40Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
@@ -37,7 +37,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 1.59,
+          "age_days": 1.66,
           "latest_commit": "2026-10-11T10:34:33Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
@@ -54,8 +54,8 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.45,
-          "latest_commit": "2026-10-12T14:00:02Z",
+          "age_days": 0.02,
+          "latest_commit": "2026-10-13T02:00:01Z",
           "repo": "Ruk1ng001/freeSub",
           "path": "clash.yaml"
         }
@@ -71,7 +71,7 @@
         "skipped_inactive": true,
         "freshness": {
           "fresh": false,
-          "age_days": 14.98,
+          "age_days": 15.05,
           "latest_commit": "2026-09-28T01:13:40Z",
           "repo": "ripaojiedian/freenode",
           "path": "clash"
@@ -88,7 +88,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.21,
+          "age_days": 0.29,
           "latest_commit": "2026-10-12T19:39:43Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
@@ -105,7 +105,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.16,
+          "age_days": 0.24,
           "latest_commit": "2026-10-12T20:51:13Z",
           "repo": "wzmwayne/proxy-node",
           "path": "output/yoyapai/clash.yaml"
@@ -124,7 +124,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.16,
+          "age_days": 0.24,
           "latest_commit": "2026-10-12T20:51:13Z",
           "repo": "wzmwayne/proxy-node",
           "path": "output/yoyapai/clash.yaml"
@@ -141,8 +141,8 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.45,
-          "latest_commit": "2026-10-12T14:00:02Z",
+          "age_days": 0.02,
+          "latest_commit": "2026-10-13T02:00:01Z",
           "repo": "Ruk1ng001/freeSub",
           "path": "clash.yaml"
         }
@@ -158,7 +158,7 @@
         "skipped_inactive": true,
         "freshness": {
           "fresh": false,
-          "age_days": 14.98,
+          "age_days": 15.05,
           "latest_commit": "2026-09-28T01:13:40Z",
           "repo": "ripaojiedian/freenode",
           "path": "clash"
@@ -175,7 +175,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.21,
+          "age_days": 0.29,
           "latest_commit": "2026-10-12T19:39:43Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
@@ -192,7 +192,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.84,
+          "age_days": 0.91,
           "latest_commit": "2026-10-12T04:33:40Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
@@ -209,7 +209,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 1.59,
+          "age_days": 1.66,
           "latest_commit": "2026-10-11T10:34:33Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
