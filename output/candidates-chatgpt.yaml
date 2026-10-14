@@ -1,4 +1,15 @@
 proxies:
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩國丨yoyapai.com
+  type: vless
+  server: crimson-smoke-7818.397.workers.dev
+  port: 8880
+  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+  skip-cert-verify: false
+  udp: true
 - name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
   type: vless
   server: dey.lnmarketplace.net
@@ -30,15 +41,22 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_7
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇦CA加拿大丨yoyapai.com
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
+  server: 172.67.79.160
+  port: 2087
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  network: ws
+  servername: cvhpyn.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cvhpyn.pages.dev
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_3
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_4
   type: vless
   server: c20s5.portablesubmarines.com
   port: 443
@@ -152,20 +170,6 @@ proxies:
   reality-opts:
     public-key: fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8
     short-id: f5bc6788
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美國丨yoyapai.com_1
-  type: vless
-  server: 108.162.194.135
-  port: 443
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
-  network: ws
-  servername: nbhhh.mrcool.kdns.fr
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: nbhhh.mrcool.kdns.fr
   skip-cert-verify: false
   udp: true
 - alterId: 64

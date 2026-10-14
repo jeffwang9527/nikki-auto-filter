@@ -909,6 +909,17 @@ proxies:
     headers:
       Host: food.zhaal.ir
     path: /
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩國丨yoyapai.com
+  type: vless
+  server: crimson-smoke-7818.397.workers.dev
+  port: 8880
+  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+  skip-cert-verify: false
+  udp: true
 - name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
   type: vless
   server: dey.lnmarketplace.net
@@ -940,15 +951,22 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_7
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇦CA加拿大丨yoyapai.com
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
+  server: 172.67.79.160
+  port: 2087
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  network: ws
+  servername: cvhpyn.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cvhpyn.pages.dev
   skip-cert-verify: false
   udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_3
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_4
   type: vless
   server: c20s5.portablesubmarines.com
   port: 443
@@ -1037,16 +1055,5 @@ proxies:
   reality-opts:
     public-key: 99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg
     short-id: aa9884f2982b7d3c
-  skip-cert-verify: false
-  udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇿CZ捷克丨yoyapai.com
-  type: vless
-  server: 153.76.185.161
-  port: 3090
-  uuid: 2e065d01-2ac9-48d7-bc4f-c1e3e6ef3de4
-  network: grpc
-  tls: false
-  grpc-opts:
-    grpc-service-name: vless
   skip-cert-verify: false
   udp: true
