@@ -764,132 +764,142 @@ proxies:
 - name: GENERAL | anaer/Sub | 美国 001
   type: vmess
   network: ws
-  server: 162.159.1.33
-  port: 8080
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  skip-cert-verify: false
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- name: GENERAL | anaer/Sub | 土耳其 001
-  type: vmess
-  network: http
-  server: 78.111.102.232
-  port: 3389
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-  tls: false
-  alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-- name: GENERAL | anaer/Sub | 美国 002
-  type: vmess
-  network: ws
-  server: 172.67.152.170
-  port: 2052
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: mahilu.site
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /
-- name: GENERAL | anaer/Sub | 美国 003
+- name: GENERAL | anaer/Sub | 中国 001
   type: vmess
   network: ws
-  server: russia.com
-  port: 2095
-  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  skip-cert-verify: false
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
-- name: GENERAL | anaer/Sub | 美国 004
+      Host: 47.244.120.197
+    path: /
+- name: GENERAL | anaer/Sub | 中国 002
   type: vmess
   network: ws
-  server: cold-dawn-9246.fly.dev
+  server: 47.243.194.125
   port: 443
-  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  skip-cert-verify: false
   tls: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: cold-dawn-9246.fly.dev
-    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
+      Host: nycqg19zkwacpm1b.v.3dns.vip
+    path: /
+- name: GENERAL | anaer/Sub | 中国 003
+  type: vmess
+  network: ws
+  server: 8.218.195.61
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: EX1oGt73NzPQKAc2.v.3dns.vip
+    path: /
+- name: GENERAL | anaer/Sub | 美国 002
+  type: vmess
+  network: ws
+  server: 172.66.203.67
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: vmess.lbw666.dpdns.org
+    path: /
+- name: GENERAL | anaer/Sub | 伊朗 001
+  type: vmess
+  network: ws
+  server: az.hk01.paopaocloud.cyou
+  port: 10035
+  uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: paopao.v2.tw04.paopaocloud.cyou
+    path: /
+- name: GENERAL | anaer/Sub | 伊朗 002
+  type: vmess
+  network: ws
+  server: ah.yd01.paopaocloud.cyou
+  port: 10015
+  uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: paopao.v2.jp02.paopaocloud.cyou
+    path: /
+- name: GENERAL | anaer/Sub | 美国 003
+  type: vmess
+  network: ws
+  server: 141.101.114.33
+  port: 443
+  uuid: e5a88ce2-fc1b-45d1-9c5f-553721d28004
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: v2ray1.zhujicn2.org
+    path: /
+- name: GENERAL | anaer/Sub | 美国 004
+  type: vmess
+  network: ws
+  server: vau1.0bad.com
+  port: 443
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: vau1.0bad.com
+    path: /
 - name: GENERAL | anaer/Sub | 美国 005
   type: vmess
   network: ws
-  server: 162.159.137.249
-  port: 8080
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  server: ee.cloudflare.quest
+  port: 80
+  uuid: f9247df4-02d5-4b31-acc5-4022652c5953
+  skip-cert-verify: false
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: nest-emily-healing-h.trycloudflare.com
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-- name: GENERAL | anaer/Sub | 美国 006
-  type: vmess
-  network: ws
-  server: 104.21.82.39
-  port: 2052
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: mahilu.site
-    path: /
-- name: GENERAL | anaer/Sub | 其他 001
-  type: vmess
-  network: ws
-  server: mahilu.site
-  port: 2052
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: mahilu.site
-    path: /
-- name: GENERAL | anaer/Sub | 美国 007
-  type: vmess
-  network: ws
-  server: 23.227.39.24
-  port: 8080
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
-- name: GENERAL | anaer/Sub | 法国 001
-  type: vmess
-  network: ws
-  server: 94.140.0.110
-  port: 8880
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: food.zhaal.ir
+      Host: ee.cloudflare.quest
     path: /
 - name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩國丨yoyapai.com
   type: vless
@@ -1064,28 +1074,32 @@ proxies:
     short-id: f5bc6788
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | anaer/Sub | 美国 008
+- name: CHATGPT | anaer/Sub | 美国 006
   type: vmess
   network: ws
-  server: 23.227.38.22
-  port: 8080
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  server: shopify.com
+  port: 80
+  uuid: 353bbf5f-a264-4731-e735-984e611c2e01
+  skip-cert-verify: false
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
-- name: CHATGPT | anaer/Sub | 美国 009
-  type: trojan
+      Host: tgus.cloudflare.quest
+    path: /
+- name: CHATGPT | anaer/Sub | 美国 007
+  type: vmess
   network: ws
-  server: 23.227.38.11
+  server: vus3.0bad.com
   port: 443
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  servername: vus3.0bad.com
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: /argox-tr
+      Host: vus3.0bad.com
+    path: /
