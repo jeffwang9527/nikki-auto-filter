@@ -111,21 +111,35 @@ function Verify-RouterPools {
   $GenNames=@($GenProv.proxies | ForEach-Object { $_.name })
   $GptNames=@($GptProv.proxies | ForEach-Object { $_.name })
   Write-Host ("Providers loaded: general={0}, gpt={1}" -f $GenNames.Count, $GptNames.Count)
-
-  $GenAlive=0
-  foreach($n in $GenNames){
-    $enc=[uri]::EscapeDataString($n)
+  # 存活判断改为 provider healthCheck history：File provider 成员不会注册为顶层
+  # /proxies 节点（/proxies/{name} 恒 404），PUT 后等待新健康检查周期（约 300s）再统计。
+  $PutAt=[DateTime]::UtcNow
+  $Deadline=$PutAt.AddSeconds(345)
+  $GenAlive=0; $GptAlive=0; $checked=$false
+  while(([DateTime]::UtcNow) -lt $Deadline){
+    Start-Sleep -Seconds 25
     try{
-      $d=Invoke-RestMethod -Uri ("$RouterApi/proxies/$enc/delay?url=" + [uri]::EscapeDataString("https://www.google.com/generate_204") + "&timeout=6500") -Headers $Hdr -TimeoutSec 12
-      if($d.delay -gt 0){$GenAlive++}
+      $gp=Invoke-RestMethod -Uri "$RouterApi/providers/proxies/NIKKI-GENERAL" -Headers $Hdr -TimeoutSec 20
+      $gt=Invoke-RestMethod -Uri "$RouterApi/providers/proxies/NIKKI-GPT" -Headers $Hdr -TimeoutSec 20
+      $gTimes=@($gp.proxies | Where-Object { @($_.history).Count -gt 0 } | ForEach-Object { $_.history[-1].time })
+      $tTimes=@($gt.proxies | Where-Object { @($_.history).Count -gt 0 } | ForEach-Object { $_.history[-1].time })
+      $gLatest=if($gTimes.Count -gt 0){ $gTimes | Sort-Object | Select-Object -Last 1 } else { $null }
+      $tLatest=if($tTimes.Count -gt 0){ $tTimes | Sort-Object | Select-Object -Last 1 } else { $null }
+      if($gLatest -and ([DateTime]$gLatest) -gt $PutAt.AddSeconds(30) -and $tLatest -and ([DateTime]$tLatest) -gt $PutAt.AddSeconds(30)){
+        $GenAlive=@($gp.proxies | Where-Object { @($_.history).Count -gt 0 -and $_.history[-1].delay -gt 0 }).Count
+        $GptAlive=@($gt.proxies | Where-Object { @($_.history).Count -gt 0 -and $_.history[-1].delay -gt 0 }).Count
+        $checked=$true
+        break
+      }
     }catch{}
   }
-  $GptAlive=0
-  foreach($n in $GptNames){
-    $enc=[uri]::EscapeDataString($n)
+  if(-not $checked){
     try{
-      $d=Invoke-RestMethod -Uri ("$RouterApi/proxies/$enc/delay?url=" + [uri]::EscapeDataString("https://chatgpt.com/robots.txt") + "&timeout=8500") -Headers $Hdr -TimeoutSec 14
-      if($d.delay -gt 0){$GptAlive++}
+      $gp=Invoke-RestMethod -Uri "$RouterApi/providers/proxies/NIKKI-GENERAL" -Headers $Hdr -TimeoutSec 20
+      $gt=Invoke-RestMethod -Uri "$RouterApi/providers/proxies/NIKKI-GPT" -Headers $Hdr -TimeoutSec 20
+      $GenAlive=@($gp.proxies | Where-Object { @($_.history).Count -gt 0 -and $_.history[-1].delay -gt 0 }).Count
+      $GptAlive=@($gt.proxies | Where-Object { @($_.history).Count -gt 0 -and $_.history[-1].delay -gt 0 }).Count
+      Write-Host "WARNING: health check wait timed out; alive count may be stale."
     }catch{}
   }
   Write-Host ("Router alive check: general={0}/{1}, gpt={2}/{3}" -f $GenAlive, $GenNames.Count, $GptAlive, $GptNames.Count)
