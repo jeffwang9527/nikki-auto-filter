@@ -37,6 +37,22 @@ FAIL_COOLDOWN = 6 * 3600
 FAIL_EJECT_STREAK = 3
 MAX_SAME_SERVER = 2
 
+# 已弃用旧源黑名单：free18/yoyapai/barabama/ripaojiedian/anaer 五个源已被
+# 用户明确丢弃（sources.yaml 不再收录）。其历史节点不得再通过 previous 池或
+# 缓存 grace 进入最终池，名称含以下标记的节点一律过滤。
+BLOCKED_SOURCE_MARKERS = (
+    "free18",
+    "yoyapai",
+    "barabama",
+    "ripaojiedian",
+    "anaer",
+)
+
+
+def source_blocked(node: dict[str, Any]) -> bool:
+    name = scalar(node.get("name")).lower()
+    return any(marker in name for marker in BLOCKED_SOURCE_MARKERS)
+
 
 def scalar(value: Any) -> str:
     return "" if value is None else str(value)
@@ -437,14 +453,32 @@ def main() -> None:
     ap.add_argument("--full", action="store_true")
     args = ap.parse_args()
 
-    general_candidates = dedupe_nodes(load_nodes(Path(args.general_candidate)))
-    chatgpt_candidates = dedupe_nodes(load_nodes(Path(args.chatgpt_candidate)))
-    general_previous = load_optional_nodes(Path(args.general_previous))
-    chatgpt_previous = load_optional_nodes(Path(args.chatgpt_previous))
+    general_candidates = [
+        n for n in dedupe_nodes(load_nodes(Path(args.general_candidate)))
+        if not source_blocked(n)
+    ]
+    chatgpt_candidates = [
+        n for n in dedupe_nodes(load_nodes(Path(args.chatgpt_candidate)))
+        if not source_blocked(n)
+    ]
+    general_previous = [
+        n for n in load_optional_nodes(Path(args.general_previous))
+        if not source_blocked(n)
+    ]
+    chatgpt_previous = [
+        n for n in load_optional_nodes(Path(args.chatgpt_previous))
+        if not source_blocked(n)
+    ]
     if not general_previous:
-        general_previous = load_optional_nodes(Path(args.general_out))
+        general_previous = [
+            n for n in load_optional_nodes(Path(args.general_out))
+            if not source_blocked(n)
+        ]
     if not chatgpt_previous:
-        chatgpt_previous = load_optional_nodes(Path(args.chatgpt_out))
+        chatgpt_previous = [
+            n for n in load_optional_nodes(Path(args.chatgpt_out))
+            if not source_blocked(n)
+        ]
     # Current candidates come first; the previous published pool is the
     # rolling fallback and is retained until it fails or is outranked.
     general_pool = dedupe_nodes(general_candidates + general_previous)
