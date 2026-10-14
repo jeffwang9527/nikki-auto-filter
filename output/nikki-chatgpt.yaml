@@ -1,9 +1,59 @@
 proxies:
-- name: GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_5024ffeb
-  port: 8080
-  server: 104.51.39.146
-  type: http
-- name: GPT | CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_14
+- name: GPT | CHATGPT | free18/v2ray | 🇫🇮_芬兰_18
+  type: vless
+  server: 95.111.212.241
+  port: 443
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  servername: www.samsung.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  skip-cert-verify: true
+  udp: true
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎞️]_dokng.com_054bd55d
+  port: 10808
+  server: 123.58.219.171
+  type: socks5
+- name: GPT | CHATGPT | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm
+  type: vless
+  server: 157.228.150.34
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  skip-cert-verify: true
+  udp: true
+- name: GPT | CHATGPT | free18/v2ray | 🇯🇵_日本_17
+  type: trojan
+  server: 45.32.52.173
+  port: 8886
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 45.32.52.173
+  skip-cert-verify: true
+  udp: true
+- name: GPT | CHATGPT | free18/v2ray | 每天更新，请加电报群防止失联
+  type: vless
+  server: 157.228.128.59
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  skip-cert-verify: true
+  udp: true
+- name: GPT | CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_10
   type: vless
   server: 157.228.160.166
   port: 443
@@ -17,10 +67,23 @@ proxies:
     short-id: 3cef317b
   skip-cert-verify: true
   udp: true
+- name: GPT | CHATGPT | free18/v2ray | 🇳🇱_荷兰_19
+  type: vless
+  server: 2.26.231.218
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  servername: rusbid.de
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  skip-cert-verify: true
+  udp: true
 - client-fingerprint: chrome
   idle-session-check-interval: 30
   idle-session-timeout: 30
-  name: GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[✈️]_dokng.com_9f01a8ac
+  name: GPT | GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | U⚪🏳️ukn[✈️]_dokng.com_9f01a8ac
   password: 776b4834-caaf-4006-ab21-409e958867af
   port: 33091
   server: 45.202.240.4
@@ -28,7 +91,32 @@ proxies:
   sni: www.bing.com
   type: anytls
   udp: true
-- name: GPT | CHATGPT | free18/v2ray | 🇵🇱_波兰_13
+- name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇰🇷hos[🎞️✈️🔍]_dokng.com_5275faab
+  port: 12121
+  server: 112.216.54.226
+  type: http
+- name: GPT | CHATGPT | free18/v2ray | 🇸🇬_新加坡_16
+  type: trojan
+  server: 139.180.146.200
+  port: 8886
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 139.180.146.200
+  skip-cert-verify: true
+  udp: true
+- name: GPT | CHATGPT | free18/v2ray | 🇷🇺_俄罗斯_15
+  type: vless
+  server: fi-p1.h1cloud.net
+  port: 25633
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  servername: www.icloud.com
+  tls: true
+  client-fingerprint: random
+  reality-opts:
+    public-key: YLIRYJ8UkT0nSSgxJr7YckNuXnokVyEs2G6thNyx1GE
+    short-id: 200811f031ae7463
+  skip-cert-verify: true
+  udp: true
+- name: GPT | GPT | CHATGPT | free18/v2ray | 🇵🇱_波兰_13
   type: vless
   server: 144.31.101.196
   port: 33891
@@ -41,91 +129,4 @@ proxies:
     public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
     short-id: 5bd7b68ca4c04443
   skip-cert-verify: true
-  udp: true
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇮🇩res[🎬🤖📺🎭]_dokng.com_bf687581
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1015
-  server: 7a9a2v1f.zf-mix.9999231.xyz
-  skip-cert-verify: true
-  sni: id-house.9999231.xyz
-  type: anytls
-  udp: true
-- name: GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd55d
-  port: 10808
-  server: 123.58.219.171
-  type: socks5
-- cipher: aes-256-cfb
-  name: GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | C🟠🇬🇧hos[🤖🎪🎞️📦]_dokng.com_91b85eba
-  password: amazonskr05
-  port: 443
-  server: 13.40.25.145
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | D🔴🇩🇰hos[🎬🤖📺🎭]_dokng.com_76c79447
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1027
-  server: 3uilvi9w.zf-mix.9999231.xyz
-  sni: dk-wy.9999231.xyz
-  type: anytls
-  udp: true
-- name: GPT | CHATGPT | ripaojiedian/freenode | 🇭🇰 香港|@ripaojiedian
-  server: v10.hdacd.com
-  port: 30807
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_4
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  network: xhttp
-  tls: true
-  alpn:
-  - h2
-  xhttp-opts:
-    path: /kavir
-    mode: stream-one
-  skip-cert-verify: false
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: GPT | GPT | GPT | GPT | CHATGPT | Ruk1ng001/freeSub | A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_4d3ce0de
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
-    short-id: f39ad9d9eb26df47
-  server: 154.37.216.186
-  servername: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
-  xudp: true
-- name: GPT | CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  network: xhttp
-  servername: dey.lnmarketplace.net
-  tls: true
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  xhttp-opts:
-    path: /kavir
-    host: dey.lnmarketplace.net
-    mode: stream-one
-  skip-cert-verify: false
   udp: true
