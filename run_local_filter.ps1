@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$Mihomo="C:\VPN\v2rayN-7.24.9\v2rayN-windows-64\bin\mihomo\mihomo-windows-amd64-v1.exe",
     [int]$GeneralLimit=20,
     [int]$ChatGPTLimit=12,
@@ -195,19 +195,21 @@ if($Publish){
     $Verify = Verify-RouterPools
     if(-not $Verify.refresh_ok){
       Write-Host "Router provider refresh FAILED (new pool not pulled). Rollback SKIPPED to avoid rolling back to an unverified state."
-    } elseif($Verify.general_alive -lt 4){
-      Write-Host "WARNING: router general pool alive < 4. Rolling back to previous pool..."
-      if(!(Test-Path ".\output\nikki-general-previous.yaml") -or !(Test-Path ".\output\nikki-chatgpt-previous.yaml")){
-        throw "Rollback source missing; previous pools not found. Current (possibly degraded) pool is kept on GitHub."
-      }
-      Copy-Item ".\output\nikki-general-previous.yaml" ".\output\nikki-general.yaml" -Force
-      Copy-Item ".\output\nikki-chatgpt-previous.yaml" ".\output\nikki-chatgpt.yaml" -Force
-      git add output/nikki-general.yaml output/nikki-chatgpt.yaml
-      git commit -m "rollback to previous node pools (router alive check failed)" 2>&1
-      if($LASTEXITCODE -ne 0){throw "rollback commit failed"}
-      git push origin HEAD:main 2>&1
-      if($LASTEXITCODE -ne 0){throw "rollback push to main failed"}
-      Write-Host "Rollback pushed. Verifying again..."
+  } elseif($Verify.general_alive -lt 4){
+    Write-Host "WARNING: router general pool alive < 4. Rolling back to previous pool..."
+    if(!(Test-Path "$PublishDir\output\nikki-general-previous.yaml") -or !(Test-Path "$PublishDir\output\nikki-chatgpt-previous.yaml")){
+      throw "Rollback source missing; previous pools not found. Current (possibly degraded) pool is kept on GitHub."
+    }
+    Copy-Item "$PublishDir\output\nikki-general-previous.yaml" "$PublishDir\output\nikki-general.yaml" -Force
+    Copy-Item "$PublishDir\output\nikki-chatgpt-previous.yaml" "$PublishDir\output\nikki-chatgpt.yaml" -Force
+    Push-Location $PublishDir
+    git add output/nikki-general.yaml output/nikki-chatgpt.yaml
+    git commit -m "rollback to previous node pools (router alive check failed)" 2>&1
+    if($LASTEXITCODE -ne 0){throw "rollback commit failed"}
+    git push origin HEAD:main 2>&1
+    if($LASTEXITCODE -ne 0){throw "rollback push to main failed"}
+    Pop-Location
+    Write-Host "Rollback pushed. Verifying again..."
       $Verify2 = Verify-RouterPools
       if($Verify2.refresh_ok){
         Write-Host ("After rollback: general={0}/{1}, gpt={2}/{3}" -f $Verify2.general_alive, $Verify2.general_total, $Verify2.gpt_alive, $Verify2.gpt_total)
