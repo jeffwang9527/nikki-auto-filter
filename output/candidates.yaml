@@ -1006,28 +1006,3 @@ proxies:
       Host: nbhhh.mrcool.kdns.fr
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | anaer/Sub | 美国 008
-  type: vmess
-  network: ws
-  server: 23.227.38.22
-  port: 8080
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
-- name: CHATGPT | anaer/Sub | 美国 009
-  type: trojan
-  network: ws
-  server: 23.227.38.11
-  port: 443
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: /argox-tr
