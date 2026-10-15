@@ -1,9 +1,9 @@
 {
   "method": "source-separated dedupe + structural cleanup + obvious-bad filtering only",
   "local_network_tests": false,
-  "general_candidate_count": 90,
-  "chatgpt_candidate_count": 60,
-  "candidate_total": 94,
+  "general_candidate_count": 50,
+  "chatgpt_candidate_count": 24,
+  "candidate_total": 62,
   "max_source_age_days": 7,
   "cross_pool_overlap_allowed": true,
   "cross_pool_duplicates_removed": 0,
@@ -13,15 +13,14 @@
         "source": "free18/v2ray",
         "region": null,
         "input": "input/general/free18.yaml",
-        "valid_seen": 38,
-        "duplicates": 8,
-        "selected": 30,
+        "valid_seen": 0,
+        "duplicates": 0,
+        "selected": 0,
         "limit": 30,
-        "skipped_inactive": false,
+        "skipped_inactive": true,
         "freshness": {
-          "fresh": true,
-          "age_days": 0.92,
-          "latest_commit": "2026-10-14T04:31:47Z",
+          "fresh": false,
+          "reason": "403 Client Error: rate limit exceeded for url: https://api.github.com/repos/free18/v2ray/commits?per_page=1&path=c.yaml",
           "repo": "free18/v2ray",
           "path": "c.yaml"
         }
@@ -37,7 +36,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 3.67,
+          "age_days": 3.75,
           "latest_commit": "2026-10-11T10:34:33Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
@@ -54,7 +53,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.53,
+          "age_days": 0.61,
           "latest_commit": "2026-10-14T14:00:01Z",
           "repo": "Ruk1ng001/freeSub",
           "path": "clash.yaml"
@@ -71,7 +70,7 @@
         "skipped_inactive": true,
         "freshness": {
           "fresh": false,
-          "age_days": 17.06,
+          "age_days": 17.14,
           "latest_commit": "2026-09-28T01:13:40Z",
           "repo": "ripaojiedian/freenode",
           "path": "clash"
@@ -88,7 +87,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.49,
+          "age_days": 0.57,
           "latest_commit": "2026-10-14T14:55:01Z",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
@@ -98,15 +97,14 @@
         "source": "yoyapai.com (via wzmwayne/proxy-node)",
         "region": null,
         "input": "input/general/yoyapai.yaml",
-        "valid_seen": 26,
-        "duplicates": 16,
-        "selected": 10,
+        "valid_seen": 0,
+        "duplicates": 0,
+        "selected": 0,
         "limit": 10,
-        "skipped_inactive": false,
+        "skipped_inactive": true,
         "freshness": {
-          "fresh": true,
-          "age_days": 0.15,
-          "latest_commit": "2026-10-14T23:05:13Z",
+          "fresh": false,
+          "reason": "403 Client Error: rate limit exceeded for url: https://api.github.com/repos/wzmwayne/proxy-node/commits?per_page=1&path=output%2Fyoyapai%2Fclash.yaml",
           "repo": "wzmwayne/proxy-node",
           "path": "output/yoyapai/clash.yaml"
         }
@@ -117,15 +115,14 @@
         "source": "yoyapai.com (via wzmwayne/proxy-node)",
         "region": null,
         "input": "input/chatgpt/yoyapai.yaml",
-        "valid_seen": 32,
-        "duplicates": 20,
-        "selected": 12,
+        "valid_seen": 0,
+        "duplicates": 0,
+        "selected": 0,
         "limit": 12,
-        "skipped_inactive": false,
+        "skipped_inactive": true,
         "freshness": {
-          "fresh": true,
-          "age_days": 0.15,
-          "latest_commit": "2026-10-14T23:05:13Z",
+          "fresh": false,
+          "reason": "403 Client Error: rate limit exceeded for url: https://api.github.com/repos/wzmwayne/proxy-node/commits?per_page=1&path=output%2Fyoyapai%2Fclash.yaml",
           "repo": "wzmwayne/proxy-node",
           "path": "output/yoyapai/clash.yaml"
         }
@@ -134,15 +131,14 @@
         "source": "Ruk1ng001/freeSub",
         "region": null,
         "input": "input/chatgpt/freesub.yaml",
-        "valid_seen": 12,
+        "valid_seen": 0,
         "duplicates": 0,
-        "selected": 12,
+        "selected": 0,
         "limit": 12,
-        "skipped_inactive": false,
+        "skipped_inactive": true,
         "freshness": {
-          "fresh": true,
-          "age_days": 0.53,
-          "latest_commit": "2026-10-14T14:00:01Z",
+          "fresh": false,
+          "reason": "403 Client Error: rate limit exceeded for url: https://api.github.com/repos/Ruk1ng001/freeSub/commits?per_page=1&path=clash.yaml",
           "repo": "Ruk1ng001/freeSub",
           "path": "clash.yaml"
         }
@@ -158,8 +154,7 @@
         "skipped_inactive": true,
         "freshness": {
           "fresh": false,
-          "age_days": 17.06,
-          "latest_commit": "2026-09-28T01:13:40Z",
+          "reason": "403 Client Error: rate limit exceeded for url: https://api.github.com/repos/ripaojiedian/freenode/commits?per_page=1&path=clash",
           "repo": "ripaojiedian/freenode",
           "path": "clash"
         }
@@ -168,15 +163,14 @@
         "source": "anaer/Sub",
         "region": null,
         "input": "input/chatgpt/anaer.yaml",
-        "valid_seen": 12,
+        "valid_seen": 0,
         "duplicates": 0,
-        "selected": 12,
+        "selected": 0,
         "limit": 12,
-        "skipped_inactive": false,
+        "skipped_inactive": true,
         "freshness": {
-          "fresh": true,
-          "age_days": 0.49,
-          "latest_commit": "2026-10-14T14:55:01Z",
+          "fresh": false,
+          "reason": "403 Client Error: rate limit exceeded for url: https://api.github.com/repos/anaer/Sub/commits?per_page=1&path=clash.yaml",
           "repo": "anaer/Sub",
           "path": "clash.yaml"
         }
@@ -185,15 +179,15 @@
         "source": "free18/v2ray",
         "region": null,
         "input": "input/chatgpt/free18.yaml",
-        "valid_seen": 19,
-        "duplicates": 7,
+        "valid_seen": 22,
+        "duplicates": 10,
         "selected": 12,
         "limit": 12,
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 0.92,
-          "latest_commit": "2026-10-14T04:31:47Z",
+          "age_days": 0.0,
+          "latest_commit": "2026-10-15T04:39:31Z",
           "repo": "free18/v2ray",
           "path": "c.yaml"
         }
@@ -209,7 +203,7 @@
         "skipped_inactive": false,
         "freshness": {
           "fresh": true,
-          "age_days": 3.67,
+          "age_days": 3.75,
           "latest_commit": "2026-10-11T10:34:33Z",
           "repo": "Barabama/FreeNodes",
           "path": "nodes/clashmeta.yaml"
