@@ -1,18 +1,18 @@
 {
-  "timestamp": 1792068472,
+  "timestamp": 1792068552,
   "general_candidate_count": 100,
   "chatgpt_candidate_count": 35,
-  "general_previous_count": 30,
-  "chatgpt_previous_count": 16,
-  "general_pool_count": 113,
-  "chatgpt_pool_count": 43,
-  "candidate_count": 115,
-  "tested_now": 115,
-  "general_tested_now": 113,
-  "chatgpt_tested_now": 43,
-  "cache_reused": 0,
-  "general_eligible": 33,
-  "openai_edge_eligible": 14,
+  "general_previous_count": 20,
+  "chatgpt_previous_count": 12,
+  "general_pool_count": 112,
+  "chatgpt_pool_count": 40,
+  "candidate_count": 114,
+  "tested_now": 7,
+  "general_tested_now": 6,
+  "chatgpt_tested_now": 1,
+  "cache_reused": 107,
+  "general_eligible": 32,
+  "openai_edge_eligible": 13,
   "selected_general": 20,
   "selected_chatgpt": 12,
   "selected_total": 32,
@@ -35,6 +35,11 @@
   "selected": {
     "general": [
       {
+        "name": "GEN | GENERAL | mahdibland/V2RayAggregator | 🇬🇧GB-82.38.31.192-0096 | 60.904MB",
+        "delay_ms": 771,
+        "grace": false
+      },
+      {
         "name": "GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vmess-2387872",
         "delay_ms": 203,
         "grace": true
@@ -42,6 +47,11 @@
       {
         "name": "GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | trojan-1827148395",
         "delay_ms": 203,
+        "grace": true
+      },
+      {
+        "name": "GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-1678961829",
+        "delay_ms": 241,
         "grace": true
       },
       {
@@ -55,7 +65,7 @@
         "grace": true
       },
       {
-        "name": "GEN | GEN | GEN | GEN | GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇫🇷hos[🎬🤖📺🎭]_dokng.com_13bb1fbc",
+        "name": "GEN | GEN | GEN | GEN | GEN | GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇫🇷hos[🎬🤖📺🎭]_dokng.com_13bb1fbc",
         "delay_ms": 272,
         "grace": true
       },
@@ -75,8 +85,18 @@
         "grace": true
       },
       {
+        "name": "GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-1716331078",
+        "delay_ms": 308,
+        "grace": true
+      },
+      {
         "name": "GEN | GENERAL | mahdibland/V2RayAggregator | 🇳🇱NL-193.29.139.168-0102 | 60.538MB",
         "delay_ms": 310,
+        "grace": true
+      },
+      {
+        "name": "GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-522223663",
+        "delay_ms": 314,
         "grace": true
       },
       {
@@ -100,8 +120,8 @@
         "grace": true
       },
       {
-        "name": "GEN | GEN | GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬📺🎭🎪]_dokng.com_46f19d14",
-        "delay_ms": 400,
+        "name": "GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-875271587",
+        "delay_ms": 398,
         "grace": true
       },
       {
@@ -113,29 +133,14 @@
         "name": "GENERAL | mahdibland/V2RayAggregator | 🇺🇸US-173.244.56.6-0106 | 60.665MB",
         "delay_ms": 418,
         "grace": true
-      },
-      {
-        "name": "GEN | GEN | GEN | GEN | GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_bad22d32",
-        "delay_ms": 428,
-        "grace": true
-      },
-      {
-        "name": "GENERAL | mahdibland/V2RayAggregator | 🇺🇸US-173.244.56.9-0167 | 71.893MB",
-        "delay_ms": 454,
-        "grace": true
-      },
-      {
-        "name": "GEN | GENERAL | mahdibland/V2RayAggregator | 🇺🇸US-156.146.38.169-0137 | 113.646MB",
-        "delay_ms": 456,
-        "grace": true
-      },
-      {
-        "name": "GENERAL | mahdibland/V2RayAggregator | 🇺🇸US-156.146.38.168-0108 | 60.16MB",
-        "delay_ms": 474,
-        "grace": true
       }
     ],
     "chatgpt": [
+      {
+        "name": "GPT | CHATGPT | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-1019443010",
+        "delay_ms": 866,
+        "grace": false
+      },
       {
         "name": "GPT | CHATGPT | mahdibland/V2RayAggregator | 🇺🇸US-156.146.38.167-0083 | 102.478MB",
         "delay_ms": 464,
@@ -177,11 +182,6 @@
         "grace": true
       },
       {
-        "name": "GPT | CHATGPT | mahdibland/V2RayAggregator | 🇺🇸US-156.146.38.170-0082 | 109.403MB",
-        "delay_ms": 934,
-        "grace": true
-      },
-      {
         "name": "CHATGPT | Au1rxx/free-vpn-subscriptions (SG) | SG | shadowsocks-1828226964",
         "delay_ms": 1153,
         "grace": true
@@ -192,8 +192,8 @@
         "grace": true
       },
       {
-        "name": "GPT | CHATGPT | Au1rxx/free-vpn-subscriptions (SG) | SG | shadowsocks-125384",
-        "delay_ms": 1365,
+        "name": "CHATGPT | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-1827152952",
+        "delay_ms": 1428,
         "grace": true
       }
     ]

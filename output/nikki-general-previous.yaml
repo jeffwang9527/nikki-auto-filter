@@ -1,5 +1,14 @@
 proxies:
-- name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | trojan-1742281114
+- alterId: 0
+  cipher: auto
+  name: GEN | GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vmess-2387872
+  network: raw
+  port: 18000
+  server: 149.88.23.202
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | trojan-1827148395
   password: UX82473651
   port: 443
   server: glorious-glider.rooster465.autos
@@ -7,30 +16,13 @@ proxies:
   sni: glorious-glider.rooster465.autos
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vmess-2387872
-  network: raw
-  port: 18000
-  server: 149.88.23.202
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-1678961829
-  network: raw
-  port: 24146
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  server: 54.251.9.130
-  servername: www.intel.com
+- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_609c62be
+  port: 9443
+  server: 152.233.9.239
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-- name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | trojan-1701462846
+  type: http
+- name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | trojan-1828295227
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 139.180.146.200
@@ -38,115 +30,6 @@ proxies:
   sni: 139.180.146.200
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vmess-1268277849
-  network: tcp
-  port: 18000
-  server: ww11.levikogjgfdd.ir
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vmess-1058394824
-  network: raw
-  port: 18000
-  server: ww11.levikogjgfdd.ir
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | trojan-1745293714
-  password: UX82473651
-  port: 443
-  server: glorious-glider.rooster465.autos
-  skip-cert-verify: true
-  sni: ''
-  type: trojan
-  udp: true
-- name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-1716331078
-  network: ws
-  port: 443
-  server: free.nadun.store
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-522223663
-  network: tcp
-  port: 12972
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- alterId: 0
-  cipher: auto
-  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vmess-485686942
-  network: tcp
-  port: 18000
-  server: 149.88.23.207
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-875271587
-  network: tcp
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
-  servername: sg2-8sb.6121999.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-- name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-1716729467
-  network: ws
-  port: 443
-  server: free.nadun.store
-  servername: free.nadun.store
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-260719822
-  network: tcp
-  port: 10574
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_609c62be
-  port: 9443
-  server: 152.233.9.239
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: GEN | GENERAL | mahdibland/V2RayAggregator | 🇬🇧GB-82.38.31.192-0096 | 60.904MB
-  server: 82.38.31.192
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
 - name: GEN | GEN | GEN | GEN | GEN | GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇫🇷hos[🎬🤖📺🎭]_dokng.com_13bb1fbc
   port: 443
   server: 103.82.101.43
@@ -154,24 +37,62 @@ proxies:
   sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
   tls: true
   type: http
-- name: GEN | GENERAL | mahdibland/V2RayAggregator | 🇳🇱NL-193.29.139.168-0102 | 60.538MB
+- alterId: 0
+  cipher: auto
+  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vmess-1827158929
+  network: tcp
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vmess-1827159627
+  network: raw
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: GEN | GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | trojan-1745293714
+  password: UX82473651
+  port: 443
+  server: glorious-glider.rooster465.autos
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- name: GEN | GEN | GENERAL | mahdibland/V2RayAggregator | 🇳🇱NL-193.29.139.168-0102
+    | 60.538MB
   server: 193.29.139.168
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
-- name: GEN | GENERAL | mahdibland/V2RayAggregator | 🇬🇧GB-82.38.31.170-0108 | 60.92MB
+- name: GEN | GEN | GENERAL | mahdibland/V2RayAggregator | 🇬🇧GB-82.38.31.170-0108
+    | 60.92MB
   server: 82.38.31.170
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: GEN | GENERAL | mahdibland/V2RayAggregator | 🇬🇧GB-82.38.31.155-0092 | 60.824MB
+- name: GEN | GEN | GENERAL | mahdibland/V2RayAggregator | 🇬🇧GB-82.38.31.155-0092
+    | 60.824MB
   server: 82.38.31.155
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
+- alterId: 0
+  cipher: auto
+  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions (SG) | SG | vmess-1827156309
+  network: tcp
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - name: GEN | GENERAL | Ruk1ng001/freeSub | C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_622cadae
   password: null
   port: 443
@@ -180,3 +101,48 @@ proxies:
   tls: true
   type: http
   username: null
+- name: GEN | GEN | GEN | GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬📺🎭🎪]_dokng.com_46f19d14
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 19000
+  server: anytls2.864106.xyz
+  skip-cert-verify: true
+  sni: anytls2.864106.xyz
+  type: anytls
+- cipher: aes-128-gcm
+  name: GEN | GENERAL | Au1rxx/free-vpn-subscriptions | shadowsocks-1827146224
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+  udp: true
+- name: GEN | GENERAL | mahdibland/V2RayAggregator | 🇺🇸US-173.244.56.6-0106 | 60.665MB
+  server: 173.244.56.6
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: GEN | GEN | GEN | GEN | GEN | GEN | GENERAL | Ruk1ng001/freeSub | D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_bad22d32
+  port: 8443
+  server: 44.229.69.166
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: GEN | GENERAL | mahdibland/V2RayAggregator | 🇺🇸US-173.244.56.9-0167 | 71.893MB
+  server: 173.244.56.9
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: GEN | GEN | GENERAL | mahdibland/V2RayAggregator | 🇺🇸US-156.146.38.169-0137
+    | 113.646MB
+  server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: GEN | GENERAL | mahdibland/V2RayAggregator | 🇺🇸US-156.146.38.168-0108 | 60.16MB
+  server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
