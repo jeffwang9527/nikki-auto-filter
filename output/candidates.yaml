@@ -1,4 +1,387 @@
 proxies:
+- name: GENERAL | free18/v2ray | 每天更新，请加电报群防止失联
+  type: vless
+  server: 157.228.128.59
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 电报群：https://t.me/vvkj11
+  type: vless
+  server: 177.1.187.251
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  servername: de2.srv.vbuste.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm
+  type: vless
+  server: 157.228.150.34
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇳🇱_荷兰_5
+  type: vless
+  server: 13.143.172.203
+  port: 443
+  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
+  servername: 13.143.172.203
+  tls: true
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇩🇪_德国_6
+  type: vless
+  server: de2.srv.vbuste.ru
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  servername: de2.srv.vbuste.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_10
+  type: vless
+  server: 157.228.160.166
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  servername: addons.mozilla.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇰🇷_韩国_14
+  type: vmess
+  server: 43.108.103.167
+  port: 123
+  uuid: 35aa0fda-175a-4aec-c468-0231dee1a121
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇩🇪_德国_15
+  type: vless
+  server: 177.1.187.139
+  port: 1984
+  uuid: d9eb02da-a469-44a7-a393-ba1c5fbbc8c4
+  servername: ruori.ai
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: random
+  reality-opts:
+    public-key: ikKnBJfcuPy1U0O3Cb71zv_G1liM5QcAYhR10A0Ech0
+    short-id: 0f00666a
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇷🇺_俄罗斯_19
+  type: vless
+  server: tr.datanode-internal.net
+  port: 443
+  uuid: 93996a55-febe-4183-9366-df6cb11a34dd
+  servername: sun9-38.userapi.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic
+    short-id: abbcd128
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇷🇺_俄罗斯_20
+  type: vless
+  server: 139.28.168.75
+  port: 10444
+  uuid: 154bd388-4968-4900-a088-18676f428a20
+  servername: video.yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇬🇧_英国_21
+  type: vless
+  server: 138.124.125.193
+  port: 10444
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
+  servername: ads.x5.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇷🇺_俄罗斯_22
+  type: vless
+  server: 93.183.106.180
+  port: 10444
+  uuid: 9f837d05-6d7a-488b-a896-ea2b2ccf5413
+  servername: ads.x5.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇭🇰_香港_23
+  type: vless
+  server: 213.176.92.168
+  port: 10444
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  servername: video.yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇷🇺_俄罗斯_24
+  type: vless
+  server: 93.183.106.180
+  port: 10443
+  uuid: 9f837d05-6d7a-488b-a896-ea2b2ccf5413
+  servername: 93.183.106.180
+  tls: false
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🏳️_未知_25
+  type: vless
+  server: brightharbor.download
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  servername: localhost
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇹🇷_土耳其_26
+  type: vless
+  server: 206.1.96.228
+  port: 8082
+  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇸🇪_瑞典_27
+  type: vless
+  server: 5.157.10.146
+  port: 443
+  uuid: 732255eb-8ce9-4cd5-8bdc-376bd3fa0b11
+  servername: sweb1.loozerp.wiki
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇭🇺_匈牙利_28
+  type: vless
+  server: 45.9.168.17
+  port: 443
+  uuid: 5d4a87fa-16f1-4b65-b217-225a31e36239
+  servername: hu.convert-flow.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇺🇸_美国_29
+  type: vless
+  server: 45.159.79.71
+  port: 4443
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  servername: sentry.io
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 321Ii2xbCoyll6WJ0Qm1Sh8qcC0kxXvUaZhe3kyasD8
+    short-id: a1b2c3d4e5f6a7b8
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇷🇺_俄罗斯_30
+  type: vless
+  server: 200.165.229.159
+  port: 443
+  uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
+  servername: flarora.ferreo.sbs
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
+    short-id: 1067b23f928e7618
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇺🇸_美国_31
+  type: vless
+  server: 130.12.102.125
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  servername: localhost
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇺🇸_美国_32
+  type: vless
+  server: 130.12.102.26
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  servername: localhost
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇬🇧_英国_39
+  type: vless
+  server: freshjuniper.download
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  servername: localhost
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇬🇧_英国_41
+  type: vless
+  server: freshjuniper.download
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  servername: freshjuniper.download
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇺🇸_美国_42
+  type: vless
+  server: 51.81.203.63
+  port: 443
+  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
+  servername: www.icloud.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
+    short-id: 4477382ff6d3d41c
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇹🇷_土耳其_43
+  type: vless
+  server: 185.71.219.188
+  port: 443
+  uuid: 2107ea1e-26fb-4831-8c3f-fb190bea79f7
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇩🇪_德国_44
+  type: vless
+  server: 144.31.215.48
+  port: 443
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  servername: eu-central-de2.hanvpn.biz
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w0J3H-DEyHEK-Nj7bst_5sQqzcPl700ybHpqq5mFz0U
+    short-id: 12a3b7681806bc97
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇹🇷_土耳其_46
+  type: vless
+  server: 212.64.193.85
+  port: 443
+  uuid: 2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5
+  servername: cz.cloudtechone.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: _IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo
+    short-id: f93c9d5127e622e4
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇩🇪_德国_48
+  type: vless
+  server: 178.105.61.61
+  port: 2083
+  uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
+  servername: 178.105.61.61
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: H0nCazQFHVhSObfqSUhGLhK7KRwKzTMggIBPjnMMqhk
+    short-id: af04ff8094115e93
+  skip-cert-verify: true
+  udp: true
+- name: GENERAL | free18/v2ray | 🇺🇸_美国_49
+  type: vmess
+  server: 165.140.217.2
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: GENERAL | Barabama/FreeNodes | 中国_1
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -502,163 +885,205 @@ proxies:
     headers:
       Host: ee.cloudflare.quest
     path: /
-- name: CHATGPT | free18/v2ray | 每天更新，请加电报群防止失联
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩國丨yoyapai.com
   type: vless
-  server: 157.228.128.59
+  server: crimson-smoke-7818.397.workers.dev
+  port: 8880
+  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+  skip-cert-verify: false
+  udp: true
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
+  type: vless
+  server: dey.lnmarketplace.net
   port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  servername: dey.lnmarketplace.net
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  skip-cert-verify: true
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+  skip-cert-verify: false
   udp: true
-- name: CHATGPT | free18/v2ray | 电报群：https://t.me/vvkj11
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_1
   type: vless
-  server: 177.1.187.251
+  server: dey.lnmarketplace.net
   port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  servername: de2.srv.vbuste.ru
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  skip-cert-verify: true
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    mode: stream-one
+  skip-cert-verify: false
   udp: true
-- name: CHATGPT | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇦CA加拿大丨yoyapai.com
   type: vless
-  server: 157.228.150.34
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
+  server: 172.67.79.160
+  port: 2087
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  network: ws
+  servername: cvhpyn.pages.dev
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
-  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cvhpyn.pages.dev
+  skip-cert-verify: false
   udp: true
-- name: CHATGPT | free18/v2ray | 🇳🇱_荷兰_5
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_4
   type: vless
-  server: 13.143.172.203
+  server: c20s5.portablesubmarines.com
   port: 443
-  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
-  servername: 13.143.172.203
+  uuid: 85fe968d-fbb5-40dc-8422-30635eccb149
+  servername: portal.citygrainla.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+    short-id: 051f20c2344a2dfd
+  skip-cert-verify: false
+  udp: true
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇪🇪EE爱沙尼亚丨yoyapai.com
+  type: vless
+  server: fr5.wizard.select
+  port: 443
+  uuid: 2acc3742-c568-11f1-9902-a337233c6cda
+  servername: fr5.wizard.select
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: uqLRHVERHP974FJk39ltiV8pkcGAWYKJfOJ1nMALahU
+    short-id: 984f
+  skip-cert-verify: false
+  udp: true
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇷🇺RU俄罗斯丨yoyapai.com
+  type: vless
+  server: 93.188.184.150
+  port: 443
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  network: grpc
+  servername: ru-1-2.unturned-rust-dead.lol
+  tls: true
+  client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: ru-api
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  skip-cert-verify: false
+  udp: true
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇮FI芬兰丨yoyapai.com
+  type: vless
+  server: frfx.pafaktalaei.ir
+  port: 443
+  uuid: a5bb02b7-0a54-44dc-af05-dc2633d5abd4
+  network: xhttp
+  servername: frfx.pafaktalaei.ir
+  tls: true
+  client-fingerprint: ios
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /connect-v1
+    host: frfx.pafaktalaei.ir
+    mode: auto
+  skip-cert-verify: false
+  udp: true
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇭瑞士丨yoyapai.com
+  type: vless
+  server: ns.l90909l.vip
+  port: 2096
+  uuid: 3fcec4e4-a674-44d2-8cae-c253cec43b9c
+  network: grpc
+  servername: id.vk.com
+  tls: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  skip-cert-verify: false
+  udp: true
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇲🇩MD摩尔多瓦丨yoyapai.com
+  type: vless
+  server: 89.35.14.34
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  network: grpc
+  servername: md5.univesalsrv.com
   tls: true
   client-fingerprint: firefox
-  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: app.v1.PushService
+  reality-opts:
+    public-key: 99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg
+    short-id: aa9884f2982b7d3c
+  skip-cert-verify: false
   udp: true
-- name: CHATGPT | free18/v2ray | 🇩🇪_德国_6
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇿CZ捷克丨yoyapai.com
   type: vless
-  server: de2.srv.vbuste.ru
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  servername: de2.srv.vbuste.ru
+  server: 153.76.185.161
+  port: 3090
+  uuid: 2e065d01-2ac9-48d7-bc4f-c1e3e6ef3de4
+  network: grpc
+  tls: false
+  grpc-opts:
+    grpc-service-name: vless
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇿KZ哈萨克斯坦丨yoyapai.com
+  type: vless
+  server: 206.223.249.90
+  port: 33891
+  uuid: 9977ba41-b6aa-4033-9492-2f6abfcade31
+  servername: browser.yandex.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  skip-cert-verify: true
+    public-key: fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8
+    short-id: f5bc6788
+  skip-cert-verify: false
   udp: true
-- name: CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_10
-  type: vless
-  server: 157.228.160.166
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇰🇷_韩国_14
+- name: CHATGPT | anaer/Sub | 美国 006
   type: vmess
-  server: 43.108.103.167
-  port: 123
-  uuid: 35aa0fda-175a-4aec-c468-0231dee1a121
+  network: ws
+  server: shopify.com
+  port: 80
+  uuid: 353bbf5f-a264-4731-e735-984e611c2e01
+  skip-cert-verify: false
+  tls: false
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇩🇪_德国_15
-  type: vless
-  server: 177.1.187.139
-  port: 1984
-  uuid: d9eb02da-a469-44a7-a393-ba1c5fbbc8c4
-  servername: ruori.ai
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: random
-  reality-opts:
-    public-key: ikKnBJfcuPy1U0O3Cb71zv_G1liM5QcAYhR10A0Ech0
-    short-id: 0f00666a
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇷🇺_俄罗斯_19
-  type: vless
-  server: tr.datanode-internal.net
+  ws-opts:
+    headers:
+      Host: tgus.cloudflare.quest
+    path: /
+- name: CHATGPT | anaer/Sub | 美国 007
+  type: vmess
+  network: ws
+  server: vus3.0bad.com
   port: 443
-  uuid: 93996a55-febe-4183-9366-df6cb11a34dd
-  servername: sun9-38.userapi.com
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  servername: vus3.0bad.com
+  skip-cert-verify: false
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic
-    short-id: abbcd128
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇷🇺_俄罗斯_20
-  type: vless
-  server: 139.28.168.75
-  port: 10444
-  uuid: 154bd388-4968-4900-a088-18676f428a20
-  servername: video.yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇬🇧_英国_21
-  type: vless
-  server: 138.124.125.193
-  port: 10444
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
-  servername: ads.x5.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇷🇺_俄罗斯_22
-  type: vless
-  server: 93.183.106.180
-  port: 10444
-  uuid: 9f837d05-6d7a-488b-a896-ea2b2ccf5413
-  servername: ads.x5.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  skip-cert-verify: true
-  udp: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: vus3.0bad.com
+    path: /
