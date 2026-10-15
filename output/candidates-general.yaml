@@ -640,18 +640,10 @@ proxies:
   uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
   ws-opts:
     path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- alterId: 64
-  cipher: auto
-  name: GENERAL | Ruk1ng001/freeSub | A🟢🇨🇳res[🎞️📦]_dokng.com_0da15920
-  network: tcp
-  port: 50002
-  server: 112.132.215.108
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  xudp: true
+- name: GENERAL | Ruk1ng001/freeSub | D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_1b8fac76
+  port: 1080
+  server: 47.238.126.208
+  type: socks5
 - alterId: '0'
   cipher: auto
   name: GENERAL | Ruk1ng001/freeSub | C🟠🇨🇳hos_dokng.com_f0bd4434
@@ -660,60 +652,38 @@ proxies:
   server: 39.108.113.127
   type: vmess
   uuid: 2b910c43-51e3-4b15-9be8-b658106ba35e
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos_dokng.com_e4405807
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos_dokng.com_c5089b42
+  port: 6666
+  server: 61.142.113.42
+  type: socks5
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[✨]_dokng.com_dcacfb9f
   password: '1234'
   port: 2080
-  server: 13.212.235.123
+  server: 18.143.169.187
   skip-cert-verify: true
   type: http
   username: '1234'
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_c3a69552
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[📺]_dokng.com_7bb21324
   password: '1234'
   port: 2080
-  server: 54.169.224.224
+  server: 47.129.155.166
   skip-cert-verify: true
   type: http
   username: '1234'
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬📺]_dokng.com_aa59005a
-  password: '1234'
-  port: 2080
-  server: 47.129.200.52
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  type: http
-  udp: true
-  username: '1234'
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_23257430
-  password: null
-  port: 17981
-  server: 120.232.115.170
-  type: http
-  username: null
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬📺🎪✨]_dokng.com_c51e1d0a
-  password: '1234'
-  port: 2080
-  server: 54.169.198.75
-  skip-cert-verify: true
-  type: http
-  username: '1234'
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎭]_dokng.com_e7c68157
-  password: '1234'
-  port: 2080
-  server: 54.169.52.51
-  skip-cert-verify: true
-  type: http
-  username: '1234'
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[✨]_dokng.com_b83de358
-  password: '1234'
-  port: 2080
-  server: 13.212.55.110
-  skip-cert-verify: true
-  type: http
-  username: '1234'
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_5da2fc4b
-  port: 17981
-  server: 119.188.131.55
-  type: http
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_7a4d92d5
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: I2PQq5bidT2RjVCJt2r-eSVpLNY61quSYgS2dseomF8
+    short-id: 1dd8558159ecd0
+  server: sg4.oh-node.com
+  servername: www.changiairport.com
+  tls: true
+  type: vless
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
 - name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬]_dokng.com_de7ed748
   password: '1234'
   port: 2080
@@ -721,169 +691,195 @@ proxies:
   skip-cert-verify: true
   type: http
   username: '1234'
-- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_f656099f
-  port: 6666
-  server: 218.77.50.79
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_880b1631
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: vUhHTgZiXSho6Nv84w_JZW7Mo7XjJr0TsOBf19Dpols
+    short-id: 37c94ae25b69a93a
+  server: sg1.oh-node.com
+  servername: sg-hyp-api.hoyoverse.com
+  tls: true
+  type: vless
+  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos_dokng.com_099454ad
+  password: '111'
+  port: 11211
+  server: 47.243.173.50
+  skip-cert-verify: true
   type: socks5
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇭🇰hos_dokng.com_c5089b42
-  port: 6666
-  server: 61.142.113.42
-  type: socks5
-- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬📺]_dokng.com_8fbc2880
+  username: '111'
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos_dokng.com_0360a354
   password: '1234'
   port: 2080
-  server: 54.251.149.207
+  server: 13.212.249.115
   skip-cert-verify: true
   type: http
   username: '1234'
-- name: GENERAL | Ruk1ng001/freeSub | A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_65a5452e
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬]_dokng.com_7c989a09
+  password: '1234'
+  port: 2080
+  server: 54.151.242.187
+  skip-cert-verify: true
   type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  username: '1234'
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬📺🎭🎪]_dokng.com_5642e684
+  password: '1234'
+  port: 2080
+  server: 54.169.228.182
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- name: GENERAL | Ruk1ng001/freeSub | U⚪🏳️ukn_dokng.com_5da2fc4b
+  port: 17981
+  server: 119.188.131.55
+  type: http
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬📺]_dokng.com_e7c68157
+  password: '1234'
+  port: 2080
+  server: 54.169.52.51
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- name: GENERAL | Ruk1ng001/freeSub | C🟠🇸🇬hos[🎬🎭]_dokng.com_4b0e0cd5
+  password: '1234'
+  port: 2080
+  server: 54.255.129.221
+  skip-cert-verify: true
+  type: http
+  username: '1234'
 - name: GENERAL | anaer/Sub | 美国 001
   type: vmess
   network: ws
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  skip-cert-verify: false
+  server: 162.159.1.33
+  port: 8080
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /
-- name: GENERAL | anaer/Sub | 中国 001
+      Host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+- name: GENERAL | anaer/Sub | 土耳其 001
   type: vmess
-  network: ws
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  skip-cert-verify: false
+  network: http
+  server: 78.111.102.232
+  port: 3389
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
   tls: false
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: 47.244.120.197
-    path: /
-- name: GENERAL | anaer/Sub | 中国 002
-  type: vmess
-  network: ws
-  server: 47.243.194.125
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
-    path: /
-- name: GENERAL | anaer/Sub | 中国 003
-  type: vmess
-  network: ws
-  server: 8.218.195.61
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: EX1oGt73NzPQKAc2.v.3dns.vip
-    path: /
+  http-opts:
+    method: GET
+    path:
+    - /
 - name: GENERAL | anaer/Sub | 美国 002
   type: vmess
   network: ws
-  server: 172.66.203.67
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  skip-cert-verify: false
-  tls: true
+  server: 172.67.152.170
+  port: 2052
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /
-- name: GENERAL | anaer/Sub | 伊朗 001
-  type: vmess
-  network: ws
-  server: az.hk01.paopaocloud.cyou
-  port: 10035
-  uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: paopao.v2.tw04.paopaocloud.cyou
-    path: /
-- name: GENERAL | anaer/Sub | 伊朗 002
-  type: vmess
-  network: ws
-  server: ah.yd01.paopaocloud.cyou
-  port: 10015
-  uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: paopao.v2.jp02.paopaocloud.cyou
+      Host: mahilu.site
     path: /
 - name: GENERAL | anaer/Sub | 美国 003
   type: vmess
   network: ws
-  server: 141.101.114.33
-  port: 443
-  uuid: e5a88ce2-fc1b-45d1-9c5f-553721d28004
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: v2ray1.zhujicn2.org
-    path: /
-- name: GENERAL | anaer/Sub | 美国 004
-  type: vmess
-  network: ws
-  server: vau1.0bad.com
-  port: 443
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: vau1.0bad.com
-    path: /
-- name: GENERAL | anaer/Sub | 美国 005
-  type: vmess
-  network: ws
-  server: ee.cloudflare.quest
-  port: 80
-  uuid: f9247df4-02d5-4b31-acc5-4022652c5953
-  skip-cert-verify: false
+  server: russia.com
+  port: 2095
+  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: ee.cloudflare.quest
+      Host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
+- name: GENERAL | anaer/Sub | 美国 004
+  type: vmess
+  network: ws
+  server: cold-dawn-9246.fly.dev
+  port: 443
+  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: cold-dawn-9246.fly.dev
+    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
+- name: GENERAL | anaer/Sub | 美国 005
+  type: vmess
+  network: ws
+  server: 162.159.137.249
+  port: 8080
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: nest-emily-healing-h.trycloudflare.com
+    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+- name: GENERAL | anaer/Sub | 美国 006
+  type: vmess
+  network: ws
+  server: 104.21.82.39
+  port: 2052
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: mahilu.site
+    path: /
+- name: GENERAL | anaer/Sub | 其他 001
+  type: vmess
+  network: ws
+  server: mahilu.site
+  port: 2052
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: mahilu.site
+    path: /
+- name: GENERAL | anaer/Sub | 美国 007
+  type: vmess
+  network: ws
+  server: 23.227.39.24
+  port: 8080
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: per-essex-patterns-bowling.trycloudflare.com
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+- name: GENERAL | anaer/Sub | 法国 001
+  type: vmess
+  network: ws
+  server: 94.140.0.110
+  port: 8880
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: food.zhaal.ir
     path: /
 - name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
   type: vless
