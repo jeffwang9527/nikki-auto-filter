@@ -885,18 +885,46 @@ proxies:
     headers:
       Host: ee.cloudflare.quest
     path: /
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇷KR韩國丨yoyapai.com
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
   type: vless
-  server: crimson-smoke-7818.397.workers.dev
-  port: 8880
-  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  servername: addons.mozilla.org
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  skip-cert-verify: false
+  udp: true
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_1
+  type: vless
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  servername: sg2-8sb.6121999.dpdns.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  skip-cert-verify: false
+  udp: true
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇦CA加拿大丨yoyapai.com
+  type: vless
+  server: www.iplocation.net
+  port: 8080
+  uuid: 5c4ce4e3-d4cd-43ff-8eb0-9aa553410bff
   network: ws
   tls: false
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /
+    headers:
+      Host: n23odi-jolly-sound-f784.mbkl61es.workers.dev
   skip-cert-verify: false
   udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_2
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -904,7 +932,7 @@ proxies:
   network: xhttp
   servername: dey.lnmarketplace.net
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   alpn:
   - h2
   xhttp-opts:
@@ -913,7 +941,7 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_1
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_4
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -927,135 +955,96 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇦CA加拿大丨yoyapai.com
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇦🇪AE阿联酋丨yoyapai.com
   type: vless
-  server: 172.67.79.160
-  port: 2087
-  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
-  network: ws
-  servername: cvhpyn.pages.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: cvhpyn.pages.dev
-  skip-cert-verify: false
-  udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_4
-  type: vless
-  server: c20s5.portablesubmarines.com
-  port: 443
-  uuid: 85fe968d-fbb5-40dc-8422-30635eccb149
-  servername: portal.citygrainla.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-    short-id: 051f20c2344a2dfd
-  skip-cert-verify: false
-  udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇪🇪EE爱沙尼亚丨yoyapai.com
-  type: vless
-  server: fr5.wizard.select
-  port: 443
-  uuid: 2acc3742-c568-11f1-9902-a337233c6cda
-  servername: fr5.wizard.select
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: uqLRHVERHP974FJk39ltiV8pkcGAWYKJfOJ1nMALahU
-    short-id: 984f
-  skip-cert-verify: false
-  udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇷🇺RU俄罗斯丨yoyapai.com
-  type: vless
-  server: 93.188.184.150
-  port: 443
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
-  network: grpc
-  servername: ru-1-2.unturned-rust-dead.lol
+  server: zordbx861.233874.xyz
+  port: 8888
+  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
+  servername: addons.mozilla.org
   tls: true
   client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: ru-api
   reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
   skip-cert-verify: false
   udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇮FI芬兰丨yoyapai.com
-  type: vless
-  server: frfx.pafaktalaei.ir
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_11
+  type: trojan
+  server: 185.220.100.168
   port: 443
-  uuid: a5bb02b7-0a54-44dc-af05-dc2633d5abd4
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇵🇱PL波兰丨yoyapai.com
+  type: vless
+  server: 195.137.226.11
+  port: 443
+  uuid: 54d67aa6-fe54-4b8e-b3b6-62b7e043eb35
   network: xhttp
-  servername: frfx.pafaktalaei.ir
+  servername: mobile.zandix.ir
   tls: true
-  client-fingerprint: ios
+  client-fingerprint: chrome
   alpn:
   - h2
+  - http/1.1
+  - h3
   xhttp-opts:
-    path: /connect-v1
-    host: frfx.pafaktalaei.ir
+    path: /
+    host: mobile.zandix.ir
     mode: auto
   skip-cert-verify: false
   udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇭瑞士丨yoyapai.com
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇸🇬SG新加坡丨yoyapai.com
   type: vless
-  server: ns.l90909l.vip
-  port: 2096
-  uuid: 3fcec4e4-a674-44d2-8cae-c253cec43b9c
-  network: grpc
-  servername: id.vk.com
-  tls: true
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  skip-cert-verify: false
-  udp: true
-- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇲🇩MD摩尔多瓦丨yoyapai.com
-  type: vless
-  server: 89.35.14.34
+  server: 104.21.28.176
   port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  network: grpc
-  servername: md5.univesalsrv.com
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  network: ws
   tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: app.v1.PushService
-  reality-opts:
-    public-key: 99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg
-    short-id: aa9884f2982b7d3c
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇨🇿CZ捷克丨yoyapai.com
-  type: vless
-  server: 153.76.185.161
-  port: 3090
-  uuid: 2e065d01-2ac9-48d7-bc4f-c1e3e6ef3de4
-  network: grpc
-  tls: false
-  grpc-opts:
-    grpc-service-name: vless
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇰🇿KZ哈萨克斯坦丨yoyapai.com
-  type: vless
-  server: 206.223.249.90
-  port: 33891
-  uuid: 9977ba41-b6aa-4033-9492-2f6abfcade31
-  servername: browser.yandex.com
-  tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  reality-opts:
-    public-key: fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8
-    short-id: f5bc6788
+  ws-opts:
+    path: /Singapore1
+    headers:
+      Host: sg.lovehk.xyz
+  skip-cert-verify: false
+  udp: true
+- name: GENERAL | yoyapai.com (via wzmwayne/proxy-node) | 🇱🇰LK斯里兰卡丨yoyapai.com
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇺🇸US美国丨yoyapai.com
+  type: vless
+  server: 172.67.139.229
+  port: 443
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Dallas1
+    headers:
+      Host: usa.lovehk.xyz
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_12
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
   skip-cert-verify: false
   udp: true
 - name: CHATGPT | anaer/Sub | 美国 006
