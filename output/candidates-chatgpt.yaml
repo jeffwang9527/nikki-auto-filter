@@ -411,162 +411,159 @@ proxies:
     path: /argox-tr
 - name: CHATGPT | free18/v2ray | 每天更新，请加电报群防止失联
   type: vless
-  server: 157.228.128.59
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
+  server: 516.150333.xyz
+  port: 21002
+  uuid: a3bc04d0-59c9-4881-b9bf-203bef11f680
+  servername: www.cloudflare.com
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
+    public-key: nkRktc_FQ7HQr2bqJ5HQMulYLjhuTJ_nEdypT2mevQY
+    short-id: 57857ae6fd24fac2
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | free18/v2ray | 电报群：https://t.me/vvkj11
   type: vless
-  server: 177.1.187.251
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  servername: de2.srv.vbuste.ru
+  server: 516.150333.xyz
+  port: 21003
+  uuid: a3bc04d0-59c9-4881-b9bf-203bef11f680
+  servername: www.cloudflare.com
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
+  client-fingerprint: chrome
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
+    public-key: nkRktc_FQ7HQr2bqJ5HQMulYLjhuTJ_nEdypT2mevQY
+    short-id: b09b7b71438f2c55
+  skip-cert-verify: true
+  udp: true
+- name: CHATGPT | free18/v2ray | 日期：10-16
+  type: vless
+  server: 516.150333.xyz
+  port: 21004
+  uuid: a3bc04d0-59c9-4881-b9bf-203bef11f680
+  servername: www.cloudflare.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nkRktc_FQ7HQr2bqJ5HQMulYLjhuTJ_nEdypT2mevQY
+    short-id: 2f013e71a1a52879
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | free18/v2ray | 免费VPN：https://tt.vg/FJOE2Mm
   type: vless
-  server: 157.228.150.34
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
+  server: 516.150333.xyz
+  port: 21001
+  uuid: a3bc04d0-59c9-4881-b9bf-203bef11f680
+  servername: www.cloudflare.com
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
+    public-key: nkRktc_FQ7HQr2bqJ5HQMulYLjhuTJ_nEdypT2mevQY
+    short-id: b681aa092de163aa
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | free18/v2ray | 🇳🇱_荷兰_5
   type: vless
-  server: 13.143.172.203
+  server: nl1.aiage.work
   port: 443
-  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
-  servername: 13.143.172.203
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  servername: nl1.aiage.work
   tls: true
+  flow: xtls-rprx-vision
   client-fingerprint: firefox
+  reality-opts:
+    public-key: vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk
+    short-id: adcbde41b1cf27ba
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇩🇪_德国_6
+- name: CHATGPT | free18/v2ray | 🇸🇬_新加坡_9
   type: vless
-  server: de2.srv.vbuste.ru
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  servername: de2.srv.vbuste.ru
+  server: 511.150333.xyz
+  port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  servername: www.cloudflare.com
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: ab39fc68ab3dee81
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇦🇪_阿拉伯联合酋长国_10
+- name: CHATGPT | free18/v2ray | 🇸🇬_新加坡_10
   type: vless
-  server: 157.228.160.166
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  servername: addons.mozilla.org
+  server: 511.150333.xyz
+  port: 21002
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  servername: www.cloudflare.com
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇰🇷_韩国_14
-  type: vmess
-  server: 43.108.103.167
-  port: 123
-  uuid: 35aa0fda-175a-4aec-c468-0231dee1a121
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇩🇪_德国_15
-  type: vless
-  server: 177.1.187.139
-  port: 1984
-  uuid: d9eb02da-a469-44a7-a393-ba1c5fbbc8c4
-  servername: ruori.ai
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: random
-  reality-opts:
-    public-key: ikKnBJfcuPy1U0O3Cb71zv_G1liM5QcAYhR10A0Ech0
-    short-id: 0f00666a
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇷🇺_俄罗斯_19
-  type: vless
-  server: tr.datanode-internal.net
-  port: 443
-  uuid: 93996a55-febe-4183-9366-df6cb11a34dd
-  servername: sun9-38.userapi.com
-  tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic
-    short-id: abbcd128
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 3ab8d93dd9b1a5be
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇷🇺_俄罗斯_20
+- name: CHATGPT | free18/v2ray | 🇸🇬_新加坡_11
   type: vless
-  server: 139.28.168.75
-  port: 10444
-  uuid: 154bd388-4968-4900-a088-18676f428a20
-  servername: video.yandex.ru
+  server: 511.150333.xyz
+  port: 21003
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  servername: www.cloudflare.com
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
+  client-fingerprint: chrome
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: bab49aa4c2a88d27
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇬🇧_英国_21
+- name: CHATGPT | free18/v2ray | 🇸🇬_新加坡_12
   type: vless
-  server: 138.124.125.193
-  port: 10444
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
-  servername: ads.x5.ru
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  servername: www.cloudflare.com
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
+  client-fingerprint: chrome
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 2df2bd9d8366cef1
   skip-cert-verify: true
   udp: true
-- name: CHATGPT | free18/v2ray | 🇷🇺_俄罗斯_22
+- name: CHATGPT | free18/v2ray | 🇸🇬_新加坡_13
   type: vless
-  server: 93.183.106.180
-  port: 10444
-  uuid: 9f837d05-6d7a-488b-a896-ea2b2ccf5413
-  servername: ads.x5.ru
+  server: 545.150333.xyz
+  port: 21003
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
+  servername: www.cloudflare.com
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
+  client-fingerprint: chrome
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+    short-id: 5a2d904fe6d0a39b
+  skip-cert-verify: true
+  udp: true
+- name: CHATGPT | free18/v2ray | 🇸🇬_新加坡_14
+  type: vless
+  server: 545.150333.xyz
+  port: 21002
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
+  servername: www.cloudflare.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+    short-id: a52a4528cd4d4c52
+  skip-cert-verify: true
+  udp: true
+- name: CHATGPT | free18/v2ray | 🇸🇬_新加坡_15
+  type: vless
+  server: 545.150333.xyz
+  port: 21004
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
+  servername: www.cloudflare.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+    short-id: 4ba266730580fd96
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | Barabama/FreeNodes | 中国_1
