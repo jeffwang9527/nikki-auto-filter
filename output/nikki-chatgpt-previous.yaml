@@ -1,4 +1,18 @@
 proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: GPT | GPT | CHATGPT | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-1019443010
+  network: raw
+  port: 41688
+  reality-opts:
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  server: 54.169.200.246
+  servername: www.intel.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
 - name: GPT | GPT | CHATGPT | mahdibland/V2RayAggregator | 🇺🇸US-156.146.38.167-0083
     | 102.478MB
   server: 156.146.38.167
@@ -64,13 +78,6 @@ proxies:
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: GPT | GPT | CHATGPT | mahdibland/V2RayAggregator | 🇺🇸US-156.146.38.170-0082
-    | 109.403MB
-  server: 156.146.38.170
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
 - cipher: rc4-md5
   name: GPT | CHATGPT | Au1rxx/free-vpn-subscriptions (SG) | SG | shadowsocks-1828226964
   password: 14fFPrbezE3HDZzsMOr6
@@ -85,10 +92,17 @@ proxies:
   server: 68.183.227.4
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: GPT | GPT | CHATGPT | Au1rxx/free-vpn-subscriptions (SG) | SG | shadowsocks-125384
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 128.199.172.224
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: GPT | CHATGPT | Au1rxx/free-vpn-subscriptions (SG) | SG | vless-1827152952
+  network: tcp
+  port: 10574
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
