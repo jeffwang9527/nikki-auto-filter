@@ -1,20 +1,6 @@
 proxies:
 - name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com
   type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 46105
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  servername: www.lamer.com.sg
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: 28f5c1f8f98a
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_1
-  type: vless
   server: 162.159.135.234
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
@@ -31,21 +17,7 @@ proxies:
   - h2
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_7
-  type: vless
-  server: 46.243.183.2
-  port: 443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  servername: stream.indigo.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: lrbP-ePUk7nbeLS8vBLbP5yyld7ZLmTB4_VQWRO31T8
-    short-id: 8a68df3a93c63ac8
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_9
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_2
   type: vless
   server: 172.64.150.43
   port: 443
@@ -75,7 +47,20 @@ proxies:
       Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_10
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_3
+  type: vless
+  server: 185.148.107.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime55.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -83,7 +68,7 @@ proxies:
   network: xhttp
   servername: dey.lnmarketplace.net
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   alpn:
   - h2
   xhttp-opts:
@@ -92,7 +77,7 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_4
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇳🇱NL荷兰丨yoyapai.com_2
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -120,20 +105,7 @@ proxies:
     short-id: e0215064d8d1fd7c
   skip-cert-verify: false
   udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇱🇰LK斯里兰卡丨yoyapai.com
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  udp: true
-- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_19
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | ❓未知丨yoyapai.com_12
   type: vless
   server: sg2-8sb.6121999.dpdns.org
   port: 19825
@@ -173,6 +145,38 @@ proxies:
   reality-opts:
     public-key: uqLRHVERHP974FJk39ltiV8pkcGAWYKJfOJ1nMALahU
     short-id: 984f
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇷🇺RU俄罗斯丨yoyapai.com
+  type: vless
+  server: 93.188.184.150
+  port: 443
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  network: grpc
+  servername: ru-1-2.unturned-rust-dead.lol
+  tls: true
+  client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: ru-api
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  skip-cert-verify: false
+  udp: true
+- name: CHATGPT | yoyapai.com (via wzmwayne/proxy-node) | 🇫🇮FI芬兰丨yoyapai.com
+  type: vless
+  server: frfx.pafaktalaei.ir
+  port: 443
+  uuid: a5bb02b7-0a54-44dc-af05-dc2633d5abd4
+  network: xhttp
+  servername: frfx.pafaktalaei.ir
+  tls: true
+  client-fingerprint: ios
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /connect-v1
+    host: frfx.pafaktalaei.ir
+    mode: auto
   skip-cert-verify: false
   udp: true
 - name: CHATGPT | Ruk1ng001/freeSub | A🟢🇯🇵res[🎬🤖📺🎭]_dokng.com_0aee8c03
@@ -411,6 +415,20 @@ proxies:
     headers:
       Host: per-essex-patterns-bowling.trycloudflare.com
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+- name: CHATGPT | free18/v2ray | 每天更新，请加电报群防止失联
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 46105
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  servername: www.lamer.com.sg
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
+    short-id: 28f5c1f8f98a
+  skip-cert-verify: true
+  udp: true
 - name: CHATGPT | free18/v2ray | 电报群：t.me/vvkj11
   type: vless
   server: funagfrdfs.alixxplay.com
@@ -509,6 +527,20 @@ proxies:
     short-id: 6b69118a7847c4c3
   skip-cert-verify: true
   udp: true
+- name: CHATGPT | free18/v2ray | 🇧🇾_白俄罗斯_11
+  type: vless
+  server: 46.243.183.2
+  port: 443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  servername: stream.indigo.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: lrbP-ePUk7nbeLS8vBLbP5yyld7ZLmTB4_VQWRO31T8
+    short-id: 8a68df3a93c63ac8
+  skip-cert-verify: true
+  udp: true
 - name: CHATGPT | free18/v2ray | 🇺🇸_美国_12
   type: vless
   server: 31.76.227.60
@@ -548,32 +580,6 @@ proxies:
   reality-opts:
     public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
     short-id: 4ba266730580fd96
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇸🇬_新加坡_16
-  type: vless
-  server: 545.150333.xyz
-  port: 21003
-  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
-  servername: www.cloudflare.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
-    short-id: 5a2d904fe6d0a39b
-  skip-cert-verify: true
-  udp: true
-- name: CHATGPT | free18/v2ray | 🇸🇬_新加坡_17
-  type: vless
-  server: 545.150333.xyz
-  port: 21002
-  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
-  servername: www.cloudflare.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
-    short-id: a52a4528cd4d4c52
   skip-cert-verify: true
   udp: true
 - name: CHATGPT | Barabama/FreeNodes | 中国_1
